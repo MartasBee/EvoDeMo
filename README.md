@@ -1,8 +1,8 @@
 # EvoDeMo
 
 This thesis deals with the utilization of evolutionary techniques to find such environment
-characteristics, that allow the object in this environment to perform the movement accor-
-ding to specified parameters. The environment which is utilized in this work is a cellular
+characteristics, that allow the object in this environment to perform the movement according
+to specified parameters. The environment which is utilized in this work is a cellular
 automaton, whose local transition function is optimized using the genetic algorithm. The
 principles of computational development are applied. The presented work tends to the area
 of theoretical biology. Its main objective is to create a simple simulator of life of artificial
