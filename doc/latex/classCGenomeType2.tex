@@ -1,0 +1,82 @@
+\hypertarget{classCGenomeType2}{
+\section{CGenomeType2 Class Reference}
+\label{classCGenomeType2}\index{CGenomeType2@{CGenomeType2}}
+}
+
+
+{\ttfamily \#include $<$GenomeType2.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGenomeType2_a49dcf0302d8e83d51025c31fc07ee502}{CGenomeType2} ()
+\item 
+\hyperlink{classCGenomeType2_ac58b7ab43d29dac0816e25ccf4e7ccd4}{CGenomeType2} (const \hyperlink{classCGenomeType2}{CGenomeType2} \&rSide)
+\item 
+void \hyperlink{classCGenomeType2_ae1de66cbfe4425f371433caed2309eeb}{SetGene} (int index, BYTE gene)
+\item 
+BYTE \hyperlink{classCGenomeType2_adecff806abe734ca910115bc849046aa}{GetGene} (int index)
+\item 
+BYTE $\ast$ \hyperlink{classCGenomeType2_a2c6cbf1f56c6cbc5217c06f820712557}{GetGenome} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGenomeType2_a81d27bd3cd7ed600a89031ca5ef57b55}{
+BYTE \hyperlink{classCGenomeType2_a81d27bd3cd7ed600a89031ca5ef57b55}{genome} \mbox{[}GENOME\_\-SIZE\_\-TYPE\_\-2\_\-9N\mbox{]}}
+\label{classCGenomeType2_a81d27bd3cd7ed600a89031ca5ef57b55}
+
+\begin{DoxyCompactList}\small\item\em linear chromosome \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class contains genome for 9-\/neighborhood 2 states ca genome is linear array of BYTES, every element of array represents one gene index to genome is calculated from neighbor cells, see class \hyperlink{classCTFunction}{CTFunction}, function CalculateIndexTorus in ../../ca/TFunction.cpp file, line 280 when index to genome is calculated, gene from this index is returned to CA -\/ this gene represents new value of cell in next step of ca computation so this genome is built from values CELL\_\-EMPTY and CELL\_\-LIVE\_\-1, which are only allowed values of ca space 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGenomeType2_a49dcf0302d8e83d51025c31fc07ee502}{
+\index{CGenomeType2@{CGenomeType2}!CGenomeType2@{CGenomeType2}}
+\index{CGenomeType2@{CGenomeType2}!CGenomeType2@{CGenomeType2}}
+\subsubsection[{CGenomeType2}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType2::CGenomeType2 ()}}
+\label{classCGenomeType2_a49dcf0302d8e83d51025c31fc07ee502}
+class constructor \hypertarget{classCGenomeType2_ac58b7ab43d29dac0816e25ccf4e7ccd4}{
+\index{CGenomeType2@{CGenomeType2}!CGenomeType2@{CGenomeType2}}
+\index{CGenomeType2@{CGenomeType2}!CGenomeType2@{CGenomeType2}}
+\subsubsection[{CGenomeType2}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType2::CGenomeType2 (const {\bf CGenomeType2} \& {\em rSide})}}
+\label{classCGenomeType2_ac58b7ab43d29dac0816e25ccf4e7ccd4}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to class on right side of \char`\"{}=\char`\"{} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGenomeType2_adecff806abe734ca910115bc849046aa}{
+\index{CGenomeType2@{CGenomeType2}!GetGene@{GetGene}}
+\index{GetGene@{GetGene}!CGenomeType2@{CGenomeType2}}
+\subsubsection[{GetGene}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2::GetGene (int {\em index})}}
+\label{classCGenomeType2_adecff806abe734ca910115bc849046aa}
+return value of gene from given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \end{DoxyParams}
+\hypertarget{classCGenomeType2_a2c6cbf1f56c6cbc5217c06f820712557}{
+\index{CGenomeType2@{CGenomeType2}!GetGenome@{GetGenome}}
+\index{GetGenome@{GetGenome}!CGenomeType2@{CGenomeType2}}
+\subsubsection[{GetGenome}]{\setlength{\rightskip}{0pt plus 5cm}BYTE $\ast$ CGenomeType2::GetGenome ()}}
+\label{classCGenomeType2_a2c6cbf1f56c6cbc5217c06f820712557}
+return pointer to whole genome \hypertarget{classCGenomeType2_ae1de66cbfe4425f371433caed2309eeb}{
+\index{CGenomeType2@{CGenomeType2}!SetGene@{SetGene}}
+\index{SetGene@{SetGene}!CGenomeType2@{CGenomeType2}}
+\subsubsection[{SetGene}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2::SetGene (int {\em index}, \/  BYTE {\em gene})}}
+\label{classCGenomeType2_ae1de66cbfe4425f371433caed2309eeb}
+sets gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \item[{\em gene}]value of gene \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GenomeType2.h\item 
+GenomeType2.cpp\end{DoxyCompactItemize}

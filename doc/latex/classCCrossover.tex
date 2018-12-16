@@ -1,0 +1,75 @@
+\hypertarget{classCCrossover}{
+\section{CCrossover Class Reference}
+\label{classCCrossover}\index{CCrossover@{CCrossover}}
+}
+
+
+{\ttfamily \#include $<$Crossover.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCrossover_a9877d88681846a002372d26fb450a1b8}{CCrossover} ()
+\item 
+void \hyperlink{classCCrossover_a56c755fbc976d04f42b65a31bde58426}{Crossover} (\hyperlink{classCGenome}{CGenome} $\ast$g1, \hyperlink{classCGenome}{CGenome} $\ast$g2)
+\item 
+void \hyperlink{classCCrossover_a71aa63e27a38f97b8f2032b38fd2d1a2}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cs)
+\item 
+int \hyperlink{classCCrossover_a21aa060801ac66d4437213992869c46d}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCrossover_aef34634bbba11d255a041f24f373e904}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCCrossover_aef34634bbba11d255a041f24f373e904}{pConfigCore}}
+\label{classCCrossover_aef34634bbba11d255a041f24f373e904}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCrossover_ab88ffcc10435d5def6a1fcd7386c9955}{
+\hyperlink{classCRandom}{CRandom} \hyperlink{classCCrossover_ab88ffcc10435d5def6a1fcd7386c9955}{random}}
+\label{classCCrossover_ab88ffcc10435d5def6a1fcd7386c9955}
+
+\begin{DoxyCompactList}\small\item\em instance of pseudo-\/random number generator class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCrossover_a73a6823eff615be84d341185cae0e2a1}{
+int \hyperlink{classCCrossover_a73a6823eff615be84d341185cae0e2a1}{iErrFlag}}
+\label{classCCrossover_a73a6823eff615be84d341185cae0e2a1}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+crossover class for creating child genomes using crossover NOT IMPLEMENTED 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCrossover_a9877d88681846a002372d26fb450a1b8}{
+\index{CCrossover@{CCrossover}!CCrossover@{CCrossover}}
+\index{CCrossover@{CCrossover}!CCrossover@{CCrossover}}
+\subsubsection[{CCrossover}]{\setlength{\rightskip}{0pt plus 5cm}CCrossover::CCrossover ()}}
+\label{classCCrossover_a9877d88681846a002372d26fb450a1b8}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCrossover_a56c755fbc976d04f42b65a31bde58426}{
+\index{CCrossover@{CCrossover}!Crossover@{Crossover}}
+\index{Crossover@{Crossover}!CCrossover@{CCrossover}}
+\subsubsection[{Crossover}]{\setlength{\rightskip}{0pt plus 5cm}void CCrossover::Crossover ({\bf CGenome} $\ast$ {\em g1}, \/  {\bf CGenome} $\ast$ {\em g2})}}
+\label{classCCrossover_a56c755fbc976d04f42b65a31bde58426}
+performs crossover of given genomes -\/ NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$g1}]pointer to 1st genome \item[{\em $\ast$g2}]pointer to 2nd genome \end{DoxyParams}
+\hypertarget{classCCrossover_a21aa060801ac66d4437213992869c46d}{
+\index{CCrossover@{CCrossover}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CCrossover@{CCrossover}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CCrossover::GetErrorFlag ()}}
+\label{classCCrossover_a21aa060801ac66d4437213992869c46d}
+returns error flag \hypertarget{classCCrossover_a71aa63e27a38f97b8f2032b38fd2d1a2}{
+\index{CCrossover@{CCrossover}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CCrossover@{CCrossover}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CCrossover::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCCrossover_a71aa63e27a38f97b8f2032b38fd2d1a2}
+sets config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Crossover.h\item 
+Crossover.cpp\end{DoxyCompactItemize}

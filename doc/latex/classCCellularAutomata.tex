@@ -1,0 +1,211 @@
+\hypertarget{classCCellularAutomata}{
+\section{CCellularAutomata Class Reference}
+\label{classCCellularAutomata}\index{CCellularAutomata@{CCellularAutomata}}
+}
+
+
+{\ttfamily \#include $<$CellularAutomata.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCellularAutomata_a655184244b0dfb0fc760c8456c37544e}{CCellularAutomata} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$configCore)
+\item 
+\hyperlink{classCCellularAutomata_aea01c28581d9683737ce36f38c1ac7f5}{$\sim$CCellularAutomata} ()
+\item 
+void \hyperlink{classCCellularAutomata_af5cdf03c18ba644e345daab376d210f9}{Step} ()
+\item 
+void \hyperlink{classCCellularAutomata_a5ec2f3241ecacde9250f140b4d93470c}{StepGoL} ()
+\item 
+void \hyperlink{classCCellularAutomata_ade214ca0b4f554561de04ad477ae37c7}{InitMemory} ()
+\item 
+void \hyperlink{classCCellularAutomata_ab1df4fc7a5d32eed82d62e99aaec3f1f}{InitSpace} ()
+\item 
+void \hyperlink{classCCellularAutomata_ade3b43b44d2e2cc448d5c896ae389957}{ReInit} ()
+\item 
+\hyperlink{classCRulesTable}{CRulesTable} $\ast$ \hyperlink{classCCellularAutomata_a4bdd830043f0e68a762e5da35d0a092a}{GetRulesTable} ()
+\begin{DoxyCompactList}\small\item\em ============================================================== \item\end{DoxyCompactList}\item 
+void \hyperlink{classCCellularAutomata_a0ba78441e4834407637d70e5ccf98e79}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$ccc)
+\item 
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_a811ef34c9aac8e7c9d9dffc1cf69b959}{GetSpace} ()
+\item 
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_ab11e05819885f5ce5450d5ea10d073d8}{GetInitSpace} ()
+\item 
+int \hyperlink{classCCellularAutomata_a4de26e7af894bb68740fb88e5e84bde7}{GetStepsDone} ()
+\item 
+int \hyperlink{classCCellularAutomata_ad0e09d8cc86ac519ccb237c77d4a88cc}{GetErrorFlag} ()
+\item 
+bool \hyperlink{classCCellularAutomata_a1818fe798c2bbcd3028b6dbe6f671965}{IsInitDone} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCCellularAutomata_a41cd53509e1fa773fd6a5ea08b08a2c1}{DeleteSpace} ()
+\item 
+void \hyperlink{classCCellularAutomata_a8b1286ff6ab0aa60b2e407cb09389cd8}{DeleteSpaceInit} ()
+\item 
+void \hyperlink{classCCellularAutomata_a02b47aed358ce08d72171ef555bbe2d3}{GoL} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCellularAutomata_a856d50a387aaa5b24b0f982c59704534}{
+\hyperlink{classCRulesTable}{CRulesTable} \hyperlink{classCCellularAutomata_a856d50a387aaa5b24b0f982c59704534}{rules}}
+\label{classCCellularAutomata_a856d50a387aaa5b24b0f982c59704534}
+
+\begin{DoxyCompactList}\small\item\em instance of rules table \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_ae38dbd5f4ff0a7ccef1befc45a8fc8d2}{
+\hyperlink{classCTFunction}{CTFunction} \hyperlink{classCCellularAutomata_ae38dbd5f4ff0a7ccef1befc45a8fc8d2}{tfunction}}
+\label{classCCellularAutomata_ae38dbd5f4ff0a7ccef1befc45a8fc8d2}
+
+\begin{DoxyCompactList}\small\item\em instance of transition function \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_ac5ad3726d78ae250825ae79eb6c226fc}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCCellularAutomata_ac5ad3726d78ae250825ae79eb6c226fc}{pConfigCore}}
+\label{classCCellularAutomata_ac5ad3726d78ae250825ae79eb6c226fc}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_abe77b69b74343937505dfc8baf7573f4}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_abe77b69b74343937505dfc8baf7573f4}{spaceInit}}
+\label{classCCellularAutomata_abe77b69b74343937505dfc8baf7573f4}
+
+\begin{DoxyCompactList}\small\item\em init space -\/ this class containes init ca space definated by user \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_a8d83846d9887075192d5f1d78a55e6d5}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_a8d83846d9887075192d5f1d78a55e6d5}{spaceAct}}
+\label{classCCellularAutomata_a8d83846d9887075192d5f1d78a55e6d5}
+
+\begin{DoxyCompactList}\small\item\em sa space in actual step of computation \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_ad47abe7b72446b455913196ef3ad7b55}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_ad47abe7b72446b455913196ef3ad7b55}{spaceTmp}}
+\label{classCCellularAutomata_ad47abe7b72446b455913196ef3ad7b55}
+
+\begin{DoxyCompactList}\small\item\em tmp space is used for saving next step result \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_af5d63ae730ccbe73cce038562f9a73aa}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCellularAutomata_af5d63ae730ccbe73cce038562f9a73aa}{spaceTmpX}}
+\label{classCCellularAutomata_af5d63ae730ccbe73cce038562f9a73aa}
+
+\begin{DoxyCompactList}\small\item\em pointer used for switching pointers between act and tmp instances \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_ac218781cb45b36af4d7de0ea4676c0f3}{
+unsigned int \hyperlink{classCCellularAutomata_ac218781cb45b36af4d7de0ea4676c0f3}{iStepsDone}}
+\label{classCCellularAutomata_ac218781cb45b36af4d7de0ea4676c0f3}
+
+\begin{DoxyCompactList}\small\item\em number of steps done \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_a14ce0fe077d51a9e7234d9dfc02bda14}{
+bool \hyperlink{classCCellularAutomata_a14ce0fe077d51a9e7234d9dfc02bda14}{bInitDone}}
+\label{classCCellularAutomata_a14ce0fe077d51a9e7234d9dfc02bda14}
+
+\begin{DoxyCompactList}\small\item\em is init done? \item\end{DoxyCompactList}\item 
+\hypertarget{classCCellularAutomata_a3c86a7f73e2c54eb2ee34076948602e9}{
+int \hyperlink{classCCellularAutomata_a3c86a7f73e2c54eb2ee34076948602e9}{iErrFlag}}
+\label{classCCellularAutomata_a3c86a7f73e2c54eb2ee34076948602e9}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main class of cellular automaton this class creates instances of ca space and manages ca computations for computations themself is used class \hyperlink{classCTFunction}{CTFunction}, which calculates index to genome (at this index is gene of BYTE data type which represents value of cell in next step), genome itself is mapped into instance of TRulesTable 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCellularAutomata_a655184244b0dfb0fc760c8456c37544e}{
+\index{CCellularAutomata@{CCellularAutomata}!CCellularAutomata@{CCellularAutomata}}
+\index{CCellularAutomata@{CCellularAutomata}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{CCellularAutomata}]{\setlength{\rightskip}{0pt plus 5cm}CCellularAutomata::CCellularAutomata ({\bf CConfigCore} $\ast$ {\em configCore})}}
+\label{classCCellularAutomata_a655184244b0dfb0fc760c8456c37544e}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$configCore}]pointer to config class \end{DoxyParams}
+\hypertarget{classCCellularAutomata_aea01c28581d9683737ce36f38c1ac7f5}{
+\index{CCellularAutomata@{CCellularAutomata}!$\sim$CCellularAutomata@{$\sim$CCellularAutomata}}
+\index{$\sim$CCellularAutomata@{$\sim$CCellularAutomata}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{$\sim$CCellularAutomata}]{\setlength{\rightskip}{0pt plus 5cm}CCellularAutomata::$\sim$CCellularAutomata ()}}
+\label{classCCellularAutomata_aea01c28581d9683737ce36f38c1ac7f5}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCellularAutomata_a41cd53509e1fa773fd6a5ea08b08a2c1}{
+\index{CCellularAutomata@{CCellularAutomata}!DeleteSpace@{DeleteSpace}}
+\index{DeleteSpace@{DeleteSpace}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{DeleteSpace}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::DeleteSpace ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCellularAutomata_a41cd53509e1fa773fd6a5ea08b08a2c1}
+deletes actual and tmp ca spaces \hypertarget{classCCellularAutomata_a8b1286ff6ab0aa60b2e407cb09389cd8}{
+\index{CCellularAutomata@{CCellularAutomata}!DeleteSpaceInit@{DeleteSpaceInit}}
+\index{DeleteSpaceInit@{DeleteSpaceInit}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{DeleteSpaceInit}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::DeleteSpaceInit ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCellularAutomata_a8b1286ff6ab0aa60b2e407cb09389cd8}
+deletes init ca space \hypertarget{classCCellularAutomata_ad0e09d8cc86ac519ccb237c77d4a88cc}{
+\index{CCellularAutomata@{CCellularAutomata}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CCellularAutomata::GetErrorFlag ()}}
+\label{classCCellularAutomata_ad0e09d8cc86ac519ccb237c77d4a88cc}
+return error flag \hypertarget{classCCellularAutomata_ab11e05819885f5ce5450d5ea10d073d8}{
+\index{CCellularAutomata@{CCellularAutomata}!GetInitSpace@{GetInitSpace}}
+\index{GetInitSpace@{GetInitSpace}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GetInitSpace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpace} $\ast$ CCellularAutomata::GetInitSpace ()}}
+\label{classCCellularAutomata_ab11e05819885f5ce5450d5ea10d073d8}
+returns pointer to init ca space \hypertarget{classCCellularAutomata_a4bdd830043f0e68a762e5da35d0a092a}{
+\index{CCellularAutomata@{CCellularAutomata}!GetRulesTable@{GetRulesTable}}
+\index{GetRulesTable@{GetRulesTable}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GetRulesTable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRulesTable} $\ast$ CCellularAutomata::GetRulesTable ()}}
+\label{classCCellularAutomata_a4bdd830043f0e68a762e5da35d0a092a}
+
+
+============================================================== returns pointer to rules table function \hypertarget{classCCellularAutomata_a811ef34c9aac8e7c9d9dffc1cf69b959}{
+\index{CCellularAutomata@{CCellularAutomata}!GetSpace@{GetSpace}}
+\index{GetSpace@{GetSpace}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GetSpace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpace} $\ast$ CCellularAutomata::GetSpace ()}}
+\label{classCCellularAutomata_a811ef34c9aac8e7c9d9dffc1cf69b959}
+returns pointer to actual CA space \hypertarget{classCCellularAutomata_a4de26e7af894bb68740fb88e5e84bde7}{
+\index{CCellularAutomata@{CCellularAutomata}!GetStepsDone@{GetStepsDone}}
+\index{GetStepsDone@{GetStepsDone}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GetStepsDone}]{\setlength{\rightskip}{0pt plus 5cm}int CCellularAutomata::GetStepsDone ()}}
+\label{classCCellularAutomata_a4de26e7af894bb68740fb88e5e84bde7}
+return number of done steps \hypertarget{classCCellularAutomata_a02b47aed358ce08d72171ef555bbe2d3}{
+\index{CCellularAutomata@{CCellularAutomata}!GoL@{GoL}}
+\index{GoL@{GoL}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{GoL}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::GoL ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCellularAutomata_a02b47aed358ce08d72171ef555bbe2d3}
+special funtion for \char`\"{}Game of Life\char`\"{} computations this function does not using chromosomes mapped into transition function \hypertarget{classCCellularAutomata_ade214ca0b4f554561de04ad477ae37c7}{
+\index{CCellularAutomata@{CCellularAutomata}!InitMemory@{InitMemory}}
+\index{InitMemory@{InitMemory}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{InitMemory}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::InitMemory ()}}
+\label{classCCellularAutomata_ade214ca0b4f554561de04ad477ae37c7}
+inits memory needed for computation \hypertarget{classCCellularAutomata_ab1df4fc7a5d32eed82d62e99aaec3f1f}{
+\index{CCellularAutomata@{CCellularAutomata}!InitSpace@{InitSpace}}
+\index{InitSpace@{InitSpace}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{InitSpace}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::InitSpace ()}}
+\label{classCCellularAutomata_ab1df4fc7a5d32eed82d62e99aaec3f1f}
+init spaces -\/ copies init space into actual space \hypertarget{classCCellularAutomata_a1818fe798c2bbcd3028b6dbe6f671965}{
+\index{CCellularAutomata@{CCellularAutomata}!IsInitDone@{IsInitDone}}
+\index{IsInitDone@{IsInitDone}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{IsInitDone}]{\setlength{\rightskip}{0pt plus 5cm}bool CCellularAutomata::IsInitDone ()}}
+\label{classCCellularAutomata_a1818fe798c2bbcd3028b6dbe6f671965}
+checking if initialization is done \hypertarget{classCCellularAutomata_ade3b43b44d2e2cc448d5c896ae389957}{
+\index{CCellularAutomata@{CCellularAutomata}!ReInit@{ReInit}}
+\index{ReInit@{ReInit}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{ReInit}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::ReInit ()}}
+\label{classCCellularAutomata_ade3b43b44d2e2cc448d5c896ae389957}
+reinitialization of CA \hypertarget{classCCellularAutomata_a0ba78441e4834407637d70e5ccf98e79}{
+\index{CCellularAutomata@{CCellularAutomata}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::SetConfigCore ({\bf CConfigCore} $\ast$ {\em ccc})}}
+\label{classCCellularAutomata_a0ba78441e4834407637d70e5ccf98e79}
+sets pointer to config class into this class and transition function class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$ccc}]pointer to config core class \end{DoxyParams}
+\hypertarget{classCCellularAutomata_af5cdf03c18ba644e345daab376d210f9}{
+\index{CCellularAutomata@{CCellularAutomata}!Step@{Step}}
+\index{Step@{Step}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::Step ()}}
+\label{classCCellularAutomata_af5cdf03c18ba644e345daab376d210f9}
+makes one step of ca computation \hypertarget{classCCellularAutomata_a5ec2f3241ecacde9250f140b4d93470c}{
+\index{CCellularAutomata@{CCellularAutomata}!StepGoL@{StepGoL}}
+\index{StepGoL@{StepGoL}!CCellularAutomata@{CCellularAutomata}}
+\subsubsection[{StepGoL}]{\setlength{\rightskip}{0pt plus 5cm}void CCellularAutomata::StepGoL ()}}
+\label{classCCellularAutomata_a5ec2f3241ecacde9250f140b4d93470c}
+makes one step with special function \hyperlink{classCCellularAutomata_a02b47aed358ce08d72171ef555bbe2d3}{GoL()}, which does not using transition function class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+CellularAutomata.h\item 
+CellularAutomata.cpp\end{DoxyCompactItemize}

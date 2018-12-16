@@ -1,0 +1,87 @@
+\hypertarget{classCGraphicsView}{
+\section{CGraphicsView Class Reference}
+\label{classCGraphicsView}\index{CGraphicsView@{CGraphicsView}}
+}
+
+
+{\ttfamily \#include $<$GraphicsView.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGraphicsView_ab8f66777de03ec943fbaede5f59e36bf}{CGraphicsView} (QWidget $\ast$parent=0)
+\item 
+QGraphicsView $\ast$ \hyperlink{classCGraphicsView_a2e28f55c94a25ebf465754843469f666}{view} () const 
+\item 
+QSize \hyperlink{classCGraphicsView_a4dc4d8f6b2eb14f0e68c3760b29b0edb}{minimumSizeHint} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCGraphicsView_a9766abb87c894de2696673d8f4d59b00}{setupMatrix} ()
+\item 
+void \hyperlink{classCGraphicsView_a6ab7dc0ecdd75857df6853958de85e20}{zoomIn} ()
+\item 
+void \hyperlink{classCGraphicsView_a5f04c98ba128a24812106e080b0f6c44}{zoomOut} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGraphicsView_a02e70bfb3b16ef3f1909691eec372cf9}{
+QGraphicsView $\ast$ \hyperlink{classCGraphicsView_a02e70bfb3b16ef3f1909691eec372cf9}{graphicsView}}
+\label{classCGraphicsView_a02e70bfb3b16ef3f1909691eec372cf9}
+
+\begin{DoxyCompactList}\small\item\em pointer to graphics view class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsView_aaa0a9b3d88bf8c6ebdb762187433534c}{
+QSlider $\ast$ \hyperlink{classCGraphicsView_aaa0a9b3d88bf8c6ebdb762187433534c}{sliderZoom}}
+\label{classCGraphicsView_aaa0a9b3d88bf8c6ebdb762187433534c}
+
+\begin{DoxyCompactList}\small\item\em zoom slider \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class creates view to scene with cells 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGraphicsView_ab8f66777de03ec943fbaede5f59e36bf}{
+\index{CGraphicsView@{CGraphicsView}!CGraphicsView@{CGraphicsView}}
+\index{CGraphicsView@{CGraphicsView}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{CGraphicsView}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsView::CGraphicsView (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCGraphicsView_ab8f66777de03ec943fbaede5f59e36bf}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]parent widget \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGraphicsView_a4dc4d8f6b2eb14f0e68c3760b29b0edb}{
+\index{CGraphicsView@{CGraphicsView}!minimumSizeHint@{minimumSizeHint}}
+\index{minimumSizeHint@{minimumSizeHint}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{minimumSizeHint}]{\setlength{\rightskip}{0pt plus 5cm}QSize CGraphicsView::minimumSizeHint () const}}
+\label{classCGraphicsView_a4dc4d8f6b2eb14f0e68c3760b29b0edb}
+sets minimum size of view widget \hypertarget{classCGraphicsView_a9766abb87c894de2696673d8f4d59b00}{
+\index{CGraphicsView@{CGraphicsView}!setupMatrix@{setupMatrix}}
+\index{setupMatrix@{setupMatrix}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{setupMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsView::setupMatrix ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCGraphicsView_a9766abb87c894de2696673d8f4d59b00}
+scene zooming \hypertarget{classCGraphicsView_a2e28f55c94a25ebf465754843469f666}{
+\index{CGraphicsView@{CGraphicsView}!view@{view}}
+\index{view@{view}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}QGraphicsView $\ast$ CGraphicsView::view () const}}
+\label{classCGraphicsView_a2e28f55c94a25ebf465754843469f666}
+returns pointer to graphics view \hypertarget{classCGraphicsView_a6ab7dc0ecdd75857df6853958de85e20}{
+\index{CGraphicsView@{CGraphicsView}!zoomIn@{zoomIn}}
+\index{zoomIn@{zoomIn}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{zoomIn}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsView::zoomIn ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCGraphicsView_a6ab7dc0ecdd75857df6853958de85e20}
+sets zoom slider when zoom in button is pressed \hypertarget{classCGraphicsView_a5f04c98ba128a24812106e080b0f6c44}{
+\index{CGraphicsView@{CGraphicsView}!zoomOut@{zoomOut}}
+\index{zoomOut@{zoomOut}!CGraphicsView@{CGraphicsView}}
+\subsubsection[{zoomOut}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsView::zoomOut ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCGraphicsView_a5f04c98ba128a24812106e080b0f6c44}
+sets zoom slider when zoom out button is pressed 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GraphicsView.h\item 
+GraphicsView.cpp\end{DoxyCompactItemize}

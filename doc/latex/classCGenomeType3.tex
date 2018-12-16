@@ -1,0 +1,75 @@
+\hypertarget{classCGenomeType3}{
+\section{CGenomeType3 Class Reference}
+\label{classCGenomeType3}\index{CGenomeType3@{CGenomeType3}}
+}
+
+
+{\ttfamily \#include $<$GenomeType3.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGenomeType3_a4bf9f000ce756d3203a754f7eaf29634}{CGenomeType3} ()
+\item 
+\hyperlink{classCGenomeType3_a6175c7fcb882b942df799420b7b86f66}{CGenomeType3} (const \hyperlink{classCGenomeType3}{CGenomeType3} \&rSide)
+\item 
+void \hyperlink{classCGenomeType3_a3d0626b0e86222aa39563642530d7ab0}{SetGene} (int index, BYTE gene)
+\item 
+BYTE \hyperlink{classCGenomeType3_af6f7a0271f5b93dbf23f030b3cb7781f}{GetGene} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGenomeType3_a991ab79797ffedd41e87551b6e6036e0}{
+std::bitset$<$ GENOME\_\-SIZE\_\-BITS\_\-TYPE\_\-3\_\-9N $>$ \hyperlink{classCGenomeType3_a991ab79797ffedd41e87551b6e6036e0}{genome}}
+\label{classCGenomeType3_a991ab79797ffedd41e87551b6e6036e0}
+
+\begin{DoxyCompactList}\small\item\em linear chromosome \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class contains genome for 5-\/neighborhood 3 states ca genome is created from bitset template class, every 2 elements of bitset represents one gene (2 bits are needed for int value \char`\"{}2\char`\"{}) index to genome is calculated from neighbor cells, see class \hyperlink{classCTFunction}{CTFunction}, function CalculateIndexTorus in ../../ca/TFunction.cpp file, line 280 when index to genome is calculated, gene from this index is returned to CA -\/ this gene represents new value of cell in next step of ca computation so this genome is built from values CELL\_\-EMPTY and CELL\_\-LIVE\_\-1, CELL\_\-LIVE\_\-2 which are only allowed values of ca space 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGenomeType3_a4bf9f000ce756d3203a754f7eaf29634}{
+\index{CGenomeType3@{CGenomeType3}!CGenomeType3@{CGenomeType3}}
+\index{CGenomeType3@{CGenomeType3}!CGenomeType3@{CGenomeType3}}
+\subsubsection[{CGenomeType3}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType3::CGenomeType3 ()}}
+\label{classCGenomeType3_a4bf9f000ce756d3203a754f7eaf29634}
+class constructor \hypertarget{classCGenomeType3_a6175c7fcb882b942df799420b7b86f66}{
+\index{CGenomeType3@{CGenomeType3}!CGenomeType3@{CGenomeType3}}
+\index{CGenomeType3@{CGenomeType3}!CGenomeType3@{CGenomeType3}}
+\subsubsection[{CGenomeType3}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType3::CGenomeType3 (const {\bf CGenomeType3} \& {\em rSide})}}
+\label{classCGenomeType3_a6175c7fcb882b942df799420b7b86f66}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to class on right side of \char`\"{}=\char`\"{} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGenomeType3_af6f7a0271f5b93dbf23f030b3cb7781f}{
+\index{CGenomeType3@{CGenomeType3}!GetGene@{GetGene}}
+\index{GetGene@{GetGene}!CGenomeType3@{CGenomeType3}}
+\subsubsection[{GetGene}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType3::GetGene (int {\em index})}}
+\label{classCGenomeType3_af6f7a0271f5b93dbf23f030b3cb7781f}
+return value of gene from given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \end{DoxyParams}
+\hypertarget{classCGenomeType3_a3d0626b0e86222aa39563642530d7ab0}{
+\index{CGenomeType3@{CGenomeType3}!SetGene@{SetGene}}
+\index{SetGene@{SetGene}!CGenomeType3@{CGenomeType3}}
+\subsubsection[{SetGene}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType3::SetGene (int {\em index}, \/  BYTE {\em gene})}}
+\label{classCGenomeType3_a3d0626b0e86222aa39563642530d7ab0}
+sets gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \item[{\em gene}]value of gene \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GenomeType3.h\item 
+GenomeType3.cpp\end{DoxyCompactItemize}

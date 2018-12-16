@@ -1,0 +1,87 @@
+\hypertarget{classCRulesTable}{
+\section{CRulesTable Class Reference}
+\label{classCRulesTable}\index{CRulesTable@{CRulesTable}}
+}
+
+
+{\ttfamily \#include $<$RulesTable.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCRulesTable_a17239390129d5e8f517046633c9f1d87}{CRulesTable} (\hyperlink{classCGenome}{CGenome} $\ast$gen=0)
+\item 
+void \hyperlink{classCRulesTable_a5bb7c61954a40c04ded5010accf1cdb1}{SetGenome} (\hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCRulesTable_a738f12d423fa1b145f50131336ac0273}{GetGenome} ()
+\item 
+BYTE \hyperlink{classCRulesTable_abe2bf05bb6865422c3ff9fcc24838003}{at} (int index)
+\item 
+void \hyperlink{classCRulesTable_a8f4653c3a4b576ce88635d60f268e6ad}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$pCC)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCRulesTable_aed1a5800eaf53c34771e9475d399c591}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCRulesTable_aed1a5800eaf53c34771e9475d399c591}{genome}}
+\label{classCRulesTable_aed1a5800eaf53c34771e9475d399c591}
+
+\begin{DoxyCompactList}\small\item\em pointer to genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCRulesTable_aa0927df0ca0a91db95fb698876d5c360}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCRulesTable_aa0927df0ca0a91db95fb698876d5c360}{pConfigCore}}
+\label{classCRulesTable_aa0927df0ca0a91db95fb698876d5c360}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rules table is touching point between CA and GA, contains pointer to genome and return genes from it 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCRulesTable_a17239390129d5e8f517046633c9f1d87}{
+\index{CRulesTable@{CRulesTable}!CRulesTable@{CRulesTable}}
+\index{CRulesTable@{CRulesTable}!CRulesTable@{CRulesTable}}
+\subsubsection[{CRulesTable}]{\setlength{\rightskip}{0pt plus 5cm}CRulesTable::CRulesTable ({\bf CGenome} $\ast$ {\em gen} = {\ttfamily 0})}}
+\label{classCRulesTable_a17239390129d5e8f517046633c9f1d87}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$gen}]pointer to genome from genetic algorithm \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCRulesTable_abe2bf05bb6865422c3ff9fcc24838003}{
+\index{CRulesTable@{CRulesTable}!at@{at}}
+\index{at@{at}!CRulesTable@{CRulesTable}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CRulesTable::at (int {\em index})}}
+\label{classCRulesTable_abe2bf05bb6865422c3ff9fcc24838003}
+return gene from genome at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \end{DoxyParams}
+\hypertarget{classCRulesTable_a738f12d423fa1b145f50131336ac0273}{
+\index{CRulesTable@{CRulesTable}!GetGenome@{GetGenome}}
+\index{GetGenome@{GetGenome}!CRulesTable@{CRulesTable}}
+\subsubsection[{GetGenome}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGenome} $\ast$ CRulesTable::GetGenome ()}}
+\label{classCRulesTable_a738f12d423fa1b145f50131336ac0273}
+returns pointer to actually used genome \hypertarget{classCRulesTable_a8f4653c3a4b576ce88635d60f268e6ad}{
+\index{CRulesTable@{CRulesTable}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CRulesTable@{CRulesTable}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CRulesTable::SetConfigCore ({\bf CConfigCore} $\ast$ {\em pCC})}}
+\label{classCRulesTable_a8f4653c3a4b576ce88635d60f268e6ad}
+sets config class \hypertarget{classCRulesTable_a5bb7c61954a40c04ded5010accf1cdb1}{
+\index{CRulesTable@{CRulesTable}!SetGenome@{SetGenome}}
+\index{SetGenome@{SetGenome}!CRulesTable@{CRulesTable}}
+\subsubsection[{SetGenome}]{\setlength{\rightskip}{0pt plus 5cm}void CRulesTable::SetGenome ({\bf CGenome} $\ast$ {\em gen})}}
+\label{classCRulesTable_a5bb7c61954a40c04ded5010accf1cdb1}
+sets given genome for ca computations
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$gen}]pointer to genome from genetic algorithm \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+RulesTable.h\item 
+RulesTable.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,283 @@
+\hypertarget{classCWidgetExport}{
+\section{CWidgetExport Class Reference}
+\label{classCWidgetExport}\index{CWidgetExport@{CWidgetExport}}
+}
+
+
+{\ttfamily \#include $<$WidgetExport.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetExport_a93dd689b74434b3dd1a647f5edd586f0}{
+void {\bfseries SignalWidgetExportApplyed} (bool)}
+\label{classCWidgetExport_a93dd689b74434b3dd1a647f5edd586f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWidgetExport_a1338e5bf75c7aa778fc5bfb1c2c1fe86}{CWidgetExport} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWidgetExport_aac482b95b68cbac0a338c2b4b3d87b8a}{$\sim$CWidgetExport} ()
+\item 
+int \hyperlink{classCWidgetExport_ac3d5ad813625f37314a4eb2336094378}{GetGuiDataDisplayModeTimeout} ()
+\item 
+int \hyperlink{classCWidgetExport_ad78773bd4358d9c2fb44c454936f9d48}{GetGuiDataDisplayModeCA} ()
+\item 
+QString \hyperlink{classCWidgetExport_a869e5eda5f0b9c54c4c3d271f563e60a}{GetFileExportPath} ()
+\item 
+int \hyperlink{classCWidgetExport_ab045a70c440213701a41d26312017303}{GetFileExportModeCA} ()
+\item 
+int \hyperlink{classCWidgetExport_a68238c2782d4facb5517f3e8f5c2cff0}{GetFileExportModeGA} ()
+\item 
+void \hyperlink{classCWidgetExport_a28e7d14090b6d2d9fc39e923713d5672}{SetGuiDataDisplayModeTimeout} (int to)
+\item 
+void \hyperlink{classCWidgetExport_a26a3ba5025f6cb0c2f34585dc9309482}{SetGuiDataDisplayModeCA} (int dm)
+\item 
+void \hyperlink{classCWidgetExport_a913ccffd640ae0015a771e1e56757a93}{SetFileExportModeCA} (int mca)
+\item 
+void \hyperlink{classCWidgetExport_a4735fe80f78a742cbf6d81312a9688a3}{SetFileExportModeGA} (int mga)
+\item 
+bool \hyperlink{classCWidgetExport_a94317ca319054669a2a5c603cd708313}{IsApplyed} ()
+\item 
+void \hyperlink{classCWidgetExport_a0cc01c9e8ef9c95e227a3cc27f75d166}{SetInitDone} (bool id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetExport_ade6f164eed254a2ea1bf24bc21476522}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetExport_adf47bf479d792c80723ab22e1aea0465}{GuiModeCATimeoutChanged} (int t)
+\item 
+void \hyperlink{classCWidgetExport_af48eb2f412398a4e902b44df7e9f2a72}{GuiModeCADisplayModeChanged} (int ca)
+\item 
+void \hyperlink{classCWidgetExport_a2eea5bb37bb71fde552228db4bad0fbd}{FileExportPathChanged} ()
+\item 
+void \hyperlink{classCWidgetExport_af13bcc06e192560f5c306d54d267c43c}{FileExportCAChanged} (int index)
+\item 
+void \hyperlink{classCWidgetExport_a791cea634360998bf2e12584ce533bd7}{FileExportGAChanged} (int index)
+\item 
+void \hyperlink{classCWidgetExport_a7ca1b32fdd9e190b55d9a9615330428d}{ApplyPressed} ()
+\item 
+void \hyperlink{classCWidgetExport_a6f65d412e920fe19eb7aba4d375e626e}{CancelPressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetExport_a6ad5a4c39aa02441307e66d785453883}{
+Ui::CWidgetExport $\ast$ \hyperlink{classCWidgetExport_a6ad5a4c39aa02441307e66d785453883}{ui}}
+\label{classCWidgetExport_a6ad5a4c39aa02441307e66d785453883}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_ae38b74b612c0259d5c2ca992607b41de}{
+unsigned int \hyperlink{classCWidgetExport_ae38b74b612c0259d5c2ca992607b41de}{iGuiModeCA\_\-Timeout}}
+\label{classCWidgetExport_ae38b74b612c0259d5c2ca992607b41de}
+
+\begin{DoxyCompactList}\small\item\em simulator's animation timeout \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_ad7a9df4a727385877d12012fa67bd954}{
+int \hyperlink{classCWidgetExport_ad7a9df4a727385877d12012fa67bd954}{iGuiModeCA\_\-DisplayMode}}
+\label{classCWidgetExport_ad7a9df4a727385877d12012fa67bd954}
+
+\begin{DoxyCompactList}\small\item\em simulator display mode \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_ad11e1f9a93768ad9744382404225badf}{
+QString \hyperlink{classCWidgetExport_ad11e1f9a93768ad9744382404225badf}{actPath}}
+\label{classCWidgetExport_ad11e1f9a93768ad9744382404225badf}
+
+\begin{DoxyCompactList}\small\item\em actual export path \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_a5a17e8aff24df770c68e7353e1d64ad3}{
+QString \hyperlink{classCWidgetExport_a5a17e8aff24df770c68e7353e1d64ad3}{tmpPath}}
+\label{classCWidgetExport_a5a17e8aff24df770c68e7353e1d64ad3}
+
+\begin{DoxyCompactList}\small\item\em tmp export path \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_a973cbb8a206f868cd28762d5b7038ebb}{
+int \hyperlink{classCWidgetExport_a973cbb8a206f868cd28762d5b7038ebb}{iExportModeCA}}
+\label{classCWidgetExport_a973cbb8a206f868cd28762d5b7038ebb}
+
+\begin{DoxyCompactList}\small\item\em ca export mode \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_a6238fd2a78c9c4ea7218ad3720eb497d}{
+int \hyperlink{classCWidgetExport_a6238fd2a78c9c4ea7218ad3720eb497d}{iExportModeGA}}
+\label{classCWidgetExport_a6238fd2a78c9c4ea7218ad3720eb497d}
+
+\begin{DoxyCompactList}\small\item\em ga export mode \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_a0d1e850dcb403c2bf07f0b746c144958}{
+bool \hyperlink{classCWidgetExport_a0d1e850dcb403c2bf07f0b746c144958}{bApplyed}}
+\label{classCWidgetExport_a0d1e850dcb403c2bf07f0b746c144958}
+
+\begin{DoxyCompactList}\small\item\em is this widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetExport_a1ebdab7de4daa37aa5e69c6c36136046}{
+bool \hyperlink{classCWidgetExport_a1ebdab7de4daa37aa5e69c6c36136046}{bInitDone}}
+\label{classCWidgetExport_a1ebdab7de4daa37aa5e69c6c36136046}
+
+\begin{DoxyCompactList}\small\item\em is app core init? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+export settings 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWidgetExport_a1338e5bf75c7aa778fc5bfb1c2c1fe86}{
+\index{CWidgetExport@{CWidgetExport}!CWidgetExport@{CWidgetExport}}
+\index{CWidgetExport@{CWidgetExport}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{CWidgetExport}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetExport::CWidgetExport (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWidgetExport_a1338e5bf75c7aa778fc5bfb1c2c1fe86}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent widget \end{DoxyParams}
+\hypertarget{classCWidgetExport_aac482b95b68cbac0a338c2b4b3d87b8a}{
+\index{CWidgetExport@{CWidgetExport}!$\sim$CWidgetExport@{$\sim$CWidgetExport}}
+\index{$\sim$CWidgetExport@{$\sim$CWidgetExport}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{$\sim$CWidgetExport}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetExport::$\sim$CWidgetExport ()}}
+\label{classCWidgetExport_aac482b95b68cbac0a338c2b4b3d87b8a}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWidgetExport_a7ca1b32fdd9e190b55d9a9615330428d}{
+\index{CWidgetExport@{CWidgetExport}!ApplyPressed@{ApplyPressed}}
+\index{ApplyPressed@{ApplyPressed}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{ApplyPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::ApplyPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_a7ca1b32fdd9e190b55d9a9615330428d}
+when apply is pressed disable all functional tools in widget \hypertarget{classCWidgetExport_a6f65d412e920fe19eb7aba4d375e626e}{
+\index{CWidgetExport@{CWidgetExport}!CancelPressed@{CancelPressed}}
+\index{CancelPressed@{CancelPressed}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{CancelPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::CancelPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_a6f65d412e920fe19eb7aba4d375e626e}
+when cancel is pressed, enable all functional tools in widget \hypertarget{classCWidgetExport_ade6f164eed254a2ea1bf24bc21476522}{
+\index{CWidgetExport@{CWidgetExport}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWidgetExport_ade6f164eed254a2ea1bf24bc21476522}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWidgetExport_af13bcc06e192560f5c306d54d267c43c}{
+\index{CWidgetExport@{CWidgetExport}!FileExportCAChanged@{FileExportCAChanged}}
+\index{FileExportCAChanged@{FileExportCAChanged}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{FileExportCAChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::FileExportCAChanged (int {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_af13bcc06e192560f5c306d54d267c43c}
+ca export mode was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]new mode from combobox \end{DoxyParams}
+\hypertarget{classCWidgetExport_a791cea634360998bf2e12584ce533bd7}{
+\index{CWidgetExport@{CWidgetExport}!FileExportGAChanged@{FileExportGAChanged}}
+\index{FileExportGAChanged@{FileExportGAChanged}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{FileExportGAChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::FileExportGAChanged (int {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_a791cea634360998bf2e12584ce533bd7}
+ga export mode was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]new mode from combobox \end{DoxyParams}
+\hypertarget{classCWidgetExport_a2eea5bb37bb71fde552228db4bad0fbd}{
+\index{CWidgetExport@{CWidgetExport}!FileExportPathChanged@{FileExportPathChanged}}
+\index{FileExportPathChanged@{FileExportPathChanged}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{FileExportPathChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::FileExportPathChanged ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_a2eea5bb37bb71fde552228db4bad0fbd}
+export path button was pressed -\/ get new export path \hypertarget{classCWidgetExport_ab045a70c440213701a41d26312017303}{
+\index{CWidgetExport@{CWidgetExport}!GetFileExportModeCA@{GetFileExportModeCA}}
+\index{GetFileExportModeCA@{GetFileExportModeCA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GetFileExportModeCA}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetExport::GetFileExportModeCA ()}}
+\label{classCWidgetExport_ab045a70c440213701a41d26312017303}
+returns ca export mode \hypertarget{classCWidgetExport_a68238c2782d4facb5517f3e8f5c2cff0}{
+\index{CWidgetExport@{CWidgetExport}!GetFileExportModeGA@{GetFileExportModeGA}}
+\index{GetFileExportModeGA@{GetFileExportModeGA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GetFileExportModeGA}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetExport::GetFileExportModeGA ()}}
+\label{classCWidgetExport_a68238c2782d4facb5517f3e8f5c2cff0}
+returns ga export mode \hypertarget{classCWidgetExport_a869e5eda5f0b9c54c4c3d271f563e60a}{
+\index{CWidgetExport@{CWidgetExport}!GetFileExportPath@{GetFileExportPath}}
+\index{GetFileExportPath@{GetFileExportPath}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GetFileExportPath}]{\setlength{\rightskip}{0pt plus 5cm}QString CWidgetExport::GetFileExportPath ()}}
+\label{classCWidgetExport_a869e5eda5f0b9c54c4c3d271f563e60a}
+returns path to export folder \hypertarget{classCWidgetExport_ad78773bd4358d9c2fb44c454936f9d48}{
+\index{CWidgetExport@{CWidgetExport}!GetGuiDataDisplayModeCA@{GetGuiDataDisplayModeCA}}
+\index{GetGuiDataDisplayModeCA@{GetGuiDataDisplayModeCA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GetGuiDataDisplayModeCA}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetExport::GetGuiDataDisplayModeCA ()}}
+\label{classCWidgetExport_ad78773bd4358d9c2fb44c454936f9d48}
+returns simulatior gddm \hypertarget{classCWidgetExport_ac3d5ad813625f37314a4eb2336094378}{
+\index{CWidgetExport@{CWidgetExport}!GetGuiDataDisplayModeTimeout@{GetGuiDataDisplayModeTimeout}}
+\index{GetGuiDataDisplayModeTimeout@{GetGuiDataDisplayModeTimeout}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GetGuiDataDisplayModeTimeout}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetExport::GetGuiDataDisplayModeTimeout ()}}
+\label{classCWidgetExport_ac3d5ad813625f37314a4eb2336094378}
+returns animation timeout \hypertarget{classCWidgetExport_af48eb2f412398a4e902b44df7e9f2a72}{
+\index{CWidgetExport@{CWidgetExport}!GuiModeCADisplayModeChanged@{GuiModeCADisplayModeChanged}}
+\index{GuiModeCADisplayModeChanged@{GuiModeCADisplayModeChanged}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GuiModeCADisplayModeChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::GuiModeCADisplayModeChanged (int {\em ca})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_af48eb2f412398a4e902b44df7e9f2a72}
+simulatior display mode was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ca}]new simualtor dispaly mode from combobox \end{DoxyParams}
+\hypertarget{classCWidgetExport_adf47bf479d792c80723ab22e1aea0465}{
+\index{CWidgetExport@{CWidgetExport}!GuiModeCATimeoutChanged@{GuiModeCATimeoutChanged}}
+\index{GuiModeCATimeoutChanged@{GuiModeCATimeoutChanged}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{GuiModeCATimeoutChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::GuiModeCATimeoutChanged (int {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetExport_adf47bf479d792c80723ab22e1aea0465}
+simulatior animation timeout changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]new timeout \end{DoxyParams}
+\hypertarget{classCWidgetExport_a94317ca319054669a2a5c603cd708313}{
+\index{CWidgetExport@{CWidgetExport}!IsApplyed@{IsApplyed}}
+\index{IsApplyed@{IsApplyed}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{IsApplyed}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetExport::IsApplyed ()}}
+\label{classCWidgetExport_a94317ca319054669a2a5c603cd708313}
+was apply button pressed? \hypertarget{classCWidgetExport_a913ccffd640ae0015a771e1e56757a93}{
+\index{CWidgetExport@{CWidgetExport}!SetFileExportModeCA@{SetFileExportModeCA}}
+\index{SetFileExportModeCA@{SetFileExportModeCA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{SetFileExportModeCA}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::SetFileExportModeCA (int {\em mca})}}
+\label{classCWidgetExport_a913ccffd640ae0015a771e1e56757a93}
+sets ca export mode -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mca}]new ca export mode \end{DoxyParams}
+\hypertarget{classCWidgetExport_a4735fe80f78a742cbf6d81312a9688a3}{
+\index{CWidgetExport@{CWidgetExport}!SetFileExportModeGA@{SetFileExportModeGA}}
+\index{SetFileExportModeGA@{SetFileExportModeGA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{SetFileExportModeGA}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::SetFileExportModeGA (int {\em mga})}}
+\label{classCWidgetExport_a4735fe80f78a742cbf6d81312a9688a3}
+sets ga export mode -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mga}]new ga export mode \end{DoxyParams}
+\hypertarget{classCWidgetExport_a26a3ba5025f6cb0c2f34585dc9309482}{
+\index{CWidgetExport@{CWidgetExport}!SetGuiDataDisplayModeCA@{SetGuiDataDisplayModeCA}}
+\index{SetGuiDataDisplayModeCA@{SetGuiDataDisplayModeCA}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{SetGuiDataDisplayModeCA}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::SetGuiDataDisplayModeCA (int {\em dm})}}
+\label{classCWidgetExport_a26a3ba5025f6cb0c2f34585dc9309482}
+sets simulatior gddm -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dm}]new gddm ca \end{DoxyParams}
+\hypertarget{classCWidgetExport_a28e7d14090b6d2d9fc39e923713d5672}{
+\index{CWidgetExport@{CWidgetExport}!SetGuiDataDisplayModeTimeout@{SetGuiDataDisplayModeTimeout}}
+\index{SetGuiDataDisplayModeTimeout@{SetGuiDataDisplayModeTimeout}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{SetGuiDataDisplayModeTimeout}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::SetGuiDataDisplayModeTimeout (int {\em to})}}
+\label{classCWidgetExport_a28e7d14090b6d2d9fc39e923713d5672}
+sets animation timeout -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em to}]new animation timeout \end{DoxyParams}
+\hypertarget{classCWidgetExport_a0cc01c9e8ef9c95e227a3cc27f75d166}{
+\index{CWidgetExport@{CWidgetExport}!SetInitDone@{SetInitDone}}
+\index{SetInitDone@{SetInitDone}!CWidgetExport@{CWidgetExport}}
+\subsubsection[{SetInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetExport::SetInitDone (bool {\em id})}}
+\label{classCWidgetExport_a0cc01c9e8ef9c95e227a3cc27f75d166}
+button init changed state -\/ enable/disable any changes in widget 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WidgetExport.h\item 
+WidgetExport.cpp\end{DoxyCompactItemize}

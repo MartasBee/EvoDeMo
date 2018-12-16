@@ -1,0 +1,400 @@
+\hypertarget{classCWidgetInput}{
+\section{CWidgetInput Class Reference}
+\label{classCWidgetInput}\index{CWidgetInput@{CWidgetInput}}
+}
+
+
+{\ttfamily \#include $<$WidgetInput.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetInput_a05bd031f99a0d2e55967169112339fe0}{
+void {\bfseries SignalWidgetInputApplyed} (bool)}
+\label{classCWidgetInput_a05bd031f99a0d2e55967169112339fe0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWidgetInput_a7595b91af57924e97909c96956031371}{CWidgetInput} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWidgetInput_afc915feb98e5ef4c8e6f8289ff26e4ef}{$\sim$CWidgetInput} ()
+\item 
+\hyperlink{classCGraphicsScene}{CGraphicsScene} $\ast$ \hyperlink{classCWidgetInput_aa4ed42952441c02ef7c852611e470bf6}{GetGrid} ()
+\item 
+bool \hyperlink{classCWidgetInput_abb4665c76fc6fa6596672492d2692fa5}{IsApplyed} ()
+\item 
+void \hyperlink{classCWidgetInput_ab20a7e7c2209a646e1344da181ed3b4c}{SetInitDone} (bool id)
+\item 
+void \hyperlink{classCWidgetInput_a973d6f19d85ece1c17c09c6d3b1a1d46}{SetOutputSizeX} (int x)
+\item 
+void \hyperlink{classCWidgetInput_a45e0226b68c3a47a1ad5f06a6fe6ba37}{SetOutputSizeY} (int y)
+\item 
+void \hyperlink{classCWidgetInput_a41ac9fa40929572261cb934016f77696}{SetOutputMapPosX} (int x)
+\item 
+void \hyperlink{classCWidgetInput_afdec7dfcd6c8a970fcf0bc62d5b3b723}{SetOutputMapPosY} (int y)
+\item 
+void \hyperlink{classCWidgetInput_ae3634dfaddc44903f0e15355a72fa673}{SetOutputApplyed} (bool a)
+\item 
+void \hyperlink{classCWidgetInput_a1b9d9ef0878868858b802f1fb1272693}{SetInputGridSizeX} (int x)
+\item 
+void \hyperlink{classCWidgetInput_a923841c18ee3d55ab086f65723fb9431}{SetInputGridSizeY} (int y)
+\item 
+void \hyperlink{classCWidgetInput_a53c69e51933f81dee38ce9eb7c935c70}{SetInputGridSize} (int x, int y)
+\item 
+void \hyperlink{classCWidgetInput_ad672ebec4ec33aff45c8d6ffd3cf6c12}{SetStatesCount} (int s)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetInput_a171b7d755f85804e2b87ded2cce69f69}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetInput_a68fcce29dd80cbc85cbab1390c2ac76e}{SizeChangedX} (int x)
+\item 
+void \hyperlink{classCWidgetInput_a73741d0ba03a59ac34dc00a7f789778c}{SizeChangedY} (int y)
+\item 
+void \hyperlink{classCWidgetInput_a5c7632de26c6a99e30aea469305412d1}{SizeChangeUsed} ()
+\item 
+void \hyperlink{classCWidgetInput_a8ae1871cbd815138e3eca28256b4e16f}{StatesChanged} (int s)
+\item 
+void \hyperlink{classCWidgetInput_accbc250762c28fe7b5b49f70e244342a}{StatesChandeUsed} ()
+\item 
+void \hyperlink{classCWidgetInput_a5112cafe4e68baf7952ddfa2b055ca5c}{ImportPressed} ()
+\item 
+void \hyperlink{classCWidgetInput_ab10814805e99bd5839153a73c6136e6b}{ApplyPressed} ()
+\item 
+void \hyperlink{classCWidgetInput_aa721d6a214bb831647927290f79a3d95}{CancelPressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetInput_ae5a1b1557fa5bbac8aa208584a3fa6c5}{SetupInputView} ()
+\item 
+void \hyperlink{classCWidgetInput_a6cfb1a08d26184ca978e429e598a1b05}{ReinitInputView} ()
+\item 
+void \hyperlink{classCWidgetInput_a5290e35eb931ebd4d6dd107d75bf6caf}{DeleteInputGui} ()
+\item 
+bool \hyperlink{classCWidgetInput_a0fd93c8aac117143c1365f9409a52dbd}{CheckSize} (int x, int y)
+\item 
+bool \hyperlink{classCWidgetInput_a93f4450ea15aa7db59da2b4534ad7a33}{CheckPos} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetInput_ad714379704472070988a0e485a85481a}{
+Ui::CWidgetInput $\ast$ \hyperlink{classCWidgetInput_ad714379704472070988a0e485a85481a}{ui}}
+\label{classCWidgetInput_ad714379704472070988a0e485a85481a}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_af4696600ae6335b62f5c17eef2f01925}{
+\hyperlink{classCGraphicsScene}{CGraphicsScene} $\ast$ \hyperlink{classCWidgetInput_af4696600ae6335b62f5c17eef2f01925}{grid}}
+\label{classCWidgetInput_af4696600ae6335b62f5c17eef2f01925}
+
+\begin{DoxyCompactList}\small\item\em pointer to scene class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_af4e631ee6d312aee5302624cdc92c890}{
+\hyperlink{classCGraphicsView}{CGraphicsView} $\ast$ \hyperlink{classCWidgetInput_af4e631ee6d312aee5302624cdc92c890}{view}}
+\label{classCWidgetInput_af4e631ee6d312aee5302624cdc92c890}
+
+\begin{DoxyCompactList}\small\item\em pointer to view class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_aa78047314c34083ba143e3924f78b819}{
+unsigned int \hyperlink{classCWidgetInput_aa78047314c34083ba143e3924f78b819}{iSizeX}}
+\label{classCWidgetInput_aa78047314c34083ba143e3924f78b819}
+
+\begin{DoxyCompactList}\small\item\em space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_aedabcf898c164d27dea5f398c7429c4d}{
+unsigned int \hyperlink{classCWidgetInput_aedabcf898c164d27dea5f398c7429c4d}{iSizeY}}
+\label{classCWidgetInput_aedabcf898c164d27dea5f398c7429c4d}
+
+\begin{DoxyCompactList}\small\item\em space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_abd2bb685e0dcd99cf37cec1a68a150c8}{
+unsigned int \hyperlink{classCWidgetInput_abd2bb685e0dcd99cf37cec1a68a150c8}{iStates}}
+\label{classCWidgetInput_abd2bb685e0dcd99cf37cec1a68a150c8}
+
+\begin{DoxyCompactList}\small\item\em states count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_ac529dc556154e4dfd4b7666f1d461cb0}{
+int \hyperlink{classCWidgetInput_ac529dc556154e4dfd4b7666f1d461cb0}{iTmpSizeX}}
+\label{classCWidgetInput_ac529dc556154e4dfd4b7666f1d461cb0}
+
+\begin{DoxyCompactList}\small\item\em tmp space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a33f5400b232eb9a7732f6f46e151d049}{
+int \hyperlink{classCWidgetInput_a33f5400b232eb9a7732f6f46e151d049}{iTmpSizeY}}
+\label{classCWidgetInput_a33f5400b232eb9a7732f6f46e151d049}
+
+\begin{DoxyCompactList}\small\item\em tmp space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a74a438f44aa0de106e06f7da073be16c}{
+int \hyperlink{classCWidgetInput_a74a438f44aa0de106e06f7da073be16c}{iTmpStates}}
+\label{classCWidgetInput_a74a438f44aa0de106e06f7da073be16c}
+
+\begin{DoxyCompactList}\small\item\em tmp states count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_ab8403050dc62bcc24aa674299e486f33}{
+bool \hyperlink{classCWidgetInput_ab8403050dc62bcc24aa674299e486f33}{bApplyed}}
+\label{classCWidgetInput_ab8403050dc62bcc24aa674299e486f33}
+
+\begin{DoxyCompactList}\small\item\em is this widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a8efdb5830d74ffc8f03f27477df90c73}{
+bool \hyperlink{classCWidgetInput_a8efdb5830d74ffc8f03f27477df90c73}{bInitDone}}
+\label{classCWidgetInput_a8efdb5830d74ffc8f03f27477df90c73}
+
+\begin{DoxyCompactList}\small\item\em is app core init? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_ae4914021f91aae8b87bf1a87fbf17e1e}{
+unsigned int \hyperlink{classCWidgetInput_ae4914021f91aae8b87bf1a87fbf17e1e}{iOutputSizeX}}
+\label{classCWidgetInput_ae4914021f91aae8b87bf1a87fbf17e1e}
+
+\begin{DoxyCompactList}\small\item\em output space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a4cfd8b3f895a5efc2d7159df2d89e69d}{
+unsigned int \hyperlink{classCWidgetInput_a4cfd8b3f895a5efc2d7159df2d89e69d}{iOutputSizeY}}
+\label{classCWidgetInput_a4cfd8b3f895a5efc2d7159df2d89e69d}
+
+\begin{DoxyCompactList}\small\item\em output space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a3e0a4082da8d43e2c4ebcfe533022d4d}{
+unsigned int \hyperlink{classCWidgetInput_a3e0a4082da8d43e2c4ebcfe533022d4d}{iOutputMapPosX}}
+\label{classCWidgetInput_a3e0a4082da8d43e2c4ebcfe533022d4d}
+
+\begin{DoxyCompactList}\small\item\em output space map coord x \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_acbe2a323650d3459254f867277e7812e}{
+unsigned int \hyperlink{classCWidgetInput_acbe2a323650d3459254f867277e7812e}{iOutputMapPosY}}
+\label{classCWidgetInput_acbe2a323650d3459254f867277e7812e}
+
+\begin{DoxyCompactList}\small\item\em output space map coord y \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetInput_a8bfff7342cfe3db74d8d35fcda33a40c}{
+bool \hyperlink{classCWidgetInput_a8bfff7342cfe3db74d8d35fcda33a40c}{bOutputApplyed}}
+\label{classCWidgetInput_a8bfff7342cfe3db74d8d35fcda33a40c}
+
+\begin{DoxyCompactList}\small\item\em is output space widget applyed? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+input ca space settings 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWidgetInput_a7595b91af57924e97909c96956031371}{
+\index{CWidgetInput@{CWidgetInput}!CWidgetInput@{CWidgetInput}}
+\index{CWidgetInput@{CWidgetInput}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{CWidgetInput}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetInput::CWidgetInput (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWidgetInput_a7595b91af57924e97909c96956031371}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent widget \end{DoxyParams}
+\hypertarget{classCWidgetInput_afc915feb98e5ef4c8e6f8289ff26e4ef}{
+\index{CWidgetInput@{CWidgetInput}!$\sim$CWidgetInput@{$\sim$CWidgetInput}}
+\index{$\sim$CWidgetInput@{$\sim$CWidgetInput}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{$\sim$CWidgetInput}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetInput::$\sim$CWidgetInput ()}}
+\label{classCWidgetInput_afc915feb98e5ef4c8e6f8289ff26e4ef}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWidgetInput_ab10814805e99bd5839153a73c6136e6b}{
+\index{CWidgetInput@{CWidgetInput}!ApplyPressed@{ApplyPressed}}
+\index{ApplyPressed@{ApplyPressed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{ApplyPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::ApplyPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_ab10814805e99bd5839153a73c6136e6b}
+when apply is pressed disable all functional tools in widget \hypertarget{classCWidgetInput_aa721d6a214bb831647927290f79a3d95}{
+\index{CWidgetInput@{CWidgetInput}!CancelPressed@{CancelPressed}}
+\index{CancelPressed@{CancelPressed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{CancelPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::CancelPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_aa721d6a214bb831647927290f79a3d95}
+when cancel is pressed, enable all functional tools in widget \hypertarget{classCWidgetInput_a171b7d755f85804e2b87ded2cce69f69}{
+\index{CWidgetInput@{CWidgetInput}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWidgetInput_a171b7d755f85804e2b87ded2cce69f69}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWidgetInput_a93f4450ea15aa7db59da2b4534ad7a33}{
+\index{CWidgetInput@{CWidgetInput}!CheckPos@{CheckPos}}
+\index{CheckPos@{CheckPos}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{CheckPos}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetInput::CheckPos (int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetInput_a93f4450ea15aa7db59da2b4534ad7a33}
+checks if is possible to map input grid to output from given position output widget was applyed before input
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x coord of mapping \item[{\em y}]y coord of mapping \end{DoxyParams}
+\hypertarget{classCWidgetInput_a0fd93c8aac117143c1365f9409a52dbd}{
+\index{CWidgetInput@{CWidgetInput}!CheckSize@{CheckSize}}
+\index{CheckSize@{CheckSize}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{CheckSize}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetInput::CheckSize (int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetInput_a0fd93c8aac117143c1365f9409a52dbd}
+checks if is input grid is smaller or same as output output widget was applyed before input
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]width of input grid \item[{\em y}]height of input grid \end{DoxyParams}
+\hypertarget{classCWidgetInput_a5290e35eb931ebd4d6dd107d75bf6caf}{
+\index{CWidgetInput@{CWidgetInput}!DeleteInputGui@{DeleteInputGui}}
+\index{DeleteInputGui@{DeleteInputGui}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{DeleteInputGui}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::DeleteInputGui ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetInput_a5290e35eb931ebd4d6dd107d75bf6caf}
+deletes input space scene \hypertarget{classCWidgetInput_aa4ed42952441c02ef7c852611e470bf6}{
+\index{CWidgetInput@{CWidgetInput}!GetGrid@{GetGrid}}
+\index{GetGrid@{GetGrid}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{GetGrid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGraphicsScene} $\ast$ CWidgetInput::GetGrid ()}}
+\label{classCWidgetInput_aa4ed42952441c02ef7c852611e470bf6}
+returns pointer to input space scene \hypertarget{classCWidgetInput_a5112cafe4e68baf7952ddfa2b055ca5c}{
+\index{CWidgetInput@{CWidgetInput}!ImportPressed@{ImportPressed}}
+\index{ImportPressed@{ImportPressed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{ImportPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::ImportPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_a5112cafe4e68baf7952ddfa2b055ca5c}
+imports spce from png file \hypertarget{classCWidgetInput_abb4665c76fc6fa6596672492d2692fa5}{
+\index{CWidgetInput@{CWidgetInput}!IsApplyed@{IsApplyed}}
+\index{IsApplyed@{IsApplyed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{IsApplyed}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetInput::IsApplyed ()}}
+\label{classCWidgetInput_abb4665c76fc6fa6596672492d2692fa5}
+is input widget applyed? \hypertarget{classCWidgetInput_a6cfb1a08d26184ca978e429e598a1b05}{
+\index{CWidgetInput@{CWidgetInput}!ReinitInputView@{ReinitInputView}}
+\index{ReinitInputView@{ReinitInputView}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{ReinitInputView}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::ReinitInputView ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetInput_a6cfb1a08d26184ca978e429e598a1b05}
+reinits input space scene used when size of scene was changed \hypertarget{classCWidgetInput_ab20a7e7c2209a646e1344da181ed3b4c}{
+\index{CWidgetInput@{CWidgetInput}!SetInitDone@{SetInitDone}}
+\index{SetInitDone@{SetInitDone}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetInitDone (bool {\em id})}}
+\label{classCWidgetInput_ab20a7e7c2209a646e1344da181ed3b4c}
+button init changed state -\/ enable/disable any changes in widget \hypertarget{classCWidgetInput_a53c69e51933f81dee38ce9eb7c935c70}{
+\index{CWidgetInput@{CWidgetInput}!SetInputGridSize@{SetInputGridSize}}
+\index{SetInputGridSize@{SetInputGridSize}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetInputGridSize}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetInputGridSize (int {\em x}, \/  int {\em y})}}
+\label{classCWidgetInput_a53c69e51933f81dee38ce9eb7c935c70}
+sets input space size -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]new input space width \item[{\em y}]new input space height \end{DoxyParams}
+\hypertarget{classCWidgetInput_a1b9d9ef0878868858b802f1fb1272693}{
+\index{CWidgetInput@{CWidgetInput}!SetInputGridSizeX@{SetInputGridSizeX}}
+\index{SetInputGridSizeX@{SetInputGridSizeX}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetInputGridSizeX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetInputGridSizeX (int {\em x})}}
+\label{classCWidgetInput_a1b9d9ef0878868858b802f1fb1272693}
+sets input space width -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]new input space width \end{DoxyParams}
+\hypertarget{classCWidgetInput_a923841c18ee3d55ab086f65723fb9431}{
+\index{CWidgetInput@{CWidgetInput}!SetInputGridSizeY@{SetInputGridSizeY}}
+\index{SetInputGridSizeY@{SetInputGridSizeY}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetInputGridSizeY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetInputGridSizeY (int {\em y})}}
+\label{classCWidgetInput_a923841c18ee3d55ab086f65723fb9431}
+sets input space height -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]new input space height \end{DoxyParams}
+\hypertarget{classCWidgetInput_ae3634dfaddc44903f0e15355a72fa673}{
+\index{CWidgetInput@{CWidgetInput}!SetOutputApplyed@{SetOutputApplyed}}
+\index{SetOutputApplyed@{SetOutputApplyed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetOutputApplyed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetOutputApplyed (bool {\em a})}}
+\label{classCWidgetInput_ae3634dfaddc44903f0e15355a72fa673}
+sets, when output widget apply state changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]output widget apply state \end{DoxyParams}
+\hypertarget{classCWidgetInput_a41ac9fa40929572261cb934016f77696}{
+\index{CWidgetInput@{CWidgetInput}!SetOutputMapPosX@{SetOutputMapPosX}}
+\index{SetOutputMapPosX@{SetOutputMapPosX}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetOutputMapPosX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetOutputMapPosX (int {\em x})}}
+\label{classCWidgetInput_a41ac9fa40929572261cb934016f77696}
+sets output space x mapping position
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x mapping coord \end{DoxyParams}
+\hypertarget{classCWidgetInput_afdec7dfcd6c8a970fcf0bc62d5b3b723}{
+\index{CWidgetInput@{CWidgetInput}!SetOutputMapPosY@{SetOutputMapPosY}}
+\index{SetOutputMapPosY@{SetOutputMapPosY}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetOutputMapPosY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetOutputMapPosY (int {\em y})}}
+\label{classCWidgetInput_afdec7dfcd6c8a970fcf0bc62d5b3b723}
+sets output space y mapping position
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]y mapping coord \end{DoxyParams}
+\hypertarget{classCWidgetInput_a973d6f19d85ece1c17c09c6d3b1a1d46}{
+\index{CWidgetInput@{CWidgetInput}!SetOutputSizeX@{SetOutputSizeX}}
+\index{SetOutputSizeX@{SetOutputSizeX}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetOutputSizeX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetOutputSizeX (int {\em x})}}
+\label{classCWidgetInput_a973d6f19d85ece1c17c09c6d3b1a1d46}
+sets output space width
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]output space width \end{DoxyParams}
+\hypertarget{classCWidgetInput_a45e0226b68c3a47a1ad5f06a6fe6ba37}{
+\index{CWidgetInput@{CWidgetInput}!SetOutputSizeY@{SetOutputSizeY}}
+\index{SetOutputSizeY@{SetOutputSizeY}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetOutputSizeY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetOutputSizeY (int {\em y})}}
+\label{classCWidgetInput_a45e0226b68c3a47a1ad5f06a6fe6ba37}
+sets output space height
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]output space height \end{DoxyParams}
+\hypertarget{classCWidgetInput_ad672ebec4ec33aff45c8d6ffd3cf6c12}{
+\index{CWidgetInput@{CWidgetInput}!SetStatesCount@{SetStatesCount}}
+\index{SetStatesCount@{SetStatesCount}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetStatesCount (int {\em s})}}
+\label{classCWidgetInput_ad672ebec4ec33aff45c8d6ffd3cf6c12}
+sets states count -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]new states count \end{DoxyParams}
+\hypertarget{classCWidgetInput_ae5a1b1557fa5bbac8aa208584a3fa6c5}{
+\index{CWidgetInput@{CWidgetInput}!SetupInputView@{SetupInputView}}
+\index{SetupInputView@{SetupInputView}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SetupInputView}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SetupInputView ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetInput_ae5a1b1557fa5bbac8aa208584a3fa6c5}
+creates input space scene used when application starts \hypertarget{classCWidgetInput_a68fcce29dd80cbc85cbab1390c2ac76e}{
+\index{CWidgetInput@{CWidgetInput}!SizeChangedX@{SizeChangedX}}
+\index{SizeChangedX@{SizeChangedX}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SizeChangedX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SizeChangedX (int {\em x})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_a68fcce29dd80cbc85cbab1390c2ac76e}
+spinbox with space width changed value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]new space width \end{DoxyParams}
+\hypertarget{classCWidgetInput_a73741d0ba03a59ac34dc00a7f789778c}{
+\index{CWidgetInput@{CWidgetInput}!SizeChangedY@{SizeChangedY}}
+\index{SizeChangedY@{SizeChangedY}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SizeChangedY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SizeChangedY (int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_a73741d0ba03a59ac34dc00a7f789778c}
+spinbox with space height changed value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]new space height \end{DoxyParams}
+\hypertarget{classCWidgetInput_a5c7632de26c6a99e30aea469305412d1}{
+\index{CWidgetInput@{CWidgetInput}!SizeChangeUsed@{SizeChangeUsed}}
+\index{SizeChangeUsed@{SizeChangeUsed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{SizeChangeUsed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::SizeChangeUsed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_a5c7632de26c6a99e30aea469305412d1}
+space size change was applyed -\/ set button was pressed \hypertarget{classCWidgetInput_accbc250762c28fe7b5b49f70e244342a}{
+\index{CWidgetInput@{CWidgetInput}!StatesChandeUsed@{StatesChandeUsed}}
+\index{StatesChandeUsed@{StatesChandeUsed}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{StatesChandeUsed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::StatesChandeUsed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_accbc250762c28fe7b5b49f70e244342a}
+count of space was changed -\/ set button was pressed \hypertarget{classCWidgetInput_a8ae1871cbd815138e3eca28256b4e16f}{
+\index{CWidgetInput@{CWidgetInput}!StatesChanged@{StatesChanged}}
+\index{StatesChanged@{StatesChanged}!CWidgetInput@{CWidgetInput}}
+\subsubsection[{StatesChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetInput::StatesChanged (int {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetInput_a8ae1871cbd815138e3eca28256b4e16f}
+spinbox with states count changed value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]new states count \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WidgetInput.h\item 
+WidgetInput.cpp\end{DoxyCompactItemize}

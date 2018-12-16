@@ -1,0 +1,104 @@
+\hypertarget{classCInputCA}{
+\section{CInputCA Class Reference}
+\label{classCInputCA}\index{CInputCA@{CInputCA}}
+}
+
+
+{\ttfamily \#include $<$InputCA.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCInputCA_a8903f80fae371eeb71be05a80be11f8b}{CInputCA} ()
+\item 
+bool \hyperlink{classCInputCA_a42d417afadc4ff816c0555dc41e101bb}{ImportCA} (QString fileName)
+\item 
+bool \hyperlink{classCInputCA_a11c14c3a7eebd8513152cec4aeaee10d}{ExportCA} (QString fileName)
+\item 
+void \hyperlink{classCInputCA_ad951b8c0fedc1570d3155034c9bf0d89}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cCore)
+\item 
+int \hyperlink{classCInputCA_a87c0ff3d984b033bbd1580b3fd6e4dff}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCInputCA_ae2dee0e7b63f91a0b59e7046da822f00}{
+QXmlStreamWriter \hyperlink{classCInputCA_ae2dee0e7b63f91a0b59e7046da822f00}{xmlW}}
+\label{classCInputCA_ae2dee0e7b63f91a0b59e7046da822f00}
+
+\begin{DoxyCompactList}\small\item\em instance of xml writer class \item\end{DoxyCompactList}\item 
+\hypertarget{classCInputCA_a87d6b8ee4c79d3b123ae01fd2e89e7dc}{
+QXmlStreamReader \hyperlink{classCInputCA_a87d6b8ee4c79d3b123ae01fd2e89e7dc}{xmlR}}
+\label{classCInputCA_a87d6b8ee4c79d3b123ae01fd2e89e7dc}
+
+\begin{DoxyCompactList}\small\item\em instance of xml reader class \item\end{DoxyCompactList}\item 
+\hypertarget{classCInputCA_a4843f4b7db0265e6ed822774e9488f26}{
+QIODevice $\ast$ \hyperlink{classCInputCA_a4843f4b7db0265e6ed822774e9488f26}{device}}
+\label{classCInputCA_a4843f4b7db0265e6ed822774e9488f26}
+
+\begin{DoxyCompactList}\small\item\em io device -\/ opened file descriptor -\/ for xml class \item\end{DoxyCompactList}\item 
+\hypertarget{classCInputCA_a02734fb078a9585be8f16d9b1b16eca3}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCInputCA_a02734fb078a9585be8f16d9b1b16eca3}{config}}
+\label{classCInputCA_a02734fb078a9585be8f16d9b1b16eca3}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCInputCA_a14cc46d0856a6f462c622aac7498b3b9}{
+int \hyperlink{classCInputCA_a14cc46d0856a6f462c622aac7498b3b9}{iErrFlag}}
+\label{classCInputCA_a14cc46d0856a6f462c622aac7498b3b9}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class will be (maybe) used for export/import init CA space to xml file
+
+this functionality is actually cover by \hyperlink{classCWindowMain}{CWindowMain} and png files 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCInputCA_a8903f80fae371eeb71be05a80be11f8b}{
+\index{CInputCA@{CInputCA}!CInputCA@{CInputCA}}
+\index{CInputCA@{CInputCA}!CInputCA@{CInputCA}}
+\subsubsection[{CInputCA}]{\setlength{\rightskip}{0pt plus 5cm}CInputCA::CInputCA ()}}
+\label{classCInputCA_a8903f80fae371eeb71be05a80be11f8b}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCInputCA_a11c14c3a7eebd8513152cec4aeaee10d}{
+\index{CInputCA@{CInputCA}!ExportCA@{ExportCA}}
+\index{ExportCA@{ExportCA}!CInputCA@{CInputCA}}
+\subsubsection[{ExportCA}]{\setlength{\rightskip}{0pt plus 5cm}bool CInputCA::ExportCA (QString {\em fileName})}}
+\label{classCInputCA_a11c14c3a7eebd8513152cec4aeaee10d}
+export init CA space config to xml -\/ NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]path/name of file \end{DoxyParams}
+\hypertarget{classCInputCA_a87c0ff3d984b033bbd1580b3fd6e4dff}{
+\index{CInputCA@{CInputCA}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CInputCA@{CInputCA}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CInputCA::GetErrorFlag ()}}
+\label{classCInputCA_a87c0ff3d984b033bbd1580b3fd6e4dff}
+returns error flag \hypertarget{classCInputCA_a42d417afadc4ff816c0555dc41e101bb}{
+\index{CInputCA@{CInputCA}!ImportCA@{ImportCA}}
+\index{ImportCA@{ImportCA}!CInputCA@{CInputCA}}
+\subsubsection[{ImportCA}]{\setlength{\rightskip}{0pt plus 5cm}bool CInputCA::ImportCA (QString {\em fileName})}}
+\label{classCInputCA_a42d417afadc4ff816c0555dc41e101bb}
+import init CA space config from xml -\/ NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]path/name of file \end{DoxyParams}
+\hypertarget{classCInputCA_ad951b8c0fedc1570d3155034c9bf0d89}{
+\index{CInputCA@{CInputCA}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CInputCA@{CInputCA}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CInputCA::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cCore})}}
+\label{classCInputCA_ad951b8c0fedc1570d3155034c9bf0d89}
+sets config class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$cCore}]pointer to config class \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+InputCA.h\item 
+InputCA.cpp\end{DoxyCompactItemize}

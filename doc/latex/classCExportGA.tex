@@ -1,0 +1,133 @@
+\hypertarget{classCExportGA}{
+\section{CExportGA Class Reference}
+\label{classCExportGA}\index{CExportGA@{CExportGA}}
+}
+
+
+{\ttfamily \#include $<$ExportGA.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCExportGA_a309d0b41af0bc98a55137036dae666c0}{CExportGA} ()
+\item 
+void \hyperlink{classCExportGA_a31d3ac536a7ff74d7739208effef4bd7}{ExportGeneration} (QString fileName, std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$gen)
+\item 
+void \hyperlink{classCExportGA_ac9f851d52b55ecca7a4b4d318d673f24}{ExportChromosome} (QString fileName, \hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCExportGA_a46317749555daaf7e405715075298a20}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cCore)
+\item 
+int \hyperlink{classCExportGA_a9ada1a72c5eb021637f9356c7a85a661}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCExportGA_acea05138092ae64ba357a4912a0bf439}{WriteDocStart} ()
+\item 
+void \hyperlink{classCExportGA_ad0fa22bd7fb670f980220e908009a9aa}{WriteDocEnd} ()
+\item 
+void \hyperlink{classCExportGA_a422e44e86f39b68cb9e3eaf72229068b}{WriteGenome} (\hyperlink{classCGenome}{CGenome} $\ast$genome)
+\item 
+void \hyperlink{classCExportGA_a8a285ef63836c0b454cbcfb08032746a}{SetIODevice} (QIODevice $\ast$\hyperlink{classCExportGA_a89a558515aefb9ca36180116bf76e04d}{device})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCExportGA_a578c393d6e595413da10b0b1a6aff45d}{
+QXmlStreamWriter \hyperlink{classCExportGA_a578c393d6e595413da10b0b1a6aff45d}{xml}}
+\label{classCExportGA_a578c393d6e595413da10b0b1a6aff45d}
+
+\begin{DoxyCompactList}\small\item\em xml writer \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportGA_a89a558515aefb9ca36180116bf76e04d}{
+QIODevice $\ast$ \hyperlink{classCExportGA_a89a558515aefb9ca36180116bf76e04d}{device}}
+\label{classCExportGA_a89a558515aefb9ca36180116bf76e04d}
+
+\begin{DoxyCompactList}\small\item\em io device -\/ opened file descriptor -\/ for xml class \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportGA_aec9b1757260fd9c035b9f0f0ef311991}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCExportGA_aec9b1757260fd9c035b9f0f0ef311991}{config}}
+\label{classCExportGA_aec9b1757260fd9c035b9f0f0ef311991}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportGA_a8b1256553939c48d7d2251e4c7819571}{
+int \hyperlink{classCExportGA_a8b1256553939c48d7d2251e4c7819571}{iErrFlag}}
+\label{classCExportGA_a8b1256553939c48d7d2251e4c7819571}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class exports ga genomes or whole population of genomes into xml files, which can be imported later into app by \hyperlink{classCImportGA}{CImportGA} class 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCExportGA_a309d0b41af0bc98a55137036dae666c0}{
+\index{CExportGA@{CExportGA}!CExportGA@{CExportGA}}
+\index{CExportGA@{CExportGA}!CExportGA@{CExportGA}}
+\subsubsection[{CExportGA}]{\setlength{\rightskip}{0pt plus 5cm}CExportGA::CExportGA ()}}
+\label{classCExportGA_a309d0b41af0bc98a55137036dae666c0}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCExportGA_ac9f851d52b55ecca7a4b4d318d673f24}{
+\index{CExportGA@{CExportGA}!ExportChromosome@{ExportChromosome}}
+\index{ExportChromosome@{ExportChromosome}!CExportGA@{CExportGA}}
+\subsubsection[{ExportChromosome}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::ExportChromosome (QString {\em fileName}, \/  {\bf CGenome} $\ast$ {\em gen})}}
+\label{classCExportGA_ac9f851d52b55ecca7a4b4d318d673f24}
+exports one genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]file path/name \item[{\em $\ast$gen}]pointer to genome \end{DoxyParams}
+\hypertarget{classCExportGA_a31d3ac536a7ff74d7739208effef4bd7}{
+\index{CExportGA@{CExportGA}!ExportGeneration@{ExportGeneration}}
+\index{ExportGeneration@{ExportGeneration}!CExportGA@{CExportGA}}
+\subsubsection[{ExportGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::ExportGeneration (QString {\em fileName}, \/  std::vector$<$ {\bf CGenome} $\ast$ $>$ $\ast$ {\em vecGen})}}
+\label{classCExportGA_a31d3ac536a7ff74d7739208effef4bd7}
+exports one generation of whole population
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]file path/name \item[{\em $\ast$vecGen}]pointer to population of genomes \end{DoxyParams}
+\hypertarget{classCExportGA_a9ada1a72c5eb021637f9356c7a85a661}{
+\index{CExportGA@{CExportGA}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CExportGA@{CExportGA}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CExportGA::GetErrorFlag ()}}
+\label{classCExportGA_a9ada1a72c5eb021637f9356c7a85a661}
+returns error flag \hypertarget{classCExportGA_a46317749555daaf7e405715075298a20}{
+\index{CExportGA@{CExportGA}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CExportGA@{CExportGA}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cCore})}}
+\label{classCExportGA_a46317749555daaf7e405715075298a20}
+sets config class \hypertarget{classCExportGA_a8a285ef63836c0b454cbcfb08032746a}{
+\index{CExportGA@{CExportGA}!SetIODevice@{SetIODevice}}
+\index{SetIODevice@{SetIODevice}!CExportGA@{CExportGA}}
+\subsubsection[{SetIODevice}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::SetIODevice (QIODevice $\ast$ {\em device})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportGA_a8a285ef63836c0b454cbcfb08032746a}
+sets IO device (opened file descriptor) into xml class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$device}]opened file descriptor \end{DoxyParams}
+\hypertarget{classCExportGA_ad0fa22bd7fb670f980220e908009a9aa}{
+\index{CExportGA@{CExportGA}!WriteDocEnd@{WriteDocEnd}}
+\index{WriteDocEnd@{WriteDocEnd}!CExportGA@{CExportGA}}
+\subsubsection[{WriteDocEnd}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::WriteDocEnd ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportGA_ad0fa22bd7fb670f980220e908009a9aa}
+writes doc end (closing elements) \hypertarget{classCExportGA_acea05138092ae64ba357a4912a0bf439}{
+\index{CExportGA@{CExportGA}!WriteDocStart@{WriteDocStart}}
+\index{WriteDocStart@{WriteDocStart}!CExportGA@{CExportGA}}
+\subsubsection[{WriteDocStart}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::WriteDocStart ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportGA_acea05138092ae64ba357a4912a0bf439}
+writes doc start doc type genome type \hypertarget{classCExportGA_a422e44e86f39b68cb9e3eaf72229068b}{
+\index{CExportGA@{CExportGA}!WriteGenome@{WriteGenome}}
+\index{WriteGenome@{WriteGenome}!CExportGA@{CExportGA}}
+\subsubsection[{WriteGenome}]{\setlength{\rightskip}{0pt plus 5cm}void CExportGA::WriteGenome ({\bf CGenome} $\ast$ {\em genome})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportGA_a422e44e86f39b68cb9e3eaf72229068b}
+writes one genome into file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$genome}]pointer to genome class to be exported \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ExportGA.h\item 
+ExportGA.cpp\end{DoxyCompactItemize}

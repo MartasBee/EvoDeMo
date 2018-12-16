@@ -1,0 +1,95 @@
+\hypertarget{classCSelection}{
+\section{CSelection Class Reference}
+\label{classCSelection}\index{CSelection@{CSelection}}
+}
+
+
+{\ttfamily \#include $<$Selection.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSelection_a13060ea1f1ec32b957acfaed41f2f8aa}{CSelection} ()
+\item 
+void \hyperlink{classCSelection_a1881ca413690f15e11e304f329f4fa4a}{Selection} (std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$act, std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$next)
+\item 
+void \hyperlink{classCSelection_a87662aebda82944ed7eb8702ca85107e}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCSelection_aad9d7729f69f7069f16d1e6d67fd95af}{\_\-Selection\_\-01} ()
+\item 
+void \hyperlink{classCSelection_a5f042b58f50bf7713fb9160fe3929c32}{\_\-Selection\_\-02} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCSelection_a5e9545813cd295ece924bb1aa23bad44}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCSelection_a5e9545813cd295ece924bb1aa23bad44}{pConfigCore}}
+\label{classCSelection_a5e9545813cd295ece924bb1aa23bad44}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCSelection_ace8ab23fbb701b9b51f1e62811bd5c50}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCSelection_ace8ab23fbb701b9b51f1e62811bd5c50}{genome}}
+\label{classCSelection_ace8ab23fbb701b9b51f1e62811bd5c50}
+
+\begin{DoxyCompactList}\small\item\em pointer to actually used genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCSelection_a16f64d04954d473574c3242ed3d921d5}{
+\hyperlink{classCRandom}{CRandom} \hyperlink{classCSelection_a16f64d04954d473574c3242ed3d921d5}{random}}
+\label{classCSelection_a16f64d04954d473574c3242ed3d921d5}
+
+\begin{DoxyCompactList}\small\item\em instance of number generating class \item\end{DoxyCompactList}\item 
+\hypertarget{classCSelection_a6390c2640995d4af17dab0c03d889b6f}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCSelection_a6390c2640995d4af17dab0c03d889b6f}{vecGenerationAct}}
+\label{classCSelection_a6390c2640995d4af17dab0c03d889b6f}
+
+\begin{DoxyCompactList}\small\item\em pointer to vector which contains actual generation of population \item\end{DoxyCompactList}\item 
+\hypertarget{classCSelection_aaa40edfb88f4dad0ebdc56931bef7e0c}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCSelection_aaa40edfb88f4dad0ebdc56931bef7e0c}{vecGenerationTmp}}
+\label{classCSelection_aaa40edfb88f4dad0ebdc56931bef7e0c}
+
+\begin{DoxyCompactList}\small\item\em pointer to vector for next generation \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+performs selection, actually by using tournamen selection implements elitism 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSelection_a13060ea1f1ec32b957acfaed41f2f8aa}{
+\index{CSelection@{CSelection}!CSelection@{CSelection}}
+\index{CSelection@{CSelection}!CSelection@{CSelection}}
+\subsubsection[{CSelection}]{\setlength{\rightskip}{0pt plus 5cm}CSelection::CSelection ()}}
+\label{classCSelection_a13060ea1f1ec32b957acfaed41f2f8aa}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSelection_aad9d7729f69f7069f16d1e6d67fd95af}{
+\index{CSelection@{CSelection}!\_\-Selection\_\-01@{\_\-Selection\_\-01}}
+\index{\_\-Selection\_\-01@{\_\-Selection\_\-01}!CSelection@{CSelection}}
+\subsubsection[{\_\-Selection\_\-01}]{\setlength{\rightskip}{0pt plus 5cm}void CSelection::\_\-Selection\_\-01 ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCSelection_aad9d7729f69f7069f16d1e6d67fd95af}
+performs rulete selection -\/ OLD one, actually NOT USED \hypertarget{classCSelection_a5f042b58f50bf7713fb9160fe3929c32}{
+\index{CSelection@{CSelection}!\_\-Selection\_\-02@{\_\-Selection\_\-02}}
+\index{\_\-Selection\_\-02@{\_\-Selection\_\-02}!CSelection@{CSelection}}
+\subsubsection[{\_\-Selection\_\-02}]{\setlength{\rightskip}{0pt plus 5cm}void CSelection::\_\-Selection\_\-02 ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCSelection_a5f042b58f50bf7713fb9160fe3929c32}
+performs tournament selection of genomes ELITISM is used -\/ first of all, best genome from whole popualtion is found, then DEEP COPY of this one is performed, and this copy is inserted into population vector at 1st position best genome is then selected 2nd time, this 2nd copy will be later mutated, first copy wont be \hypertarget{classCSelection_a1881ca413690f15e11e304f329f4fa4a}{
+\index{CSelection@{CSelection}!Selection@{Selection}}
+\index{Selection@{Selection}!CSelection@{CSelection}}
+\subsubsection[{Selection}]{\setlength{\rightskip}{0pt plus 5cm}void CSelection::Selection (std::vector$<$ {\bf CGenome} $\ast$ $>$ $\ast$ {\em act}, \/  std::vector$<$ {\bf CGenome} $\ast$ $>$ $\ast$ {\em next})}}
+\label{classCSelection_a1881ca413690f15e11e304f329f4fa4a}
+performs selection of genomes from actual generation into next
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$act}]pointer to vector with pointers to genomes of actual generation \item[{\em $\ast$next}]pointer to vector with pointers to genomes of next generation \end{DoxyParams}
+\hypertarget{classCSelection_a87662aebda82944ed7eb8702ca85107e}{
+\index{CSelection@{CSelection}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CSelection@{CSelection}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CSelection::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCSelection_a87662aebda82944ed7eb8702ca85107e}
+set config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Selection.h\item 
+Selection.cpp\end{DoxyCompactItemize}

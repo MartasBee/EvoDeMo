@@ -1,0 +1,534 @@
+\hypertarget{classCThreadCore}{
+\section{CThreadCore Class Reference}
+\label{classCThreadCore}\index{CThreadCore@{CThreadCore}}
+}
+
+
+{\ttfamily \#include $<$ThreadCore.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCThreadCore_a715eb432de93b30314f523e58bb6381b}{
+void {\bfseries SignalErrCore} (int)}
+\label{classCThreadCore_a715eb432de93b30314f523e58bb6381b}
+
+\item 
+\hypertarget{classCThreadCore_a8dfdedd72e8e108b4c72bc26cf881149}{
+void {\bfseries SignalInitCoreDone} ()}
+\label{classCThreadCore_a8dfdedd72e8e108b4c72bc26cf881149}
+
+\item 
+\hypertarget{classCThreadCore_a233ff4a618739e9c096fc3eeed4b4296}{
+void {\bfseries SignalNewDataAvailable} ()}
+\label{classCThreadCore_a233ff4a618739e9c096fc3eeed4b4296}
+
+\item 
+\hypertarget{classCThreadCore_ad418dc626ec7ac1c3f7b198d200b694d}{
+void {\bfseries SignalThreadState} (int)}
+\label{classCThreadCore_ad418dc626ec7ac1c3f7b198d200b694d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCThreadCore_a3bf4b7a3b3dab03741d538e35dcfb9dc}{CThreadCore} ()
+\item 
+\hyperlink{classCThreadCore_a059d1d66522f2e611d83abafda575564}{$\sim$CThreadCore} ()
+\item 
+void \hyperlink{classCThreadCore_af78150953eef0f33cf28125f137d7fbb}{run} ()
+\item 
+void \hyperlink{classCThreadCore_adfbf9fecc93acfb6f000f4d936a0f136}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cc)
+\item 
+void \hyperlink{classCThreadCore_aebf817096243757f85c09221b9271c8d}{SetCoreSpace} (\hyperlink{classCSpace}{CSpace} $\ast$cs)
+\item 
+void \hyperlink{classCThreadCore_a21b99b77c6e6f2ba8c3616c82185d6ef}{SetCoreDataGA} (struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} $\ast$tcdga)
+\item 
+void \hyperlink{classCThreadCore_ada7f488e5307d5996cea904f5fa9d62b}{SetMutex} (QMutex $\ast$mc)
+\item 
+void \hyperlink{classCThreadCore_a68d67f8c9b9cb9592c014f3c8c27c5d7}{SetWaitCondition} (QWaitCondition $\ast$wcc)
+\item 
+void \hyperlink{classCThreadCore_a12e9d20ea581f945c72e6648a313e3b3}{SetCoreDataExpiration} (bool $\ast$be)
+\item 
+void \hyperlink{classCThreadCore_a001ae8aefae184bcb4274793a7633df6}{SetSimulationRunning} (bool $\ast$sr)
+\item 
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCThreadCore_ae65e6c5c661c97f58d795907da19377a}{GetSpace} ()
+\item 
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCThreadCore_aab198fc60402f7c65e5085404d9b75ae}{GetInitSpace} ()
+\item 
+bool \hyperlink{classCThreadCore_a85b03fa847d72661b2710af2beaa70dd}{IsInitDone} ()
+\item 
+void \hyperlink{classCThreadCore_a656208f8a0c3915d6786e317ba59184f}{TerminateThreadLoop} ()
+\item 
+bool \hyperlink{classCThreadCore_a817d1a465e68edcb480a30d66ec7f5c2}{CheckThreadLoopTermination} ()
+\item 
+void \hyperlink{classCThreadCore_ad44d9a6277ac3c02715b35eb44110c07}{TerminateCaRun} ()
+\item 
+bool \hyperlink{classCThreadCore_ac19af4cab9673daf796044312634c97a}{CheckCaRunTermination} ()
+\item 
+int \hyperlink{classCThreadCore_a584f4b6a6afec6903ca7cb5f9eac96b2}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCThreadCore_a585fd3734edc146086bc42187fd56bc6}{InitCore} ()
+\item 
+void \hyperlink{classCThreadCore_a6d63012cb404af5d7b18017d8299a603}{ReinitCore} ()
+\item 
+void \hyperlink{classCThreadCore_ad0bfe748e42ad65bbe82df1070c8c95e}{InitCoreGeneticAlgorithm} ()
+\item 
+void \hyperlink{classCThreadCore_a1dc7525d74dba3c1fa0a94057596c0a2}{InitCoreCellularAutomata} ()
+\item 
+void \hyperlink{classCThreadCore_a6cc4724d18c05cd2d06833c986cc569d}{InitCoreCAMemory} ()
+\item 
+void \hyperlink{classCThreadCore_abde63c16350bd57c9ecc539195a84e91}{InitExport} ()
+\item 
+void \hyperlink{classCThreadCore_a4e710409fd00cd204c837db052506879}{InitTmpCAs} ()
+\item 
+void \hyperlink{classCThreadCore_a6a70230547c401faba79d362df341bae}{ClearTmpCAs} ()
+\item 
+bool \hyperlink{classCThreadCore_a27d1fd877a64e906a250898a36aeb730}{CheckCorePointers} ()
+\item 
+void \hyperlink{classCThreadCore_af979f38a80787229941f03512e003c09}{WriteCASpaceFromCoreIntoCA} ()
+\item 
+void \hyperlink{classCThreadCore_a427dd34ccf958e15f9b9754ca4b21088}{WriteDataCAToCore} ()
+\item 
+void \hyperlink{classCThreadCore_a533ca5b498cbe0395dedd01e1646c973}{WriteDataGAToCore} ()
+\item 
+void \hyperlink{classCThreadCore_a4fff3c00394bcaffae4875a7fb28a335}{SyncDataWithCore} ()
+\item 
+void \hyperlink{classCThreadCore_a780fc802d644b0e4d992558df2f27c5d}{SetCoreDataValidity} (bool dve)
+\item 
+void \hyperlink{classCThreadCore_a597d1ee93090b677f89f3ac6005e8561}{RunGuiMode} (int call\_\-pos)
+\item 
+void \hyperlink{classCThreadCore_ad76c05c9748da357d926c66a52fecfdc}{FileExportGa} (int call\_\-pos)
+\item 
+void \hyperlink{classCThreadCore_a8a25b573f3189377f4f34b75a65dd063}{FileExportCaInit} ()
+\item 
+void \hyperlink{classCThreadCore_a25cbacbf0e0c79aab05aee3a41a1043f}{FileExportCaSteps} (\hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCThreadCore_a73af8250e870e24d41f99f7e576fb466}{RunGenomeCaSimulation} (\hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCThreadCore_aecc92d11204f96cd0c658cdc3b925f58}{StoreGenomeDataForGui} (int mode)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCThreadCore_a5227042e1033fe13a8008f5e168be186}{
+bool \hyperlink{classCThreadCore_a5227042e1033fe13a8008f5e168be186}{bInitDone}}
+\label{classCThreadCore_a5227042e1033fe13a8008f5e168be186}
+
+\begin{DoxyCompactList}\small\item\em init done var \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a600744bc7de7dc91afe82eb8e1f1c339}{
+bool \hyperlink{classCThreadCore_a600744bc7de7dc91afe82eb8e1f1c339}{bEvoExit}}
+\label{classCThreadCore_a600744bc7de7dc91afe82eb8e1f1c339}
+
+\begin{DoxyCompactList}\small\item\em evolution (thread) termination var \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a7583f058641e2ddd3f7ff6f74a49a3e5}{
+bool \hyperlink{classCThreadCore_a7583f058641e2ddd3f7ff6f74a49a3e5}{bCaRunTermination}}
+\label{classCThreadCore_a7583f058641e2ddd3f7ff6f74a49a3e5}
+
+\begin{DoxyCompactList}\small\item\em ca simulator terminated var \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_afba26cc1a0606dbc2a61bc5cc1b606f9}{
+\hyperlink{classCGeneticAlgorithm}{CGeneticAlgorithm} $\ast$ \hyperlink{classCThreadCore_afba26cc1a0606dbc2a61bc5cc1b606f9}{ga}}
+\label{classCThreadCore_afba26cc1a0606dbc2a61bc5cc1b606f9}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of main GA class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a66fd0ab7d1c294b88d6354073a0aaeb1}{
+\hyperlink{classCCellularAutomata}{CCellularAutomata} $\ast$ \hyperlink{classCThreadCore_a66fd0ab7d1c294b88d6354073a0aaeb1}{ca}}
+\label{classCThreadCore_a66fd0ab7d1c294b88d6354073a0aaeb1}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of main CA class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a8080361bc3a14e997aa26f8da2b6144a}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCThreadCore_a8080361bc3a14e997aa26f8da2b6144a}{pConfigCore}}
+\label{classCThreadCore_a8080361bc3a14e997aa26f8da2b6144a}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_aa6919fadf11ae4ae63f1c9d23d10f7bd}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCThreadCore_aa6919fadf11ae4ae63f1c9d23d10f7bd}{pCoreSpace}}
+\label{classCThreadCore_aa6919fadf11ae4ae63f1c9d23d10f7bd}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} ca space used for sending data into gui \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a1fc888c8bd4964441440a0bca709975e}{
+\hyperlink{classCExportGA}{CExportGA} \hyperlink{classCThreadCore_a1fc888c8bd4964441440a0bca709975e}{exportGa}}
+\label{classCThreadCore_a1fc888c8bd4964441440a0bca709975e}
+
+\begin{DoxyCompactList}\small\item\em instance of export ga class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a08a252657f47ad43a53af77d19969150}{
+\hyperlink{classCExportCA}{CExportCA} \hyperlink{classCThreadCore_a08a252657f47ad43a53af77d19969150}{exportCa}}
+\label{classCThreadCore_a08a252657f47ad43a53af77d19969150}
+
+\begin{DoxyCompactList}\small\item\em instance of export ca class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a0611597f1c547b6ed601f7aec10446f6}{
+\hyperlink{classCImportGA}{CImportGA} \hyperlink{classCThreadCore_a0611597f1c547b6ed601f7aec10446f6}{importGa}}
+\label{classCThreadCore_a0611597f1c547b6ed601f7aec10446f6}
+
+\begin{DoxyCompactList}\small\item\em instance of import genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_ac4d055b467336ef1f9195e44e3712bc3}{
+\hyperlink{classCExportLog}{CExportLog} \hyperlink{classCThreadCore_ac4d055b467336ef1f9195e44e3712bc3}{exportLog}}
+\label{classCThreadCore_ac4d055b467336ef1f9195e44e3712bc3}
+
+\begin{DoxyCompactList}\small\item\em instance of export error log class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a8572b9b637d9202ccc81bbc0199091f7}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCThreadCore_a8572b9b637d9202ccc81bbc0199091f7}{bestGenome}}
+\label{classCThreadCore_a8572b9b637d9202ccc81bbc0199091f7}
+
+\begin{DoxyCompactList}\small\item\em best genome in actual evolution run \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_ae7f25c80e6a63af6cfe99cf835bda7dd}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCThreadCore_ae7f25c80e6a63af6cfe99cf835bda7dd}{bestGenomeTotal}}
+\label{classCThreadCore_ae7f25c80e6a63af6cfe99cf835bda7dd}
+
+\begin{DoxyCompactList}\small\item\em pointer to total best genome class (best genome of all independet evolution runs) \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_abc716aac8fde953bdffb62a2c0cd7406}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCThreadCore_abc716aac8fde953bdffb62a2c0cd7406}{actGenome}}
+\label{classCThreadCore_abc716aac8fde953bdffb62a2c0cd7406}
+
+\begin{DoxyCompactList}\small\item\em pointer to actual genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_ab5bfacc207f66af97ba53cf31249b33b}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCThreadCore_ab5bfacc207f66af97ba53cf31249b33b}{importGenome}}
+\label{classCThreadCore_ab5bfacc207f66af97ba53cf31249b33b}
+
+\begin{DoxyCompactList}\small\item\em pointer to import genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a6b038d21e01e0ccfa5fe741cb42cd29b}{
+QMutex $\ast$ \hyperlink{classCThreadCore_a6b038d21e01e0ccfa5fe741cb42cd29b}{pMutexCore}}
+\label{classCThreadCore_a6b038d21e01e0ccfa5fe741cb42cd29b}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} var used for threads sync \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a8bd4c7324c6d5daa73b1d7a8b3c7799a}{
+QWaitCondition $\ast$ \hyperlink{classCThreadCore_a8bd4c7324c6d5daa73b1d7a8b3c7799a}{pWaitCCore}}
+\label{classCThreadCore_a8bd4c7324c6d5daa73b1d7a8b3c7799a}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} var used for threads sync \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_aaaa0f369415f94bafde05c09ee4467c6}{
+bool $\ast$ \hyperlink{classCThreadCore_aaaa0f369415f94bafde05c09ee4467c6}{bCoreDataExpired}}
+\label{classCThreadCore_aaaa0f369415f94bafde05c09ee4467c6}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} var defining if data send into \hyperlink{classCCore}{CCore} are displayed in gui \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_aec58c27de7ab78615bb759ecb5c5d5dd}{
+bool $\ast$ \hyperlink{classCThreadCore_aec58c27de7ab78615bb759ecb5c5d5dd}{bCoreSimRunning}}
+\label{classCThreadCore_aec58c27de7ab78615bb759ecb5c5d5dd}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} var defining if this thread should start compute \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a806a6c3785b9729b6f8013aab99fd0df}{
+std::string \hyperlink{classCThreadCore_a806a6c3785b9729b6f8013aab99fd0df}{gol}}
+\label{classCThreadCore_a806a6c3785b9729b6f8013aab99fd0df}
+
+\begin{DoxyCompactList}\small\item\em i am not sure .. probably from very early version for GoL genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a1104adbe15044f2acc27d3a433242fa0}{
+int \hyperlink{classCThreadCore_a1104adbe15044f2acc27d3a433242fa0}{iErrFlag}}
+\label{classCThreadCore_a1104adbe15044f2acc27d3a433242fa0}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a68a415431dad357abc1f4d2f09fd7758}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} \hyperlink{classCThreadCore_a68a415431dad357abc1f4d2f09fd7758}{dataGaAct}}
+\label{classCThreadCore_a68a415431dad357abc1f4d2f09fd7758}
+
+\begin{DoxyCompactList}\small\item\em actually used genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_ae4a6c06b235fd91b91e54a1700f72607}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} \hyperlink{classCThreadCore_ae4a6c06b235fd91b91e54a1700f72607}{dataGaMax}}
+\label{classCThreadCore_ae4a6c06b235fd91b91e54a1700f72607}
+
+\begin{DoxyCompactList}\small\item\em best genome of this run \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_abd1b12027b0f0472b446de0d87b8081f}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} \hyperlink{classCThreadCore_abd1b12027b0f0472b446de0d87b8081f}{dataGaTot}}
+\label{classCThreadCore_abd1b12027b0f0472b446de0d87b8081f}
+
+\begin{DoxyCompactList}\small\item\em ga data of total best genome (best genome of all independent runs) \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a6e090ebaca99c35e652d47f9fbaabe93}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} $\ast$ \hyperlink{classCThreadCore_a6e090ebaca99c35e652d47f9fbaabe93}{dataGaToGui}}
+\label{classCThreadCore_a6e090ebaca99c35e652d47f9fbaabe93}
+
+\begin{DoxyCompactList}\small\item\em pointer to data struct from which data to gui will be send \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_abf3c30352d0c198c224177d6638f3d95}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} $\ast$ \hyperlink{classCThreadCore_abf3c30352d0c198c224177d6638f3d95}{pCoreDataGa}}
+\label{classCThreadCore_abf3c30352d0c198c224177d6638f3d95}
+
+\begin{DoxyCompactList}\small\item\em pointer to \hyperlink{classCCore}{CCore} ga data struct \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a5139054ea143d81458c0c5827623495b}{
+QString \hyperlink{classCThreadCore_a5139054ea143d81458c0c5827623495b}{exportFileGa}}
+\label{classCThreadCore_a5139054ea143d81458c0c5827623495b}
+
+\begin{DoxyCompactList}\small\item\em name of ga export file \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_ad814a51d840bd6cad637664c2e9a9bd9}{
+QString \hyperlink{classCThreadCore_ad814a51d840bd6cad637664c2e9a9bd9}{exportFileCa}}
+\label{classCThreadCore_ad814a51d840bd6cad637664c2e9a9bd9}
+
+\begin{DoxyCompactList}\small\item\em name of ca export file \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a955bf734623372149659859157b456bf}{
+\hyperlink{classCCellularAutomata}{CCellularAutomata} $\ast$ \hyperlink{classCThreadCore_a955bf734623372149659859157b456bf}{tmpVecCA}}
+\label{classCThreadCore_a955bf734623372149659859157b456bf}
+
+\begin{DoxyCompactList}\small\item\em pointer to CA class \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_aef7310c60e87ac0ee0a45e5b9220d14b}{
+std::vector$<$ \hyperlink{classCCellularAutomata}{CCellularAutomata} $\ast$ $>$ \hyperlink{classCThreadCore_aef7310c60e87ac0ee0a45e5b9220d14b}{vecTmpCAs}}
+\label{classCThreadCore_aef7310c60e87ac0ee0a45e5b9220d14b}
+
+\begin{DoxyCompactList}\small\item\em vector with cellular automatons \item\end{DoxyCompactList}\item 
+\hypertarget{classCThreadCore_a97c80e8cf2c9e0461636a309d596438a}{
+\hyperlink{classCConfigCore}{CConfigCore} \hyperlink{classCThreadCore_a97c80e8cf2c9e0461636a309d596438a}{configTmpCAs}}
+\label{classCThreadCore_a97c80e8cf2c9e0461636a309d596438a}
+
+\begin{DoxyCompactList}\small\item\em config core for tmp CAs \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main compute class of evolution this class is using classes of GA and CA 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCThreadCore_a3bf4b7a3b3dab03741d538e35dcfb9dc}{
+\index{CThreadCore@{CThreadCore}!CThreadCore@{CThreadCore}}
+\index{CThreadCore@{CThreadCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{CThreadCore}]{\setlength{\rightskip}{0pt plus 5cm}CThreadCore::CThreadCore ()}}
+\label{classCThreadCore_a3bf4b7a3b3dab03741d538e35dcfb9dc}
+class constructor \hypertarget{classCThreadCore_a059d1d66522f2e611d83abafda575564}{
+\index{CThreadCore@{CThreadCore}!$\sim$CThreadCore@{$\sim$CThreadCore}}
+\index{$\sim$CThreadCore@{$\sim$CThreadCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{$\sim$CThreadCore}]{\setlength{\rightskip}{0pt plus 5cm}CThreadCore::$\sim$CThreadCore ()}}
+\label{classCThreadCore_a059d1d66522f2e611d83abafda575564}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCThreadCore_ac19af4cab9673daf796044312634c97a}{
+\index{CThreadCore@{CThreadCore}!CheckCaRunTermination@{CheckCaRunTermination}}
+\index{CheckCaRunTermination@{CheckCaRunTermination}!CThreadCore@{CThreadCore}}
+\subsubsection[{CheckCaRunTermination}]{\setlength{\rightskip}{0pt plus 5cm}bool CThreadCore::CheckCaRunTermination ()}}
+\label{classCThreadCore_ac19af4cab9673daf796044312634c97a}
+checks, if ca simulator was abord from gui \hypertarget{classCThreadCore_a27d1fd877a64e906a250898a36aeb730}{
+\index{CThreadCore@{CThreadCore}!CheckCorePointers@{CheckCorePointers}}
+\index{CheckCorePointers@{CheckCorePointers}!CThreadCore@{CThreadCore}}
+\subsubsection[{CheckCorePointers}]{\setlength{\rightskip}{0pt plus 5cm}bool CThreadCore::CheckCorePointers ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a27d1fd877a64e906a250898a36aeb730}
+checks if all pointers to \hyperlink{classCCore}{CCore} var are correctly set \hypertarget{classCThreadCore_a817d1a465e68edcb480a30d66ec7f5c2}{
+\index{CThreadCore@{CThreadCore}!CheckThreadLoopTermination@{CheckThreadLoopTermination}}
+\index{CheckThreadLoopTermination@{CheckThreadLoopTermination}!CThreadCore@{CThreadCore}}
+\subsubsection[{CheckThreadLoopTermination}]{\setlength{\rightskip}{0pt plus 5cm}bool CThreadCore::CheckThreadLoopTermination ()}}
+\label{classCThreadCore_a817d1a465e68edcb480a30d66ec7f5c2}
+checks if app/thread core was terminated \hypertarget{classCThreadCore_a6a70230547c401faba79d362df341bae}{
+\index{CThreadCore@{CThreadCore}!ClearTmpCAs@{ClearTmpCAs}}
+\index{ClearTmpCAs@{ClearTmpCAs}!CThreadCore@{CThreadCore}}
+\subsubsection[{ClearTmpCAs}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::ClearTmpCAs ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a6a70230547c401faba79d362df341bae}
+clears tmp CAs which are used for evolving vseo chromosomes \hypertarget{classCThreadCore_a8a25b573f3189377f4f34b75a65dd063}{
+\index{CThreadCore@{CThreadCore}!FileExportCaInit@{FileExportCaInit}}
+\index{FileExportCaInit@{FileExportCaInit}!CThreadCore@{CThreadCore}}
+\subsubsection[{FileExportCaInit}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::FileExportCaInit ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a8a25b573f3189377f4f34b75a65dd063}
+exports init ca configuration into png (using \hyperlink{classCExportCA}{CExportCA} class) \hypertarget{classCThreadCore_a25cbacbf0e0c79aab05aee3a41a1043f}{
+\index{CThreadCore@{CThreadCore}!FileExportCaSteps@{FileExportCaSteps}}
+\index{FileExportCaSteps@{FileExportCaSteps}!CThreadCore@{CThreadCore}}
+\subsubsection[{FileExportCaSteps}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::FileExportCaSteps ({\bf CGenome} $\ast$ {\em gen})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a25cbacbf0e0c79aab05aee3a41a1043f}
+exports all steps (from period) of ca run of object with selected genome for export space into png is used \hyperlink{classCExportCA}{CExportCA} class example: exports 4 png-\/s of glider with game of life rules
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$gen}]pointer to genome \end{DoxyParams}
+\hypertarget{classCThreadCore_ad76c05c9748da357d926c66a52fecfdc}{
+\index{CThreadCore@{CThreadCore}!FileExportGa@{FileExportGa}}
+\index{FileExportGa@{FileExportGa}!CThreadCore@{CThreadCore}}
+\subsubsection[{FileExportGa}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::FileExportGa (int {\em call\_\-pos})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_ad76c05c9748da357d926c66a52fecfdc}
+exports genome from actual run, call\_\-pos determines, which data will be exported -\/ whole actual population, best genome from actual population or best genome from all evolution runs \hypertarget{classCThreadCore_a584f4b6a6afec6903ca7cb5f9eac96b2}{
+\index{CThreadCore@{CThreadCore}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CThreadCore@{CThreadCore}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CThreadCore::GetErrorFlag ()}}
+\label{classCThreadCore_a584f4b6a6afec6903ca7cb5f9eac96b2}
+returns error flag \hypertarget{classCThreadCore_aab198fc60402f7c65e5085404d9b75ae}{
+\index{CThreadCore@{CThreadCore}!GetInitSpace@{GetInitSpace}}
+\index{GetInitSpace@{GetInitSpace}!CThreadCore@{CThreadCore}}
+\subsubsection[{GetInitSpace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpace} $\ast$ CThreadCore::GetInitSpace ()}}
+\label{classCThreadCore_aab198fc60402f7c65e5085404d9b75ae}
+returns pointer to init ca space \hypertarget{classCThreadCore_ae65e6c5c661c97f58d795907da19377a}{
+\index{CThreadCore@{CThreadCore}!GetSpace@{GetSpace}}
+\index{GetSpace@{GetSpace}!CThreadCore@{CThreadCore}}
+\subsubsection[{GetSpace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpace} $\ast$ CThreadCore::GetSpace ()}}
+\label{classCThreadCore_ae65e6c5c661c97f58d795907da19377a}
+returns pointer to actual ca space \hypertarget{classCThreadCore_a585fd3734edc146086bc42187fd56bc6}{
+\index{CThreadCore@{CThreadCore}!InitCore@{InitCore}}
+\index{InitCore@{InitCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a585fd3734edc146086bc42187fd56bc6}
+this function inits thread core init must be done before evolution starts \hypertarget{classCThreadCore_a6cc4724d18c05cd2d06833c986cc569d}{
+\index{CThreadCore@{CThreadCore}!InitCoreCAMemory@{InitCoreCAMemory}}
+\index{InitCoreCAMemory@{InitCoreCAMemory}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitCoreCAMemory}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitCoreCAMemory ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a6cc4724d18c05cd2d06833c986cc569d}
+inits ca classes \hypertarget{classCThreadCore_a1dc7525d74dba3c1fa0a94057596c0a2}{
+\index{CThreadCore@{CThreadCore}!InitCoreCellularAutomata@{InitCoreCellularAutomata}}
+\index{InitCoreCellularAutomata@{InitCoreCellularAutomata}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitCoreCellularAutomata}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitCoreCellularAutomata ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a1dc7525d74dba3c1fa0a94057596c0a2}
+creates instance of CA used in evolution \hypertarget{classCThreadCore_ad0bfe748e42ad65bbe82df1070c8c95e}{
+\index{CThreadCore@{CThreadCore}!InitCoreGeneticAlgorithm@{InitCoreGeneticAlgorithm}}
+\index{InitCoreGeneticAlgorithm@{InitCoreGeneticAlgorithm}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitCoreGeneticAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitCoreGeneticAlgorithm ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_ad0bfe748e42ad65bbe82df1070c8c95e}
+creates new GA instance used in evolution \hypertarget{classCThreadCore_abde63c16350bd57c9ecc539195a84e91}{
+\index{CThreadCore@{CThreadCore}!InitExport@{InitExport}}
+\index{InitExport@{InitExport}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitExport}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitExport ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_abde63c16350bd57c9ecc539195a84e91}
+inits export classes \hypertarget{classCThreadCore_a4e710409fd00cd204c837db052506879}{
+\index{CThreadCore@{CThreadCore}!InitTmpCAs@{InitTmpCAs}}
+\index{InitTmpCAs@{InitTmpCAs}!CThreadCore@{CThreadCore}}
+\subsubsection[{InitTmpCAs}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::InitTmpCAs ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a4e710409fd00cd204c837db052506879}
+inits tmp CAs which are used for evolving vseo chromosomes \hypertarget{classCThreadCore_a85b03fa847d72661b2710af2beaa70dd}{
+\index{CThreadCore@{CThreadCore}!IsInitDone@{IsInitDone}}
+\index{IsInitDone@{IsInitDone}!CThreadCore@{CThreadCore}}
+\subsubsection[{IsInitDone}]{\setlength{\rightskip}{0pt plus 5cm}bool CThreadCore::IsInitDone ()}}
+\label{classCThreadCore_a85b03fa847d72661b2710af2beaa70dd}
+returns core init state \hypertarget{classCThreadCore_a6d63012cb404af5d7b18017d8299a603}{
+\index{CThreadCore@{CThreadCore}!ReinitCore@{ReinitCore}}
+\index{ReinitCore@{ReinitCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{ReinitCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::ReinitCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a6d63012cb404af5d7b18017d8299a603}
+reinits thread -\/ used when evolution repetition occurs evolution repetitions = independet runs of evolution GA needs to be reinit \hypertarget{classCThreadCore_af78150953eef0f33cf28125f137d7fbb}{
+\index{CThreadCore@{CThreadCore}!run@{run}}
+\index{run@{run}!CThreadCore@{CThreadCore}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::run ()}}
+\label{classCThreadCore_af78150953eef0f33cf28125f137d7fbb}
+main compute function, runs in own thread 1st of all, init part of thread is done if any error occurs, this error is send into gui and thread is then abord after successful init thread wait to \char`\"{}Evolve\char`\"{} button in gui is pressed then evolution will begin \hypertarget{classCThreadCore_a73af8250e870e24d41f99f7e576fb466}{
+\index{CThreadCore@{CThreadCore}!RunGenomeCaSimulation@{RunGenomeCaSimulation}}
+\index{RunGenomeCaSimulation@{RunGenomeCaSimulation}!CThreadCore@{CThreadCore}}
+\subsubsection[{RunGenomeCaSimulation}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::RunGenomeCaSimulation ({\bf CGenome} $\ast$ {\em gen})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a73af8250e870e24d41f99f7e576fb466}
+this function is ca run simulator given genome is used for for this simulation simulation data (ca space0 are send into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$gen}]genome used in simualtion \end{DoxyParams}
+\hypertarget{classCThreadCore_a597d1ee93090b677f89f3ac6005e8561}{
+\index{CThreadCore@{CThreadCore}!RunGuiMode@{RunGuiMode}}
+\index{RunGuiMode@{RunGuiMode}!CThreadCore@{CThreadCore}}
+\subsubsection[{RunGuiMode}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::RunGuiMode (int {\em call\_\-pos})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a597d1ee93090b677f89f3ac6005e8561}
+this function is used for sending data from this thread class into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em call\_\-pos}]teremines which data will be send \end{DoxyParams}
+\hypertarget{classCThreadCore_adfbf9fecc93acfb6f000f4d936a0f136}{
+\index{CThreadCore@{CThreadCore}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCThreadCore_adfbf9fecc93acfb6f000f4d936a0f136}
+sets pointer to config class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$cc}]pointer to config class \end{DoxyParams}
+\hypertarget{classCThreadCore_a12e9d20ea581f945c72e6648a313e3b3}{
+\index{CThreadCore@{CThreadCore}!SetCoreDataExpiration@{SetCoreDataExpiration}}
+\index{SetCoreDataExpiration@{SetCoreDataExpiration}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetCoreDataExpiration}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetCoreDataExpiration (bool $\ast$ {\em be})}}
+\label{classCThreadCore_a12e9d20ea581f945c72e6648a313e3b3}
+sets pointer to \hyperlink{classCCore}{CCore} var which determining, if data in \hyperlink{classCCore}{CCore} was already written into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$be}]pointer to \hyperlink{classCCore}{CCore} bool var \end{DoxyParams}
+\hypertarget{classCThreadCore_a21b99b77c6e6f2ba8c3616c82185d6ef}{
+\index{CThreadCore@{CThreadCore}!SetCoreDataGA@{SetCoreDataGA}}
+\index{SetCoreDataGA@{SetCoreDataGA}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetCoreDataGA}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetCoreDataGA (struct {\bf stThreadCoreDataGA} $\ast$ {\em tcdga})}}
+\label{classCThreadCore_a21b99b77c6e6f2ba8c3616c82185d6ef}
+sets pointer to data struct in \hyperlink{classCCore}{CCore} which is used to send GA data from this thread class into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$tcdga}]pointer to ga data struct \end{DoxyParams}
+\hypertarget{classCThreadCore_a780fc802d644b0e4d992558df2f27c5d}{
+\index{CThreadCore@{CThreadCore}!SetCoreDataValidity@{SetCoreDataValidity}}
+\index{SetCoreDataValidity@{SetCoreDataValidity}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetCoreDataValidity}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetCoreDataValidity (bool {\em dve})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a780fc802d644b0e4d992558df2f27c5d}
+sets if data in gui (\hyperlink{classCCore}{CCore} class) are valid or not
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dve}]data validity \end{DoxyParams}
+\hypertarget{classCThreadCore_aebf817096243757f85c09221b9271c8d}{
+\index{CThreadCore@{CThreadCore}!SetCoreSpace@{SetCoreSpace}}
+\index{SetCoreSpace@{SetCoreSpace}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetCoreSpace}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetCoreSpace ({\bf CSpace} $\ast$ {\em cs})}}
+\label{classCThreadCore_aebf817096243757f85c09221b9271c8d}
+sets pointer to ca space in \hyperlink{classCCore}{CCore} -\/ this ca space is used to write ca data from this thread class into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$ca}]pointer to ca space in \hyperlink{classCCore}{CCore} \end{DoxyParams}
+\hypertarget{classCThreadCore_ada7f488e5307d5996cea904f5fa9d62b}{
+\index{CThreadCore@{CThreadCore}!SetMutex@{SetMutex}}
+\index{SetMutex@{SetMutex}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetMutex}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetMutex (QMutex $\ast$ {\em mc})}}
+\label{classCThreadCore_ada7f488e5307d5996cea904f5fa9d62b}
+sets pointer to mutex from \hyperlink{classCCore}{CCore} class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$mc}]pointer to mutex class \end{DoxyParams}
+\hypertarget{classCThreadCore_a001ae8aefae184bcb4274793a7633df6}{
+\index{CThreadCore@{CThreadCore}!SetSimulationRunning@{SetSimulationRunning}}
+\index{SetSimulationRunning@{SetSimulationRunning}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetSimulationRunning}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetSimulationRunning (bool $\ast$ {\em sr})}}
+\label{classCThreadCore_a001ae8aefae184bcb4274793a7633df6}
+sets if thread core would start simulation/evolution thread core is paused after init part of thread is done
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$sr}]pointer to \hyperlink{classCCore}{CCore} bool var \end{DoxyParams}
+\hypertarget{classCThreadCore_a68d67f8c9b9cb9592c014f3c8c27c5d7}{
+\index{CThreadCore@{CThreadCore}!SetWaitCondition@{SetWaitCondition}}
+\index{SetWaitCondition@{SetWaitCondition}!CThreadCore@{CThreadCore}}
+\subsubsection[{SetWaitCondition}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SetWaitCondition (QWaitCondition $\ast$ {\em wcc})}}
+\label{classCThreadCore_a68d67f8c9b9cb9592c014f3c8c27c5d7}
+sets pointer to wait condition class from \hyperlink{classCCore}{CCore}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$wcc}]pointer to wait condition class \end{DoxyParams}
+\hypertarget{classCThreadCore_aecc92d11204f96cd0c658cdc3b925f58}{
+\index{CThreadCore@{CThreadCore}!StoreGenomeDataForGui@{StoreGenomeDataForGui}}
+\index{StoreGenomeDataForGui@{StoreGenomeDataForGui}!CThreadCore@{CThreadCore}}
+\subsubsection[{StoreGenomeDataForGui}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::StoreGenomeDataForGui (int {\em mode})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_aecc92d11204f96cd0c658cdc3b925f58}
+this function is used for initializing data struct \char`\"{}dataGaAct\char`\"{} which holds information about ga computations which will be send into gui also this fc sets pointer to that data struct, from which ga data will be send into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mode}]sets mode (way of if condition) \end{DoxyParams}
+\hypertarget{classCThreadCore_a4fff3c00394bcaffae4875a7fb28a335}{
+\index{CThreadCore@{CThreadCore}!SyncDataWithCore@{SyncDataWithCore}}
+\index{SyncDataWithCore@{SyncDataWithCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{SyncDataWithCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::SyncDataWithCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a4fff3c00394bcaffae4875a7fb28a335}
+sends data into \hyperlink{classCCore}{CCore} class from which they are send into gui \hypertarget{classCThreadCore_ad44d9a6277ac3c02715b35eb44110c07}{
+\index{CThreadCore@{CThreadCore}!TerminateCaRun@{TerminateCaRun}}
+\index{TerminateCaRun@{TerminateCaRun}!CThreadCore@{CThreadCore}}
+\subsubsection[{TerminateCaRun}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::TerminateCaRun ()}}
+\label{classCThreadCore_ad44d9a6277ac3c02715b35eb44110c07}
+sets var for ca simulator termination \hypertarget{classCThreadCore_a656208f8a0c3915d6786e317ba59184f}{
+\index{CThreadCore@{CThreadCore}!TerminateThreadLoop@{TerminateThreadLoop}}
+\index{TerminateThreadLoop@{TerminateThreadLoop}!CThreadCore@{CThreadCore}}
+\subsubsection[{TerminateThreadLoop}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::TerminateThreadLoop ()}}
+\label{classCThreadCore_a656208f8a0c3915d6786e317ba59184f}
+sets var for thread core termination \hypertarget{classCThreadCore_af979f38a80787229941f03512e003c09}{
+\index{CThreadCore@{CThreadCore}!WriteCASpaceFromCoreIntoCA@{WriteCASpaceFromCoreIntoCA}}
+\index{WriteCASpaceFromCoreIntoCA@{WriteCASpaceFromCoreIntoCA}!CThreadCore@{CThreadCore}}
+\subsubsection[{WriteCASpaceFromCoreIntoCA}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::WriteCASpaceFromCoreIntoCA ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_af979f38a80787229941f03512e003c09}
+this function reads data from \hyperlink{classCCore}{CCore} class (ca space init config) and propagates them into ca class \hypertarget{classCThreadCore_a427dd34ccf958e15f9b9754ca4b21088}{
+\index{CThreadCore@{CThreadCore}!WriteDataCAToCore@{WriteDataCAToCore}}
+\index{WriteDataCAToCore@{WriteDataCAToCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{WriteDataCAToCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::WriteDataCAToCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a427dd34ccf958e15f9b9754ca4b21088}
+sends ca space into \hyperlink{classCCore}{CCore} \hypertarget{classCThreadCore_a533ca5b498cbe0395dedd01e1646c973}{
+\index{CThreadCore@{CThreadCore}!WriteDataGAToCore@{WriteDataGAToCore}}
+\index{WriteDataGAToCore@{WriteDataGAToCore}!CThreadCore@{CThreadCore}}
+\subsubsection[{WriteDataGAToCore}]{\setlength{\rightskip}{0pt plus 5cm}void CThreadCore::WriteDataGAToCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCThreadCore_a533ca5b498cbe0395dedd01e1646c973}
+sends ga data struct into \hyperlink{classCCore}{CCore} 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ThreadCore.h\item 
+ThreadCore.cpp\end{DoxyCompactItemize}

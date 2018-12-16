@@ -1,0 +1,170 @@
+\hypertarget{classCWidgetRunCA}{
+\section{CWidgetRunCA Class Reference}
+\label{classCWidgetRunCA}\index{CWidgetRunCA@{CWidgetRunCA}}
+}
+
+
+{\ttfamily \#include $<$WidgetRunCA.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWidgetRunCA_a9caedb86747ca43e4fb25a47540dc913}{CWidgetRunCA} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWidgetRunCA_a1bce231d5077c8379aa7004ff09ca882}{$\sim$CWidgetRunCA} ()
+\item 
+\hyperlink{classCGraphicsScene}{CGraphicsScene} $\ast$ \hyperlink{classCWidgetRunCA_a3d5e7c81fb6ca9a403a7e09b095406f8}{GetGrid} ()
+\item 
+void \hyperlink{classCWidgetRunCA_a03a2ff0e531cc8308fdb26e0e2adca3f}{InitRunGrid} (int sizeX, int sizeY, int states)
+\item 
+void \hyperlink{classCWidgetRunCA_a4ad65849d43d161a9d9669c68e7a8a09}{DeleteRun} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetRunCA_aa4b0012b7945de59576888d37e880ef6}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetRunCA_a59cd2d794a0e8d4d284a7e685d679ee7}{SetRunGridSizeX} (int x)
+\item 
+void \hyperlink{classCWidgetRunCA_a401b881aeab0f689d08d9c94542b8716}{SetRunGridSizeY} (int y)
+\item 
+void \hyperlink{classCWidgetRunCA_ac59bae3e136a55bcf7c858b1dee2cadc}{SetRunGridStates} (int s)
+\item 
+void \hyperlink{classCWidgetRunCA_af91de52e2c23a56f5fc24b46cd8fd043}{SetupRunGridView} ()
+\item 
+void \hyperlink{classCWidgetRunCA_a60ba9306ab165cd11701226975f077da}{DeleteRunGridView} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetRunCA_a66e1b970a11013ac5edbe436c39d4c2e}{
+Ui::CWidgetRunCA $\ast$ \hyperlink{classCWidgetRunCA_a66e1b970a11013ac5edbe436c39d4c2e}{ui}}
+\label{classCWidgetRunCA_a66e1b970a11013ac5edbe436c39d4c2e}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetRunCA_a5077c0b2c53defba13b60828349c5144}{
+\hyperlink{classCGraphicsScene}{CGraphicsScene} $\ast$ \hyperlink{classCWidgetRunCA_a5077c0b2c53defba13b60828349c5144}{grid}}
+\label{classCWidgetRunCA_a5077c0b2c53defba13b60828349c5144}
+
+\begin{DoxyCompactList}\small\item\em pointer to scene class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetRunCA_a76b774d5a70d73ccc9c6479fa66c13a0}{
+\hyperlink{classCGraphicsView}{CGraphicsView} $\ast$ \hyperlink{classCWidgetRunCA_a76b774d5a70d73ccc9c6479fa66c13a0}{view}}
+\label{classCWidgetRunCA_a76b774d5a70d73ccc9c6479fa66c13a0}
+
+\begin{DoxyCompactList}\small\item\em pointer to view class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetRunCA_af4db2febbb90e81baa9e4bafdc174a13}{
+unsigned int \hyperlink{classCWidgetRunCA_af4db2febbb90e81baa9e4bafdc174a13}{iSizeX}}
+\label{classCWidgetRunCA_af4db2febbb90e81baa9e4bafdc174a13}
+
+\begin{DoxyCompactList}\small\item\em space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetRunCA_a15bb4ad5f4667db927556e1fd15e86c4}{
+unsigned int \hyperlink{classCWidgetRunCA_a15bb4ad5f4667db927556e1fd15e86c4}{iSizeY}}
+\label{classCWidgetRunCA_a15bb4ad5f4667db927556e1fd15e86c4}
+
+\begin{DoxyCompactList}\small\item\em space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetRunCA_af4f147b9d78186cc17c56f94efc785b5}{
+unsigned int \hyperlink{classCWidgetRunCA_af4f147b9d78186cc17c56f94efc785b5}{iStates}}
+\label{classCWidgetRunCA_af4f147b9d78186cc17c56f94efc785b5}
+
+\begin{DoxyCompactList}\small\item\em ca states count \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+simulator's ca space widget -\/ gui 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWidgetRunCA_a9caedb86747ca43e4fb25a47540dc913}{
+\index{CWidgetRunCA@{CWidgetRunCA}!CWidgetRunCA@{CWidgetRunCA}}
+\index{CWidgetRunCA@{CWidgetRunCA}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{CWidgetRunCA}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetRunCA::CWidgetRunCA (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWidgetRunCA_a9caedb86747ca43e4fb25a47540dc913}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent widget \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_a1bce231d5077c8379aa7004ff09ca882}{
+\index{CWidgetRunCA@{CWidgetRunCA}!$\sim$CWidgetRunCA@{$\sim$CWidgetRunCA}}
+\index{$\sim$CWidgetRunCA@{$\sim$CWidgetRunCA}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{$\sim$CWidgetRunCA}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetRunCA::$\sim$CWidgetRunCA ()}}
+\label{classCWidgetRunCA_a1bce231d5077c8379aa7004ff09ca882}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWidgetRunCA_aa4b0012b7945de59576888d37e880ef6}{
+\index{CWidgetRunCA@{CWidgetRunCA}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWidgetRunCA_aa4b0012b7945de59576888d37e880ef6}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_a4ad65849d43d161a9d9669c68e7a8a09}{
+\index{CWidgetRunCA@{CWidgetRunCA}!DeleteRun@{DeleteRun}}
+\index{DeleteRun@{DeleteRun}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{DeleteRun}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::DeleteRun ()}}
+\label{classCWidgetRunCA_a4ad65849d43d161a9d9669c68e7a8a09}
+public fc, which calls fc for deleting space \hypertarget{classCWidgetRunCA_a60ba9306ab165cd11701226975f077da}{
+\index{CWidgetRunCA@{CWidgetRunCA}!DeleteRunGridView@{DeleteRunGridView}}
+\index{DeleteRunGridView@{DeleteRunGridView}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{DeleteRunGridView}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::DeleteRunGridView ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetRunCA_a60ba9306ab165cd11701226975f077da}
+deletes simulator space \hypertarget{classCWidgetRunCA_a3d5e7c81fb6ca9a403a7e09b095406f8}{
+\index{CWidgetRunCA@{CWidgetRunCA}!GetGrid@{GetGrid}}
+\index{GetGrid@{GetGrid}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{GetGrid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGraphicsScene} $\ast$ CWidgetRunCA::GetGrid ()}}
+\label{classCWidgetRunCA_a3d5e7c81fb6ca9a403a7e09b095406f8}
+returns pointer tp ca space scene \hypertarget{classCWidgetRunCA_a03a2ff0e531cc8308fdb26e0e2adca3f}{
+\index{CWidgetRunCA@{CWidgetRunCA}!InitRunGrid@{InitRunGrid}}
+\index{InitRunGrid@{InitRunGrid}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{InitRunGrid}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::InitRunGrid (int {\em sizeX}, \/  int {\em sizeY}, \/  int {\em states})}}
+\label{classCWidgetRunCA_a03a2ff0e531cc8308fdb26e0e2adca3f}
+inits simulator space
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sizeX}]space width \item[{\em sizeY}]space height \item[{\em states}]count of states \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_a59cd2d794a0e8d4d284a7e685d679ee7}{
+\index{CWidgetRunCA@{CWidgetRunCA}!SetRunGridSizeX@{SetRunGridSizeX}}
+\index{SetRunGridSizeX@{SetRunGridSizeX}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{SetRunGridSizeX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::SetRunGridSizeX (int {\em x})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetRunCA_a59cd2d794a0e8d4d284a7e685d679ee7}
+sets simulator space width
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]space width \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_a401b881aeab0f689d08d9c94542b8716}{
+\index{CWidgetRunCA@{CWidgetRunCA}!SetRunGridSizeY@{SetRunGridSizeY}}
+\index{SetRunGridSizeY@{SetRunGridSizeY}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{SetRunGridSizeY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::SetRunGridSizeY (int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetRunCA_a401b881aeab0f689d08d9c94542b8716}
+sets simulator space height
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]space height \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_ac59bae3e136a55bcf7c858b1dee2cadc}{
+\index{CWidgetRunCA@{CWidgetRunCA}!SetRunGridStates@{SetRunGridStates}}
+\index{SetRunGridStates@{SetRunGridStates}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{SetRunGridStates}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::SetRunGridStates (int {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetRunCA_ac59bae3e136a55bcf7c858b1dee2cadc}
+sets simulator sapce states count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]states count \end{DoxyParams}
+\hypertarget{classCWidgetRunCA_af91de52e2c23a56f5fc24b46cd8fd043}{
+\index{CWidgetRunCA@{CWidgetRunCA}!SetupRunGridView@{SetupRunGridView}}
+\index{SetupRunGridView@{SetupRunGridView}!CWidgetRunCA@{CWidgetRunCA}}
+\subsubsection[{SetupRunGridView}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetRunCA::SetupRunGridView ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetRunCA_af91de52e2c23a56f5fc24b46cd8fd043}
+creates simulator space 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WidgetRunCA.h\item 
+WidgetRunCA.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,373 @@
+\hypertarget{classCWidgetOutput}{
+\section{CWidgetOutput Class Reference}
+\label{classCWidgetOutput}\index{CWidgetOutput@{CWidgetOutput}}
+}
+
+
+{\ttfamily \#include $<$WidgetOutput.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetOutput_a11366e1de30efb1e0a670104eeaac601}{
+void {\bfseries SignalWidgetOutputApplyed} (bool)}
+\label{classCWidgetOutput_a11366e1de30efb1e0a670104eeaac601}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWidgetOutput_aa50b2f8c1d87552f95a98b89cdceb2e7}{CWidgetOutput} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWidgetOutput_ae061db04883a78a2cd0f5bc01e37ec6d}{$\sim$CWidgetOutput} ()
+\item 
+int \hyperlink{classCWidgetOutput_acf934dd6b1c0152fd843a146f1ae1db0}{GetOutputGridSizeX} ()
+\item 
+int \hyperlink{classCWidgetOutput_ae432e6da755550423efda0da5d35b59f}{GetOutputGridSizeY} ()
+\item 
+int \hyperlink{classCWidgetOutput_ad8ad2678d28bb1193af426e900047094}{GetOutputMapPosX} ()
+\item 
+int \hyperlink{classCWidgetOutput_a255be0716b77039669bef07bb78c95b8}{GetOutputMapPosY} ()
+\item 
+int \hyperlink{classCWidgetOutput_abbebacde13cb2cf11c6cf5a14f7756cf}{GetOutputArrayType} ()
+\item 
+bool \hyperlink{classCWidgetOutput_ada41e67db63edcb77452600ef0eaea9a}{IsApplyed} ()
+\item 
+void \hyperlink{classCWidgetOutput_a517c98711eaa20bb3a370181fe1b0b86}{SetInitDone} (bool id)
+\item 
+void \hyperlink{classCWidgetOutput_a50817d0767670f5ddf46585de5892d26}{SetInputSizeX} (int x)
+\item 
+void \hyperlink{classCWidgetOutput_a71c98ee451faa09a9c53842aaae70aca}{SetInputSizeY} (int y)
+\item 
+void \hyperlink{classCWidgetOutput_a9c4fe2d7649b6c5273df945f69cbec22}{SetInputApplyed} (bool a)
+\item 
+void \hyperlink{classCWidgetOutput_a1c5fd5000d450fc31ad5246efc914a41}{SetOutputGridSizeX} (int x)
+\item 
+void \hyperlink{classCWidgetOutput_ad30ea04a0d848bb26848b9f236f231a6}{SetOutputGridSizeY} (int y)
+\item 
+void \hyperlink{classCWidgetOutput_a585e2d0af4e9bb011634cd8202ac62bd}{SetOutputMapPosX} (int x)
+\item 
+void \hyperlink{classCWidgetOutput_a51929359458a26fe65a655b35d3e7ed8}{SetOutputMapPosY} (int y)
+\item 
+void \hyperlink{classCWidgetOutput_a91ef6edea639a31229e15b9659b64954}{SetOutputArrayType} (int st)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetOutput_adc2fe6c29b5efecb84cbd9a2c854a8ae}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetOutput_a9f9f4aec6fc63607de96aacd44d69d44}{SizeChangedX} (int x)
+\item 
+void \hyperlink{classCWidgetOutput_ad71a09c6e75893732ab306ebf235ae3f}{SizeChangedY} (int y)
+\item 
+void \hyperlink{classCWidgetOutput_a49bf6287bc7ec9eb962cf22d261f0110}{PosChangedX} (int x)
+\item 
+void \hyperlink{classCWidgetOutput_a41c2d7f5f4dac75a4d41bf9ca807d838}{PosChangedY} (int y)
+\item 
+void \hyperlink{classCWidgetOutput_ab16e835c4cfa86cc10db87d3d7a4049b}{ArrayTypeChanged} (int at)
+\item 
+void \hyperlink{classCWidgetOutput_a85f2e81ad45e331d0a37d5d7e11a4b53}{ApplyPressed} ()
+\item 
+void \hyperlink{classCWidgetOutput_a8d34da834418a33f61ad02a7559ab6e4}{CancelPressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCWidgetOutput_a118825abe1b61b854786bf899df97903}{CheckSize} (int x, int y)
+\item 
+bool \hyperlink{classCWidgetOutput_aee8224c38a13ee5bc2badcbfae43a4b0}{CheckPos} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetOutput_a4d857465a494759853fcb5cd3bfa276d}{
+Ui::CWidgetOutput $\ast$ \hyperlink{classCWidgetOutput_a4d857465a494759853fcb5cd3bfa276d}{ui}}
+\label{classCWidgetOutput_a4d857465a494759853fcb5cd3bfa276d}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a2d3d16540fd0fdc82cd846e9c8530122}{
+unsigned int \hyperlink{classCWidgetOutput_a2d3d16540fd0fdc82cd846e9c8530122}{iSizeX}}
+\label{classCWidgetOutput_a2d3d16540fd0fdc82cd846e9c8530122}
+
+\begin{DoxyCompactList}\small\item\em output space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a5e3d80447b469c87ac8df1a3f2dd6468}{
+unsigned int \hyperlink{classCWidgetOutput_a5e3d80447b469c87ac8df1a3f2dd6468}{iSizeY}}
+\label{classCWidgetOutput_a5e3d80447b469c87ac8df1a3f2dd6468}
+
+\begin{DoxyCompactList}\small\item\em output space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a72b465809542e769b7a4a17873f1a2b2}{
+unsigned int \hyperlink{classCWidgetOutput_a72b465809542e769b7a4a17873f1a2b2}{iMapPosX}}
+\label{classCWidgetOutput_a72b465809542e769b7a4a17873f1a2b2}
+
+\begin{DoxyCompactList}\small\item\em mapping coord x \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_ae916b21e6f7219803b9332b0dd17b34d}{
+unsigned int \hyperlink{classCWidgetOutput_ae916b21e6f7219803b9332b0dd17b34d}{iMapPosY}}
+\label{classCWidgetOutput_ae916b21e6f7219803b9332b0dd17b34d}
+
+\begin{DoxyCompactList}\small\item\em mapping coord y \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_af0e6e363cf3750548dce1b0cef628814}{
+int \hyperlink{classCWidgetOutput_af0e6e363cf3750548dce1b0cef628814}{iOutputArrayType}}
+\label{classCWidgetOutput_af0e6e363cf3750548dce1b0cef628814}
+
+\begin{DoxyCompactList}\small\item\em output space type -\/ 2d grid $|$$|$ torus \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a1b0a058f065679fed4481aa38279afd9}{
+unsigned int \hyperlink{classCWidgetOutput_a1b0a058f065679fed4481aa38279afd9}{iInputSizeX}}
+\label{classCWidgetOutput_a1b0a058f065679fed4481aa38279afd9}
+
+\begin{DoxyCompactList}\small\item\em input space width \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a1606a466a8df86675011ced74bcf1e1a}{
+unsigned int \hyperlink{classCWidgetOutput_a1606a466a8df86675011ced74bcf1e1a}{iInputSizeY}}
+\label{classCWidgetOutput_a1606a466a8df86675011ced74bcf1e1a}
+
+\begin{DoxyCompactList}\small\item\em input space height \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_aa7b7387f41a55f9915dd6c21300ab541}{
+bool \hyperlink{classCWidgetOutput_aa7b7387f41a55f9915dd6c21300ab541}{bInputApplyed}}
+\label{classCWidgetOutput_aa7b7387f41a55f9915dd6c21300ab541}
+
+\begin{DoxyCompactList}\small\item\em is input widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a9e4fd4135e715fe5043c7dae4549736c}{
+bool \hyperlink{classCWidgetOutput_a9e4fd4135e715fe5043c7dae4549736c}{bApplyed}}
+\label{classCWidgetOutput_a9e4fd4135e715fe5043c7dae4549736c}
+
+\begin{DoxyCompactList}\small\item\em is this widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetOutput_a19c61753da4854845cfa0c1a1fc63a82}{
+bool \hyperlink{classCWidgetOutput_a19c61753da4854845cfa0c1a1fc63a82}{bInitDone}}
+\label{classCWidgetOutput_a19c61753da4854845cfa0c1a1fc63a82}
+
+\begin{DoxyCompactList}\small\item\em is app core init? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+output sapce settings 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWidgetOutput_aa50b2f8c1d87552f95a98b89cdceb2e7}{
+\index{CWidgetOutput@{CWidgetOutput}!CWidgetOutput@{CWidgetOutput}}
+\index{CWidgetOutput@{CWidgetOutput}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{CWidgetOutput}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetOutput::CWidgetOutput (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWidgetOutput_aa50b2f8c1d87552f95a98b89cdceb2e7}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent wodget \end{DoxyParams}
+\hypertarget{classCWidgetOutput_ae061db04883a78a2cd0f5bc01e37ec6d}{
+\index{CWidgetOutput@{CWidgetOutput}!$\sim$CWidgetOutput@{$\sim$CWidgetOutput}}
+\index{$\sim$CWidgetOutput@{$\sim$CWidgetOutput}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{$\sim$CWidgetOutput}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetOutput::$\sim$CWidgetOutput ()}}
+\label{classCWidgetOutput_ae061db04883a78a2cd0f5bc01e37ec6d}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWidgetOutput_a85f2e81ad45e331d0a37d5d7e11a4b53}{
+\index{CWidgetOutput@{CWidgetOutput}!ApplyPressed@{ApplyPressed}}
+\index{ApplyPressed@{ApplyPressed}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{ApplyPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::ApplyPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_a85f2e81ad45e331d0a37d5d7e11a4b53}
+when apply is pressed disable all functional tools in widget \hypertarget{classCWidgetOutput_ab16e835c4cfa86cc10db87d3d7a4049b}{
+\index{CWidgetOutput@{CWidgetOutput}!ArrayTypeChanged@{ArrayTypeChanged}}
+\index{ArrayTypeChanged@{ArrayTypeChanged}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{ArrayTypeChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::ArrayTypeChanged (int {\em at})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_ab16e835c4cfa86cc10db87d3d7a4049b}
+ca space type was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em at}]new array type from combobox \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a8d34da834418a33f61ad02a7559ab6e4}{
+\index{CWidgetOutput@{CWidgetOutput}!CancelPressed@{CancelPressed}}
+\index{CancelPressed@{CancelPressed}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{CancelPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::CancelPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_a8d34da834418a33f61ad02a7559ab6e4}
+when cancel is pressed, enable all functional tools in widget \hypertarget{classCWidgetOutput_adc2fe6c29b5efecb84cbd9a2c854a8ae}{
+\index{CWidgetOutput@{CWidgetOutput}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWidgetOutput_adc2fe6c29b5efecb84cbd9a2c854a8ae}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWidgetOutput_aee8224c38a13ee5bc2badcbfae43a4b0}{
+\index{CWidgetOutput@{CWidgetOutput}!CheckPos@{CheckPos}}
+\index{CheckPos@{CheckPos}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{CheckPos}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetOutput::CheckPos (int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetOutput_aee8224c38a13ee5bc2badcbfae43a4b0}
+checks if is possible to map input grid to output from given position input widget was applyed before output
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x coord of mapping \item[{\em y}]y coord of mapping \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a118825abe1b61b854786bf899df97903}{
+\index{CWidgetOutput@{CWidgetOutput}!CheckSize@{CheckSize}}
+\index{CheckSize@{CheckSize}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{CheckSize}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetOutput::CheckSize (int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWidgetOutput_a118825abe1b61b854786bf899df97903}
+checks if is input grid is smaller or same as output input widget was applyed before output
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]width of input grid \item[{\em y}]height of input grid \end{DoxyParams}
+\hypertarget{classCWidgetOutput_abbebacde13cb2cf11c6cf5a14f7756cf}{
+\index{CWidgetOutput@{CWidgetOutput}!GetOutputArrayType@{GetOutputArrayType}}
+\index{GetOutputArrayType@{GetOutputArrayType}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{GetOutputArrayType}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetOutput::GetOutputArrayType ()}}
+\label{classCWidgetOutput_abbebacde13cb2cf11c6cf5a14f7756cf}
+returns output space type \hypertarget{classCWidgetOutput_acf934dd6b1c0152fd843a146f1ae1db0}{
+\index{CWidgetOutput@{CWidgetOutput}!GetOutputGridSizeX@{GetOutputGridSizeX}}
+\index{GetOutputGridSizeX@{GetOutputGridSizeX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{GetOutputGridSizeX}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetOutput::GetOutputGridSizeX ()}}
+\label{classCWidgetOutput_acf934dd6b1c0152fd843a146f1ae1db0}
+returns space width \hypertarget{classCWidgetOutput_ae432e6da755550423efda0da5d35b59f}{
+\index{CWidgetOutput@{CWidgetOutput}!GetOutputGridSizeY@{GetOutputGridSizeY}}
+\index{GetOutputGridSizeY@{GetOutputGridSizeY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{GetOutputGridSizeY}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetOutput::GetOutputGridSizeY ()}}
+\label{classCWidgetOutput_ae432e6da755550423efda0da5d35b59f}
+returns space height \hypertarget{classCWidgetOutput_ad8ad2678d28bb1193af426e900047094}{
+\index{CWidgetOutput@{CWidgetOutput}!GetOutputMapPosX@{GetOutputMapPosX}}
+\index{GetOutputMapPosX@{GetOutputMapPosX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{GetOutputMapPosX}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetOutput::GetOutputMapPosX ()}}
+\label{classCWidgetOutput_ad8ad2678d28bb1193af426e900047094}
+returns x mapping coord \hypertarget{classCWidgetOutput_a255be0716b77039669bef07bb78c95b8}{
+\index{CWidgetOutput@{CWidgetOutput}!GetOutputMapPosY@{GetOutputMapPosY}}
+\index{GetOutputMapPosY@{GetOutputMapPosY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{GetOutputMapPosY}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetOutput::GetOutputMapPosY ()}}
+\label{classCWidgetOutput_a255be0716b77039669bef07bb78c95b8}
+returns y mapping coord \hypertarget{classCWidgetOutput_ada41e67db63edcb77452600ef0eaea9a}{
+\index{CWidgetOutput@{CWidgetOutput}!IsApplyed@{IsApplyed}}
+\index{IsApplyed@{IsApplyed}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{IsApplyed}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetOutput::IsApplyed ()}}
+\label{classCWidgetOutput_ada41e67db63edcb77452600ef0eaea9a}
+is outpu widget applyed? \hypertarget{classCWidgetOutput_a49bf6287bc7ec9eb962cf22d261f0110}{
+\index{CWidgetOutput@{CWidgetOutput}!PosChangedX@{PosChangedX}}
+\index{PosChangedX@{PosChangedX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{PosChangedX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::PosChangedX (int {\em x})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_a49bf6287bc7ec9eb962cf22d261f0110}
+x mapping position was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x mapping position from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a41c2d7f5f4dac75a4d41bf9ca807d838}{
+\index{CWidgetOutput@{CWidgetOutput}!PosChangedY@{PosChangedY}}
+\index{PosChangedY@{PosChangedY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{PosChangedY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::PosChangedY (int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_a41c2d7f5f4dac75a4d41bf9ca807d838}
+y mapping coord was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]y mapping coord from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a517c98711eaa20bb3a370181fe1b0b86}{
+\index{CWidgetOutput@{CWidgetOutput}!SetInitDone@{SetInitDone}}
+\index{SetInitDone@{SetInitDone}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetInitDone (bool {\em id})}}
+\label{classCWidgetOutput_a517c98711eaa20bb3a370181fe1b0b86}
+button init changed state -\/ enable/disable any changes in widget \hypertarget{classCWidgetOutput_a9c4fe2d7649b6c5273df945f69cbec22}{
+\index{CWidgetOutput@{CWidgetOutput}!SetInputApplyed@{SetInputApplyed}}
+\index{SetInputApplyed@{SetInputApplyed}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetInputApplyed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetInputApplyed (bool {\em a})}}
+\label{classCWidgetOutput_a9c4fe2d7649b6c5273df945f69cbec22}
+sets input widget apply state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]input widget apply \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a50817d0767670f5ddf46585de5892d26}{
+\index{CWidgetOutput@{CWidgetOutput}!SetInputSizeX@{SetInputSizeX}}
+\index{SetInputSizeX@{SetInputSizeX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetInputSizeX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetInputSizeX (int {\em x})}}
+\label{classCWidgetOutput_a50817d0767670f5ddf46585de5892d26}
+sets input space width
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]input space width \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a71c98ee451faa09a9c53842aaae70aca}{
+\index{CWidgetOutput@{CWidgetOutput}!SetInputSizeY@{SetInputSizeY}}
+\index{SetInputSizeY@{SetInputSizeY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetInputSizeY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetInputSizeY (int {\em y})}}
+\label{classCWidgetOutput_a71c98ee451faa09a9c53842aaae70aca}
+sets input space height
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]input space height \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a91ef6edea639a31229e15b9659b64954}{
+\index{CWidgetOutput@{CWidgetOutput}!SetOutputArrayType@{SetOutputArrayType}}
+\index{SetOutputArrayType@{SetOutputArrayType}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetOutputArrayType}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetOutputArrayType (int {\em st})}}
+\label{classCWidgetOutput_a91ef6edea639a31229e15b9659b64954}
+sets output space type -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em st}]new output space type \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a1c5fd5000d450fc31ad5246efc914a41}{
+\index{CWidgetOutput@{CWidgetOutput}!SetOutputGridSizeX@{SetOutputGridSizeX}}
+\index{SetOutputGridSizeX@{SetOutputGridSizeX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetOutputGridSizeX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetOutputGridSizeX (int {\em x})}}
+\label{classCWidgetOutput_a1c5fd5000d450fc31ad5246efc914a41}
+sets output space width -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]new output space width \end{DoxyParams}
+\hypertarget{classCWidgetOutput_ad30ea04a0d848bb26848b9f236f231a6}{
+\index{CWidgetOutput@{CWidgetOutput}!SetOutputGridSizeY@{SetOutputGridSizeY}}
+\index{SetOutputGridSizeY@{SetOutputGridSizeY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetOutputGridSizeY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetOutputGridSizeY (int {\em y})}}
+\label{classCWidgetOutput_ad30ea04a0d848bb26848b9f236f231a6}
+sets output space height -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]new output space height \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a585e2d0af4e9bb011634cd8202ac62bd}{
+\index{CWidgetOutput@{CWidgetOutput}!SetOutputMapPosX@{SetOutputMapPosX}}
+\index{SetOutputMapPosX@{SetOutputMapPosX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetOutputMapPosX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetOutputMapPosX (int {\em x})}}
+\label{classCWidgetOutput_a585e2d0af4e9bb011634cd8202ac62bd}
+sets x mapping coord -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]new x mapping coord \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a51929359458a26fe65a655b35d3e7ed8}{
+\index{CWidgetOutput@{CWidgetOutput}!SetOutputMapPosY@{SetOutputMapPosY}}
+\index{SetOutputMapPosY@{SetOutputMapPosY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SetOutputMapPosY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SetOutputMapPosY (int {\em y})}}
+\label{classCWidgetOutput_a51929359458a26fe65a655b35d3e7ed8}
+sets y mapping coord -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]new y mapping coord \end{DoxyParams}
+\hypertarget{classCWidgetOutput_a9f9f4aec6fc63607de96aacd44d69d44}{
+\index{CWidgetOutput@{CWidgetOutput}!SizeChangedX@{SizeChangedX}}
+\index{SizeChangedX@{SizeChangedX}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SizeChangedX}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SizeChangedX (int {\em x})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_a9f9f4aec6fc63607de96aacd44d69d44}
+output sapce width was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]output space width from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetOutput_ad71a09c6e75893732ab306ebf235ae3f}{
+\index{CWidgetOutput@{CWidgetOutput}!SizeChangedY@{SizeChangedY}}
+\index{SizeChangedY@{SizeChangedY}!CWidgetOutput@{CWidgetOutput}}
+\subsubsection[{SizeChangedY}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetOutput::SizeChangedY (int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetOutput_ad71a09c6e75893732ab306ebf235ae3f}
+output space height was changed
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em y}]output space height from spinbox \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WidgetOutput.h\item 
+WidgetOutput.cpp\end{DoxyCompactItemize}

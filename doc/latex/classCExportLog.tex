@@ -1,0 +1,171 @@
+\hypertarget{classCExportLog}{
+\section{CExportLog Class Reference}
+\label{classCExportLog}\index{CExportLog@{CExportLog}}
+}
+
+
+{\ttfamily \#include $<$ExportLog.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCExportLog_a9025e661ea014b4e9b84ec7507d1fce1}{CExportLog} ()
+\item 
+\hyperlink{classCExportLog_a1dd4f328cf5efec31bf0a06e3d1ece0d}{$\sim$CExportLog} ()
+\item 
+void \hyperlink{classCExportLog_a72fbcc722def244634996c0a4c7ae7dd}{SetFilePath} (QString path)
+\item 
+void \hyperlink{classCExportLog_aeaa6ab60ed0b4cad6b465f309da5d6b2}{SetFileName} (QString name)
+\item 
+bool \hyperlink{classCExportLog_ac5b1e09dd67f6aaa199f6ff98c0e1138}{OpenLogFile} ()
+\item 
+void \hyperlink{classCExportLog_a693e8f83ac60f696f88358e8c907f316}{CloseLogFile} ()
+\item 
+void \hyperlink{classCExportLog_a98759c11a550a90692af1fc21fc58c64}{WriteInfoLog} (QString info)
+\item 
+void \hyperlink{classCExportLog_aedda889f4345c0fb94691fe20eee643f}{WriteErrorLog} (int errId)
+\item 
+void \hyperlink{classCExportLog_ad316dacdee3ef0fb2ee34e17b56743ca}{WriteErrorLog} (QString error)
+\item 
+void \hyperlink{classCExportLog_af21ab4e7ccfcc193bbb6cfe48afb8a44}{ShowMessageBox} (int errId)
+\item 
+void \hyperlink{classCExportLog_a3cab18e4b751b54e26ad62c60c71ec93}{ShowMessageBox} (QString error)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCExportLog_ade9462b98bb1416be12d1029e236b9ab}{
+QString \hyperlink{classCExportLog_ade9462b98bb1416be12d1029e236b9ab}{filePath}}
+\label{classCExportLog_ade9462b98bb1416be12d1029e236b9ab}
+
+\begin{DoxyCompactList}\small\item\em export path \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportLog_addfb74e678d534d63192d61c0fc16d4c}{
+QString \hyperlink{classCExportLog_addfb74e678d534d63192d61c0fc16d4c}{fileName}}
+\label{classCExportLog_addfb74e678d534d63192d61c0fc16d4c}
+
+\begin{DoxyCompactList}\small\item\em export file name \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportLog_a6f2684e29d0971b28c4d939707d106b8}{
+QString \hyperlink{classCExportLog_a6f2684e29d0971b28c4d939707d106b8}{filePathName}}
+\label{classCExportLog_a6f2684e29d0971b28c4d939707d106b8}
+
+\begin{DoxyCompactList}\small\item\em combination of previous two \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportLog_ae915dbdff1cdeb611845fe4dd4ddf1f5}{
+QFile \hyperlink{classCExportLog_ae915dbdff1cdeb611845fe4dd4ddf1f5}{fileDevice}}
+\label{classCExportLog_ae915dbdff1cdeb611845fe4dd4ddf1f5}
+
+\begin{DoxyCompactList}\small\item\em file descriptor \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportLog_a02f7e9e4f931a53a93c183aff0180c70}{
+QTextStream \hyperlink{classCExportLog_a02f7e9e4f931a53a93c183aff0180c70}{fileStream}}
+\label{classCExportLog_a02f7e9e4f931a53a93c183aff0180c70}
+
+\begin{DoxyCompactList}\small\item\em file writer \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportLog_a5b29ac68edcc8ea73cd7d642060ec7b0}{
+bool \hyperlink{classCExportLog_a5b29ac68edcc8ea73cd7d642060ec7b0}{bFileOpened}}
+\label{classCExportLog_a5b29ac68edcc8ea73cd7d642060ec7b0}
+
+\begin{DoxyCompactList}\small\item\em is file opened? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class exports logs from CORE part of application into txt file it is used just as ONE instance, created in \hyperlink{classCThreadCore}{CThreadCore} (i hope there) and pointer to this instance is send to all core classes
+
+is used for exporting error and warning strings into file or messagebox 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCExportLog_a9025e661ea014b4e9b84ec7507d1fce1}{
+\index{CExportLog@{CExportLog}!CExportLog@{CExportLog}}
+\index{CExportLog@{CExportLog}!CExportLog@{CExportLog}}
+\subsubsection[{CExportLog}]{\setlength{\rightskip}{0pt plus 5cm}CExportLog::CExportLog ()}}
+\label{classCExportLog_a9025e661ea014b4e9b84ec7507d1fce1}
+class constructor \hypertarget{classCExportLog_a1dd4f328cf5efec31bf0a06e3d1ece0d}{
+\index{CExportLog@{CExportLog}!$\sim$CExportLog@{$\sim$CExportLog}}
+\index{$\sim$CExportLog@{$\sim$CExportLog}!CExportLog@{CExportLog}}
+\subsubsection[{$\sim$CExportLog}]{\setlength{\rightskip}{0pt plus 5cm}CExportLog::$\sim$CExportLog ()}}
+\label{classCExportLog_a1dd4f328cf5efec31bf0a06e3d1ece0d}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCExportLog_a693e8f83ac60f696f88358e8c907f316}{
+\index{CExportLog@{CExportLog}!CloseLogFile@{CloseLogFile}}
+\index{CloseLogFile@{CloseLogFile}!CExportLog@{CExportLog}}
+\subsubsection[{CloseLogFile}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::CloseLogFile ()}}
+\label{classCExportLog_a693e8f83ac60f696f88358e8c907f316}
+closes file \hypertarget{classCExportLog_ac5b1e09dd67f6aaa199f6ff98c0e1138}{
+\index{CExportLog@{CExportLog}!OpenLogFile@{OpenLogFile}}
+\index{OpenLogFile@{OpenLogFile}!CExportLog@{CExportLog}}
+\subsubsection[{OpenLogFile}]{\setlength{\rightskip}{0pt plus 5cm}bool CExportLog::OpenLogFile ()}}
+\label{classCExportLog_ac5b1e09dd67f6aaa199f6ff98c0e1138}
+opens log file \hypertarget{classCExportLog_aeaa6ab60ed0b4cad6b465f309da5d6b2}{
+\index{CExportLog@{CExportLog}!SetFileName@{SetFileName}}
+\index{SetFileName@{SetFileName}!CExportLog@{CExportLog}}
+\subsubsection[{SetFileName}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::SetFileName (QString {\em name})}}
+\label{classCExportLog_aeaa6ab60ed0b4cad6b465f309da5d6b2}
+sets log file name
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]log file name \end{DoxyParams}
+\hypertarget{classCExportLog_a72fbcc722def244634996c0a4c7ae7dd}{
+\index{CExportLog@{CExportLog}!SetFilePath@{SetFilePath}}
+\index{SetFilePath@{SetFilePath}!CExportLog@{CExportLog}}
+\subsubsection[{SetFilePath}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::SetFilePath (QString {\em path})}}
+\label{classCExportLog_a72fbcc722def244634996c0a4c7ae7dd}
+sets path of log file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em path}]relative or absolute path \end{DoxyParams}
+\hypertarget{classCExportLog_a3cab18e4b751b54e26ad62c60c71ec93}{
+\index{CExportLog@{CExportLog}!ShowMessageBox@{ShowMessageBox}}
+\index{ShowMessageBox@{ShowMessageBox}!CExportLog@{CExportLog}}
+\subsubsection[{ShowMessageBox}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::ShowMessageBox (QString {\em error})}}
+\label{classCExportLog_a3cab18e4b751b54e26ad62c60c71ec93}
+shows message box with error
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]string to be showed \end{DoxyParams}
+\hypertarget{classCExportLog_af21ab4e7ccfcc193bbb6cfe48afb8a44}{
+\index{CExportLog@{CExportLog}!ShowMessageBox@{ShowMessageBox}}
+\index{ShowMessageBox@{ShowMessageBox}!CExportLog@{CExportLog}}
+\subsubsection[{ShowMessageBox}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::ShowMessageBox (int {\em errId})}}
+\label{classCExportLog_af21ab4e7ccfcc193bbb6cfe48afb8a44}
+shows message box with error
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em errId}]error id (described in \hyperlink{Defines_8h_source}{Defines.h}) \end{DoxyParams}
+\hypertarget{classCExportLog_ad316dacdee3ef0fb2ee34e17b56743ca}{
+\index{CExportLog@{CExportLog}!WriteErrorLog@{WriteErrorLog}}
+\index{WriteErrorLog@{WriteErrorLog}!CExportLog@{CExportLog}}
+\subsubsection[{WriteErrorLog}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::WriteErrorLog (QString {\em error})}}
+\label{classCExportLog_ad316dacdee3ef0fb2ee34e17b56743ca}
+writes ERROR into log file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]string to be write \end{DoxyParams}
+\hypertarget{classCExportLog_aedda889f4345c0fb94691fe20eee643f}{
+\index{CExportLog@{CExportLog}!WriteErrorLog@{WriteErrorLog}}
+\index{WriteErrorLog@{WriteErrorLog}!CExportLog@{CExportLog}}
+\subsubsection[{WriteErrorLog}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::WriteErrorLog (int {\em errId})}}
+\label{classCExportLog_aedda889f4345c0fb94691fe20eee643f}
+writes ERROR into log file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em errId}]error id (described in \hyperlink{Defines_8h_source}{Defines.h}) \end{DoxyParams}
+\hypertarget{classCExportLog_a98759c11a550a90692af1fc21fc58c64}{
+\index{CExportLog@{CExportLog}!WriteInfoLog@{WriteInfoLog}}
+\index{WriteInfoLog@{WriteInfoLog}!CExportLog@{CExportLog}}
+\subsubsection[{WriteInfoLog}]{\setlength{\rightskip}{0pt plus 5cm}void CExportLog::WriteInfoLog (QString {\em info})}}
+\label{classCExportLog_a98759c11a550a90692af1fc21fc58c64}
+writes INFORMATION into log file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em info}]string to be write \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ExportLog.h\item 
+ExportLog.cpp\end{DoxyCompactItemize}

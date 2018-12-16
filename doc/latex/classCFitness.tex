@@ -1,0 +1,188 @@
+\hypertarget{classCFitness}{
+\section{CFitness Class Reference}
+\label{classCFitness}\index{CFitness@{CFitness}}
+}
+
+
+{\ttfamily \#include $<$Fitness.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCFitness_a8d4721645167435856bb00ed4d5406e2}{CFitness} ()
+\item 
+int \hyperlink{classCFitness_a0f4e219fd31fab1f3a90baf4101ab133}{Fitness} (\hyperlink{classCSpace}{CSpace} $\ast$spaceInit, \hyperlink{classCSpace}{CSpace} $\ast$spaceAct)
+\item 
+bool \hyperlink{classCFitness_a73dc0cc2da0fdceaf0901ffcbf2c95ab}{IsLiveOrganismInSpace} (\hyperlink{classCSpace}{CSpace} $\ast$s)
+\item 
+void \hyperlink{classCFitness_ab47bde2acae9b2cf350b3f0f30c1848e}{IdentifyCorners} (\hyperlink{classCSpace}{CSpace} $\ast$s)
+\item 
+int \hyperlink{classCFitness_aad8f7c73a77d92e961675974d1547be1}{GetCornerPosX} (int corn)
+\item 
+int \hyperlink{classCFitness_af6cce0883c44254ff4f99ac82c657702}{GetCornerPosY} (int corn)
+\item 
+void \hyperlink{classCFitness_a6843fde3ca6128f399ed79fb222ff631}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cc)
+\item 
+int \hyperlink{classCFitness_ae1b8b88c462be88750ee3ac66050f00d}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCFitness_aa499673546171eaac6a42ddcfa59b808}{\_\-MoveA} (int dir, int distance, int $\ast$iMoveDir\_\-X, int $\ast$iMoveDir\_\-Y)
+\item 
+int \hyperlink{classCFitness_ac4244e0b5c5da3831630c7f8d77b80c4}{\_\-Fitness\_\-01} (\hyperlink{classCSpace}{CSpace} $\ast$spaceInit, \hyperlink{classCSpace}{CSpace} $\ast$spaceAct)
+\item 
+int \hyperlink{classCFitness_ad6e3f11b3b29abcc1f87b93ae0584777}{\_\-Fitness\_\-02} (\hyperlink{classCSpace}{CSpace} $\ast$spaceInit, \hyperlink{classCSpace}{CSpace} $\ast$spaceAct)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCFitness_a310d2b868145aabcf214aae88461d13b}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCFitness_a310d2b868145aabcf214aae88461d13b}{pConfigCore}}
+\label{classCFitness_a310d2b868145aabcf214aae88461d13b}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_aaae8574bcd7930f2e5d327ba82652f18}{
+int \hyperlink{classCFitness_aaae8574bcd7930f2e5d327ba82652f18}{iX\_\-1}}
+\label{classCFitness_aaae8574bcd7930f2e5d327ba82652f18}
+
+\begin{DoxyCompactList}\small\item\em x-\/coord upper left corner of object's rectangle envelope \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_a5d6782a2960931a4ee7533bc972ad598}{
+int \hyperlink{classCFitness_a5d6782a2960931a4ee7533bc972ad598}{iY\_\-1}}
+\label{classCFitness_a5d6782a2960931a4ee7533bc972ad598}
+
+\begin{DoxyCompactList}\small\item\em y-\/coord upper left corner of object's rectangle envelope \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_a5ceb3a8ede00cd90aa53094a28f354d2}{
+int \hyperlink{classCFitness_a5ceb3a8ede00cd90aa53094a28f354d2}{iX\_\-2}}
+\label{classCFitness_a5ceb3a8ede00cd90aa53094a28f354d2}
+
+\begin{DoxyCompactList}\small\item\em x-\/coord lower right corner of object's rectangle envelope \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_a7f616a3a284b09be4de131eb11ab6916}{
+int \hyperlink{classCFitness_a7f616a3a284b09be4de131eb11ab6916}{iY\_\-2}}
+\label{classCFitness_a7f616a3a284b09be4de131eb11ab6916}
+
+\begin{DoxyCompactList}\small\item\em y-\/coord lower right corner of object's rectangle envelope \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_acf3167240f33b65d7e10bc98de56a9c2}{
+bool \hyperlink{classCFitness_acf3167240f33b65d7e10bc98de56a9c2}{bNonEmptyCellExists}}
+\label{classCFitness_acf3167240f33b65d7e10bc98de56a9c2}
+
+\begin{DoxyCompactList}\small\item\em tmp var used for object corner detection \item\end{DoxyCompactList}\item 
+\hypertarget{classCFitness_a444d921fb45192d764a5046a4432e61b}{
+int \hyperlink{classCFitness_a444d921fb45192d764a5046a4432e61b}{iErrFlag}}
+\label{classCFitness_a444d921fb45192d764a5046a4432e61b}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class computes base of fitness value of genome which is actually used for ca computations fitness is maximalized in \hyperlink{classCGeneticAlgorithm}{CGeneticAlgorithm} class in function Fitness, see comment in GeneticAlgorithm.cpp on line 250 (this line in time, when i am writing this comment...)
+
+fitness computation is simple: this class just looks to INIT space, shifts object in this space in (user definated) direction to (user definated) distances, then it looks to ACT space and checks, which cells have right value. if cell have right value, it will give fitness +1 point, else 0 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCFitness_a8d4721645167435856bb00ed4d5406e2}{
+\index{CFitness@{CFitness}!CFitness@{CFitness}}
+\index{CFitness@{CFitness}!CFitness@{CFitness}}
+\subsubsection[{CFitness}]{\setlength{\rightskip}{0pt plus 5cm}CFitness::CFitness ()}}
+\label{classCFitness_a8d4721645167435856bb00ed4d5406e2}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCFitness_ac4244e0b5c5da3831630c7f8d77b80c4}{
+\index{CFitness@{CFitness}!\_\-Fitness\_\-01@{\_\-Fitness\_\-01}}
+\index{\_\-Fitness\_\-01@{\_\-Fitness\_\-01}!CFitness@{CFitness}}
+\subsubsection[{\_\-Fitness\_\-01}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::\_\-Fitness\_\-01 ({\bf CSpace} $\ast$ {\em spaceInit}, \/  {\bf CSpace} $\ast$ {\em spaceAct})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCFitness_ac4244e0b5c5da3831630c7f8d77b80c4}
+this function calculates fitness -\/ compares every cell in INIT space with ACT space of course, is expected that object from INIT is shifted in ACT in given direction to given distance (direction and distance given from GUI) function uses \_\-MoveA to determine position of object in ACT relative to INIT maximum fitness is returned, when all cells in ACT have expected values -\/ so, more cells have expected values, higher the fitness will be
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$spaceInit}]pointer to init spce of ca \item[{\em $\ast$spaceAct}]pointer to actual space of ca \end{DoxyParams}
+\hypertarget{classCFitness_ad6e3f11b3b29abcc1f87b93ae0584777}{
+\index{CFitness@{CFitness}!\_\-Fitness\_\-02@{\_\-Fitness\_\-02}}
+\index{\_\-Fitness\_\-02@{\_\-Fitness\_\-02}!CFitness@{CFitness}}
+\subsubsection[{\_\-Fitness\_\-02}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::\_\-Fitness\_\-02 ({\bf CSpace} $\ast$ {\em spaceInit}, \/  {\bf CSpace} $\ast$ {\em spaceAct})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCFitness_ad6e3f11b3b29abcc1f87b93ae0584777}
+provides same functionality as \_\-Fitness\_\-01, but is able to cumpute with direction \char`\"{}ANY\char`\"{} and calculates with variable distances (from 1 to distance given as param in GUI)
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$spaceInit}]pointer to init spce of ca \item[{\em $\ast$spaceAct}]pointer to actual space of ca \end{DoxyParams}
+\hypertarget{classCFitness_aa499673546171eaac6a42ddcfa59b808}{
+\index{CFitness@{CFitness}!\_\-MoveA@{\_\-MoveA}}
+\index{\_\-MoveA@{\_\-MoveA}!CFitness@{CFitness}}
+\subsubsection[{\_\-MoveA}]{\setlength{\rightskip}{0pt plus 5cm}void CFitness::\_\-MoveA (int {\em dir}, \/  int {\em distance}, \/  int $\ast$ {\em iMoveDir\_\-X}, \/  int $\ast$ {\em iMoveDir\_\-Y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCFitness_aa499673546171eaac6a42ddcfa59b808}
+this function calculates relative position of cell, on which is cell expected to be, result is written into \char`\"{}pointer params\char`\"{} result is added to each cell position from INIT space, and then is checked, if cell in ACTUAL space aton newly computed position have expected value so, it calculates position in ACT relative to INIT
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dir}]direction of movement \item[{\em distance}]distance in \char`\"{}cell units\char`\"{} which object should go through \item[{\em $\ast$iMoveDir\_\-X}]pointer to var which determines x coordinate, on which should cell be in actual step -\/ result of this fc \item[{\em $\ast$iMoveDir\_\-Y}]pointer to var which determines y coordinate, on which should cell be in actual step -\/ result of this fc \end{DoxyParams}
+\hypertarget{classCFitness_a0f4e219fd31fab1f3a90baf4101ab133}{
+\index{CFitness@{CFitness}!Fitness@{Fitness}}
+\index{Fitness@{Fitness}!CFitness@{CFitness}}
+\subsubsection[{Fitness}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::Fitness ({\bf CSpace} $\ast$ {\em spaceInit}, \/  {\bf CSpace} $\ast$ {\em spaceAct})}}
+\label{classCFitness_a0f4e219fd31fab1f3a90baf4101ab133}
+calculates fitness of actual step of ca
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$spaceInit}]init ca space -\/ stores original ca config \item[{\em $\ast$spaceAct}]actual ca space \end{DoxyParams}
+\hypertarget{classCFitness_aad8f7c73a77d92e961675974d1547be1}{
+\index{CFitness@{CFitness}!GetCornerPosX@{GetCornerPosX}}
+\index{GetCornerPosX@{GetCornerPosX}!CFitness@{CFitness}}
+\subsubsection[{GetCornerPosX}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::GetCornerPosX (int {\em corn})}}
+\label{classCFitness_aad8f7c73a77d92e961675974d1547be1}
+returns coordinate of object corner on x-\/axes
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em corn}]specifies which corner should be returned \end{DoxyParams}
+\hypertarget{classCFitness_af6cce0883c44254ff4f99ac82c657702}{
+\index{CFitness@{CFitness}!GetCornerPosY@{GetCornerPosY}}
+\index{GetCornerPosY@{GetCornerPosY}!CFitness@{CFitness}}
+\subsubsection[{GetCornerPosY}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::GetCornerPosY (int {\em corn})}}
+\label{classCFitness_af6cce0883c44254ff4f99ac82c657702}
+returns coordinate of object corner on y-\/axes
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em corn}]specifies which corner should be returned \end{DoxyParams}
+\hypertarget{classCFitness_ae1b8b88c462be88750ee3ac66050f00d}{
+\index{CFitness@{CFitness}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CFitness@{CFitness}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CFitness::GetErrorFlag ()}}
+\label{classCFitness_ae1b8b88c462be88750ee3ac66050f00d}
+return error flag \hypertarget{classCFitness_ab47bde2acae9b2cf350b3f0f30c1848e}{
+\index{CFitness@{CFitness}!IdentifyCorners@{IdentifyCorners}}
+\index{IdentifyCorners@{IdentifyCorners}!CFitness@{CFitness}}
+\subsubsection[{IdentifyCorners}]{\setlength{\rightskip}{0pt plus 5cm}void CFitness::IdentifyCorners ({\bf CSpace} $\ast$ {\em s})}}
+\label{classCFitness_ab47bde2acae9b2cf350b3f0f30c1848e}
+identifies corners of envelope of object in ca space -\/ used for determinate if any object is in space object is covered by rectangle:
+
+-\/-\/-\/$\ast$-\/-\/-\/ $|$ $\ast$$\ast$$\ast$ $|$ $|$$\ast$$\ast$ $\ast$$\ast$$|$ $\ast$$\ast$ $\ast$ $\ast$$\ast$ $|$$\ast$$\ast$ $\ast$$\ast$$|$ $|$ $\ast$$\ast$$\ast$ $|$ -\/-\/-\/$\ast$-\/-\/-\/
+
+object is created from asterisks, white space are \char`\"{}dead cells\char`\"{}, rectangle is created from lines
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$s}]pointer to ca space \end{DoxyParams}
+\hypertarget{classCFitness_a73dc0cc2da0fdceaf0901ffcbf2c95ab}{
+\index{CFitness@{CFitness}!IsLiveOrganismInSpace@{IsLiveOrganismInSpace}}
+\index{IsLiveOrganismInSpace@{IsLiveOrganismInSpace}!CFitness@{CFitness}}
+\subsubsection[{IsLiveOrganismInSpace}]{\setlength{\rightskip}{0pt plus 5cm}bool CFitness::IsLiveOrganismInSpace ({\bf CSpace} $\ast$ {\em s})}}
+\label{classCFitness_a73dc0cc2da0fdceaf0901ffcbf2c95ab}
+checks, if there is any live cell in ca space
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$s}]pointer to ca space \end{DoxyParams}
+\hypertarget{classCFitness_a6843fde3ca6128f399ed79fb222ff631}{
+\index{CFitness@{CFitness}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CFitness@{CFitness}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CFitness::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCFitness_a6843fde3ca6128f399ed79fb222ff631}
+sets config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Fitness.h\item 
+Fitness.cpp\end{DoxyCompactItemize}

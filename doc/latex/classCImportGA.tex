@@ -1,0 +1,131 @@
+\hypertarget{classCImportGA}{
+\section{CImportGA Class Reference}
+\label{classCImportGA}\index{CImportGA@{CImportGA}}
+}
+
+
+{\ttfamily \#include $<$ImportGA.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCImportGA_ae697ea4a3cee45b973e6331422dde4c0}{CImportGA} ()
+\item 
+void \hyperlink{classCImportGA_a384bf039491b76cac0d07225e479ce26}{ImportChromosome} (QString fileName, \hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCImportGA_a30c6e30805279b7e795895d64a05852d}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cCore)
+\item 
+int \hyperlink{classCImportGA_aee42b056447a05412413fdad4f2d233b}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCImportGA_add157c36e5436ea5e433a5aa1eeca605}{ReadDocStart} ()
+\item 
+void \hyperlink{classCImportGA_a31342a1ba9bdae4a94575bf5733d1b45}{ReadGenome} (\hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCImportGA_a034ce47fefb46cc7e87f225909b2ab92}{WriteGenesIntoGenome} (QString $\ast$genes, \hyperlink{classCGenome}{CGenome} $\ast$gen)
+\item 
+void \hyperlink{classCImportGA_a1e777dd84da02e20b2dccb8e90423082}{SetIODevice} (QIODevice $\ast$\hyperlink{classCImportGA_a8b3d05f98d84a34529eaa25423606e3c}{device})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCImportGA_a3e86a20acfc8c396e41dc2a37b9f6e55}{
+QXmlStreamReader \hyperlink{classCImportGA_a3e86a20acfc8c396e41dc2a37b9f6e55}{xml}}
+\label{classCImportGA_a3e86a20acfc8c396e41dc2a37b9f6e55}
+
+\begin{DoxyCompactList}\small\item\em xml reader \item\end{DoxyCompactList}\item 
+\hypertarget{classCImportGA_a8b3d05f98d84a34529eaa25423606e3c}{
+QIODevice $\ast$ \hyperlink{classCImportGA_a8b3d05f98d84a34529eaa25423606e3c}{device}}
+\label{classCImportGA_a8b3d05f98d84a34529eaa25423606e3c}
+
+\begin{DoxyCompactList}\small\item\em io device -\/ opened file descriptor -\/ for xml class \item\end{DoxyCompactList}\item 
+\hypertarget{classCImportGA_afa911e390870cfdaf6abf8351db3a95e}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCImportGA_afa911e390870cfdaf6abf8351db3a95e}{config}}
+\label{classCImportGA_afa911e390870cfdaf6abf8351db3a95e}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCImportGA_ad1893025f830c3b30ddfd1808fa21606}{
+int \hyperlink{classCImportGA_ad1893025f830c3b30ddfd1808fa21606}{iErrFlag}}
+\label{classCImportGA_ad1893025f830c3b30ddfd1808fa21606}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+imports genome from xml file (created by \hyperlink{classCExportGA}{CExportGA} class) into genome (\hyperlink{classCGenome}{CGenome} class) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCImportGA_ae697ea4a3cee45b973e6331422dde4c0}{
+\index{CImportGA@{CImportGA}!CImportGA@{CImportGA}}
+\index{CImportGA@{CImportGA}!CImportGA@{CImportGA}}
+\subsubsection[{CImportGA}]{\setlength{\rightskip}{0pt plus 5cm}CImportGA::CImportGA ()}}
+\label{classCImportGA_ae697ea4a3cee45b973e6331422dde4c0}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCImportGA_aee42b056447a05412413fdad4f2d233b}{
+\index{CImportGA@{CImportGA}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CImportGA@{CImportGA}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CImportGA::GetErrorFlag ()}}
+\label{classCImportGA_aee42b056447a05412413fdad4f2d233b}
+returns error flag \hypertarget{classCImportGA_a384bf039491b76cac0d07225e479ce26}{
+\index{CImportGA@{CImportGA}!ImportChromosome@{ImportChromosome}}
+\index{ImportChromosome@{ImportChromosome}!CImportGA@{CImportGA}}
+\subsubsection[{ImportChromosome}]{\setlength{\rightskip}{0pt plus 5cm}void CImportGA::ImportChromosome (QString {\em fileName}, \/  {\bf CGenome} $\ast$ {\em gen})}}
+\label{classCImportGA_a384bf039491b76cac0d07225e479ce26}
+function for imprting genome from xml file created by \hyperlink{classCExportGA}{CExportGA} class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]path/name of file \item[{\em $\ast$gen}]pointer to genome class (must exists !!) into which data will be write \end{DoxyParams}
+\hypertarget{classCImportGA_add157c36e5436ea5e433a5aa1eeca605}{
+\index{CImportGA@{CImportGA}!ReadDocStart@{ReadDocStart}}
+\index{ReadDocStart@{ReadDocStart}!CImportGA@{CImportGA}}
+\subsubsection[{ReadDocStart}]{\setlength{\rightskip}{0pt plus 5cm}bool CImportGA::ReadDocStart ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportGA_add157c36e5436ea5e433a5aa1eeca605}
+read document header for determining if file is compatibile and if genome is compatibile with user settings \hypertarget{classCImportGA_a31342a1ba9bdae4a94575bf5733d1b45}{
+\index{CImportGA@{CImportGA}!ReadGenome@{ReadGenome}}
+\index{ReadGenome@{ReadGenome}!CImportGA@{CImportGA}}
+\subsubsection[{ReadGenome}]{\setlength{\rightskip}{0pt plus 5cm}void CImportGA::ReadGenome ({\bf CGenome} $\ast$ {\em gen})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportGA_a31342a1ba9bdae4a94575bf5733d1b45}
+this function reads genome data from xml
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$gen}]pointer to genome class in which data will be stored \end{DoxyParams}
+\hypertarget{classCImportGA_a30c6e30805279b7e795895d64a05852d}{
+\index{CImportGA@{CImportGA}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CImportGA@{CImportGA}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CImportGA::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cCore})}}
+\label{classCImportGA_a30c6e30805279b7e795895d64a05852d}
+sets config class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$cCore}]pointer to config class \end{DoxyParams}
+\hypertarget{classCImportGA_a1e777dd84da02e20b2dccb8e90423082}{
+\index{CImportGA@{CImportGA}!SetIODevice@{SetIODevice}}
+\index{SetIODevice@{SetIODevice}!CImportGA@{CImportGA}}
+\subsubsection[{SetIODevice}]{\setlength{\rightskip}{0pt plus 5cm}void CImportGA::SetIODevice (QIODevice $\ast$ {\em device})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportGA_a1e777dd84da02e20b2dccb8e90423082}
+sets IO devide (opened file) in xml class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$device}]pointer to opened file descriptor \end{DoxyParams}
+\hypertarget{classCImportGA_a034ce47fefb46cc7e87f225909b2ab92}{
+\index{CImportGA@{CImportGA}!WriteGenesIntoGenome@{WriteGenesIntoGenome}}
+\index{WriteGenesIntoGenome@{WriteGenesIntoGenome}!CImportGA@{CImportGA}}
+\subsubsection[{WriteGenesIntoGenome}]{\setlength{\rightskip}{0pt plus 5cm}void CImportGA::WriteGenesIntoGenome (QString $\ast$ {\em genes}, \/  {\bf CGenome} $\ast$ {\em genom})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportGA_a034ce47fefb46cc7e87f225909b2ab92}
+this function reads genome data -\/ genes -\/ from file and stores them into genome class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$genes}]string with genes read in previous function \item[{\em $\ast$genom}]pointer to genome class for writing data \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ImportGA.h\item 
+ImportGA.cpp\end{DoxyCompactItemize}

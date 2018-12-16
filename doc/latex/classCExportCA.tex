@@ -1,0 +1,82 @@
+\hypertarget{classCExportCA}{
+\section{CExportCA Class Reference}
+\label{classCExportCA}\index{CExportCA@{CExportCA}}
+}
+
+
+{\ttfamily \#include $<$ExportCA.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCExportCA_a53f333999ac0fbc58f80058d27518502}{CExportCA} ()
+\item 
+void \hyperlink{classCExportCA_a9bc0574ebc0672985fb7700c5a5d04a9}{ExportCellularAutomaton} (QString fileName, \hyperlink{classCSpace}{CSpace} $\ast$space)
+\item 
+void \hyperlink{classCExportCA_ad805bf09d9c72c60ba662d4d9d2fe117}{ExportCellularAutomatonInput} (QString fileName, \hyperlink{classCSpace}{CSpace} $\ast$space)
+\item 
+void \hyperlink{classCExportCA_a36ef474f274f8cb123073968d6e33a9d}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cCore)
+\item 
+int \hyperlink{classCExportCA_a88c08f02b37ad712b7d924544ec6b15f}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCExportCA_a211f03265e70aa2bcb25e5f4e56084ff}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCExportCA_a211f03265e70aa2bcb25e5f4e56084ff}{config}}
+\label{classCExportCA_a211f03265e70aa2bcb25e5f4e56084ff}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportCA_aec825a9dcb2001305918a8764ae311cf}{
+int \hyperlink{classCExportCA_aec825a9dcb2001305918a8764ae311cf}{iErrFlag}}
+\label{classCExportCA_aec825a9dcb2001305918a8764ae311cf}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class exports ca space it has two modes -\/ standard, which makes 10x zoom on exported images and input, which is used for exporting input ca space from gui settings tab, this mode does not used zoom, because input png should be imported into app later 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCExportCA_a53f333999ac0fbc58f80058d27518502}{
+\index{CExportCA@{CExportCA}!CExportCA@{CExportCA}}
+\index{CExportCA@{CExportCA}!CExportCA@{CExportCA}}
+\subsubsection[{CExportCA}]{\setlength{\rightskip}{0pt plus 5cm}CExportCA::CExportCA ()}}
+\label{classCExportCA_a53f333999ac0fbc58f80058d27518502}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCExportCA_a9bc0574ebc0672985fb7700c5a5d04a9}{
+\index{CExportCA@{CExportCA}!ExportCellularAutomaton@{ExportCellularAutomaton}}
+\index{ExportCellularAutomaton@{ExportCellularAutomaton}!CExportCA@{CExportCA}}
+\subsubsection[{ExportCellularAutomaton}]{\setlength{\rightskip}{0pt plus 5cm}void CExportCA::ExportCellularAutomaton (QString {\em fileName}, \/  {\bf CSpace} $\ast$ {\em space})}}
+\label{classCExportCA_a9bc0574ebc0672985fb7700c5a5d04a9}
+exports ca space, using 10x zoom effect, into png
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]file path/name \item[{\em $\ast$space}]pointer to ca space class \end{DoxyParams}
+\hypertarget{classCExportCA_ad805bf09d9c72c60ba662d4d9d2fe117}{
+\index{CExportCA@{CExportCA}!ExportCellularAutomatonInput@{ExportCellularAutomatonInput}}
+\index{ExportCellularAutomatonInput@{ExportCellularAutomatonInput}!CExportCA@{CExportCA}}
+\subsubsection[{ExportCellularAutomatonInput}]{\setlength{\rightskip}{0pt plus 5cm}void CExportCA::ExportCellularAutomatonInput (QString {\em fileName}, \/  {\bf CSpace} $\ast$ {\em space})}}
+\label{classCExportCA_ad805bf09d9c72c60ba662d4d9d2fe117}
+this function is used for export input ca space from settings input ca tab does not using zoom effect, because these images can be later imported into app
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]file path/name \item[{\em $\ast$space}]pointer to ca space class \end{DoxyParams}
+\hypertarget{classCExportCA_a88c08f02b37ad712b7d924544ec6b15f}{
+\index{CExportCA@{CExportCA}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CExportCA@{CExportCA}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CExportCA::GetErrorFlag ()}}
+\label{classCExportCA_a88c08f02b37ad712b7d924544ec6b15f}
+returns erro flag \hypertarget{classCExportCA_a36ef474f274f8cb123073968d6e33a9d}{
+\index{CExportCA@{CExportCA}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CExportCA@{CExportCA}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CExportCA::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cCore})}}
+\label{classCExportCA_a36ef474f274f8cb123073968d6e33a9d}
+sets config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ExportCA.h\item 
+ExportCA.cpp\end{DoxyCompactItemize}

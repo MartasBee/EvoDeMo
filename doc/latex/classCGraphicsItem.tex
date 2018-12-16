@@ -1,0 +1,222 @@
+\hypertarget{classCGraphicsItem}{
+\section{CGraphicsItem Class Reference}
+\label{classCGraphicsItem}\index{CGraphicsItem@{CGraphicsItem}}
+}
+
+
+{\ttfamily \#include $<$GraphicsItem.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGraphicsItem_ae1cfa0f541eadcf6a72d23c0386d80ac}{CGraphicsItem} ()
+\item 
+\hyperlink{classCGraphicsItem_ac6af1bfd1ec6e5d42ee0590dffcd920f}{CGraphicsItem} (int posX, int posY, int states, BYTE defState)
+\item 
+\hyperlink{classCGraphicsItem_aaf9e5d412117ffdbe047ab45ba4f32b4}{CGraphicsItem} (int posX, int posY, \hyperlink{classCGraphicsItemConfig}{CGraphicsItemConfig} $\ast$c)
+\item 
+QRectF \hyperlink{classCGraphicsItem_abe95249eb365a95ba48f98d716081d1c}{boundingRect} () const 
+\item 
+void \hyperlink{classCGraphicsItem_ad417dbdb6e271454a8e18cddde6867ea}{paint} (QPainter $\ast$painter, const QStyleOptionGraphicsItem $\ast$option, QWidget $\ast$widget)
+\item 
+void \hyperlink{classCGraphicsItem_a356ca18291bc9ef8ae5e764c9d8bfb1a}{SetState} (BYTE s)
+\item 
+BYTE \hyperlink{classCGraphicsItem_afdb90d7fa1103b248678df935c323078}{GetState} ()
+\item 
+void \hyperlink{classCGraphicsItem_a58c3123bfe6213f33e9fcb0f39984be4}{SetEditable} (bool b)
+\item 
+bool \hyperlink{classCGraphicsItem_aa116ef0415c22d54e9a56617184d7de8}{IsEditable} ()
+\item 
+int \hyperlink{classCGraphicsItem_a71cf5e1e005071bc98346dfd688bb5ae}{GetPosX} ()
+\item 
+int \hyperlink{classCGraphicsItem_a0027198ae4260474a36bbbb55d55184b}{GetPosY} ()
+\item 
+int \hyperlink{classCGraphicsItem_af302d0c5f3b0978e34a90b8540de2bc0}{GetStatesCount} ()
+\item 
+void \hyperlink{classCGraphicsItem_a4c3f6d8b84fad5e303f0fa29a4007aee}{SetStatesCount} (int sc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCGraphicsItem_a670472b11f99123fd81cc1f0998405b8}{mouseMoveEvent} (QGraphicsSceneMouseEvent $\ast$event)
+\item 
+void \hyperlink{classCGraphicsItem_adbbe3716e050a386328c4c04af24eb22}{mousePressEvent} (QGraphicsSceneMouseEvent $\ast$event)
+\item 
+void \hyperlink{classCGraphicsItem_ac264e38927e3a97005305b544344b624}{mouseReleaseEvent} (QGraphicsSceneMouseEvent $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGraphicsItem_ac7a0a177a09d2a900ea90e92cbd08259}{
+unsigned int \hyperlink{classCGraphicsItem_ac7a0a177a09d2a900ea90e92cbd08259}{iGridPosX}}
+\label{classCGraphicsItem_ac7a0a177a09d2a900ea90e92cbd08259}
+
+\begin{DoxyCompactList}\small\item\em x coord of cell in space \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_a578276df19732d088a7cec6f075ace8f}{
+unsigned int \hyperlink{classCGraphicsItem_a578276df19732d088a7cec6f075ace8f}{iGridPosY}}
+\label{classCGraphicsItem_a578276df19732d088a7cec6f075ace8f}
+
+\begin{DoxyCompactList}\small\item\em y coord of cell in space \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_a94d5302cd3368e21a14a57678f1e652d}{
+BYTE \hyperlink{classCGraphicsItem_a94d5302cd3368e21a14a57678f1e652d}{byState}}
+\label{classCGraphicsItem_a94d5302cd3368e21a14a57678f1e652d}
+
+\begin{DoxyCompactList}\small\item\em current state of cell \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_a74ad113a3ed87d22a6c99266400254be}{
+bool \hyperlink{classCGraphicsItem_a74ad113a3ed87d22a6c99266400254be}{bEditable}}
+\label{classCGraphicsItem_a74ad113a3ed87d22a6c99266400254be}
+
+\begin{DoxyCompactList}\small\item\em is cell editable/clickable? \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_a8f8312a6e0b7f11e991a2dc9df806f32}{
+int \hyperlink{classCGraphicsItem_a8f8312a6e0b7f11e991a2dc9df806f32}{iStatesCount}}
+\label{classCGraphicsItem_a8f8312a6e0b7f11e991a2dc9df806f32}
+
+\begin{DoxyCompactList}\small\item\em states count \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_ae2ff9685cc91a71dff820e4acf15a4d9}{
+\hyperlink{classCGraphicsItemConfig}{CGraphicsItemConfig} $\ast$ \hyperlink{classCGraphicsItem_ae2ff9685cc91a71dff820e4acf15a4d9}{config}}
+\label{classCGraphicsItem_ae2ff9685cc91a71dff820e4acf15a4d9}
+
+\begin{DoxyCompactList}\small\item\em pointer to cells' config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItem_a64eee04ebeb713d942e59b209c8ad6c7}{
+QColor \hyperlink{classCGraphicsItem_a64eee04ebeb713d942e59b209c8ad6c7}{color}}
+\label{classCGraphicsItem_a64eee04ebeb713d942e59b209c8ad6c7}
+
+\begin{DoxyCompactList}\small\item\em color of cell in gui \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class represents one cell in gui space 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGraphicsItem_ae1cfa0f541eadcf6a72d23c0386d80ac}{
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{CGraphicsItem}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsItem::CGraphicsItem ()}}
+\label{classCGraphicsItem_ae1cfa0f541eadcf6a72d23c0386d80ac}
+class constructor \hypertarget{classCGraphicsItem_ac6af1bfd1ec6e5d42ee0590dffcd920f}{
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{CGraphicsItem}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsItem::CGraphicsItem (int {\em posX}, \/  int {\em posY}, \/  int {\em states}, \/  BYTE {\em defState})}}
+\label{classCGraphicsItem_ac6af1bfd1ec6e5d42ee0590dffcd920f}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]x coord of cell \item[{\em posY}]y coord of cell \item[{\em states}]states count \item[{\em defState}]default state \end{DoxyParams}
+\hypertarget{classCGraphicsItem_aaf9e5d412117ffdbe047ab45ba4f32b4}{
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\index{CGraphicsItem@{CGraphicsItem}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{CGraphicsItem}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsItem::CGraphicsItem (int {\em posX}, \/  int {\em posY}, \/  {\bf CGraphicsItemConfig} $\ast$ {\em c})}}
+\label{classCGraphicsItem_aaf9e5d412117ffdbe047ab45ba4f32b4}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]x coord of cell \item[{\em posY}]y coord of cell \item[{\em $\ast$c}]pointer to \hyperlink{classCGraphicsItemConfig}{CGraphicsItemConfig} class \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGraphicsItem_abe95249eb365a95ba48f98d716081d1c}{
+\index{CGraphicsItem@{CGraphicsItem}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{boundingRect}]{\setlength{\rightskip}{0pt plus 5cm}QRectF CGraphicsItem::boundingRect () const}}
+\label{classCGraphicsItem_abe95249eb365a95ba48f98d716081d1c}
+returns rectangle which represets a cell \hypertarget{classCGraphicsItem_a71cf5e1e005071bc98346dfd688bb5ae}{
+\index{CGraphicsItem@{CGraphicsItem}!GetPosX@{GetPosX}}
+\index{GetPosX@{GetPosX}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{GetPosX}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsItem::GetPosX ()}}
+\label{classCGraphicsItem_a71cf5e1e005071bc98346dfd688bb5ae}
+returns cell's x coord \hypertarget{classCGraphicsItem_a0027198ae4260474a36bbbb55d55184b}{
+\index{CGraphicsItem@{CGraphicsItem}!GetPosY@{GetPosY}}
+\index{GetPosY@{GetPosY}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{GetPosY}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsItem::GetPosY ()}}
+\label{classCGraphicsItem_a0027198ae4260474a36bbbb55d55184b}
+returns cell's y coord \hypertarget{classCGraphicsItem_afdb90d7fa1103b248678df935c323078}{
+\index{CGraphicsItem@{CGraphicsItem}!GetState@{GetState}}
+\index{GetState@{GetState}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{GetState}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGraphicsItem::GetState ()}}
+\label{classCGraphicsItem_afdb90d7fa1103b248678df935c323078}
+returns cell state \hypertarget{classCGraphicsItem_af302d0c5f3b0978e34a90b8540de2bc0}{
+\index{CGraphicsItem@{CGraphicsItem}!GetStatesCount@{GetStatesCount}}
+\index{GetStatesCount@{GetStatesCount}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{GetStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsItem::GetStatesCount ()}}
+\label{classCGraphicsItem_af302d0c5f3b0978e34a90b8540de2bc0}
+returns states count \hypertarget{classCGraphicsItem_aa116ef0415c22d54e9a56617184d7de8}{
+\index{CGraphicsItem@{CGraphicsItem}!IsEditable@{IsEditable}}
+\index{IsEditable@{IsEditable}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{IsEditable}]{\setlength{\rightskip}{0pt plus 5cm}bool CGraphicsItem::IsEditable ()}}
+\label{classCGraphicsItem_aa116ef0415c22d54e9a56617184d7de8}
+returns if cell is editable \hypertarget{classCGraphicsItem_a670472b11f99123fd81cc1f0998405b8}{
+\index{CGraphicsItem@{CGraphicsItem}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{mouseMoveEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::mouseMoveEvent (QGraphicsSceneMouseEvent $\ast$ {\em event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGraphicsItem_a670472b11f99123fd81cc1f0998405b8}
+reaction on mouse move
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]mouse event \end{DoxyParams}
+\hypertarget{classCGraphicsItem_adbbe3716e050a386328c4c04af24eb22}{
+\index{CGraphicsItem@{CGraphicsItem}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{mousePressEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::mousePressEvent (QGraphicsSceneMouseEvent $\ast$ {\em event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGraphicsItem_adbbe3716e050a386328c4c04af24eb22}
+reaction on mouse button press event
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]mouse event \end{DoxyParams}
+\hypertarget{classCGraphicsItem_ac264e38927e3a97005305b544344b624}{
+\index{CGraphicsItem@{CGraphicsItem}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{mouseReleaseEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::mouseReleaseEvent (QGraphicsSceneMouseEvent $\ast$ {\em event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGraphicsItem_ac264e38927e3a97005305b544344b624}
+reaction on mouse button release event
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]mouse event \end{DoxyParams}
+\hypertarget{classCGraphicsItem_ad417dbdb6e271454a8e18cddde6867ea}{
+\index{CGraphicsItem@{CGraphicsItem}!paint@{paint}}
+\index{paint@{paint}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{paint}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::paint (QPainter $\ast$ {\em painter}, \/  const QStyleOptionGraphicsItem $\ast$ {\em option}, \/  QWidget $\ast$ {\em widget})}}
+\label{classCGraphicsItem_ad417dbdb6e271454a8e18cddde6867ea}
+draws cell
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$painter}]pointer to QPainter class \item[{\em $\ast$option}]pointet to QStyleOptionGraphicsItem class \item[{\em $\ast$widget}]pointer to parent widget class \end{DoxyParams}
+\hypertarget{classCGraphicsItem_a58c3123bfe6213f33e9fcb0f39984be4}{
+\index{CGraphicsItem@{CGraphicsItem}!SetEditable@{SetEditable}}
+\index{SetEditable@{SetEditable}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{SetEditable}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::SetEditable (bool {\em b})}}
+\label{classCGraphicsItem_a58c3123bfe6213f33e9fcb0f39984be4}
+sets if cell is editable -\/ clickable
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em b}]is editable? \end{DoxyParams}
+\hypertarget{classCGraphicsItem_a356ca18291bc9ef8ae5e764c9d8bfb1a}{
+\index{CGraphicsItem@{CGraphicsItem}!SetState@{SetState}}
+\index{SetState@{SetState}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{SetState}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::SetState (BYTE {\em s})}}
+\label{classCGraphicsItem_a356ca18291bc9ef8ae5e764c9d8bfb1a}
+sets cell state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]new state \end{DoxyParams}
+\hypertarget{classCGraphicsItem_a4c3f6d8b84fad5e303f0fa29a4007aee}{
+\index{CGraphicsItem@{CGraphicsItem}!SetStatesCount@{SetStatesCount}}
+\index{SetStatesCount@{SetStatesCount}!CGraphicsItem@{CGraphicsItem}}
+\subsubsection[{SetStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItem::SetStatesCount (int {\em sc})}}
+\label{classCGraphicsItem_a4c3f6d8b84fad5e303f0fa29a4007aee}
+sets states count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sc}]states count \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GraphicsItem.h\item 
+GraphicsItem.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,578 @@
+\hypertarget{classCWidgetEvolution}{
+\section{CWidgetEvolution Class Reference}
+\label{classCWidgetEvolution}\index{CWidgetEvolution@{CWidgetEvolution}}
+}
+
+
+{\ttfamily \#include $<$WidgetEvolution.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetEvolution_aaacd71b8fa235871df73b20f2ff5cfba}{
+void {\bfseries SignalWidgetEvoApplayed} (bool)}
+\label{classCWidgetEvolution_aaacd71b8fa235871df73b20f2ff5cfba}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWidgetEvolution_acc38dd902ec3ce3f9841e421d8df67e3}{CWidgetEvolution} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWidgetEvolution_a367c1cdbb1c2ca9a07bc849aefb72dde}{$\sim$CWidgetEvolution} ()
+\item 
+int \hyperlink{classCWidgetEvolution_ab932d951a5043baf812f8d8b7ba09681}{GetRepetitionsCount} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a011bcc0709b3086df95eec9129919fe4}{GetGenerationsCount} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a73c50aad4c50e16931ffe9e82e8c1ddd}{GetPopulationSize} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a6fbf46c23f78d22d382e6ae0b02d97bd}{GetGenomeType} ()
+\item 
+int \hyperlink{classCWidgetEvolution_aa56437520abf70bfabc084ff03a6741b}{GetCrossoverProbability} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a2e12780109a568cf644e39eb3a197dc8}{GetCrossoverCount} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a5880bb761b37c1cdf3e9bed2def2a88b}{GetMutationProbability} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a678de75bb460f47bd264e8f7204239dc}{GetMutationCount} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a93068c5f3e07a982485cd7a12647905f}{GetMoveDirection} ()
+\item 
+int \hyperlink{classCWidgetEvolution_a311003fd6ff969e460b56c994e3ba3f5}{GetStepsCount} ()
+\item 
+int \hyperlink{classCWidgetEvolution_abc656941aa35fbed538c057939bd6126}{GetMoveDistance} ()
+\item 
+bool \hyperlink{classCWidgetEvolution_a57efe43b895556eedf5fc55cf1bf6e88}{IsImportGenomeEnabledSimulation} ()
+\item 
+bool \hyperlink{classCWidgetEvolution_a8d75d5c02040eb4946081468f50f09d5}{IsImportGenomeEnabledReevolve} ()
+\item 
+QString \hyperlink{classCWidgetEvolution_a29e080891a238ae764150e625151d132}{GetImportGenomeFile} ()
+\item 
+void \hyperlink{classCWidgetEvolution_a3e5d42568af5ae95dd8d6c23ffa3d8a6}{SetRepetitionsCount} (int rc)
+\item 
+void \hyperlink{classCWidgetEvolution_ac37ef6a70355a7c15b3861a2e4112a96}{SetGenerationsCount} (int gc)
+\item 
+void \hyperlink{classCWidgetEvolution_a75cdaa493580c52f979f91c37f55e288}{SetPopulationSize} (int ps)
+\item 
+void \hyperlink{classCWidgetEvolution_ac81c258deaf2e7e58c197ec9e729fae1}{SetGenomeType} (int gt)
+\item 
+void \hyperlink{classCWidgetEvolution_a57c5a52ca97a082b05e9fa6738453a75}{SetCrossoverProbability} (int cp)
+\item 
+void \hyperlink{classCWidgetEvolution_ad4d552bfa2b441f1f0b8f78343a131e7}{SetCrossoverCount} (int cc)
+\item 
+void \hyperlink{classCWidgetEvolution_ab4f774d3c732bab25a981cf09690c279}{SetMutationProbability} (int mp)
+\item 
+void \hyperlink{classCWidgetEvolution_a568011dcfe6bdb00e24eca8b905dc486}{SetMutationCount} (int mc)
+\item 
+void \hyperlink{classCWidgetEvolution_a0d953499ba4929e231f649881e8324f9}{SetMoveDirection} (int md)
+\item 
+void \hyperlink{classCWidgetEvolution_a86ca9aaaa80695bb4c70347d971a76d5}{SetStepsCount} (int sc)
+\item 
+void \hyperlink{classCWidgetEvolution_a62380d2dc516f8c8da4448a2129f2de7}{SetMoveDistance} (int md)
+\item 
+bool \hyperlink{classCWidgetEvolution_a9d1d32df0aa44d939f778329d1c1408a}{IsApplyed} ()
+\item 
+void \hyperlink{classCWidgetEvolution_aeb3ae4928b09eed819d3c3e7562848ac}{SetInitDone} (bool id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetEvolution_ac15f1ad2dbe291bfbc5ac6a815d03820}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWidgetEvolution_a4a2344ac3739e3c9360dd3b1ede65dda}{RepetitionsChanged} (int r)
+\item 
+void \hyperlink{classCWidgetEvolution_a8a40de3276109d8b03dc02ef42d8961b}{GenerationsChanged} (int g)
+\item 
+void \hyperlink{classCWidgetEvolution_a1931e0c63052127070ecd8ad86f87530}{PopulationChanged} (int p)
+\item 
+void \hyperlink{classCWidgetEvolution_a2748148f4fbf4dd9698bde0f9496ae8c}{GenomeTypeChanged} (int g)
+\item 
+void \hyperlink{classCWidgetEvolution_a3c80054e331df0db4a19ba444a82bd53}{DirectionChanged} (int d)
+\item 
+void \hyperlink{classCWidgetEvolution_adcbaead4616e9947c5b0697677af0c20}{StepsChanged} (int s)
+\item 
+void \hyperlink{classCWidgetEvolution_a5e155a1df2cbf7ec7b4e0ac94d8596a2}{DistanceChanged} (int d)
+\item 
+void \hyperlink{classCWidgetEvolution_a0cf06a851852dd39ce709869188e6abd}{CrossoverProbChanged} (int cp)
+\item 
+void \hyperlink{classCWidgetEvolution_a813da70b11446896d8b03f2bc7c5eb35}{CrossoverCountChanged} (int cc)
+\item 
+void \hyperlink{classCWidgetEvolution_aaf76f3b21dc7558b9d488e747409b66a}{MutationProbChanged} (int mp)
+\item 
+void \hyperlink{classCWidgetEvolution_a26dffc6b20f733569a4b43aa66ffc04a}{MutationCountChanged} (int mc)
+\item 
+void \hyperlink{classCWidgetEvolution_a2c27b79baf649227eac32b819874eac2}{ImportFileButtonPressed} ()
+\item 
+void \hyperlink{classCWidgetEvolution_ab404024a3c67b19e74448fc61a96c1af}{ImportFileEnableSimulation} (int ifes)
+\item 
+void \hyperlink{classCWidgetEvolution_a85d018ad28c22f7b20ecefa82b282313}{ImportFileEnableReevolve} (int ifer)
+\item 
+void \hyperlink{classCWidgetEvolution_a12c4341a31c05a4311af2de591575845}{ApplyPressed} ()
+\item 
+void \hyperlink{classCWidgetEvolution_ae8cd94dd178c48cd41e51fd37df02606}{CancelPressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWidgetEvolution_a50a1f44adcae0b612d6a480fbdcc641e}{
+Ui::CWidgetEvolution $\ast$ \hyperlink{classCWidgetEvolution_a50a1f44adcae0b612d6a480fbdcc641e}{ui}}
+\label{classCWidgetEvolution_a50a1f44adcae0b612d6a480fbdcc641e}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a8a56a1fa6b4cb1f1bd5a6f00ba7b7144}{
+int \hyperlink{classCWidgetEvolution_a8a56a1fa6b4cb1f1bd5a6f00ba7b7144}{iRepetitions}}
+\label{classCWidgetEvolution_a8a56a1fa6b4cb1f1bd5a6f00ba7b7144}
+
+\begin{DoxyCompactList}\small\item\em repetitions -\/ independent runs of evolution \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a3246b8532969c19fcab09253833f1726}{
+int \hyperlink{classCWidgetEvolution_a3246b8532969c19fcab09253833f1726}{iGenerations}}
+\label{classCWidgetEvolution_a3246b8532969c19fcab09253833f1726}
+
+\begin{DoxyCompactList}\small\item\em generations count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a9e80d3139c0034444c6c922fc1f5f4f6}{
+int \hyperlink{classCWidgetEvolution_a9e80d3139c0034444c6c922fc1f5f4f6}{iPopulation}}
+\label{classCWidgetEvolution_a9e80d3139c0034444c6c922fc1f5f4f6}
+
+\begin{DoxyCompactList}\small\item\em population size \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a41eb68a4be2a3166d9b03e3a55947fe3}{
+int \hyperlink{classCWidgetEvolution_a41eb68a4be2a3166d9b03e3a55947fe3}{iStepsCount}}
+\label{classCWidgetEvolution_a41eb68a4be2a3166d9b03e3a55947fe3}
+
+\begin{DoxyCompactList}\small\item\em ca steps count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a7bfd201eac004479650af8616864c1e1}{
+int \hyperlink{classCWidgetEvolution_a7bfd201eac004479650af8616864c1e1}{iCrossoverProb}}
+\label{classCWidgetEvolution_a7bfd201eac004479650af8616864c1e1}
+
+\begin{DoxyCompactList}\small\item\em crossover probability \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_ab77bacec2be3ed2a66dceb3792be26db}{
+int \hyperlink{classCWidgetEvolution_ab77bacec2be3ed2a66dceb3792be26db}{iCrossoverCount}}
+\label{classCWidgetEvolution_ab77bacec2be3ed2a66dceb3792be26db}
+
+\begin{DoxyCompactList}\small\item\em crossovers count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a9b13d39ed478b4d585b8d4ca04fe5e01}{
+int \hyperlink{classCWidgetEvolution_a9b13d39ed478b4d585b8d4ca04fe5e01}{iMutationProb}}
+\label{classCWidgetEvolution_a9b13d39ed478b4d585b8d4ca04fe5e01}
+
+\begin{DoxyCompactList}\small\item\em mutation probability \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_ada433fe773781ca9d1d00a42d88beb1c}{
+int \hyperlink{classCWidgetEvolution_ada433fe773781ca9d1d00a42d88beb1c}{iMutationCount}}
+\label{classCWidgetEvolution_ada433fe773781ca9d1d00a42d88beb1c}
+
+\begin{DoxyCompactList}\small\item\em mutations count \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_aa68ab370d8e042de65d1701b945a70d6}{
+int \hyperlink{classCWidgetEvolution_aa68ab370d8e042de65d1701b945a70d6}{iMoveDir}}
+\label{classCWidgetEvolution_aa68ab370d8e042de65d1701b945a70d6}
+
+\begin{DoxyCompactList}\small\item\em movement direction \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_ac4271dfb95f40221d981163e202660d5}{
+int \hyperlink{classCWidgetEvolution_ac4271dfb95f40221d981163e202660d5}{iMoveDis}}
+\label{classCWidgetEvolution_ac4271dfb95f40221d981163e202660d5}
+
+\begin{DoxyCompactList}\small\item\em movement distance \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a354871e0e6022ef92292013a16eba9af}{
+int \hyperlink{classCWidgetEvolution_a354871e0e6022ef92292013a16eba9af}{iGenomeType}}
+\label{classCWidgetEvolution_a354871e0e6022ef92292013a16eba9af}
+
+\begin{DoxyCompactList}\small\item\em genome type -\/ 5nbh $|$$|$ 9nbh \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a25ad07548c0e42f5c0d6d5a364aa8b99}{
+bool \hyperlink{classCWidgetEvolution_a25ad07548c0e42f5c0d6d5a364aa8b99}{bApplyed}}
+\label{classCWidgetEvolution_a25ad07548c0e42f5c0d6d5a364aa8b99}
+
+\begin{DoxyCompactList}\small\item\em is this widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a6ae29a4d8d850332cce0c4bdaef09a33}{
+bool \hyperlink{classCWidgetEvolution_a6ae29a4d8d850332cce0c4bdaef09a33}{bInitDone}}
+\label{classCWidgetEvolution_a6ae29a4d8d850332cce0c4bdaef09a33}
+
+\begin{DoxyCompactList}\small\item\em is app core init? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a97b2a7c1047952f147025ed2a44d1b75}{
+QString \hyperlink{classCWidgetEvolution_a97b2a7c1047952f147025ed2a44d1b75}{importFile}}
+\label{classCWidgetEvolution_a97b2a7c1047952f147025ed2a44d1b75}
+
+\begin{DoxyCompactList}\small\item\em path/name to ga import file \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a84cb3c7dd3d052de094c1a306b473395}{
+bool \hyperlink{classCWidgetEvolution_a84cb3c7dd3d052de094c1a306b473395}{bImportFileEnabledSimulation}}
+\label{classCWidgetEvolution_a84cb3c7dd3d052de094c1a306b473395}
+
+\begin{DoxyCompactList}\small\item\em should be imported genome used for simulation? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWidgetEvolution_a8bdd4c21118cc14b35a9c24c44357401}{
+bool \hyperlink{classCWidgetEvolution_a8bdd4c21118cc14b35a9c24c44357401}{bImportFileEnabledReevolve}}
+\label{classCWidgetEvolution_a8bdd4c21118cc14b35a9c24c44357401}
+
+\begin{DoxyCompactList}\small\item\em should be imported genome used for reevolution? \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+settings of evolution and movement of object 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWidgetEvolution_acc38dd902ec3ce3f9841e421d8df67e3}{
+\index{CWidgetEvolution@{CWidgetEvolution}!CWidgetEvolution@{CWidgetEvolution}}
+\index{CWidgetEvolution@{CWidgetEvolution}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{CWidgetEvolution}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetEvolution::CWidgetEvolution (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWidgetEvolution_acc38dd902ec3ce3f9841e421d8df67e3}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent widget \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a367c1cdbb1c2ca9a07bc849aefb72dde}{
+\index{CWidgetEvolution@{CWidgetEvolution}!$\sim$CWidgetEvolution@{$\sim$CWidgetEvolution}}
+\index{$\sim$CWidgetEvolution@{$\sim$CWidgetEvolution}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{$\sim$CWidgetEvolution}]{\setlength{\rightskip}{0pt plus 5cm}CWidgetEvolution::$\sim$CWidgetEvolution ()}}
+\label{classCWidgetEvolution_a367c1cdbb1c2ca9a07bc849aefb72dde}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWidgetEvolution_a12c4341a31c05a4311af2de591575845}{
+\index{CWidgetEvolution@{CWidgetEvolution}!ApplyPressed@{ApplyPressed}}
+\index{ApplyPressed@{ApplyPressed}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{ApplyPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::ApplyPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a12c4341a31c05a4311af2de591575845}
+when apply is pressed disable all functional tools in widget \hypertarget{classCWidgetEvolution_ae8cd94dd178c48cd41e51fd37df02606}{
+\index{CWidgetEvolution@{CWidgetEvolution}!CancelPressed@{CancelPressed}}
+\index{CancelPressed@{CancelPressed}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{CancelPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::CancelPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_ae8cd94dd178c48cd41e51fd37df02606}
+when cancel is pressed, enable all functional tools in widget \hypertarget{classCWidgetEvolution_ac15f1ad2dbe291bfbc5ac6a815d03820}{
+\index{CWidgetEvolution@{CWidgetEvolution}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWidgetEvolution_ac15f1ad2dbe291bfbc5ac6a815d03820}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a813da70b11446896d8b03f2bc7c5eb35}{
+\index{CWidgetEvolution@{CWidgetEvolution}!CrossoverCountChanged@{CrossoverCountChanged}}
+\index{CrossoverCountChanged@{CrossoverCountChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{CrossoverCountChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::CrossoverCountChanged (int {\em cc})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a813da70b11446896d8b03f2bc7c5eb35}
+crossover count spinbox was changed -\/ set new crossover count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a0cf06a851852dd39ce709869188e6abd}{
+\index{CWidgetEvolution@{CWidgetEvolution}!CrossoverProbChanged@{CrossoverProbChanged}}
+\index{CrossoverProbChanged@{CrossoverProbChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{CrossoverProbChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::CrossoverProbChanged (int {\em cp})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a0cf06a851852dd39ce709869188e6abd}
+crossover probability spinbox was changed -\/ set new crossover prob
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cp}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a3c80054e331df0db4a19ba444a82bd53}{
+\index{CWidgetEvolution@{CWidgetEvolution}!DirectionChanged@{DirectionChanged}}
+\index{DirectionChanged@{DirectionChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{DirectionChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::DirectionChanged (int {\em d})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a3c80054e331df0db4a19ba444a82bd53}
+direction combobox was changed -\/ set new direction
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em d}]new value from combobox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a5e155a1df2cbf7ec7b4e0ac94d8596a2}{
+\index{CWidgetEvolution@{CWidgetEvolution}!DistanceChanged@{DistanceChanged}}
+\index{DistanceChanged@{DistanceChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{DistanceChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::DistanceChanged (int {\em d})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a5e155a1df2cbf7ec7b4e0ac94d8596a2}
+distance spinbox was changed -\/ set new distance
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em d}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a8a40de3276109d8b03dc02ef42d8961b}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GenerationsChanged@{GenerationsChanged}}
+\index{GenerationsChanged@{GenerationsChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GenerationsChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::GenerationsChanged (int {\em g})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a8a40de3276109d8b03dc02ef42d8961b}
+generation count spinbox was changed -\/ set new generation count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em g}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a2748148f4fbf4dd9698bde0f9496ae8c}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GenomeTypeChanged@{GenomeTypeChanged}}
+\index{GenomeTypeChanged@{GenomeTypeChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GenomeTypeChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::GenomeTypeChanged (int {\em g})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a2748148f4fbf4dd9698bde0f9496ae8c}
+genome type spinbox was changed -\/ set new genome type
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em g}]new value from combobox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a2e12780109a568cf644e39eb3a197dc8}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetCrossoverCount@{GetCrossoverCount}}
+\index{GetCrossoverCount@{GetCrossoverCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetCrossoverCount}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetCrossoverCount ()}}
+\label{classCWidgetEvolution_a2e12780109a568cf644e39eb3a197dc8}
+returns crossover count \hypertarget{classCWidgetEvolution_aa56437520abf70bfabc084ff03a6741b}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetCrossoverProbability@{GetCrossoverProbability}}
+\index{GetCrossoverProbability@{GetCrossoverProbability}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetCrossoverProbability}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetCrossoverProbability ()}}
+\label{classCWidgetEvolution_aa56437520abf70bfabc084ff03a6741b}
+returns crossover probability \hypertarget{classCWidgetEvolution_a011bcc0709b3086df95eec9129919fe4}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetGenerationsCount@{GetGenerationsCount}}
+\index{GetGenerationsCount@{GetGenerationsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetGenerationsCount}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetGenerationsCount ()}}
+\label{classCWidgetEvolution_a011bcc0709b3086df95eec9129919fe4}
+returns generations count \hypertarget{classCWidgetEvolution_a6fbf46c23f78d22d382e6ae0b02d97bd}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetGenomeType@{GetGenomeType}}
+\index{GetGenomeType@{GetGenomeType}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetGenomeType}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetGenomeType ()}}
+\label{classCWidgetEvolution_a6fbf46c23f78d22d382e6ae0b02d97bd}
+returns genome type \hypertarget{classCWidgetEvolution_a29e080891a238ae764150e625151d132}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetImportGenomeFile@{GetImportGenomeFile}}
+\index{GetImportGenomeFile@{GetImportGenomeFile}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetImportGenomeFile}]{\setlength{\rightskip}{0pt plus 5cm}QString CWidgetEvolution::GetImportGenomeFile ()}}
+\label{classCWidgetEvolution_a29e080891a238ae764150e625151d132}
+returns path/name of imported file \hypertarget{classCWidgetEvolution_a93068c5f3e07a982485cd7a12647905f}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetMoveDirection@{GetMoveDirection}}
+\index{GetMoveDirection@{GetMoveDirection}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetMoveDirection}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetMoveDirection ()}}
+\label{classCWidgetEvolution_a93068c5f3e07a982485cd7a12647905f}
+returns movement direction \hypertarget{classCWidgetEvolution_abc656941aa35fbed538c057939bd6126}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetMoveDistance@{GetMoveDistance}}
+\index{GetMoveDistance@{GetMoveDistance}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetMoveDistance}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetMoveDistance ()}}
+\label{classCWidgetEvolution_abc656941aa35fbed538c057939bd6126}
+returns movement distance \hypertarget{classCWidgetEvolution_a678de75bb460f47bd264e8f7204239dc}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetMutationCount@{GetMutationCount}}
+\index{GetMutationCount@{GetMutationCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetMutationCount}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetMutationCount ()}}
+\label{classCWidgetEvolution_a678de75bb460f47bd264e8f7204239dc}
+returns mutation count \hypertarget{classCWidgetEvolution_a5880bb761b37c1cdf3e9bed2def2a88b}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetMutationProbability@{GetMutationProbability}}
+\index{GetMutationProbability@{GetMutationProbability}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetMutationProbability}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetMutationProbability ()}}
+\label{classCWidgetEvolution_a5880bb761b37c1cdf3e9bed2def2a88b}
+returns mutation probability \hypertarget{classCWidgetEvolution_a73c50aad4c50e16931ffe9e82e8c1ddd}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetPopulationSize@{GetPopulationSize}}
+\index{GetPopulationSize@{GetPopulationSize}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetPopulationSize}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetPopulationSize ()}}
+\label{classCWidgetEvolution_a73c50aad4c50e16931ffe9e82e8c1ddd}
+returns population size \hypertarget{classCWidgetEvolution_ab932d951a5043baf812f8d8b7ba09681}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetRepetitionsCount@{GetRepetitionsCount}}
+\index{GetRepetitionsCount@{GetRepetitionsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetRepetitionsCount}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetRepetitionsCount ()}}
+\label{classCWidgetEvolution_ab932d951a5043baf812f8d8b7ba09681}
+returns repetitions count \hypertarget{classCWidgetEvolution_a311003fd6ff969e460b56c994e3ba3f5}{
+\index{CWidgetEvolution@{CWidgetEvolution}!GetStepsCount@{GetStepsCount}}
+\index{GetStepsCount@{GetStepsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{GetStepsCount}]{\setlength{\rightskip}{0pt plus 5cm}int CWidgetEvolution::GetStepsCount ()}}
+\label{classCWidgetEvolution_a311003fd6ff969e460b56c994e3ba3f5}
+returns steps count \hypertarget{classCWidgetEvolution_a2c27b79baf649227eac32b819874eac2}{
+\index{CWidgetEvolution@{CWidgetEvolution}!ImportFileButtonPressed@{ImportFileButtonPressed}}
+\index{ImportFileButtonPressed@{ImportFileButtonPressed}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{ImportFileButtonPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::ImportFileButtonPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a2c27b79baf649227eac32b819874eac2}
+import genome button is pressed \hypertarget{classCWidgetEvolution_a85d018ad28c22f7b20ecefa82b282313}{
+\index{CWidgetEvolution@{CWidgetEvolution}!ImportFileEnableReevolve@{ImportFileEnableReevolve}}
+\index{ImportFileEnableReevolve@{ImportFileEnableReevolve}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{ImportFileEnableReevolve}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::ImportFileEnableReevolve (int {\em ifer})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a85d018ad28c22f7b20ecefa82b282313}
+re-\/evolve checkbox changed it's state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ifer}]current check state of reevolve checkbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_ab404024a3c67b19e74448fc61a96c1af}{
+\index{CWidgetEvolution@{CWidgetEvolution}!ImportFileEnableSimulation@{ImportFileEnableSimulation}}
+\index{ImportFileEnableSimulation@{ImportFileEnableSimulation}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{ImportFileEnableSimulation}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::ImportFileEnableSimulation (int {\em ifes})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_ab404024a3c67b19e74448fc61a96c1af}
+simulation checkbox changed it's state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ifes}]current check state of simulation checkbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a9d1d32df0aa44d939f778329d1c1408a}{
+\index{CWidgetEvolution@{CWidgetEvolution}!IsApplyed@{IsApplyed}}
+\index{IsApplyed@{IsApplyed}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{IsApplyed}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetEvolution::IsApplyed ()}}
+\label{classCWidgetEvolution_a9d1d32df0aa44d939f778329d1c1408a}
+are settings from this widget applyed \hypertarget{classCWidgetEvolution_a8d75d5c02040eb4946081468f50f09d5}{
+\index{CWidgetEvolution@{CWidgetEvolution}!IsImportGenomeEnabledReevolve@{IsImportGenomeEnabledReevolve}}
+\index{IsImportGenomeEnabledReevolve@{IsImportGenomeEnabledReevolve}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{IsImportGenomeEnabledReevolve}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetEvolution::IsImportGenomeEnabledReevolve ()}}
+\label{classCWidgetEvolution_a8d75d5c02040eb4946081468f50f09d5}
+should be imported genome used for reevolution? \hypertarget{classCWidgetEvolution_a57efe43b895556eedf5fc55cf1bf6e88}{
+\index{CWidgetEvolution@{CWidgetEvolution}!IsImportGenomeEnabledSimulation@{IsImportGenomeEnabledSimulation}}
+\index{IsImportGenomeEnabledSimulation@{IsImportGenomeEnabledSimulation}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{IsImportGenomeEnabledSimulation}]{\setlength{\rightskip}{0pt plus 5cm}bool CWidgetEvolution::IsImportGenomeEnabledSimulation ()}}
+\label{classCWidgetEvolution_a57efe43b895556eedf5fc55cf1bf6e88}
+should be imported genome used in simulation? \hypertarget{classCWidgetEvolution_a26dffc6b20f733569a4b43aa66ffc04a}{
+\index{CWidgetEvolution@{CWidgetEvolution}!MutationCountChanged@{MutationCountChanged}}
+\index{MutationCountChanged@{MutationCountChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{MutationCountChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::MutationCountChanged (int {\em mc})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a26dffc6b20f733569a4b43aa66ffc04a}
+mutation count spinbox was changed -\/ set new mutation count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mc}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_aaf76f3b21dc7558b9d488e747409b66a}{
+\index{CWidgetEvolution@{CWidgetEvolution}!MutationProbChanged@{MutationProbChanged}}
+\index{MutationProbChanged@{MutationProbChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{MutationProbChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::MutationProbChanged (int {\em mp})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_aaf76f3b21dc7558b9d488e747409b66a}
+mutation probability spinbox was changed -\/ set new mutation prob
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mp}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a1931e0c63052127070ecd8ad86f87530}{
+\index{CWidgetEvolution@{CWidgetEvolution}!PopulationChanged@{PopulationChanged}}
+\index{PopulationChanged@{PopulationChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{PopulationChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::PopulationChanged (int {\em p})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a1931e0c63052127070ecd8ad86f87530}
+population size spinbox was changed -\/ set new popluation size
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a4a2344ac3739e3c9360dd3b1ede65dda}{
+\index{CWidgetEvolution@{CWidgetEvolution}!RepetitionsChanged@{RepetitionsChanged}}
+\index{RepetitionsChanged@{RepetitionsChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{RepetitionsChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::RepetitionsChanged (int {\em r})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_a4a2344ac3739e3c9360dd3b1ede65dda}
+repetitions spinbox was changed -\/ set new repetitions
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]new value from spinbox \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_ad4d552bfa2b441f1f0b8f78343a131e7}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetCrossoverCount@{SetCrossoverCount}}
+\index{SetCrossoverCount@{SetCrossoverCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetCrossoverCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetCrossoverCount (int {\em cc})}}
+\label{classCWidgetEvolution_ad4d552bfa2b441f1f0b8f78343a131e7}
+sets crossover count -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]new crossover count \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a57c5a52ca97a082b05e9fa6738453a75}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetCrossoverProbability@{SetCrossoverProbability}}
+\index{SetCrossoverProbability@{SetCrossoverProbability}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetCrossoverProbability}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetCrossoverProbability (int {\em cp})}}
+\label{classCWidgetEvolution_a57c5a52ca97a082b05e9fa6738453a75}
+sets crossover probability -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cp}]new crossover probability \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_ac37ef6a70355a7c15b3861a2e4112a96}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetGenerationsCount@{SetGenerationsCount}}
+\index{SetGenerationsCount@{SetGenerationsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetGenerationsCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetGenerationsCount (int {\em gc})}}
+\label{classCWidgetEvolution_ac37ef6a70355a7c15b3861a2e4112a96}
+sets generations count -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em gc}]new generation count \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_ac81c258deaf2e7e58c197ec9e729fae1}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetGenomeType@{SetGenomeType}}
+\index{SetGenomeType@{SetGenomeType}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetGenomeType}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetGenomeType (int {\em gt})}}
+\label{classCWidgetEvolution_ac81c258deaf2e7e58c197ec9e729fae1}
+sets genome type -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em gt}]new genome type \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_aeb3ae4928b09eed819d3c3e7562848ac}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetInitDone@{SetInitDone}}
+\index{SetInitDone@{SetInitDone}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetInitDone (bool {\em id})}}
+\label{classCWidgetEvolution_aeb3ae4928b09eed819d3c3e7562848ac}
+button init changed state -\/ enable/disable any changes in widget \hypertarget{classCWidgetEvolution_a0d953499ba4929e231f649881e8324f9}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetMoveDirection@{SetMoveDirection}}
+\index{SetMoveDirection@{SetMoveDirection}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetMoveDirection}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetMoveDirection (int {\em md})}}
+\label{classCWidgetEvolution_a0d953499ba4929e231f649881e8324f9}
+sets direction -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em md}]new direction \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a62380d2dc516f8c8da4448a2129f2de7}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetMoveDistance@{SetMoveDistance}}
+\index{SetMoveDistance@{SetMoveDistance}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetMoveDistance}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetMoveDistance (int {\em md})}}
+\label{classCWidgetEvolution_a62380d2dc516f8c8da4448a2129f2de7}
+sets distance -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em md}]new distance \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a568011dcfe6bdb00e24eca8b905dc486}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetMutationCount@{SetMutationCount}}
+\index{SetMutationCount@{SetMutationCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetMutationCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetMutationCount (int {\em mc})}}
+\label{classCWidgetEvolution_a568011dcfe6bdb00e24eca8b905dc486}
+sets mutation count -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mc}]new mutation count \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_ab4f774d3c732bab25a981cf09690c279}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetMutationProbability@{SetMutationProbability}}
+\index{SetMutationProbability@{SetMutationProbability}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetMutationProbability}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetMutationProbability (int {\em mp})}}
+\label{classCWidgetEvolution_ab4f774d3c732bab25a981cf09690c279}
+sets mutation probability -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mp}]new mutation probability \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a75cdaa493580c52f979f91c37f55e288}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetPopulationSize@{SetPopulationSize}}
+\index{SetPopulationSize@{SetPopulationSize}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetPopulationSize}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetPopulationSize (int {\em ps})}}
+\label{classCWidgetEvolution_a75cdaa493580c52f979f91c37f55e288}
+sets population size -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ps}]new population size \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a3e5d42568af5ae95dd8d6c23ffa3d8a6}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetRepetitionsCount@{SetRepetitionsCount}}
+\index{SetRepetitionsCount@{SetRepetitionsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetRepetitionsCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetRepetitionsCount (int {\em rc})}}
+\label{classCWidgetEvolution_a3e5d42568af5ae95dd8d6c23ffa3d8a6}
+sets repetitions -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rc}]new repetitions count \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_a86ca9aaaa80695bb4c70347d971a76d5}{
+\index{CWidgetEvolution@{CWidgetEvolution}!SetStepsCount@{SetStepsCount}}
+\index{SetStepsCount@{SetStepsCount}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{SetStepsCount}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::SetStepsCount (int {\em sc})}}
+\label{classCWidgetEvolution_a86ca9aaaa80695bb4c70347d971a76d5}
+sets steps count -\/ used as extern call -\/ when settings are loaded from file
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sc}]new steps count \end{DoxyParams}
+\hypertarget{classCWidgetEvolution_adcbaead4616e9947c5b0697677af0c20}{
+\index{CWidgetEvolution@{CWidgetEvolution}!StepsChanged@{StepsChanged}}
+\index{StepsChanged@{StepsChanged}!CWidgetEvolution@{CWidgetEvolution}}
+\subsubsection[{StepsChanged}]{\setlength{\rightskip}{0pt plus 5cm}void CWidgetEvolution::StepsChanged (int {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWidgetEvolution_adcbaead4616e9947c5b0697677af0c20}
+steps count spinbox was changed -\/ set new steps count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]new value from spinbox \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WidgetEvolution.h\item 
+WidgetEvolution.cpp\end{DoxyCompactItemize}

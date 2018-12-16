@@ -1,0 +1,307 @@
+\hypertarget{classCCore}{
+\section{CCore Class Reference}
+\label{classCCore}\index{CCore@{CCore}}
+}
+
+
+{\ttfamily \#include $<$Core.h$>$}\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCore_a511dd9be6e5a240b61bcab23bc70b322}{
+void {\bfseries SignalThreadCoreErr} (int)}
+\label{classCCore_a511dd9be6e5a240b61bcab23bc70b322}
+
+\item 
+\hypertarget{classCCore_a03dfcdbafa0ec6fd8d608c9b8136dde9}{
+void {\bfseries SignalThreadCoreState} (int)}
+\label{classCCore_a03dfcdbafa0ec6fd8d608c9b8136dde9}
+
+\item 
+\hypertarget{classCCore_a963de9336a447139f8961ed4790d4d8f}{
+void {\bfseries SignalNewDataAvailable} ()}
+\label{classCCore_a963de9336a447139f8961ed4790d4d8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCore_a4c7b83e9a0113f0d4eb0c1d86e6d6be7}{CCore} ()
+\item 
+\hyperlink{classCCore_ad0d1b93c70b1225137690ecb205d49bd}{$\sim$CCore} ()
+\item 
+void \hyperlink{classCCore_abf803abecd356eca5edff06f3ca6be33}{InitGuiCore} ()
+\item 
+void \hyperlink{classCCore_ae2e68df5908b34b15106820fde4d4de1}{SetCoreDataExpiration} (bool e)
+\item 
+void \hyperlink{classCCore_abe4809ea8ec654371e2a412ecbc057ee}{SetSimulationRunning} (bool sr)
+\item 
+void \hyperlink{classCCore_a799587561a1a236c5f62018fb9c7949e}{SetCaRunTermination} ()
+\item 
+void \hyperlink{classCCore_ab23cb1edf937f04342dfbbc7c2e1e45a}{StartThreadCore} ()
+\item 
+bool \hyperlink{classCCore_a9cc1459df131a2757809f13e2af2bf9e}{IsInitDone} ()
+\item 
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCCore_a08ea111ccd738ddbc2d29ec3c9ac3443}{GetConfigCore} ()
+\item 
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCore_a3eebffde003b3ae3e724136521739e12}{GetSpace} ()
+\item 
+int \hyperlink{classCCore_a18ce09c76b45dd18a7932c4832f61300}{GetSimCoreGenerationID} ()
+\item 
+int \hyperlink{classCCore_acad2cd2c8de535f03515281b58c643a6}{GetSimCoreChromosomeID} ()
+\item 
+int \hyperlink{classCCore_ab1b7b2beb189d420eac4f2af40d883c2}{GetSimCoreAncestorsCount} ()
+\item 
+int \hyperlink{classCCore_a0de6196e934c38a12fd26875b5e020be}{GetSimCoreFitnessMax} ()
+\item 
+double \hyperlink{classCCore_a383218fe410dd8425ede9772277e708f}{GetSimCoreFitnessMaxNorm} ()
+\item 
+int \hyperlink{classCCore_a15daf074c713232f20f772b20098e716}{GetSimCoreDifferentionMin} ()
+\item 
+int \hyperlink{classCCore_a974f6f52d6cb6362718c7e1a06a767c9}{GetSimCoreFitMaxStepCA} ()
+\item 
+int \hyperlink{classCCore_a07b0206d4fc75b23bd8da7660d8efc1a}{GetSimCoreSameChromosomesCount} ()
+\item 
+double \hyperlink{classCCore_aa6634f29c320ed9110ce82eed156b05d}{GetSimCoreSameChromosomesGenerationAvarage} ()
+\item 
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} $\ast$ \hyperlink{classCCore_a4ddbbc5f50ff19b2d2b9095792b648a6}{GetSimCoreDataStruct} ()
+\item 
+int \hyperlink{classCCore_a86ddf9496601836d1dae7432279fd044}{GetErrorFlag} ()
+\item 
+void \hyperlink{classCCore_ae836cfc9a5b1d30a093cc92c7e0f825b}{ShowDebugConfigCore} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCCore_a8da26ce21ea70fb3c31978e6d2fce17e}{ThreadCoreErrorSlot} (int err)
+\item 
+void \hyperlink{classCCore_a201541672b99640948959c4022f8cda4}{ThreadCoreCheckCoreInitDone} ()
+\item 
+void \hyperlink{classCCore_a05760021352ea7bdb7304d7d0f2a61eb}{ThreadCoreNewDataAvailable} ()
+\item 
+void \hyperlink{classCCore_a6b1594d8d1a21121d0db95c5e9a8fabd}{ThreadCoreState} (int s)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCore_a88cfee1f612c96f3bfede6a20ca5cabd}{
+\hyperlink{classCConfigCore}{CConfigCore} \hyperlink{classCCore_a88cfee1f612c96f3bfede6a20ca5cabd}{configCore}}
+\label{classCCore_a88cfee1f612c96f3bfede6a20ca5cabd}
+
+\begin{DoxyCompactList}\small\item\em config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a6813b6f89b401a896381a19b04fc509a}{
+bool \hyperlink{classCCore_a6813b6f89b401a896381a19b04fc509a}{bCoreDataExpired}}
+\label{classCCore_a6813b6f89b401a896381a19b04fc509a}
+
+\begin{DoxyCompactList}\small\item\em are data from this class already displayed in gui? \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_ad0b15abbb2cfc189f6639b1e45041a6d}{
+bool \hyperlink{classCCore_ad0b15abbb2cfc189f6639b1e45041a6d}{bSimRunning}}
+\label{classCCore_ad0b15abbb2cfc189f6639b1e45041a6d}
+
+\begin{DoxyCompactList}\small\item\em should be evolution running? \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_ad6381478361c75e7be735b6003e45dbd}{
+bool \hyperlink{classCCore_ad6381478361c75e7be735b6003e45dbd}{bInitDone}}
+\label{classCCore_ad6381478361c75e7be735b6003e45dbd}
+
+\begin{DoxyCompactList}\small\item\em is init done? \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_ad744c98c0206358039db24d89a26e913}{
+\hyperlink{classCSpace}{CSpace} $\ast$ \hyperlink{classCCore_ad744c98c0206358039db24d89a26e913}{space}}
+\label{classCCore_ad744c98c0206358039db24d89a26e913}
+
+\begin{DoxyCompactList}\small\item\em pointer to ca space class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a20b827bf2dafe610e9a5228eb9c6e7ae}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCCore_a20b827bf2dafe610e9a5228eb9c6e7ae}{genome}}
+\label{classCCore_a20b827bf2dafe610e9a5228eb9c6e7ae}
+
+\begin{DoxyCompactList}\small\item\em pointer to genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a2699b566011cda9d1f69f36c734811ea}{
+struct \hyperlink{structstThreadCoreDataGA}{stThreadCoreDataGA} \hyperlink{classCCore_a2699b566011cda9d1f69f36c734811ea}{dataGa}}
+\label{classCCore_a2699b566011cda9d1f69f36c734811ea}
+
+\begin{DoxyCompactList}\small\item\em ga data struct used for propagating data from thread core into gui \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a36b1cf10df7c1d3bd036d69a109ae81b}{
+QMutex \hyperlink{classCCore_a36b1cf10df7c1d3bd036d69a109ae81b}{mutexCore}}
+\label{classCCore_a36b1cf10df7c1d3bd036d69a109ae81b}
+
+\begin{DoxyCompactList}\small\item\em mutex used for sync gui thread (in which this class runs) with \hyperlink{classCThreadCore}{CThreadCore} thread \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_abf4a4a3ebe49dc69c3c27dd545aa4606}{
+QWaitCondition \hyperlink{classCCore_abf4a4a3ebe49dc69c3c27dd545aa4606}{waitCCore}}
+\label{classCCore_abf4a4a3ebe49dc69c3c27dd545aa4606}
+
+\begin{DoxyCompactList}\small\item\em wait cond used for sync gui thread (in which this class runs) with \hyperlink{classCThreadCore}{CThreadCore} thread \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a06fcd7735c831f7dcf1e855313dab8a5}{
+\hyperlink{classCThreadCore}{CThreadCore} $\ast$ \hyperlink{classCCore_a06fcd7735c831f7dcf1e855313dab8a5}{threadCore}}
+\label{classCCore_a06fcd7735c831f7dcf1e855313dab8a5}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of thread core class \item\end{DoxyCompactList}\item 
+\hypertarget{classCCore_a0d7dcc59aa4cde53f4edc7006e45a2c6}{
+int \hyperlink{classCCore_a0d7dcc59aa4cde53f4edc7006e45a2c6}{iErrFlag}}
+\label{classCCore_a0d7dcc59aa4cde53f4edc7006e45a2c6}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this is special class -\/ is used as mediator between gui classes and \hyperlink{classCThreadCore}{CThreadCore} -\/ computation class this class solves thread sync between gui and core core send data from ga and ca to this class, this class then tell gui, that new data arrived and gui then copy this data and displays them, last step is, that gui tells this class, that data are displayed, this class send this info to core, so core will know, that can send new data
+
+this class is created when \char`\"{}Init\char`\"{} button is pressed and deleted when \char`\"{}Delete\char`\"{} button is pressed when init button is pressed, this class creates \hyperlink{classCThreadCore}{CThreadCore} and propagate sync pointers to it when delete is pressed this class kills compute core thread 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCore_a4c7b83e9a0113f0d4eb0c1d86e6d6be7}{
+\index{CCore@{CCore}!CCore@{CCore}}
+\index{CCore@{CCore}!CCore@{CCore}}
+\subsubsection[{CCore}]{\setlength{\rightskip}{0pt plus 5cm}CCore::CCore ()}}
+\label{classCCore_a4c7b83e9a0113f0d4eb0c1d86e6d6be7}
+class constructor \hypertarget{classCCore_ad0d1b93c70b1225137690ecb205d49bd}{
+\index{CCore@{CCore}!$\sim$CCore@{$\sim$CCore}}
+\index{$\sim$CCore@{$\sim$CCore}!CCore@{CCore}}
+\subsubsection[{$\sim$CCore}]{\setlength{\rightskip}{0pt plus 5cm}CCore::$\sim$CCore ()}}
+\label{classCCore_ad0d1b93c70b1225137690ecb205d49bd}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCore_a08ea111ccd738ddbc2d29ec3c9ac3443}{
+\index{CCore@{CCore}!GetConfigCore@{GetConfigCore}}
+\index{GetConfigCore@{GetConfigCore}!CCore@{CCore}}
+\subsubsection[{GetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CConfigCore} $\ast$ CCore::GetConfigCore ()}}
+\label{classCCore_a08ea111ccd738ddbc2d29ec3c9ac3443}
+return pointer to config class \hypertarget{classCCore_a86ddf9496601836d1dae7432279fd044}{
+\index{CCore@{CCore}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CCore@{CCore}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetErrorFlag ()}}
+\label{classCCore_a86ddf9496601836d1dae7432279fd044}
+returns erro flag \hypertarget{classCCore_ab1b7b2beb189d420eac4f2af40d883c2}{
+\index{CCore@{CCore}!GetSimCoreAncestorsCount@{GetSimCoreAncestorsCount}}
+\index{GetSimCoreAncestorsCount@{GetSimCoreAncestorsCount}!CCore@{CCore}}
+\subsubsection[{GetSimCoreAncestorsCount}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreAncestorsCount ()}}
+\label{classCCore_ab1b7b2beb189d420eac4f2af40d883c2}
+return ga data -\/ genome's ancestor count \hypertarget{classCCore_acad2cd2c8de535f03515281b58c643a6}{
+\index{CCore@{CCore}!GetSimCoreChromosomeID@{GetSimCoreChromosomeID}}
+\index{GetSimCoreChromosomeID@{GetSimCoreChromosomeID}!CCore@{CCore}}
+\subsubsection[{GetSimCoreChromosomeID}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreChromosomeID ()}}
+\label{classCCore_acad2cd2c8de535f03515281b58c643a6}
+return ga data -\/ genome's id \hypertarget{classCCore_a4ddbbc5f50ff19b2d2b9095792b648a6}{
+\index{CCore@{CCore}!GetSimCoreDataStruct@{GetSimCoreDataStruct}}
+\index{GetSimCoreDataStruct@{GetSimCoreDataStruct}!CCore@{CCore}}
+\subsubsection[{GetSimCoreDataStruct}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf stThreadCoreDataGA} $\ast$ CCore::GetSimCoreDataStruct ()\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{classCCore_a4ddbbc5f50ff19b2d2b9095792b648a6}
+returns pointer to ga data struct \hypertarget{classCCore_a15daf074c713232f20f772b20098e716}{
+\index{CCore@{CCore}!GetSimCoreDifferentionMin@{GetSimCoreDifferentionMin}}
+\index{GetSimCoreDifferentionMin@{GetSimCoreDifferentionMin}!CCore@{CCore}}
+\subsubsection[{GetSimCoreDifferentionMin}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreDifferentionMin ()}}
+\label{classCCore_a15daf074c713232f20f772b20098e716}
+return ga data -\/ genome's minimum differention \hypertarget{classCCore_a974f6f52d6cb6362718c7e1a06a767c9}{
+\index{CCore@{CCore}!GetSimCoreFitMaxStepCA@{GetSimCoreFitMaxStepCA}}
+\index{GetSimCoreFitMaxStepCA@{GetSimCoreFitMaxStepCA}!CCore@{CCore}}
+\subsubsection[{GetSimCoreFitMaxStepCA}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreFitMaxStepCA ()}}
+\label{classCCore_a974f6f52d6cb6362718c7e1a06a767c9}
+return ga data -\/ ca step with max fitness \hypertarget{classCCore_a0de6196e934c38a12fd26875b5e020be}{
+\index{CCore@{CCore}!GetSimCoreFitnessMax@{GetSimCoreFitnessMax}}
+\index{GetSimCoreFitnessMax@{GetSimCoreFitnessMax}!CCore@{CCore}}
+\subsubsection[{GetSimCoreFitnessMax}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreFitnessMax ()}}
+\label{classCCore_a0de6196e934c38a12fd26875b5e020be}
+return ga data -\/ genome's maximum fitness \hypertarget{classCCore_a383218fe410dd8425ede9772277e708f}{
+\index{CCore@{CCore}!GetSimCoreFitnessMaxNorm@{GetSimCoreFitnessMaxNorm}}
+\index{GetSimCoreFitnessMaxNorm@{GetSimCoreFitnessMaxNorm}!CCore@{CCore}}
+\subsubsection[{GetSimCoreFitnessMaxNorm}]{\setlength{\rightskip}{0pt plus 5cm}double CCore::GetSimCoreFitnessMaxNorm ()}}
+\label{classCCore_a383218fe410dd8425ede9772277e708f}
+return ga data -\/ genome's maximum fitness \hypertarget{classCCore_a18ce09c76b45dd18a7932c4832f61300}{
+\index{CCore@{CCore}!GetSimCoreGenerationID@{GetSimCoreGenerationID}}
+\index{GetSimCoreGenerationID@{GetSimCoreGenerationID}!CCore@{CCore}}
+\subsubsection[{GetSimCoreGenerationID}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreGenerationID ()}}
+\label{classCCore_a18ce09c76b45dd18a7932c4832f61300}
+return ga data -\/ genome's generation id \hypertarget{classCCore_a07b0206d4fc75b23bd8da7660d8efc1a}{
+\index{CCore@{CCore}!GetSimCoreSameChromosomesCount@{GetSimCoreSameChromosomesCount}}
+\index{GetSimCoreSameChromosomesCount@{GetSimCoreSameChromosomesCount}!CCore@{CCore}}
+\subsubsection[{GetSimCoreSameChromosomesCount}]{\setlength{\rightskip}{0pt plus 5cm}int CCore::GetSimCoreSameChromosomesCount ()}}
+\label{classCCore_a07b0206d4fc75b23bd8da7660d8efc1a}
+return ga data -\/ count of genomes with same fitness \hypertarget{classCCore_aa6634f29c320ed9110ce82eed156b05d}{
+\index{CCore@{CCore}!GetSimCoreSameChromosomesGenerationAvarage@{GetSimCoreSameChromosomesGenerationAvarage}}
+\index{GetSimCoreSameChromosomesGenerationAvarage@{GetSimCoreSameChromosomesGenerationAvarage}!CCore@{CCore}}
+\subsubsection[{GetSimCoreSameChromosomesGenerationAvarage}]{\setlength{\rightskip}{0pt plus 5cm}double CCore::GetSimCoreSameChromosomesGenerationAvarage ()}}
+\label{classCCore_aa6634f29c320ed9110ce82eed156b05d}
+return ga data -\/ avarage generation of \char`\"{}same\char`\"{} genomes \hypertarget{classCCore_a3eebffde003b3ae3e724136521739e12}{
+\index{CCore@{CCore}!GetSpace@{GetSpace}}
+\index{GetSpace@{GetSpace}!CCore@{CCore}}
+\subsubsection[{GetSpace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpace} $\ast$ CCore::GetSpace ()}}
+\label{classCCore_a3eebffde003b3ae3e724136521739e12}
+returns pointer to ca space class \hypertarget{classCCore_abf803abecd356eca5edff06f3ca6be33}{
+\index{CCore@{CCore}!InitGuiCore@{InitGuiCore}}
+\index{InitGuiCore@{InitGuiCore}!CCore@{CCore}}
+\subsubsection[{InitGuiCore}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::InitGuiCore ()}}
+\label{classCCore_abf803abecd356eca5edff06f3ca6be33}
+inits \hyperlink{classCCore}{CCore} and core thread \hyperlink{classCThreadCore}{CThreadCore} propagates dat from this class into \hyperlink{classCThreadCore}{CThreadCore} data from gui are propagated to this class from gui functions \hypertarget{classCCore_a9cc1459df131a2757809f13e2af2bf9e}{
+\index{CCore@{CCore}!IsInitDone@{IsInitDone}}
+\index{IsInitDone@{IsInitDone}!CCore@{CCore}}
+\subsubsection[{IsInitDone}]{\setlength{\rightskip}{0pt plus 5cm}bool CCore::IsInitDone ()}}
+\label{classCCore_a9cc1459df131a2757809f13e2af2bf9e}
+returns if init is done and ok \hypertarget{classCCore_a799587561a1a236c5f62018fb9c7949e}{
+\index{CCore@{CCore}!SetCaRunTermination@{SetCaRunTermination}}
+\index{SetCaRunTermination@{SetCaRunTermination}!CCore@{CCore}}
+\subsubsection[{SetCaRunTermination}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::SetCaRunTermination ()}}
+\label{classCCore_a799587561a1a236c5f62018fb9c7949e}
+sets state var shich tells core, that user pressed button \char`\"{}Terminate\char`\"{} for terminating ca simulator \hypertarget{classCCore_ae2e68df5908b34b15106820fde4d4de1}{
+\index{CCore@{CCore}!SetCoreDataExpiration@{SetCoreDataExpiration}}
+\index{SetCoreDataExpiration@{SetCoreDataExpiration}!CCore@{CCore}}
+\subsubsection[{SetCoreDataExpiration}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::SetCoreDataExpiration (bool {\em e})}}
+\label{classCCore_ae2e68df5908b34b15106820fde4d4de1}
+sets state var, which tells core, that data from this class was already displayed in gui, so new data can be propagete to this class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]are core's data expered? (already showed in gui) \end{DoxyParams}
+\hypertarget{classCCore_abe4809ea8ec654371e2a412ecbc057ee}{
+\index{CCore@{CCore}!SetSimulationRunning@{SetSimulationRunning}}
+\index{SetSimulationRunning@{SetSimulationRunning}!CCore@{CCore}}
+\subsubsection[{SetSimulationRunning}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::SetSimulationRunning (bool {\em sr})}}
+\label{classCCore_abe4809ea8ec654371e2a412ecbc057ee}
+sets state var which tells core, that user pressed button \char`\"{}Evolve\char`\"{} so evolution can start
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sr}]set ThreadCore thread running state \end{DoxyParams}
+\hypertarget{classCCore_ae836cfc9a5b1d30a093cc92c7e0f825b}{
+\index{CCore@{CCore}!ShowDebugConfigCore@{ShowDebugConfigCore}}
+\index{ShowDebugConfigCore@{ShowDebugConfigCore}!CCore@{CCore}}
+\subsubsection[{ShowDebugConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::ShowDebugConfigCore ()}}
+\label{classCCore_ae836cfc9a5b1d30a093cc92c7e0f825b}
+debug INFO \hypertarget{classCCore_ab23cb1edf937f04342dfbbc7c2e1e45a}{
+\index{CCore@{CCore}!StartThreadCore@{StartThreadCore}}
+\index{StartThreadCore@{StartThreadCore}!CCore@{CCore}}
+\subsubsection[{StartThreadCore}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::StartThreadCore ()}}
+\label{classCCore_ab23cb1edf937f04342dfbbc7c2e1e45a}
+starts \hyperlink{classCThreadCore}{CThreadCore} thread, just init part is compute, then thread waits for \char`\"{}Evolve\char`\"{} button to be pressed \hypertarget{classCCore_a201541672b99640948959c4022f8cda4}{
+\index{CCore@{CCore}!ThreadCoreCheckCoreInitDone@{ThreadCoreCheckCoreInitDone}}
+\index{ThreadCoreCheckCoreInitDone@{ThreadCoreCheckCoreInitDone}!CCore@{CCore}}
+\subsubsection[{ThreadCoreCheckCoreInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::ThreadCoreCheckCoreInitDone ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCCore_a201541672b99640948959c4022f8cda4}
+propagates info about thread core init done into gui \hypertarget{classCCore_a8da26ce21ea70fb3c31978e6d2fce17e}{
+\index{CCore@{CCore}!ThreadCoreErrorSlot@{ThreadCoreErrorSlot}}
+\index{ThreadCoreErrorSlot@{ThreadCoreErrorSlot}!CCore@{CCore}}
+\subsubsection[{ThreadCoreErrorSlot}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::ThreadCoreErrorSlot (int {\em err})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCCore_a8da26ce21ea70fb3c31978e6d2fce17e}
+propagates error from core thread into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em err}]error code from signal from core thread \end{DoxyParams}
+\hypertarget{classCCore_a05760021352ea7bdb7304d7d0f2a61eb}{
+\index{CCore@{CCore}!ThreadCoreNewDataAvailable@{ThreadCoreNewDataAvailable}}
+\index{ThreadCoreNewDataAvailable@{ThreadCoreNewDataAvailable}!CCore@{CCore}}
+\subsubsection[{ThreadCoreNewDataAvailable}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::ThreadCoreNewDataAvailable ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCCore_a05760021352ea7bdb7304d7d0f2a61eb}
+tells gui, that new data from thread core are in this class \hypertarget{classCCore_a6b1594d8d1a21121d0db95c5e9a8fabd}{
+\index{CCore@{CCore}!ThreadCoreState@{ThreadCoreState}}
+\index{ThreadCoreState@{ThreadCoreState}!CCore@{CCore}}
+\subsubsection[{ThreadCoreState}]{\setlength{\rightskip}{0pt plus 5cm}void CCore::ThreadCoreState (int {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCCore_a6b1594d8d1a21121d0db95c5e9a8fabd}
+propagates state of thread core into gui
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]core thread state \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Core.h\item 
+Core.cpp\end{DoxyCompactItemize}

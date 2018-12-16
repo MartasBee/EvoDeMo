@@ -1,0 +1,157 @@
+\hypertarget{classCImportConfig}{
+\section{CImportConfig Class Reference}
+\label{classCImportConfig}\index{CImportConfig@{CImportConfig}}
+}
+
+
+{\ttfamily \#include $<$ImportConfig.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCImportConfig_a97be714a5a5005731dc6938243c26796}{CImportConfig} ()
+\item 
+void \hyperlink{classCImportConfig_af4d96bf6b02540218f0210c196361bb3}{ImportConfig} (QString fileName, \hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn, \hyperlink{classCWidgetOutput}{CWidgetOutput} $\ast$widOut, \hyperlink{classCWidgetEvolution}{CWidgetEvolution} $\ast$widEvo, \hyperlink{classCWidgetExport}{CWidgetExport} $\ast$widExp)
+\item 
+int \hyperlink{classCImportConfig_a3a92df143f5a70a40e7c28cbea76b0bd}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCImportConfig_a0397bcf324cc2938b413bfb9670e05a4}{ReadDocStart} ()
+\item 
+void \hyperlink{classCImportConfig_a0b08262d21fcf9995846c599bac9357c}{ReadDocEnd} ()
+\item 
+void \hyperlink{classCImportConfig_ab1d9c03db12994e62f95195f7a280bb9}{ReadSettingsInput} (\hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn)
+\item 
+void \hyperlink{classCImportConfig_a98422fe598b7ef8e64fd583133670566}{ReadSettingsOutput} (\hyperlink{classCWidgetOutput}{CWidgetOutput} $\ast$widOut)
+\item 
+void \hyperlink{classCImportConfig_abf7928fbebdd79cf6334fd0c9c2975bc}{ReadSettingsEvolution} (\hyperlink{classCWidgetEvolution}{CWidgetEvolution} $\ast$widEvo)
+\item 
+void \hyperlink{classCImportConfig_adeba1887e4095c43cc3ea4ada724a75a}{ReadSettingsExport} (\hyperlink{classCWidgetExport}{CWidgetExport} $\ast$widExp)
+\item 
+void \hyperlink{classCImportConfig_a90f26f48dd036015d6dbe9ca70c255df}{ReadSettingsInputCASpace} (\hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn)
+\item 
+void \hyperlink{classCImportConfig_a725b2dfb494c97728b6b53ef8b4d92e9}{SetIODevice} (QIODevice $\ast$\hyperlink{classCImportConfig_ae3c7a8257039bee979ad0380a25986e4}{device})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCImportConfig_ac2d7d78339efb455940399cbe19cef5f}{
+QXmlStreamReader \hyperlink{classCImportConfig_ac2d7d78339efb455940399cbe19cef5f}{xml}}
+\label{classCImportConfig_ac2d7d78339efb455940399cbe19cef5f}
+
+\begin{DoxyCompactList}\small\item\em xml reader \item\end{DoxyCompactList}\item 
+\hypertarget{classCImportConfig_ae3c7a8257039bee979ad0380a25986e4}{
+QIODevice $\ast$ \hyperlink{classCImportConfig_ae3c7a8257039bee979ad0380a25986e4}{device}}
+\label{classCImportConfig_ae3c7a8257039bee979ad0380a25986e4}
+
+\begin{DoxyCompactList}\small\item\em io device -\/ opened file descriptor -\/ for xml class \item\end{DoxyCompactList}\item 
+\hypertarget{classCImportConfig_aac8875dde79755767f78c55753c91e38}{
+int \hyperlink{classCImportConfig_aac8875dde79755767f78c55753c91e38}{iErrFlag}}
+\label{classCImportConfig_aac8875dde79755767f78c55753c91e38}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+imports app's configuration from extern file 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCImportConfig_a97be714a5a5005731dc6938243c26796}{
+\index{CImportConfig@{CImportConfig}!CImportConfig@{CImportConfig}}
+\index{CImportConfig@{CImportConfig}!CImportConfig@{CImportConfig}}
+\subsubsection[{CImportConfig}]{\setlength{\rightskip}{0pt plus 5cm}CImportConfig::CImportConfig ()}}
+\label{classCImportConfig_a97be714a5a5005731dc6938243c26796}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCImportConfig_a3a92df143f5a70a40e7c28cbea76b0bd}{
+\index{CImportConfig@{CImportConfig}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CImportConfig@{CImportConfig}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CImportConfig::GetErrorFlag ()}}
+\label{classCImportConfig_a3a92df143f5a70a40e7c28cbea76b0bd}
+returns error flag \hypertarget{classCImportConfig_af4d96bf6b02540218f0210c196361bb3}{
+\index{CImportConfig@{CImportConfig}!ImportConfig@{ImportConfig}}
+\index{ImportConfig@{ImportConfig}!CImportConfig@{CImportConfig}}
+\subsubsection[{ImportConfig}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ImportConfig (QString {\em fileName}, \/  {\bf CWidgetInput} $\ast$ {\em widIn}, \/  {\bf CWidgetOutput} $\ast$ {\em widOut}, \/  {\bf CWidgetEvolution} $\ast$ {\em widEvo}, \/  {\bf CWidgetExport} $\ast$ {\em widExp})}}
+\label{classCImportConfig_af4d96bf6b02540218f0210c196361bb3}
+function for imprting genome from xml file created by \hyperlink{classCExportGA}{CExportGA} class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]path/name of file \item[{\em $\ast$gen}]pointer to genome class (must exists !!) into which data will be write \end{DoxyParams}
+\hypertarget{classCImportConfig_a0b08262d21fcf9995846c599bac9357c}{
+\index{CImportConfig@{CImportConfig}!ReadDocEnd@{ReadDocEnd}}
+\index{ReadDocEnd@{ReadDocEnd}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadDocEnd}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadDocEnd ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_a0b08262d21fcf9995846c599bac9357c}
+read document's last (closing) tags \hypertarget{classCImportConfig_a0397bcf324cc2938b413bfb9670e05a4}{
+\index{CImportConfig@{CImportConfig}!ReadDocStart@{ReadDocStart}}
+\index{ReadDocStart@{ReadDocStart}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadDocStart}]{\setlength{\rightskip}{0pt plus 5cm}bool CImportConfig::ReadDocStart ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_a0397bcf324cc2938b413bfb9670e05a4}
+read document header for determining if file is compatibile and if genome is compatibile with user settings \hypertarget{classCImportConfig_abf7928fbebdd79cf6334fd0c9c2975bc}{
+\index{CImportConfig@{CImportConfig}!ReadSettingsEvolution@{ReadSettingsEvolution}}
+\index{ReadSettingsEvolution@{ReadSettingsEvolution}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadSettingsEvolution}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadSettingsEvolution ({\bf CWidgetEvolution} $\ast$ {\em widEvo})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_abf7928fbebdd79cf6334fd0c9c2975bc}
+reads evolution settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widEvo}]pointer to widget with evolution settings \end{DoxyParams}
+\hypertarget{classCImportConfig_adeba1887e4095c43cc3ea4ada724a75a}{
+\index{CImportConfig@{CImportConfig}!ReadSettingsExport@{ReadSettingsExport}}
+\index{ReadSettingsExport@{ReadSettingsExport}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadSettingsExport}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadSettingsExport ({\bf CWidgetExport} $\ast$ {\em widExp})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_adeba1887e4095c43cc3ea4ada724a75a}
+reads export settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widExp}]pointer to widget with export settings \end{DoxyParams}
+\hypertarget{classCImportConfig_ab1d9c03db12994e62f95195f7a280bb9}{
+\index{CImportConfig@{CImportConfig}!ReadSettingsInput@{ReadSettingsInput}}
+\index{ReadSettingsInput@{ReadSettingsInput}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadSettingsInput}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadSettingsInput ({\bf CWidgetInput} $\ast$ {\em widIn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_ab1d9c03db12994e62f95195f7a280bb9}
+reads input settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widIn}]pointer to widget with input settings \end{DoxyParams}
+\hypertarget{classCImportConfig_a90f26f48dd036015d6dbe9ca70c255df}{
+\index{CImportConfig@{CImportConfig}!ReadSettingsInputCASpace@{ReadSettingsInputCASpace}}
+\index{ReadSettingsInputCASpace@{ReadSettingsInputCASpace}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadSettingsInputCASpace}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadSettingsInputCASpace ({\bf CWidgetInput} $\ast$ {\em widIn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_a90f26f48dd036015d6dbe9ca70c255df}
+reads input ca space
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widIn}]pointer to widget with input settings \end{DoxyParams}
+\hypertarget{classCImportConfig_a98422fe598b7ef8e64fd583133670566}{
+\index{CImportConfig@{CImportConfig}!ReadSettingsOutput@{ReadSettingsOutput}}
+\index{ReadSettingsOutput@{ReadSettingsOutput}!CImportConfig@{CImportConfig}}
+\subsubsection[{ReadSettingsOutput}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::ReadSettingsOutput ({\bf CWidgetOutput} $\ast$ {\em widOut})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_a98422fe598b7ef8e64fd583133670566}
+reads output settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widIn}]pointer to widget with settings \end{DoxyParams}
+\hypertarget{classCImportConfig_a725b2dfb494c97728b6b53ef8b4d92e9}{
+\index{CImportConfig@{CImportConfig}!SetIODevice@{SetIODevice}}
+\index{SetIODevice@{SetIODevice}!CImportConfig@{CImportConfig}}
+\subsubsection[{SetIODevice}]{\setlength{\rightskip}{0pt plus 5cm}void CImportConfig::SetIODevice (QIODevice $\ast$ {\em device})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCImportConfig_a725b2dfb494c97728b6b53ef8b4d92e9}
+sets IO devide (opened file) in xml class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$device}]pointer to opened file descriptor \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ImportConfig.h\item 
+ImportConfig.cpp\end{DoxyCompactItemize}

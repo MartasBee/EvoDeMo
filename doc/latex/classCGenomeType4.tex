@@ -1,0 +1,75 @@
+\hypertarget{classCGenomeType4}{
+\section{CGenomeType4 Class Reference}
+\label{classCGenomeType4}\index{CGenomeType4@{CGenomeType4}}
+}
+
+
+{\ttfamily \#include $<$GenomeType4.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGenomeType4_a48a81653decfdcd49be75fcefb8b9631}{CGenomeType4} ()
+\item 
+\hyperlink{classCGenomeType4_ace78f82cd5544971117f518012f34901}{CGenomeType4} (const \hyperlink{classCGenomeType4}{CGenomeType4} \&rSide)
+\item 
+void \hyperlink{classCGenomeType4_a1add0c5bed39e85a32e3a00ea2809032}{SetGene} (int index, BYTE gene)
+\item 
+BYTE \hyperlink{classCGenomeType4_a8d55be3eefbd0e6451d385b231c8c96a}{GetGene} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGenomeType4_afd4f07598a9a035fa1aa11716c66329a}{
+std::bitset$<$ GENOME\_\-SIZE\_\-BITS\_\-TYPE\_\-4\_\-9N $>$ \hyperlink{classCGenomeType4_afd4f07598a9a035fa1aa11716c66329a}{genome}}
+\label{classCGenomeType4_afd4f07598a9a035fa1aa11716c66329a}
+
+\begin{DoxyCompactList}\small\item\em linear chromosome \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class contains genome for 5-\/neighborhood 4 states ca genome is created from bitset template class, every 2 elements of bitset represents one gene (2 bits are needed for int value \char`\"{}2\char`\"{} and \char`\"{}3\char`\"{}) index to genome is calculated from neighbor cells, see class \hyperlink{classCTFunction}{CTFunction}, function CalculateIndexTorus in ../../ca/TFunction.cpp file, line 280 when index to genome is calculated, gene from this index is returned to CA -\/ this gene represents new value of cell in next step of ca computation so this genome is built from values CELL\_\-EMPTY and CELL\_\-LIVE\_\-1, CELL\_\-LIVE\_\-2 and CELL\_\-LIVE\_\-3 which are only allowed values of ca space 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGenomeType4_a48a81653decfdcd49be75fcefb8b9631}{
+\index{CGenomeType4@{CGenomeType4}!CGenomeType4@{CGenomeType4}}
+\index{CGenomeType4@{CGenomeType4}!CGenomeType4@{CGenomeType4}}
+\subsubsection[{CGenomeType4}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType4::CGenomeType4 ()}}
+\label{classCGenomeType4_a48a81653decfdcd49be75fcefb8b9631}
+class constructor \hypertarget{classCGenomeType4_ace78f82cd5544971117f518012f34901}{
+\index{CGenomeType4@{CGenomeType4}!CGenomeType4@{CGenomeType4}}
+\index{CGenomeType4@{CGenomeType4}!CGenomeType4@{CGenomeType4}}
+\subsubsection[{CGenomeType4}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType4::CGenomeType4 (const {\bf CGenomeType4} \& {\em rSide})}}
+\label{classCGenomeType4_ace78f82cd5544971117f518012f34901}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to class on right side of \char`\"{}=\char`\"{} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGenomeType4_a8d55be3eefbd0e6451d385b231c8c96a}{
+\index{CGenomeType4@{CGenomeType4}!GetGene@{GetGene}}
+\index{GetGene@{GetGene}!CGenomeType4@{CGenomeType4}}
+\subsubsection[{GetGene}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType4::GetGene (int {\em index})}}
+\label{classCGenomeType4_a8d55be3eefbd0e6451d385b231c8c96a}
+return value of gene from given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \end{DoxyParams}
+\hypertarget{classCGenomeType4_a1add0c5bed39e85a32e3a00ea2809032}{
+\index{CGenomeType4@{CGenomeType4}!SetGene@{SetGene}}
+\index{SetGene@{SetGene}!CGenomeType4@{CGenomeType4}}
+\subsubsection[{SetGene}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType4::SetGene (int {\em index}, \/  BYTE {\em gene})}}
+\label{classCGenomeType4_a1add0c5bed39e85a32e3a00ea2809032}
+sets gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to genome \item[{\em gene}]value of gene \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GenomeType4.h\item 
+GenomeType4.cpp\end{DoxyCompactItemize}

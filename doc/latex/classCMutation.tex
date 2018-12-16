@@ -1,0 +1,114 @@
+\hypertarget{classCMutation}{
+\section{CMutation Class Reference}
+\label{classCMutation}\index{CMutation@{CMutation}}
+}
+
+
+{\ttfamily \#include $<$Mutation.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCMutation_ad52e2648f1e7a288706dfa1d429b74c4}{CMutation} ()
+\item 
+void \hyperlink{classCMutation_a011d0153e14d5551a0bb1993e029fa75}{Mutation} (\hyperlink{classCGenome}{CGenome} $\ast$g)
+\item 
+void \hyperlink{classCMutation_ae5d1555611f0c19de65c237d16ff3536}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cc)
+\item 
+int \hyperlink{classCMutation_afa507d1edb86b5fdc33ec4e88b54ad71}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCMutation_abaf0adf86b76dcce975cb6a10173730d}{\_\-Mutation\_\-01} (\hyperlink{classCGenome}{CGenome} $\ast$g)
+\item 
+void \hyperlink{classCMutation_a9ea86e30d04f615dca21f594f51ec491}{\_\-Mutation\_\-02} (\hyperlink{classCGenome}{CGenome} $\ast$g)
+\item 
+void \hyperlink{classCMutation_a1a38ef4c6a010eebddacc6eaf1b9e758}{\_\-Mutation\_\-Ins\_\-01} (\hyperlink{classCGenome}{CGenome} $\ast$g)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCMutation_af548105d80999d51b7c4ed8b5ebe2175}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCMutation_af548105d80999d51b7c4ed8b5ebe2175}{pConfigCore}}
+\label{classCMutation_af548105d80999d51b7c4ed8b5ebe2175}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCMutation_afd64020d1eaf41e339ee5e03e353cfce}{
+\hyperlink{classCRandom}{CRandom} \hyperlink{classCMutation_afd64020d1eaf41e339ee5e03e353cfce}{random}}
+\label{classCMutation_afd64020d1eaf41e339ee5e03e353cfce}
+
+\begin{DoxyCompactList}\small\item\em instance of pseudo-\/random numbers generator \item\end{DoxyCompactList}\item 
+\hypertarget{classCMutation_a8cb735d26df38e977e032572bb2fdb23}{
+int \hyperlink{classCMutation_a8cb735d26df38e977e032572bb2fdb23}{iErrFlag}}
+\label{classCMutation_a8cb735d26df38e977e032572bb2fdb23}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class performs mutation of genome 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCMutation_ad52e2648f1e7a288706dfa1d429b74c4}{
+\index{CMutation@{CMutation}!CMutation@{CMutation}}
+\index{CMutation@{CMutation}!CMutation@{CMutation}}
+\subsubsection[{CMutation}]{\setlength{\rightskip}{0pt plus 5cm}CMutation::CMutation ()}}
+\label{classCMutation_ad52e2648f1e7a288706dfa1d429b74c4}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCMutation_abaf0adf86b76dcce975cb6a10173730d}{
+\index{CMutation@{CMutation}!\_\-Mutation\_\-01@{\_\-Mutation\_\-01}}
+\index{\_\-Mutation\_\-01@{\_\-Mutation\_\-01}!CMutation@{CMutation}}
+\subsubsection[{\_\-Mutation\_\-01}]{\setlength{\rightskip}{0pt plus 5cm}void CMutation::\_\-Mutation\_\-01 ({\bf CGenome} $\ast$ {\em g})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMutation_abaf0adf86b76dcce975cb6a10173730d}
+performs mutation of given genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$g}]pointer to genome which should be mutated \end{DoxyParams}
+\hypertarget{classCMutation_a9ea86e30d04f615dca21f594f51ec491}{
+\index{CMutation@{CMutation}!\_\-Mutation\_\-02@{\_\-Mutation\_\-02}}
+\index{\_\-Mutation\_\-02@{\_\-Mutation\_\-02}!CMutation@{CMutation}}
+\subsubsection[{\_\-Mutation\_\-02}]{\setlength{\rightskip}{0pt plus 5cm}void CMutation::\_\-Mutation\_\-02 ({\bf CGenome} $\ast$ {\em g})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMutation_a9ea86e30d04f615dca21f594f51ec491}
+new mutation function -\/ NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$g}]pointer to genome which should be mutated \end{DoxyParams}
+\hypertarget{classCMutation_a1a38ef4c6a010eebddacc6eaf1b9e758}{
+\index{CMutation@{CMutation}!\_\-Mutation\_\-Ins\_\-01@{\_\-Mutation\_\-Ins\_\-01}}
+\index{\_\-Mutation\_\-Ins\_\-01@{\_\-Mutation\_\-Ins\_\-01}!CMutation@{CMutation}}
+\subsubsection[{\_\-Mutation\_\-Ins\_\-01}]{\setlength{\rightskip}{0pt plus 5cm}void CMutation::\_\-Mutation\_\-Ins\_\-01 ({\bf CGenome} $\ast$ {\em g})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMutation_a1a38ef4c6a010eebddacc6eaf1b9e758}
+performs mutation of instruction genome -\/ NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$g}]pointer to genome which should be mutated \end{DoxyParams}
+\hypertarget{classCMutation_afa507d1edb86b5fdc33ec4e88b54ad71}{
+\index{CMutation@{CMutation}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CMutation@{CMutation}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CMutation::GetErrorFlag ()}}
+\label{classCMutation_afa507d1edb86b5fdc33ec4e88b54ad71}
+return error flag \hypertarget{classCMutation_a011d0153e14d5551a0bb1993e029fa75}{
+\index{CMutation@{CMutation}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!CMutation@{CMutation}}
+\subsubsection[{Mutation}]{\setlength{\rightskip}{0pt plus 5cm}void CMutation::Mutation ({\bf CGenome} $\ast$ {\em g})}}
+\label{classCMutation_a011d0153e14d5551a0bb1993e029fa75}
+performs mutation of given genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$g}]pointer to genome which should be mutated \end{DoxyParams}
+\hypertarget{classCMutation_ae5d1555611f0c19de65c237d16ff3536}{
+\index{CMutation@{CMutation}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CMutation@{CMutation}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CMutation::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCMutation_ae5d1555611f0c19de65c237d16ff3536}
+sets config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Mutation.h\item 
+Mutation.cpp\end{DoxyCompactItemize}

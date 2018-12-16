@@ -1,0 +1,136 @@
+\hypertarget{classCTFunction}{
+\section{CTFunction Class Reference}
+\label{classCTFunction}\index{CTFunction@{CTFunction}}
+}
+
+
+{\ttfamily \#include $<$TFunction.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCTFunction_a85e48f0a80f493d3e6144f3ed4058ede}{CTFunction} ()
+\item 
+void \hyperlink{classCTFunction_ae1ba9e9f2baff1687236edc46b23d07f}{SetRulesTable} (\hyperlink{classCRulesTable}{CRulesTable} $\ast$rt)
+\item 
+void \hyperlink{classCTFunction_ab629990f0e797774b7389e8bd07394a2}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$cc)
+\item 
+void \hyperlink{classCTFunction_a7d961dbfd8759a0e71180c4112f33ffc}{NextSpace} (\hyperlink{classCSpace}{CSpace} $\ast$sa, \hyperlink{classCSpace}{CSpace} $\ast$sn)
+\item 
+\hypertarget{classCTFunction_abab8543b07fa119edc0ec039ffb31d83}{
+int {\bfseries GetErrorFlag} ()}
+\label{classCTFunction_abab8543b07fa119edc0ec039ffb31d83}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCTFunction_ac62d3fe86128f015892eccecfef0ddf8}{NextSpaceGenomeStandard} (\hyperlink{classCSpace}{CSpace} $\ast$sa, \hyperlink{classCSpace}{CSpace} $\ast$sn)
+\item 
+void \hyperlink{classCTFunction_a1e79617602ea9a77be8ee411daa39d6c}{NextSpaceGenomeInstruction} (\hyperlink{classCSpace}{CSpace} $\ast$sa, \hyperlink{classCSpace}{CSpace} $\ast$sn)
+\item 
+int \hyperlink{classCTFunction_a337b7b2bc4aa55fba6966ed732292836}{CalculateIndexGrid} (\hyperlink{classCSpace}{CSpace} $\ast$s, int x, int y)
+\item 
+int \hyperlink{classCTFunction_a46be389e8f79729395cb918ab58e63c0}{CalculateIndexTorus} (\hyperlink{classCSpace}{CSpace} $\ast$s, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCTFunction_a72ea1bfa7803e5751d6249bfbf8c7d90}{
+\hyperlink{classCRulesTable}{CRulesTable} $\ast$ \hyperlink{classCTFunction_a72ea1bfa7803e5751d6249bfbf8c7d90}{rules}}
+\label{classCTFunction_a72ea1bfa7803e5751d6249bfbf8c7d90}
+
+\begin{DoxyCompactList}\small\item\em pointer to rules table \item\end{DoxyCompactList}\item 
+\hypertarget{classCTFunction_ae5a61d8280f85a3fa4804b22d6fcdfd0}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCTFunction_ae5a61d8280f85a3fa4804b22d6fcdfd0}{pConfigCore}}
+\label{classCTFunction_ae5a61d8280f85a3fa4804b22d6fcdfd0}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCTFunction_a84a79b8b4aa3d09537e5900de355e63d}{
+int \hyperlink{classCTFunction_a84a79b8b4aa3d09537e5900de355e63d}{iErrFlag}}
+\label{classCTFunction_a84a79b8b4aa3d09537e5900de355e63d}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+transition function performs all calculations of CA for all cell in space it calculates index to genome, gets gene using \hyperlink{classCRulesTable}{CRulesTable} class and writes new value of cell into next-\/gen space 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCTFunction_a85e48f0a80f493d3e6144f3ed4058ede}{
+\index{CTFunction@{CTFunction}!CTFunction@{CTFunction}}
+\index{CTFunction@{CTFunction}!CTFunction@{CTFunction}}
+\subsubsection[{CTFunction}]{\setlength{\rightskip}{0pt plus 5cm}CTFunction::CTFunction ()}}
+\label{classCTFunction_a85e48f0a80f493d3e6144f3ed4058ede}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCTFunction_a337b7b2bc4aa55fba6966ed732292836}{
+\index{CTFunction@{CTFunction}!CalculateIndexGrid@{CalculateIndexGrid}}
+\index{CalculateIndexGrid@{CalculateIndexGrid}!CTFunction@{CTFunction}}
+\subsubsection[{CalculateIndexGrid}]{\setlength{\rightskip}{0pt plus 5cm}int CTFunction::CalculateIndexGrid ({\bf CSpace} $\ast$ {\em s}, \/  int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCTFunction_a337b7b2bc4aa55fba6966ed732292836}
+calculates index into genome using \char`\"{}grid\char`\"{} rules
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$s}]pointer to actual ca space \item[{\em x}]x coordinate of actual cell \item[{\em y}]y coordinate of actual cell \end{DoxyParams}
+\hypertarget{classCTFunction_a46be389e8f79729395cb918ab58e63c0}{
+\index{CTFunction@{CTFunction}!CalculateIndexTorus@{CalculateIndexTorus}}
+\index{CalculateIndexTorus@{CalculateIndexTorus}!CTFunction@{CTFunction}}
+\subsubsection[{CalculateIndexTorus}]{\setlength{\rightskip}{0pt plus 5cm}int CTFunction::CalculateIndexTorus ({\bf CSpace} $\ast$ {\em s}, \/  int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCTFunction_a46be389e8f79729395cb918ab58e63c0}
+calculates index into genome using \char`\"{}torus\char`\"{} rules
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$s}]pointer to actual ca space \item[{\em x}]x coordinate of actual cell \item[{\em y}]y coordinate of actual cell \end{DoxyParams}
+\hypertarget{classCTFunction_a7d961dbfd8759a0e71180c4112f33ffc}{
+\index{CTFunction@{CTFunction}!NextSpace@{NextSpace}}
+\index{NextSpace@{NextSpace}!CTFunction@{CTFunction}}
+\subsubsection[{NextSpace}]{\setlength{\rightskip}{0pt plus 5cm}void CTFunction::NextSpace ({\bf CSpace} $\ast$ {\em sa}, \/  {\bf CSpace} $\ast$ {\em sn})}}
+\label{classCTFunction_a7d961dbfd8759a0e71180c4112f33ffc}
+computes new ca array from old one with rules table given
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$sa}]ca space actual \item[{\em $\ast$sn}]ca space next \end{DoxyParams}
+\hypertarget{classCTFunction_a1e79617602ea9a77be8ee411daa39d6c}{
+\index{CTFunction@{CTFunction}!NextSpaceGenomeInstruction@{NextSpaceGenomeInstruction}}
+\index{NextSpaceGenomeInstruction@{NextSpaceGenomeInstruction}!CTFunction@{CTFunction}}
+\subsubsection[{NextSpaceGenomeInstruction}]{\setlength{\rightskip}{0pt plus 5cm}void CTFunction::NextSpaceGenomeInstruction ({\bf CSpace} $\ast$ {\em sa}, \/  {\bf CSpace} $\ast$ {\em sn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCTFunction_a1e79617602ea9a77be8ee411daa39d6c}
+computes new ca space with instruction genome, NOT IMPLEMENTED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$sa}]ca space actual \item[{\em $\ast$sn}]ca space next \end{DoxyParams}
+\hypertarget{classCTFunction_ac62d3fe86128f015892eccecfef0ddf8}{
+\index{CTFunction@{CTFunction}!NextSpaceGenomeStandard@{NextSpaceGenomeStandard}}
+\index{NextSpaceGenomeStandard@{NextSpaceGenomeStandard}!CTFunction@{CTFunction}}
+\subsubsection[{NextSpaceGenomeStandard}]{\setlength{\rightskip}{0pt plus 5cm}void CTFunction::NextSpaceGenomeStandard ({\bf CSpace} $\ast$ {\em sa}, \/  {\bf CSpace} $\ast$ {\em sn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCTFunction_ac62d3fe86128f015892eccecfef0ddf8}
+computes new ca space with standard, non-\/instruction genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$sa}]ca space actual \item[{\em $\ast$sn}]ca space next \end{DoxyParams}
+\hypertarget{classCTFunction_ab629990f0e797774b7389e8bd07394a2}{
+\index{CTFunction@{CTFunction}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CTFunction@{CTFunction}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CTFunction::SetConfigCore ({\bf CConfigCore} $\ast$ {\em cc})}}
+\label{classCTFunction_ab629990f0e797774b7389e8bd07394a2}
+sets config class \hypertarget{classCTFunction_ae1ba9e9f2baff1687236edc46b23d07f}{
+\index{CTFunction@{CTFunction}!SetRulesTable@{SetRulesTable}}
+\index{SetRulesTable@{SetRulesTable}!CTFunction@{CTFunction}}
+\subsubsection[{SetRulesTable}]{\setlength{\rightskip}{0pt plus 5cm}void CTFunction::SetRulesTable ({\bf CRulesTable} $\ast$ {\em rt})}}
+\label{classCTFunction_ae1ba9e9f2baff1687236edc46b23d07f}
+sets actual rules table, which mapping genome from ga
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$rt}]pointer to rules table class \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+TFunction.h\item 
+TFunction.cpp\end{DoxyCompactItemize}

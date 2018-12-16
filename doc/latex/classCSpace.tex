@@ -1,0 +1,173 @@
+\hypertarget{classCSpace}{
+\section{CSpace Class Reference}
+\label{classCSpace}\index{CSpace@{CSpace}}
+}
+
+
+{\ttfamily \#include $<$Space.h$>$}Inheritance diagram for CSpace::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSpace_ab795395372f17e257fa72988e10b206f}{CSpace} (int type=SPACE\_\-TYPE\_\-GRID, int sizeX=SPACE\_\-SIZE\_\-X\_\-DEFAULT, int sizeY=SPACE\_\-SIZE\_\-Y\_\-DEFAULT, BYTE defState=CELL\_\-STATE\_\-EMPTY, \hyperlink{classCConfigCore}{CConfigCore} $\ast$pCC=NULL)
+\item 
+\hyperlink{classCSpace_a6315ca8443a78458dca1ba8f2b8cf60d}{$\sim$CSpace} ()
+\item 
+BYTE \hyperlink{classCSpace_a670a753794c1e851cc337f2f312c2538}{at} (int posX, int posY) const 
+\item 
+BYTE \& \hyperlink{classCSpace_abfac3ba5b7bf020e658b2a52ebcb7f36}{at} (int posX, int posY)
+\item 
+BYTE \hyperlink{classCSpace_a83689b4589c9f5c8d41931e830d302a1}{atGrid} (int posX, int posY) const 
+\item 
+BYTE \& \hyperlink{classCSpace_a2ad446a5bb454b65212430b71980a70e}{atGrid} (int posX, int posY)
+\item 
+BYTE \hyperlink{classCSpace_a7c0381e6e90fc56a8213fba4b047649e}{atTorus} (int posX, int posY) const 
+\item 
+BYTE \& \hyperlink{classCSpace_a1e2364f59e8dcacd46a5f96d878ca349}{atTorus} (int posX, int posY)
+\item 
+int \hyperlink{classCSpace_a0358e524cecae683cfbcf526ea99d818}{GetWidth} ()
+\item 
+int \hyperlink{classCSpace_a00b9bce5ca8303b7bae59e2ab6ce98be}{GetHeight} ()
+\item 
+int \hyperlink{classCSpace_ae700fc8fa63e62dd559245e832614c65}{GetSpaceType} ()
+\item 
+int \hyperlink{classCSpace_afe1840ea70f14055a39090ceaec9778e}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCSpace_aedf34dc29d187ea531d730770c74ea5a}{
+int \hyperlink{classCSpace_aedf34dc29d187ea531d730770c74ea5a}{iSpaceType}}
+\label{classCSpace_aedf34dc29d187ea531d730770c74ea5a}
+
+\begin{DoxyCompactList}\small\item\em space type \item\end{DoxyCompactList}\item 
+\hypertarget{classCSpace_a963d2dc89ef63e9a33322561e79a9501}{
+BYTE \hyperlink{classCSpace_a963d2dc89ef63e9a33322561e79a9501}{errCell}}
+\label{classCSpace_a963d2dc89ef63e9a33322561e79a9501}
+
+\begin{DoxyCompactList}\small\item\em error cell \item\end{DoxyCompactList}\item 
+\hypertarget{classCSpace_a4373c80fe05795c2f18d3160d57315a8}{
+BYTE \hyperlink{classCSpace_a4373c80fe05795c2f18d3160d57315a8}{byDefCell}}
+\label{classCSpace_a4373c80fe05795c2f18d3160d57315a8}
+
+\begin{DoxyCompactList}\small\item\em default value cell \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+inherits \hyperlink{classCArray2d}{CArray2d}, which is carring 2d array, this class implements behaviour of ca space -\/ grid or torus 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSpace_ab795395372f17e257fa72988e10b206f}{
+\index{CSpace@{CSpace}!CSpace@{CSpace}}
+\index{CSpace@{CSpace}!CSpace@{CSpace}}
+\subsubsection[{CSpace}]{\setlength{\rightskip}{0pt plus 5cm}CSpace::CSpace (int {\em type} = {\ttfamily SPACE\_\-TYPE\_\-GRID}, \/  int {\em sizeX} = {\ttfamily SPACE\_\-SIZE\_\-X\_\-DEFAULT}, \/  int {\em sizeY} = {\ttfamily SPACE\_\-SIZE\_\-Y\_\-DEFAULT}, \/  BYTE {\em defState} = {\ttfamily CELL\_\-STATE\_\-EMPTY}, \/  {\bf CConfigCore} $\ast$ {\em pConfigCore} = {\ttfamily NULL})}}
+\label{classCSpace_ab795395372f17e257fa72988e10b206f}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]torus or lattice \item[{\em sizeX}]array width \item[{\em sizeY}]array height \item[{\em defState}]default state \item[{\em $\ast$pConfigCore}]pointer to config class\item[{\em \hyperlink{classCArray2d}{CArray2d}}]\hyperlink{classCSpace}{CSpace} inherits this class \end{DoxyParams}
+\hypertarget{classCSpace_a6315ca8443a78458dca1ba8f2b8cf60d}{
+\index{CSpace@{CSpace}!$\sim$CSpace@{$\sim$CSpace}}
+\index{$\sim$CSpace@{$\sim$CSpace}!CSpace@{CSpace}}
+\subsubsection[{$\sim$CSpace}]{\setlength{\rightskip}{0pt plus 5cm}CSpace::$\sim$CSpace ()}}
+\label{classCSpace_a6315ca8443a78458dca1ba8f2b8cf60d}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSpace_abfac3ba5b7bf020e658b2a52ebcb7f36}{
+\index{CSpace@{CSpace}!at@{at}}
+\index{at@{at}!CSpace@{CSpace}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}BYTE \& CSpace::at (int {\em posX}, \/  int {\em posY})}}
+\label{classCSpace_abfac3ba5b7bf020e658b2a52ebcb7f36}
+returns reference to element at given coorditates
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_a670a753794c1e851cc337f2f312c2538}{
+\index{CSpace@{CSpace}!at@{at}}
+\index{at@{at}!CSpace@{CSpace}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CSpace::at (int {\em posX}, \/  int {\em posY}) const}}
+\label{classCSpace_a670a753794c1e851cc337f2f312c2538}
+returns element at given coorditates
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_a2ad446a5bb454b65212430b71980a70e}{
+\index{CSpace@{CSpace}!atGrid@{atGrid}}
+\index{atGrid@{atGrid}!CSpace@{CSpace}}
+\subsubsection[{atGrid}]{\setlength{\rightskip}{0pt plus 5cm}BYTE \& CSpace::atGrid (int {\em posX}, \/  int {\em posY})}}
+\label{classCSpace_a2ad446a5bb454b65212430b71980a70e}
+returns reference to element at given coorditates with respect to cellular space type \char`\"{}grid\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_a83689b4589c9f5c8d41931e830d302a1}{
+\index{CSpace@{CSpace}!atGrid@{atGrid}}
+\index{atGrid@{atGrid}!CSpace@{CSpace}}
+\subsubsection[{atGrid}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CSpace::atGrid (int {\em posX}, \/  int {\em posY}) const}}
+\label{classCSpace_a83689b4589c9f5c8d41931e830d302a1}
+returns element at given coorditates with respect to cellular space type \char`\"{}grid\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_a1e2364f59e8dcacd46a5f96d878ca349}{
+\index{CSpace@{CSpace}!atTorus@{atTorus}}
+\index{atTorus@{atTorus}!CSpace@{CSpace}}
+\subsubsection[{atTorus}]{\setlength{\rightskip}{0pt plus 5cm}BYTE \& CSpace::atTorus (int {\em posX}, \/  int {\em posY})}}
+\label{classCSpace_a1e2364f59e8dcacd46a5f96d878ca349}
+returns reference to element at given coorditates with respect to cellular space type \char`\"{}torus\char`\"{} -\/ quasi-\/infinate space
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_a7c0381e6e90fc56a8213fba4b047649e}{
+\index{CSpace@{CSpace}!atTorus@{atTorus}}
+\index{atTorus@{atTorus}!CSpace@{CSpace}}
+\subsubsection[{atTorus}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CSpace::atTorus (int {\em posX}, \/  int {\em posY}) const}}
+\label{classCSpace_a7c0381e6e90fc56a8213fba4b047649e}
+returns element at given coorditates with respect to cellular space type \char`\"{}torus\char`\"{} -\/ quasi-\/infinate space
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCSpace_afe1840ea70f14055a39090ceaec9778e}{
+\index{CSpace@{CSpace}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CSpace@{CSpace}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CSpace::GetErrorFlag ()}}
+\label{classCSpace_afe1840ea70f14055a39090ceaec9778e}
+return error flag 
+
+Reimplemented from \hyperlink{classCArray2d_afee234adb0190a1d8f3841f75a295e26}{CArray2d}.\hypertarget{classCSpace_a00b9bce5ca8303b7bae59e2ab6ce98be}{
+\index{CSpace@{CSpace}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CSpace@{CSpace}}
+\subsubsection[{GetHeight}]{\setlength{\rightskip}{0pt plus 5cm}int CSpace::GetHeight ()}}
+\label{classCSpace_a00b9bce5ca8303b7bae59e2ab6ce98be}
+returns array height 
+
+Reimplemented from \hyperlink{classCArray2d_ae019e1beca716a4ea7d368e342fe23a1}{CArray2d}.\hypertarget{classCSpace_ae700fc8fa63e62dd559245e832614c65}{
+\index{CSpace@{CSpace}!GetSpaceType@{GetSpaceType}}
+\index{GetSpaceType@{GetSpaceType}!CSpace@{CSpace}}
+\subsubsection[{GetSpaceType}]{\setlength{\rightskip}{0pt plus 5cm}int CSpace::GetSpaceType ()}}
+\label{classCSpace_ae700fc8fa63e62dd559245e832614c65}
+returns space type \hypertarget{classCSpace_a0358e524cecae683cfbcf526ea99d818}{
+\index{CSpace@{CSpace}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CSpace@{CSpace}}
+\subsubsection[{GetWidth}]{\setlength{\rightskip}{0pt plus 5cm}int CSpace::GetWidth ()}}
+\label{classCSpace_a0358e524cecae683cfbcf526ea99d818}
+returns array width 
+
+Reimplemented from \hyperlink{classCArray2d_a7cfeb98b3112d1e147464a7ec2374579}{CArray2d}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Space.h\item 
+Space.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,213 @@
+\hypertarget{classCGraphicsScene}{
+\section{CGraphicsScene Class Reference}
+\label{classCGraphicsScene}\index{CGraphicsScene@{CGraphicsScene}}
+}
+
+
+{\ttfamily \#include $<$GraphicsScene.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGraphicsScene_a41c5f62f60a2eb61d473d8cfa4455c36}{CGraphicsScene} (int sizeX=SPACE\_\-SIZE\_\-X\_\-DEFAULT, int sizeY=SPACE\_\-SIZE\_\-Y\_\-DEFAULT, int states=STATES\_\-COUNT\_\-DEFAULT, BYTE defState=STATE\_\-DEFAULT, bool edit=false)
+\item 
+\hyperlink{classCGraphicsScene_a738153c68b9a91316fe4ec3b2d659f59}{$\sim$CGraphicsScene} ()
+\item 
+QGraphicsScene $\ast$ \hyperlink{classCGraphicsScene_acee66ed8d6c2e4585bcb80a872bbc75c}{GetScene} ()
+\item 
+int \hyperlink{classCGraphicsScene_a446b3dd9434dbdee43bf303f4511c919}{GetWidth} ()
+\item 
+int \hyperlink{classCGraphicsScene_ad415c0259dffc4bd72fb59bc1ea23d36}{GetHeight} ()
+\item 
+\hyperlink{classCGraphicsItem}{CGraphicsItem} $\ast$ \hyperlink{classCGraphicsScene_a29048e6dda1ce0082b8499b5d2e48910}{GetCell} (int posX, int posY)
+\item 
+\hyperlink{classCGraphicsItemConfig}{CGraphicsItemConfig} $\ast$ \hyperlink{classCGraphicsScene_a97b82b2ded17f05c2cf3b3e110662ce4}{GetCellConfig} ()
+\item 
+void \hyperlink{classCGraphicsScene_a22e3319fb3557f244c7a8c6eca0bfb06}{SetConfigStatesCount} (int sc)
+\item 
+void \hyperlink{classCGraphicsScene_aa3507a9175e715ef27b7fb066a5c7bab}{SetConfigDefState} (BYTE s)
+\item 
+void \hyperlink{classCGraphicsScene_a371dfa6cc547d24db00756048fe065b9}{SetConfigEditable} (bool e)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCGraphicsScene_a7589adb1bd0809ac71f68f034d32fa5b}{SetWidth} (int w)
+\item 
+void \hyperlink{classCGraphicsScene_ac8674f95fe4430eca696633f674ce965}{SetHeight} (int h)
+\item 
+void \hyperlink{classCGraphicsScene_ad609155f1d601db1dd39eb4c6fbfb3c8}{BuildScene} (int sizeX, int sizeY)
+\item 
+void \hyperlink{classCGraphicsScene_ad718ef16c3756aaa66eacd4686e45202}{DeleteScene} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGraphicsScene_a82fd51912344eb7a4ecd122c2f769f0e}{
+QGraphicsScene $\ast$ \hyperlink{classCGraphicsScene_a82fd51912344eb7a4ecd122c2f769f0e}{scene}}
+\label{classCGraphicsScene_a82fd51912344eb7a4ecd122c2f769f0e}
+
+\begin{DoxyCompactList}\small\item\em pointer to scene \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_a0af26a9d7c12992b4c9799b74d5a4f80}{
+std::vector$<$ \hyperlink{classCGraphicsItem}{CGraphicsItem} $\ast$ $>$ \hyperlink{classCGraphicsScene_a0af26a9d7c12992b4c9799b74d5a4f80}{vecItem}}
+\label{classCGraphicsScene_a0af26a9d7c12992b4c9799b74d5a4f80}
+
+\begin{DoxyCompactList}\small\item\em vector with pointers to cells \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_aa2cf045197a92c6fd9e92f2a83bae95f}{
+\hyperlink{classCGraphicsItem}{CGraphicsItem} $\ast$ \hyperlink{classCGraphicsScene_aa2cf045197a92c6fd9e92f2a83bae95f}{errCell}}
+\label{classCGraphicsScene_aa2cf045197a92c6fd9e92f2a83bae95f}
+
+\begin{DoxyCompactList}\small\item\em error cell \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_a4e1432ac1c62f8ca0924ff678796b7d9}{
+\hyperlink{classCGraphicsItemConfig}{CGraphicsItemConfig} \hyperlink{classCGraphicsScene_a4e1432ac1c62f8ca0924ff678796b7d9}{config}}
+\label{classCGraphicsScene_a4e1432ac1c62f8ca0924ff678796b7d9}
+
+\begin{DoxyCompactList}\small\item\em cells' config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_a1e51077925b34221ac1c77b5556ebcc2}{
+unsigned int \hyperlink{classCGraphicsScene_a1e51077925b34221ac1c77b5556ebcc2}{iSizeX}}
+\label{classCGraphicsScene_a1e51077925b34221ac1c77b5556ebcc2}
+
+\begin{DoxyCompactList}\small\item\em scene's width \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_a006f5bf1ce6017e14ce20dfd3b670f47}{
+unsigned int \hyperlink{classCGraphicsScene_a006f5bf1ce6017e14ce20dfd3b670f47}{iSizeY}}
+\label{classCGraphicsScene_a006f5bf1ce6017e14ce20dfd3b670f47}
+
+\begin{DoxyCompactList}\small\item\em scene's height \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_ae2c1909ad6c669a393db40e69b1f921d}{
+unsigned int \hyperlink{classCGraphicsScene_ae2c1909ad6c669a393db40e69b1f921d}{iStatesCount}}
+\label{classCGraphicsScene_ae2c1909ad6c669a393db40e69b1f921d}
+
+\begin{DoxyCompactList}\small\item\em states count \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_ad3f40fdcd54d4471c3ba5b375ad9bc4d}{
+BYTE \hyperlink{classCGraphicsScene_ad3f40fdcd54d4471c3ba5b375ad9bc4d}{byDefState}}
+\label{classCGraphicsScene_ad3f40fdcd54d4471c3ba5b375ad9bc4d}
+
+\begin{DoxyCompactList}\small\item\em default cell state \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsScene_a6fad835e2dabc95986f9b8c899998445}{
+bool \hyperlink{classCGraphicsScene_a6fad835e2dabc95986f9b8c899998445}{bEditable}}
+\label{classCGraphicsScene_a6fad835e2dabc95986f9b8c899998445}
+
+\begin{DoxyCompactList}\small\item\em are cells editable?s \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains graphics scene -\/ scene with cells 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGraphicsScene_a41c5f62f60a2eb61d473d8cfa4455c36}{
+\index{CGraphicsScene@{CGraphicsScene}!CGraphicsScene@{CGraphicsScene}}
+\index{CGraphicsScene@{CGraphicsScene}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{CGraphicsScene}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsScene::CGraphicsScene (int {\em sizeX} = {\ttfamily SPACE\_\-SIZE\_\-X\_\-DEFAULT}, \/  int {\em sizeY} = {\ttfamily SPACE\_\-SIZE\_\-Y\_\-DEFAULT}, \/  int {\em states} = {\ttfamily STATES\_\-COUNT\_\-DEFAULT}, \/  BYTE {\em defState} = {\ttfamily STATE\_\-DEFAULT}, \/  bool {\em edit} = {\ttfamily false})}}
+\label{classCGraphicsScene_a41c5f62f60a2eb61d473d8cfa4455c36}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sizeX}]count of cells in x axes \item[{\em sizeY}]count of cells in y axes \item[{\em states}]count of states (for cell config class) \item[{\em defState}]default state of cell (for cell config class) \item[{\em edit}]cell editable (for cell config class) \end{DoxyParams}
+\hypertarget{classCGraphicsScene_a738153c68b9a91316fe4ec3b2d659f59}{
+\index{CGraphicsScene@{CGraphicsScene}!$\sim$CGraphicsScene@{$\sim$CGraphicsScene}}
+\index{$\sim$CGraphicsScene@{$\sim$CGraphicsScene}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{$\sim$CGraphicsScene}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsScene::$\sim$CGraphicsScene ()}}
+\label{classCGraphicsScene_a738153c68b9a91316fe4ec3b2d659f59}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGraphicsScene_ad609155f1d601db1dd39eb4c6fbfb3c8}{
+\index{CGraphicsScene@{CGraphicsScene}!BuildScene@{BuildScene}}
+\index{BuildScene@{BuildScene}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{BuildScene}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::BuildScene (int {\em sizeX}, \/  int {\em sizeY})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGraphicsScene_ad609155f1d601db1dd39eb4c6fbfb3c8}
+builds scene with cells
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sizeX}]count of cells in x axes \item[{\em sizeY}]count of cells in y axes \end{DoxyParams}
+\hypertarget{classCGraphicsScene_ad718ef16c3756aaa66eacd4686e45202}{
+\index{CGraphicsScene@{CGraphicsScene}!DeleteScene@{DeleteScene}}
+\index{DeleteScene@{DeleteScene}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{DeleteScene}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::DeleteScene ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGraphicsScene_ad718ef16c3756aaa66eacd4686e45202}
+deletes scene with cells \hypertarget{classCGraphicsScene_a29048e6dda1ce0082b8499b5d2e48910}{
+\index{CGraphicsScene@{CGraphicsScene}!GetCell@{GetCell}}
+\index{GetCell@{GetCell}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{GetCell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGraphicsItem} $\ast$ CGraphicsScene::GetCell (int {\em posX}, \/  int {\em posY})}}
+\label{classCGraphicsScene_a29048e6dda1ce0082b8499b5d2e48910}
+returns pointer to cell in given coords
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]x coord of cell \item[{\em posY}]y coord of cell \end{DoxyParams}
+\hypertarget{classCGraphicsScene_a97b82b2ded17f05c2cf3b3e110662ce4}{
+\index{CGraphicsScene@{CGraphicsScene}!GetCellConfig@{GetCellConfig}}
+\index{GetCellConfig@{GetCellConfig}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{GetCellConfig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGraphicsItemConfig} $\ast$ CGraphicsScene::GetCellConfig ()}}
+\label{classCGraphicsScene_a97b82b2ded17f05c2cf3b3e110662ce4}
+returns pointer to cell config class \hypertarget{classCGraphicsScene_ad415c0259dffc4bd72fb59bc1ea23d36}{
+\index{CGraphicsScene@{CGraphicsScene}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{GetHeight}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsScene::GetHeight ()}}
+\label{classCGraphicsScene_ad415c0259dffc4bd72fb59bc1ea23d36}
+returns scene \char`\"{}height\char`\"{} -\/ count of cells in y axes \hypertarget{classCGraphicsScene_acee66ed8d6c2e4585bcb80a872bbc75c}{
+\index{CGraphicsScene@{CGraphicsScene}!GetScene@{GetScene}}
+\index{GetScene@{GetScene}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{GetScene}]{\setlength{\rightskip}{0pt plus 5cm}QGraphicsScene $\ast$ CGraphicsScene::GetScene ()}}
+\label{classCGraphicsScene_acee66ed8d6c2e4585bcb80a872bbc75c}
+returns pointer to graphics scene which containes cells \hypertarget{classCGraphicsScene_a446b3dd9434dbdee43bf303f4511c919}{
+\index{CGraphicsScene@{CGraphicsScene}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{GetWidth}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsScene::GetWidth ()}}
+\label{classCGraphicsScene_a446b3dd9434dbdee43bf303f4511c919}
+returns scene \char`\"{}width\char`\"{} -\/ count of cells in x axes \hypertarget{classCGraphicsScene_aa3507a9175e715ef27b7fb066a5c7bab}{
+\index{CGraphicsScene@{CGraphicsScene}!SetConfigDefState@{SetConfigDefState}}
+\index{SetConfigDefState@{SetConfigDefState}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{SetConfigDefState}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::SetConfigDefState (BYTE {\em ds})}}
+\label{classCGraphicsScene_aa3507a9175e715ef27b7fb066a5c7bab}
+sets cell's default state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ds}]default state \end{DoxyParams}
+\hypertarget{classCGraphicsScene_a371dfa6cc547d24db00756048fe065b9}{
+\index{CGraphicsScene@{CGraphicsScene}!SetConfigEditable@{SetConfigEditable}}
+\index{SetConfigEditable@{SetConfigEditable}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{SetConfigEditable}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::SetConfigEditable (bool {\em e})}}
+\label{classCGraphicsScene_a371dfa6cc547d24db00756048fe065b9}
+sets if cells are editable
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]are editable? \end{DoxyParams}
+\hypertarget{classCGraphicsScene_a22e3319fb3557f244c7a8c6eca0bfb06}{
+\index{CGraphicsScene@{CGraphicsScene}!SetConfigStatesCount@{SetConfigStatesCount}}
+\index{SetConfigStatesCount@{SetConfigStatesCount}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{SetConfigStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::SetConfigStatesCount (int {\em sc})}}
+\label{classCGraphicsScene_a22e3319fb3557f244c7a8c6eca0bfb06}
+sets states cout
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sc}]states count \end{DoxyParams}
+\hypertarget{classCGraphicsScene_ac8674f95fe4430eca696633f674ce965}{
+\index{CGraphicsScene@{CGraphicsScene}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{SetHeight}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::SetHeight (int {\em h})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGraphicsScene_ac8674f95fe4430eca696633f674ce965}
+sets scene height
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em h}]count of cell's in y axes \end{DoxyParams}
+\hypertarget{classCGraphicsScene_a7589adb1bd0809ac71f68f034d32fa5b}{
+\index{CGraphicsScene@{CGraphicsScene}!SetWidth@{SetWidth}}
+\index{SetWidth@{SetWidth}!CGraphicsScene@{CGraphicsScene}}
+\subsubsection[{SetWidth}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsScene::SetWidth (int {\em w})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGraphicsScene_a7589adb1bd0809ac71f68f034d32fa5b}
+sets scene \char`\"{}width\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em w}]count of cell's in x axes \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GraphicsScene.h\item 
+GraphicsScene.cpp\end{DoxyCompactItemize}

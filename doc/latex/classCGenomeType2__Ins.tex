@@ -1,0 +1,239 @@
+\hypertarget{classCGenomeType2__Ins}{
+\section{CGenomeType2\_\-Ins Class Reference}
+\label{classCGenomeType2__Ins}\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}}
+}
+
+
+{\ttfamily \#include $<$GenomeType2\_\-Ins.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGenomeType2__Ins_a048014721936129050d2f72c0b2ec950}{CGenomeType2\_\-Ins} ()
+\item 
+\hyperlink{classCGenomeType2__Ins_a0b7e8f1ad3282bfda4223de5b2cdc7d2}{CGenomeType2\_\-Ins} (const \hyperlink{classCGenomeType2__Ins}{CGenomeType2\_\-Ins} \&rSide)
+\item 
+struct \hyperlink{structstGeneInstruction}{stGeneInstruction} $\ast$ \hyperlink{classCGenomeType2__Ins_a07d84d4a76655fd529fabb16037d4304}{GetGene} (int index)
+\item 
+void \hyperlink{classCGenomeType2__Ins_a179553e578b127985d5526360616ac0c}{SetInstruction} (int index, BYTE instruction)
+\item 
+BYTE \hyperlink{classCGenomeType2__Ins_ab61bdf996674a2d443cc4a14d4b19f47}{GetInstruction} (int index)
+\item 
+void \hyperlink{classCGenomeType2__Ins_af983154bb5cb502effe57484e4d0cdd9}{SetPreCondition} (int index, BYTE preCon)
+\item 
+BYTE \hyperlink{classCGenomeType2__Ins_a9403187ee6f9a6095341f843e30d545d}{GetPreCondition} (int index)
+\item 
+void \hyperlink{classCGenomeType2__Ins_a109dc11d7cbfa8fd630729bdcbe35e58}{SetPreConditionBit} (int index, int bitIndex, bool preCon)
+\item 
+bool \hyperlink{classCGenomeType2__Ins_a9d93b1f193e5e7024e66a7ed396b1494}{GetPreConditionBit} (int index, int bitIndex)
+\item 
+void \hyperlink{classCGenomeType2__Ins_ac474201ad2ab18e57cba38950504518d}{SetPreConditionLogic} (int index, BYTE preConLog)
+\item 
+BYTE \hyperlink{classCGenomeType2__Ins_aed5cc6df352196cfaa6832a6992f2757}{GetPreConditionLogic} (int index)
+\item 
+void \hyperlink{classCGenomeType2__Ins_a397c59c680ddccdbec3b0fd8f6627f3d}{SetPreConditionLogicBit} (int index, int bitIndex, bool preConLog)
+\item 
+bool \hyperlink{classCGenomeType2__Ins_a27038563ce483ebfd7a7a0dd1b19e761}{GetPreConditionLogicBit} (int index, int bitIndex)
+\item 
+void \hyperlink{classCGenomeType2__Ins_a073bf5cc9b04d06d92d9a80c300c1238}{SetPostCondition} (int index, BYTE postCon)
+\item 
+BYTE \hyperlink{classCGenomeType2__Ins_acf4f290bc5866b175232d467664260ef}{GetPostCondition} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCGenomeType2__Ins_a2a353438a53537345f463599284f7e9c}{SetBitValue} (BYTE $\ast$field, int index, bool value)
+\item 
+BYTE \hyperlink{classCGenomeType2__Ins_a1ec35ff3d5c9ff3902740d2a904c6fab}{GetBitValue} (BYTE field, int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGenomeType2__Ins_a20a94fa567ee4bbcf3b2b4160832b37f}{
+struct \hyperlink{structstGeneInstruction}{stGeneInstruction} \hyperlink{classCGenomeType2__Ins_a20a94fa567ee4bbcf3b2b4160832b37f}{genome} \mbox{[}GENOME\_\-INS\_\-\_\-COUNT\mbox{]}}
+\label{classCGenomeType2__Ins_a20a94fa567ee4bbcf3b2b4160832b37f}
+
+\begin{DoxyCompactList}\small\item\em chromosome \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenomeType2__Ins_a131cc5e7367bead06f4367c97aba3939}{
+struct \hyperlink{structstGeneInstruction}{stGeneInstruction} \hyperlink{classCGenomeType2__Ins_a131cc5e7367bead06f4367c97aba3939}{errGene}}
+\label{classCGenomeType2__Ins_a131cc5e7367bead06f4367c97aba3939}
+
+\begin{DoxyCompactList}\small\item\em error gene \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class carry instruction-\/based genome for 2-\/state ca chromosome (genome) is created from 4-\/BYTE (char) structs struct contains instruction type (NOP or IF), precondition -\/ precondition defines combination of cells in neighborhood, which shoul be active, one precon bit can define more cells preConLogic defines clutchs (???) AND or OR between preCon bits postcon defines value of cell, if instruction (gene) can be implemented on this cell 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGenomeType2__Ins_a048014721936129050d2f72c0b2ec950}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}}
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{CGenomeType2\_\-Ins}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType2\_\-Ins::CGenomeType2\_\-Ins ()}}
+\label{classCGenomeType2__Ins_a048014721936129050d2f72c0b2ec950}
+class constructor \hypertarget{classCGenomeType2__Ins_a0b7e8f1ad3282bfda4223de5b2cdc7d2}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}}
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{CGenomeType2\_\-Ins}]{\setlength{\rightskip}{0pt plus 5cm}CGenomeType2\_\-Ins::CGenomeType2\_\-Ins (const {\bf CGenomeType2\_\-Ins} \& {\em rSide})}}
+\label{classCGenomeType2__Ins_a0b7e8f1ad3282bfda4223de5b2cdc7d2}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to class on right side of \char`\"{}=\char`\"{} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGenomeType2__Ins_a1ec35ff3d5c9ff3902740d2a904c6fab}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetBitValue@{GetBitValue}}
+\index{GetBitValue@{GetBitValue}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetBitValue}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2\_\-Ins::GetBitValue (BYTE {\em field}, \/  int {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGenomeType2__Ins_a1ec35ff3d5c9ff3902740d2a904c6fab}
+return bit of given BYTE field at given bitIndex
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]BYTE field of some gene from genome \item[{\em index}]index to bit of field \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a07d84d4a76655fd529fabb16037d4304}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetGene@{GetGene}}
+\index{GetGene@{GetGene}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetGene}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf stGeneInstruction} $\ast$ CGenomeType2\_\-Ins::GetGene (int {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{classCGenomeType2__Ins_a07d84d4a76655fd529fabb16037d4304}
+returns gene from given position of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_ab61bdf996674a2d443cc4a14d4b19f47}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetInstruction@{GetInstruction}}
+\index{GetInstruction@{GetInstruction}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetInstruction}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2\_\-Ins::GetInstruction (int {\em index})}}
+\label{classCGenomeType2__Ins_ab61bdf996674a2d443cc4a14d4b19f47}
+returns instruction type of gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_acf4f290bc5866b175232d467664260ef}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetPostCondition@{GetPostCondition}}
+\index{GetPostCondition@{GetPostCondition}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetPostCondition}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2\_\-Ins::GetPostCondition (int {\em index})}}
+\label{classCGenomeType2__Ins_acf4f290bc5866b175232d467664260ef}
+returns postcondition of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a9403187ee6f9a6095341f843e30d545d}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetPreCondition@{GetPreCondition}}
+\index{GetPreCondition@{GetPreCondition}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetPreCondition}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2\_\-Ins::GetPreCondition (int {\em index})}}
+\label{classCGenomeType2__Ins_a9403187ee6f9a6095341f843e30d545d}
+returns instruction type of gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a9d93b1f193e5e7024e66a7ed396b1494}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetPreConditionBit@{GetPreConditionBit}}
+\index{GetPreConditionBit@{GetPreConditionBit}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetPreConditionBit}]{\setlength{\rightskip}{0pt plus 5cm}bool CGenomeType2\_\-Ins::GetPreConditionBit (int {\em index}, \/  int {\em bitIndex})}}
+\label{classCGenomeType2__Ins_a9d93b1f193e5e7024e66a7ed396b1494}
+returns one bit of precondition of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em bitIndex}]index of bit of precondition \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_aed5cc6df352196cfaa6832a6992f2757}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetPreConditionLogic@{GetPreConditionLogic}}
+\index{GetPreConditionLogic@{GetPreConditionLogic}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetPreConditionLogic}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenomeType2\_\-Ins::GetPreConditionLogic (int {\em index})}}
+\label{classCGenomeType2__Ins_aed5cc6df352196cfaa6832a6992f2757}
+returns precondition logic -\/ and OR or between bits of precondition
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a27038563ce483ebfd7a7a0dd1b19e761}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!GetPreConditionLogicBit@{GetPreConditionLogicBit}}
+\index{GetPreConditionLogicBit@{GetPreConditionLogicBit}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{GetPreConditionLogicBit}]{\setlength{\rightskip}{0pt plus 5cm}bool CGenomeType2\_\-Ins::GetPreConditionLogicBit (int {\em index}, \/  int {\em bitIndex})}}
+\label{classCGenomeType2__Ins_a27038563ce483ebfd7a7a0dd1b19e761}
+returns one bit of precondition logic of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em bitIndex}]index of bit of precondition logic \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a2a353438a53537345f463599284f7e9c}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetBitValue@{SetBitValue}}
+\index{SetBitValue@{SetBitValue}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetBitValue}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetBitValue (BYTE $\ast$ {\em field}, \/  int {\em index}, \/  bool {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGenomeType2__Ins_a2a353438a53537345f463599284f7e9c}
+sets bit of given BYTE field at given bitIndex to given value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$field}]pointer to BYTE field of some gene from genome \item[{\em index}]index to bit of field \item[{\em value}]value of bit \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a179553e578b127985d5526360616ac0c}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetInstruction@{SetInstruction}}
+\index{SetInstruction@{SetInstruction}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetInstruction}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetInstruction (int {\em index}, \/  BYTE {\em instruction})}}
+\label{classCGenomeType2__Ins_a179553e578b127985d5526360616ac0c}
+sets instruction type of gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em instruction}]intruction type \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a073bf5cc9b04d06d92d9a80c300c1238}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetPostCondition@{SetPostCondition}}
+\index{SetPostCondition@{SetPostCondition}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetPostCondition}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetPostCondition (int {\em index}, \/  BYTE {\em postCon})}}
+\label{classCGenomeType2__Ins_a073bf5cc9b04d06d92d9a80c300c1238}
+sets postcondition of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em postCon}]postcondition \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_af983154bb5cb502effe57484e4d0cdd9}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetPreCondition@{SetPreCondition}}
+\index{SetPreCondition@{SetPreCondition}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetPreCondition}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetPreCondition (int {\em index}, \/  BYTE {\em preCon})}}
+\label{classCGenomeType2__Ins_af983154bb5cb502effe57484e4d0cdd9}
+sets precondition type of gene at given index of genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em preCon}]precondition \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a109dc11d7cbfa8fd630729bdcbe35e58}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetPreConditionBit@{SetPreConditionBit}}
+\index{SetPreConditionBit@{SetPreConditionBit}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetPreConditionBit}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetPreConditionBit (int {\em index}, \/  int {\em bitIndex}, \/  bool {\em preCon})}}
+\label{classCGenomeType2__Ins_a109dc11d7cbfa8fd630729bdcbe35e58}
+sets one bit of precondition of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em bitIndex}]index of bit of precondition \item[{\em preCon}]value of bit \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_ac474201ad2ab18e57cba38950504518d}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetPreConditionLogic@{SetPreConditionLogic}}
+\index{SetPreConditionLogic@{SetPreConditionLogic}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetPreConditionLogic}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetPreConditionLogic (int {\em index}, \/  BYTE {\em preConLog})}}
+\label{classCGenomeType2__Ins_ac474201ad2ab18e57cba38950504518d}
+sets precondition logic -\/ and OR or between bits of precondition
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em preConLog}]precondition logic \end{DoxyParams}
+\hypertarget{classCGenomeType2__Ins_a397c59c680ddccdbec3b0fd8f6627f3d}{
+\index{CGenomeType2\_\-Ins@{CGenomeType2\_\-Ins}!SetPreConditionLogicBit@{SetPreConditionLogicBit}}
+\index{SetPreConditionLogicBit@{SetPreConditionLogicBit}!CGenomeType2_Ins@{CGenomeType2\_\-Ins}}
+\subsubsection[{SetPreConditionLogicBit}]{\setlength{\rightskip}{0pt plus 5cm}void CGenomeType2\_\-Ins::SetPreConditionLogicBit (int {\em index}, \/  int {\em bitIndex}, \/  bool {\em preConLog})}}
+\label{classCGenomeType2__Ins_a397c59c680ddccdbec3b0fd8f6627f3d}
+sets one bit of precondition logic of gene at given index
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index to gene from genome \item[{\em bitIndex}]index of bit of precondition logic \item[{\em preConLog}]value of bit \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GenomeType2\_\-Ins.h\item 
+GenomeType2\_\-Ins.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\hypertarget{classCExportConfig}{
+\section{CExportConfig Class Reference}
+\label{classCExportConfig}\index{CExportConfig@{CExportConfig}}
+}
+
+
+{\ttfamily \#include $<$ExportConfig.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCExportConfig_a8165a6c6e0c15d1b63b059d10cde6d44}{CExportConfig} ()
+\item 
+\hyperlink{classCExportConfig_a8469245d21428fb2ceac04798ea14caa}{$\sim$CExportConfig} ()
+\item 
+bool \hyperlink{classCExportConfig_ace3fcad02cfbaa2bfe5bb9cb4610052a}{ExportConfig} (QString filePathName, \hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn, \hyperlink{classCWidgetOutput}{CWidgetOutput} $\ast$widOut, \hyperlink{classCWidgetEvolution}{CWidgetEvolution} $\ast$widEvo, \hyperlink{classCWidgetExport}{CWidgetExport} $\ast$widExp)
+\item 
+int \hyperlink{classCExportConfig_a45d8601ab227c344d06c8f15d4afdc56}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCExportConfig_a44d785a78a90004ce37fc78788ff22cf}{WriteDocStart} ()
+\item 
+void \hyperlink{classCExportConfig_af055c2f9bb0af94ef17b490bde396b57}{WriteDocEnd} ()
+\item 
+void \hyperlink{classCExportConfig_acfc482ab7655108db7236df00f98d5f3}{WriteSettingsInput} (\hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn)
+\item 
+void \hyperlink{classCExportConfig_ac53bcad1b652575efb5ccc8b804e6fc0}{WriteSettingsOutput} (\hyperlink{classCWidgetOutput}{CWidgetOutput} $\ast$widOut)
+\item 
+void \hyperlink{classCExportConfig_aa345f949a1d6fba9c20704f5d977eccc}{WriteSettingsEvolution} (\hyperlink{classCWidgetEvolution}{CWidgetEvolution} $\ast$widEvo)
+\item 
+void \hyperlink{classCExportConfig_af54bae02599cec0d5fc28ab0f0f2f46d}{WriteSettingsExport} (\hyperlink{classCWidgetExport}{CWidgetExport} $\ast$widExp)
+\item 
+void \hyperlink{classCExportConfig_ad2d3b5c3a8e68084ed6c3b27b846ee55}{WriteSettingsInputCASpace} (\hyperlink{classCWidgetInput}{CWidgetInput} $\ast$widIn)
+\item 
+void \hyperlink{classCExportConfig_af5f2911f8d37299ad02027203c78d934}{SetIODevice} (QIODevice $\ast$\hyperlink{classCExportConfig_a638f31e665656264ef917946f0e384d8}{device})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCExportConfig_a5606f27f07973ded8fa1e850eaf3f179}{
+QXmlStreamWriter \hyperlink{classCExportConfig_a5606f27f07973ded8fa1e850eaf3f179}{xml}}
+\label{classCExportConfig_a5606f27f07973ded8fa1e850eaf3f179}
+
+\begin{DoxyCompactList}\small\item\em xml writer \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportConfig_a638f31e665656264ef917946f0e384d8}{
+QIODevice $\ast$ \hyperlink{classCExportConfig_a638f31e665656264ef917946f0e384d8}{device}}
+\label{classCExportConfig_a638f31e665656264ef917946f0e384d8}
+
+\begin{DoxyCompactList}\small\item\em io device -\/ opened file descriptor -\/ for xml class \item\end{DoxyCompactList}\item 
+\hypertarget{classCExportConfig_a095da6fe51ae3abff5bf9ef9bf6ef9d1}{
+int \hyperlink{classCExportConfig_a095da6fe51ae3abff5bf9ef9bf6ef9d1}{iErrFlag}}
+\label{classCExportConfig_a095da6fe51ae3abff5bf9ef9bf6ef9d1}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+exports run config 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCExportConfig_a8165a6c6e0c15d1b63b059d10cde6d44}{
+\index{CExportConfig@{CExportConfig}!CExportConfig@{CExportConfig}}
+\index{CExportConfig@{CExportConfig}!CExportConfig@{CExportConfig}}
+\subsubsection[{CExportConfig}]{\setlength{\rightskip}{0pt plus 5cm}CExportConfig::CExportConfig ()}}
+\label{classCExportConfig_a8165a6c6e0c15d1b63b059d10cde6d44}
+class constructor \hypertarget{classCExportConfig_a8469245d21428fb2ceac04798ea14caa}{
+\index{CExportConfig@{CExportConfig}!$\sim$CExportConfig@{$\sim$CExportConfig}}
+\index{$\sim$CExportConfig@{$\sim$CExportConfig}!CExportConfig@{CExportConfig}}
+\subsubsection[{$\sim$CExportConfig}]{\setlength{\rightskip}{0pt plus 5cm}CExportConfig::$\sim$CExportConfig ()}}
+\label{classCExportConfig_a8469245d21428fb2ceac04798ea14caa}
+class deconstructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCExportConfig_ace3fcad02cfbaa2bfe5bb9cb4610052a}{
+\index{CExportConfig@{CExportConfig}!ExportConfig@{ExportConfig}}
+\index{ExportConfig@{ExportConfig}!CExportConfig@{CExportConfig}}
+\subsubsection[{ExportConfig}]{\setlength{\rightskip}{0pt plus 5cm}bool CExportConfig::ExportConfig (QString {\em filePathName}, \/  {\bf CWidgetInput} $\ast$ {\em widIn}, \/  {\bf CWidgetOutput} $\ast$ {\em widOut}, \/  {\bf CWidgetEvolution} $\ast$ {\em widEvo}, \/  {\bf CWidgetExport} $\ast$ {\em widExp})}}
+\label{classCExportConfig_ace3fcad02cfbaa2bfe5bb9cb4610052a}
+exports actual app config
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filePathName}]file's path/name \item[{\em $\ast$widIn}]pointer to settings widget input \item[{\em $\ast$widOut}]pointer to settings widget output \item[{\em $\ast$widEvo}]pointer to settings widget evolution \item[{\em $\ast$widExp}]pointer to settings widget export \end{DoxyParams}
+\hypertarget{classCExportConfig_a45d8601ab227c344d06c8f15d4afdc56}{
+\index{CExportConfig@{CExportConfig}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CExportConfig@{CExportConfig}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CExportConfig::GetErrorFlag ()}}
+\label{classCExportConfig_a45d8601ab227c344d06c8f15d4afdc56}
+returns error flag \hypertarget{classCExportConfig_af5f2911f8d37299ad02027203c78d934}{
+\index{CExportConfig@{CExportConfig}!SetIODevice@{SetIODevice}}
+\index{SetIODevice@{SetIODevice}!CExportConfig@{CExportConfig}}
+\subsubsection[{SetIODevice}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::SetIODevice (QIODevice $\ast$ {\em device})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_af5f2911f8d37299ad02027203c78d934}
+sets IO device (opened file descriptor) into xml class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$device}]opened file descriptor \end{DoxyParams}
+\hypertarget{classCExportConfig_af055c2f9bb0af94ef17b490bde396b57}{
+\index{CExportConfig@{CExportConfig}!WriteDocEnd@{WriteDocEnd}}
+\index{WriteDocEnd@{WriteDocEnd}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteDocEnd}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteDocEnd ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_af055c2f9bb0af94ef17b490bde396b57}
+writes doc end (closing elements) \hypertarget{classCExportConfig_a44d785a78a90004ce37fc78788ff22cf}{
+\index{CExportConfig@{CExportConfig}!WriteDocStart@{WriteDocStart}}
+\index{WriteDocStart@{WriteDocStart}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteDocStart}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteDocStart ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_a44d785a78a90004ce37fc78788ff22cf}
+writes doc start doc type genome type \hypertarget{classCExportConfig_aa345f949a1d6fba9c20704f5d977eccc}{
+\index{CExportConfig@{CExportConfig}!WriteSettingsEvolution@{WriteSettingsEvolution}}
+\index{WriteSettingsEvolution@{WriteSettingsEvolution}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteSettingsEvolution}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteSettingsEvolution ({\bf CWidgetEvolution} $\ast$ {\em widEvo})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_aa345f949a1d6fba9c20704f5d977eccc}
+writes evolution settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widEvo}]pointer to evolution settings widget \end{DoxyParams}
+\hypertarget{classCExportConfig_af54bae02599cec0d5fc28ab0f0f2f46d}{
+\index{CExportConfig@{CExportConfig}!WriteSettingsExport@{WriteSettingsExport}}
+\index{WriteSettingsExport@{WriteSettingsExport}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteSettingsExport}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteSettingsExport ({\bf CWidgetExport} $\ast$ {\em widExp})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_af54bae02599cec0d5fc28ab0f0f2f46d}
+writes export settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widExp}]pointer to export settings widget \end{DoxyParams}
+\hypertarget{classCExportConfig_acfc482ab7655108db7236df00f98d5f3}{
+\index{CExportConfig@{CExportConfig}!WriteSettingsInput@{WriteSettingsInput}}
+\index{WriteSettingsInput@{WriteSettingsInput}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteSettingsInput}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteSettingsInput ({\bf CWidgetInput} $\ast$ {\em widIn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_acfc482ab7655108db7236df00f98d5f3}
+writes input settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widIn}]pointer to input settings widget \end{DoxyParams}
+\hypertarget{classCExportConfig_ad2d3b5c3a8e68084ed6c3b27b846ee55}{
+\index{CExportConfig@{CExportConfig}!WriteSettingsInputCASpace@{WriteSettingsInputCASpace}}
+\index{WriteSettingsInputCASpace@{WriteSettingsInputCASpace}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteSettingsInputCASpace}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteSettingsInputCASpace ({\bf CWidgetInput} $\ast$ {\em widIn})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_ad2d3b5c3a8e68084ed6c3b27b846ee55}
+writes input ca space settings \hypertarget{classCExportConfig_ac53bcad1b652575efb5ccc8b804e6fc0}{
+\index{CExportConfig@{CExportConfig}!WriteSettingsOutput@{WriteSettingsOutput}}
+\index{WriteSettingsOutput@{WriteSettingsOutput}!CExportConfig@{CExportConfig}}
+\subsubsection[{WriteSettingsOutput}]{\setlength{\rightskip}{0pt plus 5cm}void CExportConfig::WriteSettingsOutput ({\bf CWidgetOutput} $\ast$ {\em widOut})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCExportConfig_ac53bcad1b652575efb5ccc8b804e6fc0}
+writes output settings
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$widOut}]pointer to output settings widget \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ExportConfig.h\item 
+ExportConfig.cpp\end{DoxyCompactItemize}

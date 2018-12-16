@@ -1,0 +1,339 @@
+\hypertarget{classCGeneticAlgorithm}{
+\section{CGeneticAlgorithm Class Reference}
+\label{classCGeneticAlgorithm}\index{CGeneticAlgorithm@{CGeneticAlgorithm}}
+}
+
+
+{\ttfamily \#include $<$GeneticAlgorithm.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGeneticAlgorithm_a08e490f073f3f053004347361436a192}{CGeneticAlgorithm} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$configCore)
+\item 
+\hyperlink{classCGeneticAlgorithm_a6d5d96bde33bb3b14795f100b01e08a9}{$\sim$CGeneticAlgorithm} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a9632fcef92f6ec52112f971cb5119bc2}{InitGenotype} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a239027b6bfc2af7443d73645479ec293}{InitGenotypeReevolve} (\hyperlink{classCGenome}{CGenome} $\ast$genomeInit)
+\item 
+void \hyperlink{classCGeneticAlgorithm_a0992c75f2578fa1aec75996805e463cb}{ImportGenomeToPopulation} (\hyperlink{classCGenome}{CGenome} $\ast$genomeImport)
+\item 
+void \hyperlink{classCGeneticAlgorithm_a354d08a200d57940cfabf5b935b2809c}{Fitness} (\hyperlink{classCGenome}{CGenome} $\ast$genome, \hyperlink{classCSpace}{CSpace} $\ast$spaceInit, \hyperlink{classCSpace}{CSpace} $\ast$spaceAct, int caStepAct)
+\item 
+void \hyperlink{classCGeneticAlgorithm_a6d5ea989deb69d8ee444db30d6e7fe67}{CreateNextGeneration} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a790cc40ce38ec37681cf5f5a7c169915}{CreateNextGeneration} (int genID)
+\item 
+void \hyperlink{classCGeneticAlgorithm_a44c7a724b1af1370d1e669c84f30775f}{Selection} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a8a74507a0e02509a46e31377772d0399}{Crossover} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a032d168728e17a9ac47f81844a529410}{Mutation} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_ad11b5c30a2eb45b1a8526ef058b1c8d0}{IdentifyCorners} (\hyperlink{classCSpace}{CSpace} $\ast$s)
+\item 
+int \hyperlink{classCGeneticAlgorithm_a7ed37537336f7ba8c77b8944e0a9052a}{GetCornerPosX} (int corn)
+\item 
+int \hyperlink{classCGeneticAlgorithm_afff003459489277c5b3944677b589a2b}{GetCornerPosY} (int corn)
+\item 
+void \hyperlink{classCGeneticAlgorithm_aa3b7378230c783d13431d50eaf3600c9}{SetConfigCore} (\hyperlink{classCConfigCore}{CConfigCore} $\ast$ccc)
+\item 
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCGeneticAlgorithm_a85a3227b126b529d21b503e48fcf30ef}{GetGenome} (int id)
+\item 
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCGeneticAlgorithm_a3fe743e1c6ca8f2387410063ce42fb5c}{GetBestGenome} ()
+\item 
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCGeneticAlgorithm_a4066729944a04f47bf4c38257d330cb3}{GetActualPopulation} ()
+\item 
+int \hyperlink{classCGeneticAlgorithm_ad320e9d2f781d4f503f4edf66b6abc07}{GetActualPopulationSize} ()
+\item 
+bool \hyperlink{classCGeneticAlgorithm_a443bd2417f915c0aeb8119ff86844ad4}{ExistsGenomeId} (int id)
+\item 
+int \hyperlink{classCGeneticAlgorithm_a73bfc748e3d504395e6180d363a24536}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCGeneticAlgorithm_a8b027efefd585c7c3b0cdbffeebc2705}{ClearVectors} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a5cf2e61a6b805e5575bc1db1552c5aa5}{RefillPopulation} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_ae889e36cf0759ac986590e8f2756c18c}{RenumberActualGeneration} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a0354c0ccdc8b9ec809a0561767172165}{InitGenonetypeStandard} ()
+\item 
+void \hyperlink{classCGeneticAlgorithm_a9910ee23c78afc77e960320026439291}{InitGenotypeInstruction} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGeneticAlgorithm_ae345ac97020c5e359ca5a68b6d364556}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCGeneticAlgorithm_ae345ac97020c5e359ca5a68b6d364556}{pConfigCore}}
+\label{classCGeneticAlgorithm_ae345ac97020c5e359ca5a68b6d364556}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a4de255d9460110900eee396f4ca479a6}{
+\hyperlink{classCFitness}{CFitness} \hyperlink{classCGeneticAlgorithm_a4de255d9460110900eee396f4ca479a6}{fitness}}
+\label{classCGeneticAlgorithm_a4de255d9460110900eee396f4ca479a6}
+
+\begin{DoxyCompactList}\small\item\em instance of fitness class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_afdf11b0f199c37267835fa58cf1d162f}{
+\hyperlink{classCSelection}{CSelection} \hyperlink{classCGeneticAlgorithm_afdf11b0f199c37267835fa58cf1d162f}{select}}
+\label{classCGeneticAlgorithm_afdf11b0f199c37267835fa58cf1d162f}
+
+\begin{DoxyCompactList}\small\item\em instance of selection class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a8e4aad4732a223d858383c4ce5844e4c}{
+\hyperlink{classCCrossover}{CCrossover} \hyperlink{classCGeneticAlgorithm_a8e4aad4732a223d858383c4ce5844e4c}{crossover}}
+\label{classCGeneticAlgorithm_a8e4aad4732a223d858383c4ce5844e4c}
+
+\begin{DoxyCompactList}\small\item\em instance of crossover class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_aba2a017d23ec3f5e352185cc5e0e8606}{
+\hyperlink{classCMutation}{CMutation} \hyperlink{classCGeneticAlgorithm_aba2a017d23ec3f5e352185cc5e0e8606}{mutate}}
+\label{classCGeneticAlgorithm_aba2a017d23ec3f5e352185cc5e0e8606}
+
+\begin{DoxyCompactList}\small\item\em instance of mutation class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a642824db5c6141b2617bad71c62b4cb2}{
+\hyperlink{classCRandom}{CRandom} \hyperlink{classCGeneticAlgorithm_a642824db5c6141b2617bad71c62b4cb2}{random}}
+\label{classCGeneticAlgorithm_a642824db5c6141b2617bad71c62b4cb2}
+
+\begin{DoxyCompactList}\small\item\em instance of pseudo-\/random number generator class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a9d89011752d5b14444829c0c79089231}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCGeneticAlgorithm_a9d89011752d5b14444829c0c79089231}{genomeTmp}}
+\label{classCGeneticAlgorithm_a9d89011752d5b14444829c0c79089231}
+
+\begin{DoxyCompactList}\small\item\em tmp pointer used for creating new genomes \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a2824f10983a22a1c2a834120f7630594}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCGeneticAlgorithm_a2824f10983a22a1c2a834120f7630594}{bestGenome}}
+\label{classCGeneticAlgorithm_a2824f10983a22a1c2a834120f7630594}
+
+\begin{DoxyCompactList}\small\item\em pointer to best genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_ac14e5b17ffe50ffcbfff89233b7c68d4}{
+\hyperlink{classCGenome}{CGenome} $\ast$ \hyperlink{classCGeneticAlgorithm_ac14e5b17ffe50ffcbfff89233b7c68d4}{genomeErr}}
+\label{classCGeneticAlgorithm_ac14e5b17ffe50ffcbfff89233b7c68d4}
+
+\begin{DoxyCompactList}\small\item\em pointer to error genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_aee066f02809d339e00de999880aeaf4a}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ \hyperlink{classCGeneticAlgorithm_aee066f02809d339e00de999880aeaf4a}{vecGenerationX}}
+\label{classCGeneticAlgorithm_aee066f02809d339e00de999880aeaf4a}
+
+\begin{DoxyCompactList}\small\item\em vector which contains pointer for genomes \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a5afa004faf496ff623cfbfbf657af866}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ \hyperlink{classCGeneticAlgorithm_a5afa004faf496ff623cfbfbf657af866}{vecGenerationY}}
+\label{classCGeneticAlgorithm_a5afa004faf496ff623cfbfbf657af866}
+
+\begin{DoxyCompactList}\small\item\em vector which contains pointer for genomes \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a5108f3537531d05dbac2163e1b3b0428}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCGeneticAlgorithm_a5108f3537531d05dbac2163e1b3b0428}{vecGenerationAct}}
+\label{classCGeneticAlgorithm_a5108f3537531d05dbac2163e1b3b0428}
+
+\begin{DoxyCompactList}\small\item\em act population vector -\/ contains pointers to genomes from act generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_aa83ddd794f6b65a0d8207437a267792d}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCGeneticAlgorithm_aa83ddd794f6b65a0d8207437a267792d}{vecGenerationTmp}}
+\label{classCGeneticAlgorithm_aa83ddd794f6b65a0d8207437a267792d}
+
+\begin{DoxyCompactList}\small\item\em vector used for savig pointer of genomes for next gen \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_ad6a2697a3a8c0b583e4f1c320045d901}{
+std::vector$<$ \hyperlink{classCGenome}{CGenome} $\ast$ $>$ $\ast$ \hyperlink{classCGeneticAlgorithm_ad6a2697a3a8c0b583e4f1c320045d901}{vecGenerationTmpX}}
+\label{classCGeneticAlgorithm_ad6a2697a3a8c0b583e4f1c320045d901}
+
+\begin{DoxyCompactList}\small\item\em just tmp var using for exchange pointers between act and tmp vectors \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a18bc91f86647208718a7f238d4b1dad3}{
+int \hyperlink{classCGeneticAlgorithm_a18bc91f86647208718a7f238d4b1dad3}{iGenerationActID}}
+\label{classCGeneticAlgorithm_a18bc91f86647208718a7f238d4b1dad3}
+
+\begin{DoxyCompactList}\small\item\em actual generation id \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a31bf79e643ef4ae9d2258a87cbf11fb4}{
+int \hyperlink{classCGeneticAlgorithm_a31bf79e643ef4ae9d2258a87cbf11fb4}{iGenerationActSize}}
+\label{classCGeneticAlgorithm_a31bf79e643ef4ae9d2258a87cbf11fb4}
+
+\begin{DoxyCompactList}\small\item\em actual generation size \item\end{DoxyCompactList}\item 
+\hypertarget{classCGeneticAlgorithm_a3e7f57114d0d0e51d7ba2bc053fb73a2}{
+int \hyperlink{classCGeneticAlgorithm_a3e7f57114d0d0e51d7ba2bc053fb73a2}{iErrFlag}}
+\label{classCGeneticAlgorithm_a3e7f57114d0d0e51d7ba2bc053fb73a2}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main class of genetic algorithm -\/ manages all ga computation using specialized classes for partial tasks -\/ \hyperlink{classCFitness}{CFitness}, \hyperlink{classCMutation}{CMutation}, \hyperlink{classCSelection}{CSelection}, \hyperlink{classCGenome}{CGenome} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGeneticAlgorithm_a08e490f073f3f053004347361436a192}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{CGeneticAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}CGeneticAlgorithm::CGeneticAlgorithm ({\bf CConfigCore} $\ast$ {\em configCore})}}
+\label{classCGeneticAlgorithm_a08e490f073f3f053004347361436a192}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$configCore}]pointer config class \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a6d5d96bde33bb3b14795f100b01e08a9}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!$\sim$CGeneticAlgorithm@{$\sim$CGeneticAlgorithm}}
+\index{$\sim$CGeneticAlgorithm@{$\sim$CGeneticAlgorithm}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{$\sim$CGeneticAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}CGeneticAlgorithm::$\sim$CGeneticAlgorithm ()}}
+\label{classCGeneticAlgorithm_a6d5d96bde33bb3b14795f100b01e08a9}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGeneticAlgorithm_a8b027efefd585c7c3b0cdbffeebc2705}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!ClearVectors@{ClearVectors}}
+\index{ClearVectors@{ClearVectors}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{ClearVectors}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::ClearVectors ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGeneticAlgorithm_a8b027efefd585c7c3b0cdbffeebc2705}
+clears vectors which carring actual generation and tmp (next) gen \hypertarget{classCGeneticAlgorithm_a790cc40ce38ec37681cf5f5a7c169915}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!CreateNextGeneration@{CreateNextGeneration}}
+\index{CreateNextGeneration@{CreateNextGeneration}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{CreateNextGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::CreateNextGeneration (int {\em genID})}}
+\label{classCGeneticAlgorithm_a790cc40ce38ec37681cf5f5a7c169915}
+creates new generation of population of genomes SELECTs genomes to next gen RE-\/FILLs population from selected genomes MUTATE all genomes (with exception of best one, explained in Mutation fc) RE-\/NUMBER population -\/ sets new generation id and genome id
+
+CROSSOVER is NOT USED
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em genID}]sets generation id to given value \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a6d5ea989deb69d8ee444db30d6e7fe67}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!CreateNextGeneration@{CreateNextGeneration}}
+\index{CreateNextGeneration@{CreateNextGeneration}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{CreateNextGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::CreateNextGeneration ()}}
+\label{classCGeneticAlgorithm_a6d5ea989deb69d8ee444db30d6e7fe67}
+same is previous fc \hypertarget{classCGeneticAlgorithm_a8a74507a0e02509a46e31377772d0399}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!Crossover@{Crossover}}
+\index{Crossover@{Crossover}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{Crossover}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::Crossover ()}}
+\label{classCGeneticAlgorithm_a8a74507a0e02509a46e31377772d0399}
+performs crossover -\/ NOT IMPLEMENTED \hypertarget{classCGeneticAlgorithm_a443bd2417f915c0aeb8119ff86844ad4}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!ExistsGenomeId@{ExistsGenomeId}}
+\index{ExistsGenomeId@{ExistsGenomeId}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{ExistsGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}bool CGeneticAlgorithm::ExistsGenomeId (int {\em id})}}
+\label{classCGeneticAlgorithm_a443bd2417f915c0aeb8119ff86844ad4}
+checks if genome with given id exists
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]id of genome in actual population \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a354d08a200d57940cfabf5b935b2809c}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!Fitness@{Fitness}}
+\index{Fitness@{Fitness}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{Fitness}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::Fitness ({\bf CGenome} $\ast$ {\em genome}, \/  {\bf CSpace} $\ast$ {\em spaceInit}, \/  {\bf CSpace} $\ast$ {\em spaceAct}, \/  int {\em caStepAct})}}
+\label{classCGeneticAlgorithm_a354d08a200d57940cfabf5b935b2809c}
+computes fitness usig \hyperlink{classCFitness}{CFitness} class, this fc checking if actual step of ca is final step in which object shifting should be done if this is final step, this function maximalizes fitness of given genome in case, that this genome is \char`\"{}good\char`\"{} (has relative fitness higher that 0.9) if this is not final step, but fitness is \char`\"{}good\char`\"{}, it also maximalizes fitness but the maximalization is smaller in comparition to final step case
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$genome}]pointer to actually used genome \item[{\em $\ast$spaceInit}]pointer to init space of ca needed be \hyperlink{classCFitness}{CFitness} class \item[{\em $\ast$spaceAct}]pointer to actual space of ca \item[{\em caStepAct}]actual step of ca \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a4066729944a04f47bf4c38257d330cb3}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetActualPopulation@{GetActualPopulation}}
+\index{GetActualPopulation@{GetActualPopulation}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetActualPopulation}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ {\bf CGenome} $\ast$ $>$ $\ast$ CGeneticAlgorithm::GetActualPopulation ()}}
+\label{classCGeneticAlgorithm_a4066729944a04f47bf4c38257d330cb3}
+returns pointer to vector with actual generation \hypertarget{classCGeneticAlgorithm_ad320e9d2f781d4f503f4edf66b6abc07}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetActualPopulationSize@{GetActualPopulationSize}}
+\index{GetActualPopulationSize@{GetActualPopulationSize}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetActualPopulationSize}]{\setlength{\rightskip}{0pt plus 5cm}int CGeneticAlgorithm::GetActualPopulationSize ()}}
+\label{classCGeneticAlgorithm_ad320e9d2f781d4f503f4edf66b6abc07}
+returns size of actual generation \hypertarget{classCGeneticAlgorithm_a3fe743e1c6ca8f2387410063ce42fb5c}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetBestGenome@{GetBestGenome}}
+\index{GetBestGenome@{GetBestGenome}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetBestGenome}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGenome} $\ast$ CGeneticAlgorithm::GetBestGenome ()}}
+\label{classCGeneticAlgorithm_a3fe743e1c6ca8f2387410063ce42fb5c}
+returns pointer to best genome \hypertarget{classCGeneticAlgorithm_a7ed37537336f7ba8c77b8944e0a9052a}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetCornerPosX@{GetCornerPosX}}
+\index{GetCornerPosX@{GetCornerPosX}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetCornerPosX}]{\setlength{\rightskip}{0pt plus 5cm}int CGeneticAlgorithm::GetCornerPosX (int {\em corn})}}
+\label{classCGeneticAlgorithm_a7ed37537336f7ba8c77b8944e0a9052a}
+returns object's x-\/position of selected corner \hypertarget{classCGeneticAlgorithm_afff003459489277c5b3944677b589a2b}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetCornerPosY@{GetCornerPosY}}
+\index{GetCornerPosY@{GetCornerPosY}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetCornerPosY}]{\setlength{\rightskip}{0pt plus 5cm}int CGeneticAlgorithm::GetCornerPosY (int {\em corn})}}
+\label{classCGeneticAlgorithm_afff003459489277c5b3944677b589a2b}
+returns object's y-\/position of selected corner \hypertarget{classCGeneticAlgorithm_a73bfc748e3d504395e6180d363a24536}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CGeneticAlgorithm::GetErrorFlag ()}}
+\label{classCGeneticAlgorithm_a73bfc748e3d504395e6180d363a24536}
+returns error flag \hypertarget{classCGeneticAlgorithm_a85a3227b126b529d21b503e48fcf30ef}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!GetGenome@{GetGenome}}
+\index{GetGenome@{GetGenome}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{GetGenome}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGenome} $\ast$ CGeneticAlgorithm::GetGenome (int {\em id})}}
+\label{classCGeneticAlgorithm_a85a3227b126b529d21b503e48fcf30ef}
+returns pointer to genome with given id
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]id of genome from actual population \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_ad11b5c30a2eb45b1a8526ef058b1c8d0}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!IdentifyCorners@{IdentifyCorners}}
+\index{IdentifyCorners@{IdentifyCorners}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{IdentifyCorners}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::IdentifyCorners ({\bf CSpace} $\ast$ {\em s})}}
+\label{classCGeneticAlgorithm_ad11b5c30a2eb45b1a8526ef058b1c8d0}
+founds corners of object in ca space using \hyperlink{classCFitness}{CFitness} class
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$s}]pointer to ca space \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a0992c75f2578fa1aec75996805e463cb}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!ImportGenomeToPopulation@{ImportGenomeToPopulation}}
+\index{ImportGenomeToPopulation@{ImportGenomeToPopulation}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{ImportGenomeToPopulation}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::ImportGenomeToPopulation ({\bf CGenome} $\ast$ {\em genomeImport})}}
+\label{classCGeneticAlgorithm_a0992c75f2578fa1aec75996805e463cb}
+imports given genome in actual population
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$genomeImport}]genome which will be imported into actual gen \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a0354c0ccdc8b9ec809a0561767172165}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!InitGenonetypeStandard@{InitGenonetypeStandard}}
+\index{InitGenonetypeStandard@{InitGenonetypeStandard}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{InitGenonetypeStandard}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::InitGenonetypeStandard ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGeneticAlgorithm_a0354c0ccdc8b9ec809a0561767172165}
+creates init population of genomes \hypertarget{classCGeneticAlgorithm_a9632fcef92f6ec52112f971cb5119bc2}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!InitGenotype@{InitGenotype}}
+\index{InitGenotype@{InitGenotype}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{InitGenotype}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::InitGenotype ()}}
+\label{classCGeneticAlgorithm_a9632fcef92f6ec52112f971cb5119bc2}
+creates init population of genomes \hypertarget{classCGeneticAlgorithm_a9910ee23c78afc77e960320026439291}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!InitGenotypeInstruction@{InitGenotypeInstruction}}
+\index{InitGenotypeInstruction@{InitGenotypeInstruction}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{InitGenotypeInstruction}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::InitGenotypeInstruction ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGeneticAlgorithm_a9910ee23c78afc77e960320026439291}
+inits population with instruction genomes -\/ NOT IMPLEMENTED \hypertarget{classCGeneticAlgorithm_a239027b6bfc2af7443d73645479ec293}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!InitGenotypeReevolve@{InitGenotypeReevolve}}
+\index{InitGenotypeReevolve@{InitGenotypeReevolve}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{InitGenotypeReevolve}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::InitGenotypeReevolve ({\bf CGenome} $\ast$ {\em genomeInit})}}
+\label{classCGeneticAlgorithm_a239027b6bfc2af7443d73645479ec293}
+creates init population of genomes from given genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$genomeInit}]init genome which should be re-\/evolved \end{DoxyParams}
+\hypertarget{classCGeneticAlgorithm_a032d168728e17a9ac47f81844a529410}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!Mutation@{Mutation}}
+\index{Mutation@{Mutation}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{Mutation}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::Mutation ()}}
+\label{classCGeneticAlgorithm_a032d168728e17a9ac47f81844a529410}
+performs mutation using CMutate class best genome from population is selected twice -\/ one copy which is on 1st position of population vector is NOT MUTATED -\/ ALGORITHM USING ELITISM !!! \hypertarget{classCGeneticAlgorithm_a5cf2e61a6b805e5575bc1db1552c5aa5}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!RefillPopulation@{RefillPopulation}}
+\index{RefillPopulation@{RefillPopulation}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{RefillPopulation}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::RefillPopulation ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGeneticAlgorithm_a5cf2e61a6b805e5575bc1db1552c5aa5}
+refills population -\/ after selection is important to create new genomes for refilling population to init size, because no croosover to creation child genomes is used population is refilled from genomes selected into next gen \hypertarget{classCGeneticAlgorithm_ae889e36cf0759ac986590e8f2756c18c}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!RenumberActualGeneration@{RenumberActualGeneration}}
+\index{RenumberActualGeneration@{RenumberActualGeneration}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{RenumberActualGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::RenumberActualGeneration ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCGeneticAlgorithm_ae889e36cf0759ac986590e8f2756c18c}
+renumbers genomes in population -\/ sets actual generation id and genome id, which depends in index of genome in vector \hypertarget{classCGeneticAlgorithm_a44c7a724b1af1370d1e669c84f30775f}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!Selection@{Selection}}
+\index{Selection@{Selection}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{Selection}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::Selection ()}}
+\label{classCGeneticAlgorithm_a44c7a724b1af1370d1e669c84f30775f}
+performs selection using \hyperlink{classCSelection}{CSelection} class \hypertarget{classCGeneticAlgorithm_aa3b7378230c783d13431d50eaf3600c9}{
+\index{CGeneticAlgorithm@{CGeneticAlgorithm}!SetConfigCore@{SetConfigCore}}
+\index{SetConfigCore@{SetConfigCore}!CGeneticAlgorithm@{CGeneticAlgorithm}}
+\subsubsection[{SetConfigCore}]{\setlength{\rightskip}{0pt plus 5cm}void CGeneticAlgorithm::SetConfigCore ({\bf CConfigCore} $\ast$ {\em ccc})}}
+\label{classCGeneticAlgorithm_aa3b7378230c783d13431d50eaf3600c9}
+sets config class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GeneticAlgorithm.h\item 
+GeneticAlgorithm.cpp\end{DoxyCompactItemize}

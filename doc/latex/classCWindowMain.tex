@@ -1,0 +1,379 @@
+\hypertarget{classCWindowMain}{
+\section{CWindowMain Class Reference}
+\label{classCWindowMain}\index{CWindowMain@{CWindowMain}}
+}
+
+
+{\ttfamily \#include $<$WindowMain.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWindowMain_ab2ee214f54da9d9e3493e32c17dceb3b}{CWindowMain} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classCWindowMain_ae916ee64d7cf20837fa6cf92a94084bb}{$\sim$CWindowMain} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWindowMain_a3093f6da18ce5571d3461f03c725a37e}{changeEvent} (QEvent $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCWindowMain_a5c044b750d1626f1d87a7ef57c573dac}{WidgetInputApplyed} (bool a)
+\item 
+void \hyperlink{classCWindowMain_a62085f5b2d09731bba414dac063ba30c}{WidgetOutputApplyed} (bool a)
+\item 
+void \hyperlink{classCWindowMain_adbaea71f7ed0bd6ad2ee1c7ee3183933}{WidgetEvolutionApplyed} (bool a)
+\item 
+void \hyperlink{classCWindowMain_a860e2fe5338da7007566e53382d2cf35}{WidgetExportApplayed} (bool a)
+\item 
+void \hyperlink{classCWindowMain_abd0c204fff950b8b26b0dc8bd7642afd}{InitPressed} ()
+\item 
+void \hyperlink{classCWindowMain_a88e0119155757defdea0bdaf4ce84c55}{DeletePressed} ()
+\item 
+void \hyperlink{classCWindowMain_ad9734902625a60d83e0d537d74865e31}{EvoStartPressed} ()
+\item 
+void \hyperlink{classCWindowMain_ac6aaa339ff3d4812de61092cc953c2ac}{RunPressed} ()
+\item 
+void \hyperlink{classCWindowMain_a13929df83f0165db58ad16c0d90fa092}{StepPressed} ()
+\item 
+void \hyperlink{classCWindowMain_a1c895ba39c0847fd25f6b734eb5f6ac3}{StopPressed} ()
+\item 
+void \hyperlink{classCWindowMain_a0664061226a46527c08baa79c77c021e}{TerminatePressed} ()
+\item 
+void \hyperlink{classCWindowMain_a8622a7def9276f522c5c13eeb4491612}{EvolutionInit} ()
+\item 
+void \hyperlink{classCWindowMain_a215d5fc27c694df1b869aa45b161d964}{EvolutionRunning} (bool r)
+\item 
+void \hyperlink{classCWindowMain_aba0d4bd86968982f3d61d5fbaeb946e5}{CellularAutomatonRunning} (bool r)
+\item 
+void \hyperlink{classCWindowMain_a80a09b310e8041ee07ffa00db45aa56a}{CellularAutomatonStep} ()
+\item 
+void \hyperlink{classCWindowMain_ad73f9e5ab904f02091259c478caa6ac3}{SimulationDelete} ()
+\item 
+void \hyperlink{classCWindowMain_a64befadac7e02a2a690e89706badd766}{CoreCheckInitDone} (int ccid)
+\item 
+void \hyperlink{classCWindowMain_a98613fbc73c34cbafce2990aa4585e0f}{CoreDataMapToGui} ()
+\item 
+void \hyperlink{classCWindowMain_abeadaf48e9588743daf80d5ddcf3ceaa}{MenuActionAbout} ()
+\item 
+void \hyperlink{classCWindowMain_aa07e380e77b5dbcbecc1078f6ad1c41d}{MenuActionExportRunConfig} ()
+\item 
+void \hyperlink{classCWindowMain_afe2b8abc28c34267f4cf7bd5c87d97eb}{MenuActionImportRunConfig} ()
+\item 
+void \hyperlink{classCWindowMain_a321e1a1a2653cde8054d27f4125094f4}{GuiDisplayCaMove} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCWindowMain_a7a64b7f7d3cb7b2094f4a2a347e357ce}{InitCore} ()
+\item 
+void \hyperlink{classCWindowMain_a75d596613f67f6e7b1f363a3cef1c3a3}{DeleteCore} ()
+\item 
+void \hyperlink{classCWindowMain_af1f48b80b58de4cefaee7ca9fdfaa912}{CheckSettingApplyValidity} ()
+\item 
+bool \hyperlink{classCWindowMain_a0c10998825e8d84929d0926b6db8ca23}{CheckUiLayouts} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCWindowMain_a7805af2b6e68a20238c257e8921cce54}{
+Ui::CWindowMain $\ast$ \hyperlink{classCWindowMain_a7805af2b6e68a20238c257e8921cce54}{ui}}
+\label{classCWindowMain_a7805af2b6e68a20238c257e8921cce54}
+
+\begin{DoxyCompactList}\small\item\em pointer to widget (gui of this class) \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a8be4a6a8a2322d2a827e78abec5fd84e}{
+QTimer $\ast$ \hyperlink{classCWindowMain_a8be4a6a8a2322d2a827e78abec5fd84e}{timer}}
+\label{classCWindowMain_a8be4a6a8a2322d2a827e78abec5fd84e}
+
+\begin{DoxyCompactList}\small\item\em pointer to timer class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a2b9b833e18f5c255729883412932d4b0}{
+\hyperlink{classCWidgetInput}{CWidgetInput} $\ast$ \hyperlink{classCWindowMain_a2b9b833e18f5c255729883412932d4b0}{widgetI}}
+\label{classCWindowMain_a2b9b833e18f5c255729883412932d4b0}
+
+\begin{DoxyCompactList}\small\item\em pointer to input widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a7f1e66818716fce37ad262b15e8d648f}{
+\hyperlink{classCWidgetOutput}{CWidgetOutput} $\ast$ \hyperlink{classCWindowMain_a7f1e66818716fce37ad262b15e8d648f}{widgetO}}
+\label{classCWindowMain_a7f1e66818716fce37ad262b15e8d648f}
+
+\begin{DoxyCompactList}\small\item\em pointer to output widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a5ea8eb569e05ea618124bc94f5ce4634}{
+\hyperlink{classCWidgetEvolution}{CWidgetEvolution} $\ast$ \hyperlink{classCWindowMain_a5ea8eb569e05ea618124bc94f5ce4634}{widgetE}}
+\label{classCWindowMain_a5ea8eb569e05ea618124bc94f5ce4634}
+
+\begin{DoxyCompactList}\small\item\em pointer to evolution widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a0f1c84aba6b8e149e51cd4b1eb657c85}{
+\hyperlink{classCWidgetExport}{CWidgetExport} $\ast$ \hyperlink{classCWindowMain_a0f1c84aba6b8e149e51cd4b1eb657c85}{widgetEx}}
+\label{classCWindowMain_a0f1c84aba6b8e149e51cd4b1eb657c85}
+
+\begin{DoxyCompactList}\small\item\em pointer to export widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a21349fe9946de9624121773c95e37c29}{
+\hyperlink{classCWidgetRunCA}{CWidgetRunCA} $\ast$ \hyperlink{classCWindowMain_a21349fe9946de9624121773c95e37c29}{widgetRCA}}
+\label{classCWindowMain_a21349fe9946de9624121773c95e37c29}
+
+\begin{DoxyCompactList}\small\item\em pointer to run-\/ca widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a1b9bbeb524e439d7c1036f3560ef7cf7}{
+\hyperlink{classCWidgetRunEvo}{CWidgetRunEvo} $\ast$ \hyperlink{classCWindowMain_a1b9bbeb524e439d7c1036f3560ef7cf7}{widgetREvo}}
+\label{classCWindowMain_a1b9bbeb524e439d7c1036f3560ef7cf7}
+
+\begin{DoxyCompactList}\small\item\em pointer to run-\/evo widget \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_ac83f7b4a6567c3a3a8cfbcfe29d81b4f}{
+\hyperlink{classCCore}{CCore} $\ast$ \hyperlink{classCWindowMain_ac83f7b4a6567c3a3a8cfbcfe29d81b4f}{core}}
+\label{classCWindowMain_ac83f7b4a6567c3a3a8cfbcfe29d81b4f}
+
+\begin{DoxyCompactList}\small\item\em pointer to core class \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a0e37b3e25f1ce14cd4b44059273ea256}{
+\hyperlink{classCExportConfig}{CExportConfig} \hyperlink{classCWindowMain_a0e37b3e25f1ce14cd4b44059273ea256}{exportConfig}}
+\label{classCWindowMain_a0e37b3e25f1ce14cd4b44059273ea256}
+
+\begin{DoxyCompactList}\small\item\em class for exporting all settings \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_ae44966f0212ccef1bdc08b062be54891}{
+\hyperlink{classCImportConfig}{CImportConfig} \hyperlink{classCWindowMain_ae44966f0212ccef1bdc08b062be54891}{importConfig}}
+\label{classCWindowMain_ae44966f0212ccef1bdc08b062be54891}
+
+\begin{DoxyCompactList}\small\item\em class for importing all settings \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_acf63c327ce3445b85a741562692e746e}{
+bool \hyperlink{classCWindowMain_acf63c327ce3445b85a741562692e746e}{bWidgetInputApplyed}}
+\label{classCWindowMain_acf63c327ce3445b85a741562692e746e}
+
+\begin{DoxyCompactList}\small\item\em is input widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_afe18235a54b51d29bc1cc81e849486de}{
+bool \hyperlink{classCWindowMain_afe18235a54b51d29bc1cc81e849486de}{bWidgetOutputApplyed}}
+\label{classCWindowMain_afe18235a54b51d29bc1cc81e849486de}
+
+\begin{DoxyCompactList}\small\item\em is output widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a55f2018bdb8b5bd865cd2e29c918ba97}{
+bool \hyperlink{classCWindowMain_a55f2018bdb8b5bd865cd2e29c918ba97}{bWidgetEvolutionApplyed}}
+\label{classCWindowMain_a55f2018bdb8b5bd865cd2e29c918ba97}
+
+\begin{DoxyCompactList}\small\item\em is evolution wodget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a44e5c85b14ee5d538cdfa5cb466c4437}{
+bool \hyperlink{classCWindowMain_a44e5c85b14ee5d538cdfa5cb466c4437}{bWidgetExportApplyed}}
+\label{classCWindowMain_a44e5c85b14ee5d538cdfa5cb466c4437}
+
+\begin{DoxyCompactList}\small\item\em is export widget applyed? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a9fb2c8acfb8cef14443738ebc7a57e40}{
+bool \hyperlink{classCWindowMain_a9fb2c8acfb8cef14443738ebc7a57e40}{bSimInitDone}}
+\label{classCWindowMain_a9fb2c8acfb8cef14443738ebc7a57e40}
+
+\begin{DoxyCompactList}\small\item\em is core init done? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_ab2f7ecd4403800b1ac1480a892c1f09e}{
+bool \hyperlink{classCWindowMain_ab2f7ecd4403800b1ac1480a892c1f09e}{bEvoRunning}}
+\label{classCWindowMain_ab2f7ecd4403800b1ac1480a892c1f09e}
+
+\begin{DoxyCompactList}\small\item\em is evolution running? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a7f198e5218f09c31a2ee2da405a69482}{
+bool \hyperlink{classCWindowMain_a7f198e5218f09c31a2ee2da405a69482}{bCaRunning}}
+\label{classCWindowMain_a7f198e5218f09c31a2ee2da405a69482}
+
+\begin{DoxyCompactList}\small\item\em is simulator running? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_a67bdd53e50e369c7cc3831e591c0efb1}{
+bool \hyperlink{classCWindowMain_a67bdd53e50e369c7cc3831e591c0efb1}{bOutputDone}}
+\label{classCWindowMain_a67bdd53e50e369c7cc3831e591c0efb1}
+
+\begin{DoxyCompactList}\small\item\em is some output done? \item\end{DoxyCompactList}\item 
+\hypertarget{classCWindowMain_ae273a731f01b4c77bdd4c2c56fb0240a}{
+unsigned int \hyperlink{classCWindowMain_ae273a731f01b4c77bdd4c2c56fb0240a}{iGuiDisplayModeCaTimeout}}
+\label{classCWindowMain_ae273a731f01b4c77bdd4c2c56fb0240a}
+
+\begin{DoxyCompactList}\small\item\em simulator animation timeout \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main window off app, this class use all other gui classes 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWindowMain_ab2ee214f54da9d9e3493e32c17dceb3b}{
+\index{CWindowMain@{CWindowMain}!CWindowMain@{CWindowMain}}
+\index{CWindowMain@{CWindowMain}!CWindowMain@{CWindowMain}}
+\subsubsection[{CWindowMain}]{\setlength{\rightskip}{0pt plus 5cm}CWindowMain::CWindowMain (QWidget $\ast$ {\em parent} = {\ttfamily 0})}}
+\label{classCWindowMain_ab2ee214f54da9d9e3493e32c17dceb3b}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$parent}]pointer to parent widget \end{DoxyParams}
+\hypertarget{classCWindowMain_ae916ee64d7cf20837fa6cf92a94084bb}{
+\index{CWindowMain@{CWindowMain}!$\sim$CWindowMain@{$\sim$CWindowMain}}
+\index{$\sim$CWindowMain@{$\sim$CWindowMain}!CWindowMain@{CWindowMain}}
+\subsubsection[{$\sim$CWindowMain}]{\setlength{\rightskip}{0pt plus 5cm}CWindowMain::$\sim$CWindowMain ()}}
+\label{classCWindowMain_ae916ee64d7cf20837fa6cf92a94084bb}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWindowMain_aba0d4bd86968982f3d61d5fbaeb946e5}{
+\index{CWindowMain@{CWindowMain}!CellularAutomatonRunning@{CellularAutomatonRunning}}
+\index{CellularAutomatonRunning@{CellularAutomatonRunning}!CWindowMain@{CWindowMain}}
+\subsubsection[{CellularAutomatonRunning}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::CellularAutomatonRunning (bool {\em r})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_aba0d4bd86968982f3d61d5fbaeb946e5}
+reaction to run/stop button -\/ starts animation in simualtor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]is animation running? \end{DoxyParams}
+\hypertarget{classCWindowMain_a80a09b310e8041ee07ffa00db45aa56a}{
+\index{CWindowMain@{CWindowMain}!CellularAutomatonStep@{CellularAutomatonStep}}
+\index{CellularAutomatonStep@{CellularAutomatonStep}!CWindowMain@{CWindowMain}}
+\subsubsection[{CellularAutomatonStep}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::CellularAutomatonStep ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a80a09b310e8041ee07ffa00db45aa56a}
+reaction to step button \hypertarget{classCWindowMain_a3093f6da18ce5571d3461f03c725a37e}{
+\index{CWindowMain@{CWindowMain}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!CWindowMain@{CWindowMain}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCWindowMain_a3093f6da18ce5571d3461f03c725a37e}
+change event happened
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]event \end{DoxyParams}
+\hypertarget{classCWindowMain_af1f48b80b58de4cefaee7ca9fdfaa912}{
+\index{CWindowMain@{CWindowMain}!CheckSettingApplyValidity@{CheckSettingApplyValidity}}
+\index{CheckSettingApplyValidity@{CheckSettingApplyValidity}!CWindowMain@{CWindowMain}}
+\subsubsection[{CheckSettingApplyValidity}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::CheckSettingApplyValidity ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWindowMain_af1f48b80b58de4cefaee7ca9fdfaa912}
+checks, if all widgets are applyed \hypertarget{classCWindowMain_a0c10998825e8d84929d0926b6db8ca23}{
+\index{CWindowMain@{CWindowMain}!CheckUiLayouts@{CheckUiLayouts}}
+\index{CheckUiLayouts@{CheckUiLayouts}!CWindowMain@{CWindowMain}}
+\subsubsection[{CheckUiLayouts}]{\setlength{\rightskip}{0pt plus 5cm}bool CWindowMain::CheckUiLayouts ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWindowMain_a0c10998825e8d84929d0926b6db8ca23}
+checks if all widget layout was correctly allocated \hypertarget{classCWindowMain_a64befadac7e02a2a690e89706badd766}{
+\index{CWindowMain@{CWindowMain}!CoreCheckInitDone@{CoreCheckInitDone}}
+\index{CoreCheckInitDone@{CoreCheckInitDone}!CWindowMain@{CWindowMain}}
+\subsubsection[{CoreCheckInitDone}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::CoreCheckInitDone (int {\em ccid})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a64befadac7e02a2a690e89706badd766}
+checks core initialization state \hypertarget{classCWindowMain_a98613fbc73c34cbafce2990aa4585e0f}{
+\index{CWindowMain@{CWindowMain}!CoreDataMapToGui@{CoreDataMapToGui}}
+\index{CoreDataMapToGui@{CoreDataMapToGui}!CWindowMain@{CWindowMain}}
+\subsubsection[{CoreDataMapToGui}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::CoreDataMapToGui ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a98613fbc73c34cbafce2990aa4585e0f}
+maps data from \hyperlink{classCCore}{CCore} class into widgets/gui \hypertarget{classCWindowMain_a75d596613f67f6e7b1f363a3cef1c3a3}{
+\index{CWindowMain@{CWindowMain}!DeleteCore@{DeleteCore}}
+\index{DeleteCore@{DeleteCore}!CWindowMain@{CWindowMain}}
+\subsubsection[{DeleteCore}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::DeleteCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWindowMain_a75d596613f67f6e7b1f363a3cef1c3a3}
+deletes \hyperlink{classCCore}{CCore} class \hypertarget{classCWindowMain_a88e0119155757defdea0bdaf4ce84c55}{
+\index{CWindowMain@{CWindowMain}!DeletePressed@{DeletePressed}}
+\index{DeletePressed@{DeletePressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{DeletePressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::DeletePressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a88e0119155757defdea0bdaf4ce84c55}
+delete button is pressed \hypertarget{classCWindowMain_a8622a7def9276f522c5c13eeb4491612}{
+\index{CWindowMain@{CWindowMain}!EvolutionInit@{EvolutionInit}}
+\index{EvolutionInit@{EvolutionInit}!CWindowMain@{CWindowMain}}
+\subsubsection[{EvolutionInit}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::EvolutionInit ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a8622a7def9276f522c5c13eeb4491612}
+reaction to init button -\/ inits evolution \hypertarget{classCWindowMain_a215d5fc27c694df1b869aa45b161d964}{
+\index{CWindowMain@{CWindowMain}!EvolutionRunning@{EvolutionRunning}}
+\index{EvolutionRunning@{EvolutionRunning}!CWindowMain@{CWindowMain}}
+\subsubsection[{EvolutionRunning}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::EvolutionRunning (bool {\em r})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a215d5fc27c694df1b869aa45b161d964}
+reaction to evolve/delete button -\/ starts evolution
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]is evolution running? \end{DoxyParams}
+\hypertarget{classCWindowMain_ad9734902625a60d83e0d537d74865e31}{
+\index{CWindowMain@{CWindowMain}!EvoStartPressed@{EvoStartPressed}}
+\index{EvoStartPressed@{EvoStartPressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{EvoStartPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::EvoStartPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_ad9734902625a60d83e0d537d74865e31}
+evolve button is pressed \hypertarget{classCWindowMain_a321e1a1a2653cde8054d27f4125094f4}{
+\index{CWindowMain@{CWindowMain}!GuiDisplayCaMove@{GuiDisplayCaMove}}
+\index{GuiDisplayCaMove@{GuiDisplayCaMove}!CWindowMain@{CWindowMain}}
+\subsubsection[{GuiDisplayCaMove}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::GuiDisplayCaMove ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a321e1a1a2653cde8054d27f4125094f4}
+i am not sure, but i thing, that this is called when data from \hyperlink{classCCore}{CCore} are written into widgets, so it's possible to write new data into \hyperlink{classCCore}{CCore} from app kernel \hypertarget{classCWindowMain_a7a64b7f7d3cb7b2094f4a2a347e357ce}{
+\index{CWindowMain@{CWindowMain}!InitCore@{InitCore}}
+\index{InitCore@{InitCore}!CWindowMain@{CWindowMain}}
+\subsubsection[{InitCore}]{\setlength{\rightskip}{0pt plus 5cm}bool CWindowMain::InitCore ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWindowMain_a7a64b7f7d3cb7b2094f4a2a347e357ce}
+inits app core -\/ creates \hyperlink{classCCore}{CCore} class, writes all settings into it \hyperlink{classCCore}{CCore} then creates app kernel class -\/ \hyperlink{classCThreadCore}{CThreadCore} \hypertarget{classCWindowMain_abd0c204fff950b8b26b0dc8bd7642afd}{
+\index{CWindowMain@{CWindowMain}!InitPressed@{InitPressed}}
+\index{InitPressed@{InitPressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{InitPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::InitPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_abd0c204fff950b8b26b0dc8bd7642afd}
+init button os pressed \hypertarget{classCWindowMain_abeadaf48e9588743daf80d5ddcf3ceaa}{
+\index{CWindowMain@{CWindowMain}!MenuActionAbout@{MenuActionAbout}}
+\index{MenuActionAbout@{MenuActionAbout}!CWindowMain@{CWindowMain}}
+\subsubsection[{MenuActionAbout}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::MenuActionAbout ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_abeadaf48e9588743daf80d5ddcf3ceaa}
+about from menu is pressed -\/ show about dialog \hypertarget{classCWindowMain_aa07e380e77b5dbcbecc1078f6ad1c41d}{
+\index{CWindowMain@{CWindowMain}!MenuActionExportRunConfig@{MenuActionExportRunConfig}}
+\index{MenuActionExportRunConfig@{MenuActionExportRunConfig}!CWindowMain@{CWindowMain}}
+\subsubsection[{MenuActionExportRunConfig}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::MenuActionExportRunConfig ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_aa07e380e77b5dbcbecc1078f6ad1c41d}
+export from menu is pressed -\/ export all settings \hypertarget{classCWindowMain_afe2b8abc28c34267f4cf7bd5c87d97eb}{
+\index{CWindowMain@{CWindowMain}!MenuActionImportRunConfig@{MenuActionImportRunConfig}}
+\index{MenuActionImportRunConfig@{MenuActionImportRunConfig}!CWindowMain@{CWindowMain}}
+\subsubsection[{MenuActionImportRunConfig}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::MenuActionImportRunConfig ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_afe2b8abc28c34267f4cf7bd5c87d97eb}
+import from menu is pressed -\/ import all settings \hypertarget{classCWindowMain_ac6aaa339ff3d4812de61092cc953c2ac}{
+\index{CWindowMain@{CWindowMain}!RunPressed@{RunPressed}}
+\index{RunPressed@{RunPressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{RunPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::RunPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_ac6aaa339ff3d4812de61092cc953c2ac}
+run button is pressed start animation in simulator \hypertarget{classCWindowMain_ad73f9e5ab904f02091259c478caa6ac3}{
+\index{CWindowMain@{CWindowMain}!SimulationDelete@{SimulationDelete}}
+\index{SimulationDelete@{SimulationDelete}!CWindowMain@{CWindowMain}}
+\subsubsection[{SimulationDelete}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::SimulationDelete ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_ad73f9e5ab904f02091259c478caa6ac3}
+reaction to delete button \hypertarget{classCWindowMain_a13929df83f0165db58ad16c0d90fa092}{
+\index{CWindowMain@{CWindowMain}!StepPressed@{StepPressed}}
+\index{StepPressed@{StepPressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{StepPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::StepPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a13929df83f0165db58ad16c0d90fa092}
+step button is pressed do 1 step of ca in simulator \hypertarget{classCWindowMain_a1c895ba39c0847fd25f6b734eb5f6ac3}{
+\index{CWindowMain@{CWindowMain}!StopPressed@{StopPressed}}
+\index{StopPressed@{StopPressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{StopPressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::StopPressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a1c895ba39c0847fd25f6b734eb5f6ac3}
+stop button is pressed interrupt animation in simualtor \hypertarget{classCWindowMain_a0664061226a46527c08baa79c77c021e}{
+\index{CWindowMain@{CWindowMain}!TerminatePressed@{TerminatePressed}}
+\index{TerminatePressed@{TerminatePressed}!CWindowMain@{CWindowMain}}
+\subsubsection[{TerminatePressed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::TerminatePressed ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a0664061226a46527c08baa79c77c021e}
+terminate button is pressed terminate simulation \hypertarget{classCWindowMain_adbaea71f7ed0bd6ad2ee1c7ee3183933}{
+\index{CWindowMain@{CWindowMain}!WidgetEvolutionApplyed@{WidgetEvolutionApplyed}}
+\index{WidgetEvolutionApplyed@{WidgetEvolutionApplyed}!CWindowMain@{CWindowMain}}
+\subsubsection[{WidgetEvolutionApplyed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::WidgetEvolutionApplyed (bool {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_adbaea71f7ed0bd6ad2ee1c7ee3183933}
+sets evolution widget apply state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]evolution widget apply state \end{DoxyParams}
+\hypertarget{classCWindowMain_a860e2fe5338da7007566e53382d2cf35}{
+\index{CWindowMain@{CWindowMain}!WidgetExportApplayed@{WidgetExportApplayed}}
+\index{WidgetExportApplayed@{WidgetExportApplayed}!CWindowMain@{CWindowMain}}
+\subsubsection[{WidgetExportApplayed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::WidgetExportApplayed (bool {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a860e2fe5338da7007566e53382d2cf35}
+sets export widget apply state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]export widget apply state \end{DoxyParams}
+\hypertarget{classCWindowMain_a5c044b750d1626f1d87a7ef57c573dac}{
+\index{CWindowMain@{CWindowMain}!WidgetInputApplyed@{WidgetInputApplyed}}
+\index{WidgetInputApplyed@{WidgetInputApplyed}!CWindowMain@{CWindowMain}}
+\subsubsection[{WidgetInputApplyed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::WidgetInputApplyed (bool {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a5c044b750d1626f1d87a7ef57c573dac}
+sets input widget apply state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]input widget apply state \end{DoxyParams}
+\hypertarget{classCWindowMain_a62085f5b2d09731bba414dac063ba30c}{
+\index{CWindowMain@{CWindowMain}!WidgetOutputApplyed@{WidgetOutputApplyed}}
+\index{WidgetOutputApplyed@{WidgetOutputApplyed}!CWindowMain@{CWindowMain}}
+\subsubsection[{WidgetOutputApplyed}]{\setlength{\rightskip}{0pt plus 5cm}void CWindowMain::WidgetOutputApplyed (bool {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classCWindowMain_a62085f5b2d09731bba414dac063ba30c}
+sets output widget apply state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]output widget apply state \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+WindowMain.h\item 
+WindowMain.cpp\end{DoxyCompactItemize}

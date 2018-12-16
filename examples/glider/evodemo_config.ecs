@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE evodemo_run_settings_export>
+<app_run_config v="0.8.0">
+  <config_ca_input>
+    <space_size width="10" height="10"/>
+    <states count="2" default_state="0"/>
+  </config_ca_input>
+  <config_ca_output>
+    <space_type type="1"/>
+    <space_size width="10" height="10"/>
+    <mapping_point x_coord="0" y_coord="0"/>
+  </config_ca_output>
+  <config_evolution>
+    <import>
+      <check_run_sim checked="0"/>
+      <check_reevolve checked="0"/>
+      <import_file file=""/>
+    </import>
+    <ga_operations>
+      <crossover probability="90" count="0"/>
+      <mutation probability="85" count="15"/>
+    </ga_operations>
+    <evolution>
+      <evo_runs value="100"/>
+      <generations value="1000"/>
+      <population_size value="100"/>
+      <chromosome value="0"/>
+    </evolution>
+    <movement>
+      <direction value="0"/>
+      <ca_steps value="3"/>
+      <distance value="1"/>
+    </movement>
+  </config_evolution>
+  <config_export>
+    <file_export>
+      <export_path path="C:/Users/BlueGene/.VirtualBox/_VBoxSrvShared/__thesis/evodemo/actual_run_test"/>
+      <ca_export mode="0"/>
+      <ga_export mode="3"/>
+    </file_export>
+    <gddm>
+      <animation_timeout miliseconds="400"/>
+      <display_mode mode="2"/>
+    </gddm>
+  </config_export>
+  <input_ca_space>
+    <data>
+0000000000
+0000000000
+0000000000
+0001110000
+0000010000
+0000100000
+0000000000
+0000000000
+0000000000
+0000000000
+</data>
+  </input_ca_space>
+</app_run_config>

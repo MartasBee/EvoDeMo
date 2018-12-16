@@ -1,0 +1,135 @@
+\hypertarget{classCGraphicsItemConfig}{
+\section{CGraphicsItemConfig Class Reference}
+\label{classCGraphicsItemConfig}\index{CGraphicsItemConfig@{CGraphicsItemConfig}}
+}
+
+
+{\ttfamily \#include $<$GraphicsItemConfig.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGraphicsItemConfig_a33b7af5ae08da16f731f51885fda91d3}{CGraphicsItemConfig} (int statesC=STATES\_\-COUNT\_\-DEFAULT, BYTE defState=CELL\_\-STATE\_\-EMPTY, bool edit=false)
+\item 
+void \hyperlink{classCGraphicsItemConfig_ae1a6fc47d35017d5ac76f328f323bce7}{SetStatesCount} (int sc)
+\item 
+int \hyperlink{classCGraphicsItemConfig_a63cb5e11443735539db0efe93090a5a5}{GetStatesCount} ()
+\item 
+void \hyperlink{classCGraphicsItemConfig_ace5b4e90b7f89113005c2b8340e40ddb}{SetDefState} (BYTE ds)
+\item 
+BYTE \hyperlink{classCGraphicsItemConfig_a3a7aac98e22bfdce17e0383a89913fbc}{GetDefState} ()
+\item 
+void \hyperlink{classCGraphicsItemConfig_a63436e6b3eb1e9ffe7ba7b43a9b89442}{SetEditable} (bool e)
+\item 
+bool \hyperlink{classCGraphicsItemConfig_a4948f7749819061051b596111969839a}{GetEditable} ()
+\item 
+void \hyperlink{classCGraphicsItemConfig_aa6207ae65027a39d7f6efefa665d4a30}{SetCellActState} (BYTE as)
+\item 
+BYTE \hyperlink{classCGraphicsItemConfig_abca82eef98adf65fe2511c1ad75faecd}{GetCellActState} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGraphicsItemConfig_af26b418b41f28c670cc72b355f2a02dd}{
+unsigned int \hyperlink{classCGraphicsItemConfig_af26b418b41f28c670cc72b355f2a02dd}{iCellStatesCount}}
+\label{classCGraphicsItemConfig_af26b418b41f28c670cc72b355f2a02dd}
+
+\begin{DoxyCompactList}\small\item\em states count \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItemConfig_ae5e62556101a5b1dad97a01e37805a62}{
+BYTE \hyperlink{classCGraphicsItemConfig_ae5e62556101a5b1dad97a01e37805a62}{byCellDefState}}
+\label{classCGraphicsItemConfig_ae5e62556101a5b1dad97a01e37805a62}
+
+\begin{DoxyCompactList}\small\item\em default stace \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItemConfig_a5f1dfa338fc7832b2ca0ee14d415258e}{
+bool \hyperlink{classCGraphicsItemConfig_a5f1dfa338fc7832b2ca0ee14d415258e}{bCellEditable}}
+\label{classCGraphicsItemConfig_a5f1dfa338fc7832b2ca0ee14d415258e}
+
+\begin{DoxyCompactList}\small\item\em are cells ediable? \item\end{DoxyCompactList}\item 
+\hypertarget{classCGraphicsItemConfig_a1c2bcb2d69814c90f508236748151a86}{
+BYTE \hyperlink{classCGraphicsItemConfig_a1c2bcb2d69814c90f508236748151a86}{byCellActState}}
+\label{classCGraphicsItemConfig_a1c2bcb2d69814c90f508236748151a86}
+
+\begin{DoxyCompactList}\small\item\em actual state on which cell will be set after click \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains some of cells' config settings 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGraphicsItemConfig_a33b7af5ae08da16f731f51885fda91d3}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{CGraphicsItemConfig}]{\setlength{\rightskip}{0pt plus 5cm}CGraphicsItemConfig::CGraphicsItemConfig (int {\em statesC} = {\ttfamily STATES\_\-COUNT\_\-DEFAULT}, \/  BYTE {\em defState} = {\ttfamily CELL\_\-STATE\_\-EMPTY}, \/  bool {\em edit} = {\ttfamily false})}}
+\label{classCGraphicsItemConfig_a33b7af5ae08da16f731f51885fda91d3}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em statesC}]states count \item[{\em defState}]cell's default state \item[{\em edit}]is cell editable ? \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGraphicsItemConfig_abca82eef98adf65fe2511c1ad75faecd}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!GetCellActState@{GetCellActState}}
+\index{GetCellActState@{GetCellActState}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{GetCellActState}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGraphicsItemConfig::GetCellActState ()}}
+\label{classCGraphicsItemConfig_abca82eef98adf65fe2511c1ad75faecd}
+returns actual state to set \hypertarget{classCGraphicsItemConfig_a3a7aac98e22bfdce17e0383a89913fbc}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!GetDefState@{GetDefState}}
+\index{GetDefState@{GetDefState}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{GetDefState}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGraphicsItemConfig::GetDefState ()}}
+\label{classCGraphicsItemConfig_a3a7aac98e22bfdce17e0383a89913fbc}
+returns cell's default state \hypertarget{classCGraphicsItemConfig_a4948f7749819061051b596111969839a}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!GetEditable@{GetEditable}}
+\index{GetEditable@{GetEditable}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{GetEditable}]{\setlength{\rightskip}{0pt plus 5cm}bool CGraphicsItemConfig::GetEditable ()}}
+\label{classCGraphicsItemConfig_a4948f7749819061051b596111969839a}
+returns if cell is editable \hypertarget{classCGraphicsItemConfig_a63cb5e11443735539db0efe93090a5a5}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!GetStatesCount@{GetStatesCount}}
+\index{GetStatesCount@{GetStatesCount}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{GetStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}int CGraphicsItemConfig::GetStatesCount ()}}
+\label{classCGraphicsItemConfig_a63cb5e11443735539db0efe93090a5a5}
+returns states count \hypertarget{classCGraphicsItemConfig_aa6207ae65027a39d7f6efefa665d4a30}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!SetCellActState@{SetCellActState}}
+\index{SetCellActState@{SetCellActState}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{SetCellActState}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItemConfig::SetCellActState (BYTE {\em as})}}
+\label{classCGraphicsItemConfig_aa6207ae65027a39d7f6efefa665d4a30}
+sets cell's \char`\"{}actual\char`\"{} state fc is used to set concrate state to which is cell set after clicking
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em as}]actual state to set \end{DoxyParams}
+\hypertarget{classCGraphicsItemConfig_ace5b4e90b7f89113005c2b8340e40ddb}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!SetDefState@{SetDefState}}
+\index{SetDefState@{SetDefState}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{SetDefState}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItemConfig::SetDefState (BYTE {\em ds})}}
+\label{classCGraphicsItemConfig_ace5b4e90b7f89113005c2b8340e40ddb}
+sets cell's default state
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ds}]default state \end{DoxyParams}
+\hypertarget{classCGraphicsItemConfig_a63436e6b3eb1e9ffe7ba7b43a9b89442}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!SetEditable@{SetEditable}}
+\index{SetEditable@{SetEditable}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{SetEditable}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItemConfig::SetEditable (bool {\em e})}}
+\label{classCGraphicsItemConfig_a63436e6b3eb1e9ffe7ba7b43a9b89442}
+sets if cell is editable
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]is editable ? \end{DoxyParams}
+\hypertarget{classCGraphicsItemConfig_ae1a6fc47d35017d5ac76f328f323bce7}{
+\index{CGraphicsItemConfig@{CGraphicsItemConfig}!SetStatesCount@{SetStatesCount}}
+\index{SetStatesCount@{SetStatesCount}!CGraphicsItemConfig@{CGraphicsItemConfig}}
+\subsubsection[{SetStatesCount}]{\setlength{\rightskip}{0pt plus 5cm}void CGraphicsItemConfig::SetStatesCount (int {\em sc})}}
+\label{classCGraphicsItemConfig_ae1a6fc47d35017d5ac76f328f323bce7}
+sets cell's states count
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sc}]states count \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GraphicsItemConfig.h\item 
+GraphicsItemConfig.cpp\end{DoxyCompactItemize}

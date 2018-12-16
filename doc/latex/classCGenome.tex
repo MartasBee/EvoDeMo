@@ -1,0 +1,458 @@
+\hypertarget{classCGenome}{
+\section{CGenome Class Reference}
+\label{classCGenome}\index{CGenome@{CGenome}}
+}
+
+
+{\ttfamily \#include $<$Genome.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGenome_a457e2d373926103a835472d689e8e2e7}{CGenome} (int typeG=GENOME\_\-TYPE\_\-2\_\-9N, int initGenerationId=-\/1, int initGenomeId=-\/1, \hyperlink{classCConfigCore}{CConfigCore} $\ast$pCC=NULL)
+\item 
+\hyperlink{classCGenome_afe7e2e3d4f8d7640c72a3a392147b08a}{CGenome} (const \hyperlink{classCGenome}{CGenome} \&rSide, int mode=GENOME\_\-CONSTRUCT\_\-COPY\_\-MODE\_\-NEXT\_\-GEN, \hyperlink{classCConfigCore}{CConfigCore} $\ast$pCC=NULL)
+\item 
+\hyperlink{classCGenome_a6ed12f20c2ca1f53498046b584acb01b}{$\sim$CGenome} ()
+\item 
+void \hyperlink{classCGenome_ad657f8d74e59406cd4c204de9de7b521}{SetGene} (int index, BYTE gene)
+\item 
+BYTE \hyperlink{classCGenome_a63ed6158c66292bc3934b8b0321205a7}{GetGene} (int index)
+\item 
+\hyperlink{classCGenomeType2__Ins}{CGenomeType2\_\-Ins} $\ast$ \hyperlink{classCGenome_aa39c3fd7b912f6d3c9a6ea6b21f53e93}{GetInstructionGenome} ()
+\item 
+void \hyperlink{classCGenome_a55e277b9ac07a547125764452d9955e6}{SetFitness} (int f, int d, int caStep)
+\item 
+void \hyperlink{classCGenome_acd37f114e0f35ce1e9fc6aaeeb1e7906}{SetFitness} (int f)
+\item 
+int \hyperlink{classCGenome_ab377704570de61d40c5c35cbc4038b8f}{GetFitness} ()
+\item 
+int \hyperlink{classCGenome_a5ca3b39ec73b06b0bd2c6c15e058c692}{GetFitnessMax} ()
+\item 
+int \hyperlink{classCGenome_a7d7ddf14f33e67482827aac0a6dfe10c}{GetDifferentionMin} ()
+\item 
+int \hyperlink{classCGenome_add91fda87f3065245ca2cdf280272b60}{GetFitnessMaxStepCA} ()
+\item 
+void \hyperlink{classCGenome_a7c7e21d4d46a594aae09229a2aa5d814}{SetFitnessNorm} (double fn)
+\item 
+double \hyperlink{classCGenome_a268d2a8008c2c56460e6de1df644c0c5}{GetFitnessNorm} ()
+\item 
+double \hyperlink{classCGenome_a6feb7c58908885c43921300f80881852}{GetFitnessMaxNorm} ()
+\item 
+int \hyperlink{classCGenome_a47f359ecc2d00012b13042ae19a6e078}{GetGenomeType} ()
+\item 
+void \hyperlink{classCGenome_afe3b0fd006996c7cd4e004a64f148fa9}{SetAncestorsCount} (int anc)
+\item 
+int \hyperlink{classCGenome_a2d0d112a35ca90fdb715bc8fdc87a683}{GetAncestorsCount} ()
+\item 
+void \hyperlink{classCGenome_afae4fdef83e9dd66e700c10309396481}{SetMutatedGenes} (int mgc)
+\item 
+int \hyperlink{classCGenome_a5032f14a89999743b28c9b758efbcd63}{GetMutatedGenes} ()
+\item 
+void \hyperlink{classCGenome_a43880408eec620f379d23a7078b25c85}{SetMutatedGenesTotal} (int thisG, int ancestorG)
+\item 
+int \hyperlink{classCGenome_a06e87239b9570b6ece30d735218ad62e}{GetMutatedGenesTotal} ()
+\item 
+int \hyperlink{classCGenome_a38b0bff8dfc37da6ad24e546bcd09d21}{GetMutatedGenesAllAncestors} ()
+\item 
+void \hyperlink{classCGenome_a057453c23dcda0e7ce942c91c344f6df}{SetThisGenomeId} (int generationId, int genomeId)
+\item 
+int \hyperlink{classCGenome_a067c5f24d85af2dd94199a74b6bcc19a}{GetThisGenerationId} ()
+\item 
+int \hyperlink{classCGenome_a2db1857e39b167371d212f07a852a19e}{GetThisGenomeId} ()
+\item 
+void \hyperlink{classCGenome_af3df7338e44deb4a81dc6d7171b8aac4}{SetThisInitGenomeId} (int generationInitId, int genomeInitId)
+\item 
+int \hyperlink{classCGenome_a924b1fddb5b0941f38b1eb51da608c3c}{GetThisInitGenerationId} ()
+\item 
+int \hyperlink{classCGenome_a5dfa049008c6240a85fa18c99da636d0}{GetThisInitGenomeId} ()
+\item 
+void \hyperlink{classCGenome_a3029541a0ed7983360b47360e26b65d0}{SetParentGenomeId} (int generationId, int genomeId)
+\item 
+int \hyperlink{classCGenome_a2c422e43eeba639adac8819bda493840}{GetParentGenerationId} ()
+\item 
+int \hyperlink{classCGenome_a2d7df97b949060f67af3d459176d1579}{GetParentGenomeId} ()
+\item 
+int \hyperlink{classCGenome_a56f771356480c9c018e459187914ed8f}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCGenome_a0185d3a35d45671def9b0c6cf4b99813}{
+\hyperlink{classCGenomeType2}{CGenomeType2} $\ast$ \hyperlink{classCGenome_a0185d3a35d45671def9b0c6cf4b99813}{genomeT2}}
+\label{classCGenome_a0185d3a35d45671def9b0c6cf4b99813}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 9-\/neighborhood 2 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a515fe0a4fc4791e9982d05b323140b6e}{
+\hyperlink{classCGenomeType3}{CGenomeType3} $\ast$ \hyperlink{classCGenome_a515fe0a4fc4791e9982d05b323140b6e}{genomeT3}}
+\label{classCGenome_a515fe0a4fc4791e9982d05b323140b6e}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 9-\/neighborhood 3 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_acefb847048661a389759bd7494b60e46}{
+\hyperlink{classCGenomeType4}{CGenomeType4} $\ast$ \hyperlink{classCGenome_acefb847048661a389759bd7494b60e46}{genomeT4}}
+\label{classCGenome_acefb847048661a389759bd7494b60e46}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 9-\/neighborhood 4 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a28e880b3c82113751e368cbcd8aa9945}{
+\hyperlink{classCGenomeType2__Nbh5}{CGenomeType2\_\-Nbh5} $\ast$ \hyperlink{classCGenome_a28e880b3c82113751e368cbcd8aa9945}{genomeT2\_\-N5}}
+\label{classCGenome_a28e880b3c82113751e368cbcd8aa9945}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 5-\/neighborhood 2 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a93c7227190111298e57a94300c51caad}{
+\hyperlink{classCGenomeType3__Nbh5}{CGenomeType3\_\-Nbh5} $\ast$ \hyperlink{classCGenome_a93c7227190111298e57a94300c51caad}{genomeT3\_\-N5}}
+\label{classCGenome_a93c7227190111298e57a94300c51caad}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 5-\/neighborhood 3 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a0118c83be39b907d145b56fcda473516}{
+\hyperlink{classCGenomeType4__Nbh5}{CGenomeType4\_\-Nbh5} $\ast$ \hyperlink{classCGenome_a0118c83be39b907d145b56fcda473516}{genomeT4\_\-N5}}
+\label{classCGenome_a0118c83be39b907d145b56fcda473516}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of 5-\/neighborhood 4 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a2e1b5934a61dee7931c3e469ce72d54e}{
+\hyperlink{classCGenomeType2__Ins}{CGenomeType2\_\-Ins} $\ast$ \hyperlink{classCGenome_a2e1b5934a61dee7931c3e469ce72d54e}{genomeT2\_\-Ins}}
+\label{classCGenome_a2e1b5934a61dee7931c3e469ce72d54e}
+
+\begin{DoxyCompactList}\small\item\em pointer to instance of instruction 2 state genome class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_afa9cc5e237f14127319f1d4a41152b15}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCGenome_afa9cc5e237f14127319f1d4a41152b15}{pConfigCore}}
+\label{classCGenome_afa9cc5e237f14127319f1d4a41152b15}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a8646329916a00dbadf7939e8b0335150}{
+int \hyperlink{classCGenome_a8646329916a00dbadf7939e8b0335150}{iGenomeType}}
+\label{classCGenome_a8646329916a00dbadf7939e8b0335150}
+
+\begin{DoxyCompactList}\small\item\em type of genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a4c91db4e82ee7e08279ef3544531e932}{
+int \hyperlink{classCGenome_a4c91db4e82ee7e08279ef3544531e932}{iFitness}}
+\label{classCGenome_a4c91db4e82ee7e08279ef3544531e932}
+
+\begin{DoxyCompactList}\small\item\em fitness in actual step of ca \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_aa036ea71601520763f319cbee9ac6d8b}{
+int \hyperlink{classCGenome_aa036ea71601520763f319cbee9ac6d8b}{iDifferention}}
+\label{classCGenome_aa036ea71601520763f319cbee9ac6d8b}
+
+\begin{DoxyCompactList}\small\item\em difference between perfect solution and actual solution \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_af87802e7879dda9bf90fca9e6027313d}{
+int \hyperlink{classCGenome_af87802e7879dda9bf90fca9e6027313d}{iFitnessMax}}
+\label{classCGenome_af87802e7879dda9bf90fca9e6027313d}
+
+\begin{DoxyCompactList}\small\item\em maximum fitness which this genome was able to obtain in act ga generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_ac1a6769e41ac64850d69b6e234d58515}{
+int \hyperlink{classCGenome_ac1a6769e41ac64850d69b6e234d58515}{iDifferentionMin}}
+\label{classCGenome_ac1a6769e41ac64850d69b6e234d58515}
+
+\begin{DoxyCompactList}\small\item\em maximum fitness = minimum differention \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a6acea4c0ed425208f2962c53b2698e08}{
+int \hyperlink{classCGenome_a6acea4c0ed425208f2962c53b2698e08}{iFitMaxStepCA}}
+\label{classCGenome_a6acea4c0ed425208f2962c53b2698e08}
+
+\begin{DoxyCompactList}\small\item\em step of ca in which max fitness was obtained \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a4024efbdde869c1eec9400d97fcb81c7}{
+double \hyperlink{classCGenome_a4024efbdde869c1eec9400d97fcb81c7}{dFitnessNormalized}}
+\label{classCGenome_a4024efbdde869c1eec9400d97fcb81c7}
+
+\begin{DoxyCompactList}\small\item\em normalized fitness \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_ad7aa4f19b6c908bade8de233f9080390}{
+double \hyperlink{classCGenome_ad7aa4f19b6c908bade8de233f9080390}{dFitnessMaxNormalized}}
+\label{classCGenome_ad7aa4f19b6c908bade8de233f9080390}
+
+\begin{DoxyCompactList}\small\item\em normalized max fitness \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a762f920595d3aa46c2ffa42da39b0771}{
+int \hyperlink{classCGenome_a762f920595d3aa46c2ffa42da39b0771}{iGenesMutated}}
+\label{classCGenome_a762f920595d3aa46c2ffa42da39b0771}
+
+\begin{DoxyCompactList}\small\item\em mutated genes of this genome in act generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_ac2c7add5ee1ba58d6ac8fd2996d86aa2}{
+int \hyperlink{classCGenome_ac2c7add5ee1ba58d6ac8fd2996d86aa2}{iGenesMutatedTotal}}
+\label{classCGenome_ac2c7add5ee1ba58d6ac8fd2996d86aa2}
+
+\begin{DoxyCompactList}\small\item\em mutated genes of this genome during it's life time \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a733ad690a9bea7a454fd66815727ecae}{
+int \hyperlink{classCGenome_a733ad690a9bea7a454fd66815727ecae}{iGenesMutatedAllAncestors}}
+\label{classCGenome_a733ad690a9bea7a454fd66815727ecae}
+
+\begin{DoxyCompactList}\small\item\em mutated genes of all ancestors of this genome \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_ab58a779d5c4cf3c01bda8d5398fdf662}{
+int \hyperlink{classCGenome_ab58a779d5c4cf3c01bda8d5398fdf662}{iAncestorsCount}}
+\label{classCGenome_ab58a779d5c4cf3c01bda8d5398fdf662}
+
+\begin{DoxyCompactList}\small\item\em ancestor count \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_abc89d9f084ef0ebe2a4a61b6edd87573}{
+int \hyperlink{classCGenome_abc89d9f084ef0ebe2a4a61b6edd87573}{iThisGenerationId}}
+\label{classCGenome_abc89d9f084ef0ebe2a4a61b6edd87573}
+
+\begin{DoxyCompactList}\small\item\em id of actual generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_ab1c7fb7723c614f069f1857eb730033e}{
+int \hyperlink{classCGenome_ab1c7fb7723c614f069f1857eb730033e}{iThisGenomeId}}
+\label{classCGenome_ab1c7fb7723c614f069f1857eb730033e}
+
+\begin{DoxyCompactList}\small\item\em id of this genome in actual generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a46ec230bb97402ef89a0774d326c81e4}{
+int \hyperlink{classCGenome_a46ec230bb97402ef89a0774d326c81e4}{iThisInitGenerationId}}
+\label{classCGenome_a46ec230bb97402ef89a0774d326c81e4}
+
+\begin{DoxyCompactList}\small\item\em id of generation in which this genome was created \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a152f4e6e52eff010f95aff1304993ede}{
+int \hyperlink{classCGenome_a152f4e6e52eff010f95aff1304993ede}{iThisInitGenomeId}}
+\label{classCGenome_a152f4e6e52eff010f95aff1304993ede}
+
+\begin{DoxyCompactList}\small\item\em id of this genome in it's init generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a20c45f657e79b4ce4e0083fbf8b2b87d}{
+int \hyperlink{classCGenome_a20c45f657e79b4ce4e0083fbf8b2b87d}{iParentGenerationId}}
+\label{classCGenome_a20c45f657e79b4ce4e0083fbf8b2b87d}
+
+\begin{DoxyCompactList}\small\item\em id of parent genome generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a724262d508e6d5426fe62d1df6945d68}{
+int \hyperlink{classCGenome_a724262d508e6d5426fe62d1df6945d68}{iParentGenomeId}}
+\label{classCGenome_a724262d508e6d5426fe62d1df6945d68}
+
+\begin{DoxyCompactList}\small\item\em id of parent genome in it's generation \item\end{DoxyCompactList}\item 
+\hypertarget{classCGenome_a5420e4d9d8f04f42a93f6b4b8e2883b4}{
+int {\bfseries iErrFlag}}
+\label{classCGenome_a5420e4d9d8f04f42a93f6b4b8e2883b4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class contains genome of GA using classes from ./genome/ folder -\/ this classes contain genome itself, this class just make up-\/level iterface for them 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGenome_a457e2d373926103a835472d689e8e2e7}{
+\index{CGenome@{CGenome}!CGenome@{CGenome}}
+\index{CGenome@{CGenome}!CGenome@{CGenome}}
+\subsubsection[{CGenome}]{\setlength{\rightskip}{0pt plus 5cm}CGenome::CGenome (int {\em typeG} = {\ttfamily GENOME\_\-TYPE\_\-2\_\-9N}, \/  int {\em initGenerationId} = {\ttfamily -\/1}, \/  int {\em initGenomeId} = {\ttfamily -\/1}, \/  {\bf CConfigCore} $\ast$ {\em pCC} = {\ttfamily NULL})}}
+\label{classCGenome_a457e2d373926103a835472d689e8e2e7}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em typeG}]genome type \item[{\em initGenerationId}]id of generation, in which this genome was created \item[{\em initGenomeId}]id of genome \item[{\em $\ast$pCC}]pointer to config class \end{DoxyParams}
+\hypertarget{classCGenome_afe7e2e3d4f8d7640c72a3a392147b08a}{
+\index{CGenome@{CGenome}!CGenome@{CGenome}}
+\index{CGenome@{CGenome}!CGenome@{CGenome}}
+\subsubsection[{CGenome}]{\setlength{\rightskip}{0pt plus 5cm}CGenome::CGenome (const {\bf CGenome} \& {\em rSide}, \/  int {\em mode} = {\ttfamily GENOME\_\-CONSTRUCT\_\-COPY\_\-MODE\_\-NEXT\_\-GEN}, \/  {\bf CConfigCore} $\ast$ {\em pCC} = {\ttfamily NULL})}}
+\label{classCGenome_afe7e2e3d4f8d7640c72a3a392147b08a}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to genome class at right side of \char`\"{}=\char`\"{} \item[{\em mode}]class copy mode -\/ DEEP or NEXT-\/GEN \item[{\em $\ast$pCC}]pointer to config class \end{DoxyParams}
+\hypertarget{classCGenome_a6ed12f20c2ca1f53498046b584acb01b}{
+\index{CGenome@{CGenome}!$\sim$CGenome@{$\sim$CGenome}}
+\index{$\sim$CGenome@{$\sim$CGenome}!CGenome@{CGenome}}
+\subsubsection[{$\sim$CGenome}]{\setlength{\rightskip}{0pt plus 5cm}CGenome::$\sim$CGenome ()}}
+\label{classCGenome_a6ed12f20c2ca1f53498046b584acb01b}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGenome_a2d0d112a35ca90fdb715bc8fdc87a683}{
+\index{CGenome@{CGenome}!GetAncestorsCount@{GetAncestorsCount}}
+\index{GetAncestorsCount@{GetAncestorsCount}!CGenome@{CGenome}}
+\subsubsection[{GetAncestorsCount}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetAncestorsCount ()}}
+\label{classCGenome_a2d0d112a35ca90fdb715bc8fdc87a683}
+return count of ancestor genomes \hypertarget{classCGenome_a7d7ddf14f33e67482827aac0a6dfe10c}{
+\index{CGenome@{CGenome}!GetDifferentionMin@{GetDifferentionMin}}
+\index{GetDifferentionMin@{GetDifferentionMin}!CGenome@{CGenome}}
+\subsubsection[{GetDifferentionMin}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetDifferentionMin ()}}
+\label{classCGenome_a7d7ddf14f33e67482827aac0a6dfe10c}
+returns minimum differention, which was reached during all steps of ca \hypertarget{classCGenome_a56f771356480c9c018e459187914ed8f}{
+\index{CGenome@{CGenome}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CGenome@{CGenome}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetErrorFlag ()}}
+\label{classCGenome_a56f771356480c9c018e459187914ed8f}
+return error flag \hypertarget{classCGenome_ab377704570de61d40c5c35cbc4038b8f}{
+\index{CGenome@{CGenome}!GetFitness@{GetFitness}}
+\index{GetFitness@{GetFitness}!CGenome@{CGenome}}
+\subsubsection[{GetFitness}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetFitness ()}}
+\label{classCGenome_ab377704570de61d40c5c35cbc4038b8f}
+return fitness of actual step of ca \hypertarget{classCGenome_a5ca3b39ec73b06b0bd2c6c15e058c692}{
+\index{CGenome@{CGenome}!GetFitnessMax@{GetFitnessMax}}
+\index{GetFitnessMax@{GetFitnessMax}!CGenome@{CGenome}}
+\subsubsection[{GetFitnessMax}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetFitnessMax ()}}
+\label{classCGenome_a5ca3b39ec73b06b0bd2c6c15e058c692}
+return maximum fitness, which was reached during all steps of ca \hypertarget{classCGenome_a6feb7c58908885c43921300f80881852}{
+\index{CGenome@{CGenome}!GetFitnessMaxNorm@{GetFitnessMaxNorm}}
+\index{GetFitnessMaxNorm@{GetFitnessMaxNorm}!CGenome@{CGenome}}
+\subsubsection[{GetFitnessMaxNorm}]{\setlength{\rightskip}{0pt plus 5cm}double CGenome::GetFitnessMaxNorm ()}}
+\label{classCGenome_a6feb7c58908885c43921300f80881852}
+returns maximum mormalized fitness which was reached during all steps of ca \hypertarget{classCGenome_add91fda87f3065245ca2cdf280272b60}{
+\index{CGenome@{CGenome}!GetFitnessMaxStepCA@{GetFitnessMaxStepCA}}
+\index{GetFitnessMaxStepCA@{GetFitnessMaxStepCA}!CGenome@{CGenome}}
+\subsubsection[{GetFitnessMaxStepCA}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetFitnessMaxStepCA ()}}
+\label{classCGenome_add91fda87f3065245ca2cdf280272b60}
+return step of ca, in which max fitness was reached \hypertarget{classCGenome_a268d2a8008c2c56460e6de1df644c0c5}{
+\index{CGenome@{CGenome}!GetFitnessNorm@{GetFitnessNorm}}
+\index{GetFitnessNorm@{GetFitnessNorm}!CGenome@{CGenome}}
+\subsubsection[{GetFitnessNorm}]{\setlength{\rightskip}{0pt plus 5cm}double CGenome::GetFitnessNorm ()}}
+\label{classCGenome_a268d2a8008c2c56460e6de1df644c0c5}
+returns formalized fitness \hypertarget{classCGenome_a63ed6158c66292bc3934b8b0321205a7}{
+\index{CGenome@{CGenome}!GetGene@{GetGene}}
+\index{GetGene@{GetGene}!CGenome@{CGenome}}
+\subsubsection[{GetGene}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CGenome::GetGene (int {\em index})}}
+\label{classCGenome_a63ed6158c66292bc3934b8b0321205a7}
+return value of gene at given index, if index is out of range default value will be returned
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index of gene \end{DoxyParams}
+\hypertarget{classCGenome_a47f359ecc2d00012b13042ae19a6e078}{
+\index{CGenome@{CGenome}!GetGenomeType@{GetGenomeType}}
+\index{GetGenomeType@{GetGenomeType}!CGenome@{CGenome}}
+\subsubsection[{GetGenomeType}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetGenomeType ()}}
+\label{classCGenome_a47f359ecc2d00012b13042ae19a6e078}
+return type of genome \hypertarget{classCGenome_aa39c3fd7b912f6d3c9a6ea6b21f53e93}{
+\index{CGenome@{CGenome}!GetInstructionGenome@{GetInstructionGenome}}
+\index{GetInstructionGenome@{GetInstructionGenome}!CGenome@{CGenome}}
+\subsubsection[{GetInstructionGenome}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGenomeType2\_\-Ins} $\ast$ CGenome::GetInstructionGenome ()}}
+\label{classCGenome_aa39c3fd7b912f6d3c9a6ea6b21f53e93}
+returns whole instruction genome \hypertarget{classCGenome_a5032f14a89999743b28c9b758efbcd63}{
+\index{CGenome@{CGenome}!GetMutatedGenes@{GetMutatedGenes}}
+\index{GetMutatedGenes@{GetMutatedGenes}!CGenome@{CGenome}}
+\subsubsection[{GetMutatedGenes}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetMutatedGenes ()}}
+\label{classCGenome_a5032f14a89999743b28c9b758efbcd63}
+return count of mutated genes from actual generation of ga \hypertarget{classCGenome_a38b0bff8dfc37da6ad24e546bcd09d21}{
+\index{CGenome@{CGenome}!GetMutatedGenesAllAncestors@{GetMutatedGenesAllAncestors}}
+\index{GetMutatedGenesAllAncestors@{GetMutatedGenesAllAncestors}!CGenome@{CGenome}}
+\subsubsection[{GetMutatedGenesAllAncestors}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetMutatedGenesAllAncestors ()}}
+\label{classCGenome_a38b0bff8dfc37da6ad24e546bcd09d21}
+return total mutated genes of all ancestor genomes \hypertarget{classCGenome_a06e87239b9570b6ece30d735218ad62e}{
+\index{CGenome@{CGenome}!GetMutatedGenesTotal@{GetMutatedGenesTotal}}
+\index{GetMutatedGenesTotal@{GetMutatedGenesTotal}!CGenome@{CGenome}}
+\subsubsection[{GetMutatedGenesTotal}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetMutatedGenesTotal ()}}
+\label{classCGenome_a06e87239b9570b6ece30d735218ad62e}
+returns total mutated genes of this genome \hypertarget{classCGenome_a2c422e43eeba639adac8819bda493840}{
+\index{CGenome@{CGenome}!GetParentGenerationId@{GetParentGenerationId}}
+\index{GetParentGenerationId@{GetParentGenerationId}!CGenome@{CGenome}}
+\subsubsection[{GetParentGenerationId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetParentGenerationId ()}}
+\label{classCGenome_a2c422e43eeba639adac8819bda493840}
+returns parent genome generation id \hypertarget{classCGenome_a2d7df97b949060f67af3d459176d1579}{
+\index{CGenome@{CGenome}!GetParentGenomeId@{GetParentGenomeId}}
+\index{GetParentGenomeId@{GetParentGenomeId}!CGenome@{CGenome}}
+\subsubsection[{GetParentGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetParentGenomeId ()}}
+\label{classCGenome_a2d7df97b949060f67af3d459176d1579}
+returns parent id \hypertarget{classCGenome_a067c5f24d85af2dd94199a74b6bcc19a}{
+\index{CGenome@{CGenome}!GetThisGenerationId@{GetThisGenerationId}}
+\index{GetThisGenerationId@{GetThisGenerationId}!CGenome@{CGenome}}
+\subsubsection[{GetThisGenerationId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetThisGenerationId ()}}
+\label{classCGenome_a067c5f24d85af2dd94199a74b6bcc19a}
+return this genome actual generation id \hypertarget{classCGenome_a2db1857e39b167371d212f07a852a19e}{
+\index{CGenome@{CGenome}!GetThisGenomeId@{GetThisGenomeId}}
+\index{GetThisGenomeId@{GetThisGenomeId}!CGenome@{CGenome}}
+\subsubsection[{GetThisGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetThisGenomeId ()}}
+\label{classCGenome_a2db1857e39b167371d212f07a852a19e}
+returns this genome id in actual generation \hypertarget{classCGenome_a924b1fddb5b0941f38b1eb51da608c3c}{
+\index{CGenome@{CGenome}!GetThisInitGenerationId@{GetThisInitGenerationId}}
+\index{GetThisInitGenerationId@{GetThisInitGenerationId}!CGenome@{CGenome}}
+\subsubsection[{GetThisInitGenerationId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetThisInitGenerationId ()}}
+\label{classCGenome_a924b1fddb5b0941f38b1eb51da608c3c}
+return this genome init generation id \hypertarget{classCGenome_a5dfa049008c6240a85fa18c99da636d0}{
+\index{CGenome@{CGenome}!GetThisInitGenomeId@{GetThisInitGenomeId}}
+\index{GetThisInitGenomeId@{GetThisInitGenomeId}!CGenome@{CGenome}}
+\subsubsection[{GetThisInitGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}int CGenome::GetThisInitGenomeId ()}}
+\label{classCGenome_a5dfa049008c6240a85fa18c99da636d0}
+returns this genome id in init generation \hypertarget{classCGenome_afe3b0fd006996c7cd4e004a64f148fa9}{
+\index{CGenome@{CGenome}!SetAncestorsCount@{SetAncestorsCount}}
+\index{SetAncestorsCount@{SetAncestorsCount}!CGenome@{CGenome}}
+\subsubsection[{SetAncestorsCount}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetAncestorsCount (int {\em anc})}}
+\label{classCGenome_afe3b0fd006996c7cd4e004a64f148fa9}
+sets count of ancestor genomes
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em anc}]ancestors count \end{DoxyParams}
+\hypertarget{classCGenome_acd37f114e0f35ce1e9fc6aaeeb1e7906}{
+\index{CGenome@{CGenome}!SetFitness@{SetFitness}}
+\index{SetFitness@{SetFitness}!CGenome@{CGenome}}
+\subsubsection[{SetFitness}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetFitness (int {\em f})}}
+\label{classCGenome_acd37f114e0f35ce1e9fc6aaeeb1e7906}
+sets fitness
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em f}]fitness \end{DoxyParams}
+\hypertarget{classCGenome_a55e277b9ac07a547125764452d9955e6}{
+\index{CGenome@{CGenome}!SetFitness@{SetFitness}}
+\index{SetFitness@{SetFitness}!CGenome@{CGenome}}
+\subsubsection[{SetFitness}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetFitness (int {\em f}, \/  int {\em d}, \/  int {\em caStep})}}
+\label{classCGenome_a55e277b9ac07a547125764452d9955e6}
+sets fitness of this genome
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em f}]fitness \item[{\em caStep}]step of ca, in which this fitness was reached \end{DoxyParams}
+\hypertarget{classCGenome_a7c7e21d4d46a594aae09229a2aa5d814}{
+\index{CGenome@{CGenome}!SetFitnessNorm@{SetFitnessNorm}}
+\index{SetFitnessNorm@{SetFitnessNorm}!CGenome@{CGenome}}
+\subsubsection[{SetFitnessNorm}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetFitnessNorm (double {\em fn})}}
+\label{classCGenome_a7c7e21d4d46a594aae09229a2aa5d814}
+sets normalized fitness
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fn}]normalized fitness \end{DoxyParams}
+\hypertarget{classCGenome_ad657f8d74e59406cd4c204de9de7b521}{
+\index{CGenome@{CGenome}!SetGene@{SetGene}}
+\index{SetGene@{SetGene}!CGenome@{CGenome}}
+\subsubsection[{SetGene}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetGene (int {\em index}, \/  BYTE {\em gene})}}
+\label{classCGenome_ad657f8d74e59406cd4c204de9de7b521}
+sets gene of genome to given value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]index of gene in genome \item[{\em gene}]value of gene \end{DoxyParams}
+\hypertarget{classCGenome_afae4fdef83e9dd66e700c10309396481}{
+\index{CGenome@{CGenome}!SetMutatedGenes@{SetMutatedGenes}}
+\index{SetMutatedGenes@{SetMutatedGenes}!CGenome@{CGenome}}
+\subsubsection[{SetMutatedGenes}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetMutatedGenes (int {\em mgc})}}
+\label{classCGenome_afae4fdef83e9dd66e700c10309396481}
+sets count of mutated genes in actual generation of ga
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mgc}]mutated genes count \end{DoxyParams}
+\hypertarget{classCGenome_a43880408eec620f379d23a7078b25c85}{
+\index{CGenome@{CGenome}!SetMutatedGenesTotal@{SetMutatedGenesTotal}}
+\index{SetMutatedGenesTotal@{SetMutatedGenesTotal}!CGenome@{CGenome}}
+\subsubsection[{SetMutatedGenesTotal}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetMutatedGenesTotal (int {\em thisG}, \/  int {\em ancestorG})}}
+\label{classCGenome_a43880408eec620f379d23a7078b25c85}
+sets total count of mutated genes -\/ this genome + ancestors
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em thisG}]mutated genes of this genome \item[{\em ancestorsG}]mutated genes of all ancestors \end{DoxyParams}
+\hypertarget{classCGenome_a3029541a0ed7983360b47360e26b65d0}{
+\index{CGenome@{CGenome}!SetParentGenomeId@{SetParentGenomeId}}
+\index{SetParentGenomeId@{SetParentGenomeId}!CGenome@{CGenome}}
+\subsubsection[{SetParentGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetParentGenomeId (int {\em generationId}, \/  int {\em genomeId})}}
+\label{classCGenome_a3029541a0ed7983360b47360e26b65d0}
+sets parent genome id and generation id -\/ generation in which parent of this genome was created
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em generationId}]id of PARENT generation \item[{\em genomeId}]id of genome in PARENT generation \end{DoxyParams}
+\hypertarget{classCGenome_a057453c23dcda0e7ce942c91c344f6df}{
+\index{CGenome@{CGenome}!SetThisGenomeId@{SetThisGenomeId}}
+\index{SetThisGenomeId@{SetThisGenomeId}!CGenome@{CGenome}}
+\subsubsection[{SetThisGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetThisGenomeId (int {\em generationId}, \/  int {\em genomeId})}}
+\label{classCGenome_a057453c23dcda0e7ce942c91c344f6df}
+sets this genome actual id and actual generation id -\/ generation in which this genome was created
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em generationId}]id of ACTUAL generation \item[{\em genomeId}]id of genome in ACTUAL generation \end{DoxyParams}
+\hypertarget{classCGenome_af3df7338e44deb4a81dc6d7171b8aac4}{
+\index{CGenome@{CGenome}!SetThisInitGenomeId@{SetThisInitGenomeId}}
+\index{SetThisInitGenomeId@{SetThisInitGenomeId}!CGenome@{CGenome}}
+\subsubsection[{SetThisInitGenomeId}]{\setlength{\rightskip}{0pt plus 5cm}void CGenome::SetThisInitGenomeId (int {\em generationInitId}, \/  int {\em genomeInitId})}}
+\label{classCGenome_af3df7338e44deb4a81dc6d7171b8aac4}
+sets this genome init id and init generation id -\/ generation in which this genome was created
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em generationInitId}]id of INIT generation \item[{\em genomeInitId}]id of genome in INIT generation \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Genome.h\item 
+Genome.cpp\end{DoxyCompactItemize}

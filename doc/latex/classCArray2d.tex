@@ -1,0 +1,207 @@
+\hypertarget{classCArray2d}{
+\section{CArray2d Class Reference}
+\label{classCArray2d}\index{CArray2d@{CArray2d}}
+}
+
+
+{\ttfamily \#include $<$Array2d.h$>$}Inheritance diagram for CArray2d::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classCArray2d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCArray2d_a89adc38a3b0859b819fee52cc054f519}{CArray2d} (int sizeX=SPACE\_\-SIZE\_\-X\_\-DEFAULT, int sizeY=SPACE\_\-SIZE\_\-Y\_\-DEFAULT, BYTE stateDef=CELL\_\-STATE\_\-EMPTY, \hyperlink{classCConfigCore}{CConfigCore} $\ast$pCC=NULL)
+\item 
+\hyperlink{classCArray2d_a166233a87063ef3ae7d510c8f055df56}{$\sim$CArray2d} ()
+\item 
+BYTE \hyperlink{classCArray2d_a4d823e1efbdf408cf6960ccd9a40f651}{operator()} (int posX, int posY) const 
+\item 
+BYTE \& \hyperlink{classCArray2d_aa2e06bfd438eff2979d51c87b561343b}{operator()} (int posX, int posY)
+\item 
+\hyperlink{classCArray2d}{CArray2d} \& \hyperlink{classCArray2d_aed5c505b790e7b4ea06bf46ef67065f8}{operator=} (const \hyperlink{classCArray2d}{CArray2d} \&rSide)
+\item 
+int \hyperlink{classCArray2d_a7cfeb98b3112d1e147464a7ec2374579}{GetWidth} ()
+\item 
+int \hyperlink{classCArray2d_ae019e1beca716a4ea7d368e342fe23a1}{GetHeight} ()
+\item 
+int \hyperlink{classCArray2d_a021336ae61eb605e5d534722259d3c62}{GetWidth} () const 
+\item 
+int \hyperlink{classCArray2d_afbfa71015584fcb399c6fde2fa9be1b0}{GetHeight} () const 
+\item 
+void \hyperlink{classCArray2d_a3b4fc6d5c1536af5e6aead66ee7259eb}{ClearArray} ()
+\item 
+void \hyperlink{classCArray2d_a7171786b38896bf4bc52261daae3dde0}{ClearArray} (BYTE newDefState)
+\item 
+int \hyperlink{classCArray2d_afee234adb0190a1d8f3841f75a295e26}{GetErrorFlag} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classCArray2d_ad7566b350c9840af12641ca9385aa352}{AllocMemory} ()
+\item 
+int \hyperlink{classCArray2d_a83f5fbefa605a6f1875d084f4f2a3600}{DeleteMemory} ()
+\item 
+int \hyperlink{classCArray2d_aa568ff144541b03023e1afc3c8fe9cba}{InitArray} (int sizeX, int sizeY)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCArray2d_ab93193625b5110ea20017f82c3a1d426}{
+int \hyperlink{classCArray2d_ab93193625b5110ea20017f82c3a1d426}{iSizeX}}
+\label{classCArray2d_ab93193625b5110ea20017f82c3a1d426}
+
+\begin{DoxyCompactList}\small\item\em array width \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_acdb219b4bf58bc1fbc0ca992ae3c49a9}{
+int \hyperlink{classCArray2d_acdb219b4bf58bc1fbc0ca992ae3c49a9}{iSizeY}}
+\label{classCArray2d_acdb219b4bf58bc1fbc0ca992ae3c49a9}
+
+\begin{DoxyCompactList}\small\item\em array height \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_a46b3e446b7a34e04474589a31bd32ff3}{
+BYTE \hyperlink{classCArray2d_a46b3e446b7a34e04474589a31bd32ff3}{byDefCellState}}
+\label{classCArray2d_a46b3e446b7a34e04474589a31bd32ff3}
+
+\begin{DoxyCompactList}\small\item\em cell's default state \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_a29b47cb2b01eb6e235d316ec4926955b}{
+BYTE \hyperlink{classCArray2d_a29b47cb2b01eb6e235d316ec4926955b}{byErrCellState}}
+\label{classCArray2d_a29b47cb2b01eb6e235d316ec4926955b}
+
+\begin{DoxyCompactList}\small\item\em error state \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_ac318244ed315c07a5fd3bb470a4e6e6f}{
+struct \hyperlink{structstArray}{stArray} $\ast$ \hyperlink{classCArray2d_ac318244ed315c07a5fd3bb470a4e6e6f}{array}}
+\label{classCArray2d_ac318244ed315c07a5fd3bb470a4e6e6f}
+
+\begin{DoxyCompactList}\small\item\em pointer to dyn.allocated 2d array \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_ae645314b8bd552e6dde20366307e8218}{
+\hyperlink{classCConfigCore}{CConfigCore} $\ast$ \hyperlink{classCArray2d_ae645314b8bd552e6dde20366307e8218}{pConfigCoreArray}}
+\label{classCArray2d_ae645314b8bd552e6dde20366307e8218}
+
+\begin{DoxyCompactList}\small\item\em pointer to config class \item\end{DoxyCompactList}\item 
+\hypertarget{classCArray2d_a3650a21ae3734efd20a575caa28feeda}{
+int \hyperlink{classCArray2d_a3650a21ae3734efd20a575caa28feeda}{iErrFlag}}
+\label{classCArray2d_a3650a21ae3734efd20a575caa28feeda}
+
+\begin{DoxyCompactList}\small\item\em error flag \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains 2d array, which is used as cellular space for CA 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCArray2d_a89adc38a3b0859b819fee52cc054f519}{
+\index{CArray2d@{CArray2d}!CArray2d@{CArray2d}}
+\index{CArray2d@{CArray2d}!CArray2d@{CArray2d}}
+\subsubsection[{CArray2d}]{\setlength{\rightskip}{0pt plus 5cm}CArray2d::CArray2d (int {\em sizeX} = {\ttfamily SPACE\_\-SIZE\_\-X\_\-DEFAULT}, \/  int {\em sizeY} = {\ttfamily SPACE\_\-SIZE\_\-Y\_\-DEFAULT}, \/  BYTE {\em stateDef} = {\ttfamily CELL\_\-STATE\_\-EMPTY}, \/  {\bf CConfigCore} $\ast$ {\em pCC} = {\ttfamily NULL})}}
+\label{classCArray2d_a89adc38a3b0859b819fee52cc054f519}
+class constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sizeX}]x-\/dimension of array \item[{\em sizeY}]y-\/dimension of array \item[{\em stateDef}]default state of cell \item[{\em $\ast$pCC}]pointer to config class \end{DoxyParams}
+\hypertarget{classCArray2d_a166233a87063ef3ae7d510c8f055df56}{
+\index{CArray2d@{CArray2d}!$\sim$CArray2d@{$\sim$CArray2d}}
+\index{$\sim$CArray2d@{$\sim$CArray2d}!CArray2d@{CArray2d}}
+\subsubsection[{$\sim$CArray2d}]{\setlength{\rightskip}{0pt plus 5cm}CArray2d::$\sim$CArray2d ()}}
+\label{classCArray2d_a166233a87063ef3ae7d510c8f055df56}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCArray2d_ad7566b350c9840af12641ca9385aa352}{
+\index{CArray2d@{CArray2d}!AllocMemory@{AllocMemory}}
+\index{AllocMemory@{AllocMemory}!CArray2d@{CArray2d}}
+\subsubsection[{AllocMemory}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::AllocMemory ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCArray2d_ad7566b350c9840af12641ca9385aa352}
+allocates memory for 2d array \hypertarget{classCArray2d_a7171786b38896bf4bc52261daae3dde0}{
+\index{CArray2d@{CArray2d}!ClearArray@{ClearArray}}
+\index{ClearArray@{ClearArray}!CArray2d@{CArray2d}}
+\subsubsection[{ClearArray}]{\setlength{\rightskip}{0pt plus 5cm}void CArray2d::ClearArray (BYTE {\em newDefState})}}
+\label{classCArray2d_a7171786b38896bf4bc52261daae3dde0}
+clears array -\/ sets all cell to given value
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em newDefState}]new default state of cells \end{DoxyParams}
+\hypertarget{classCArray2d_a3b4fc6d5c1536af5e6aead66ee7259eb}{
+\index{CArray2d@{CArray2d}!ClearArray@{ClearArray}}
+\index{ClearArray@{ClearArray}!CArray2d@{CArray2d}}
+\subsubsection[{ClearArray}]{\setlength{\rightskip}{0pt plus 5cm}void CArray2d::ClearArray ()}}
+\label{classCArray2d_a3b4fc6d5c1536af5e6aead66ee7259eb}
+clears array -\/ sets all cell to default value \hypertarget{classCArray2d_a83f5fbefa605a6f1875d084f4f2a3600}{
+\index{CArray2d@{CArray2d}!DeleteMemory@{DeleteMemory}}
+\index{DeleteMemory@{DeleteMemory}!CArray2d@{CArray2d}}
+\subsubsection[{DeleteMemory}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::DeleteMemory ()\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCArray2d_a83f5fbefa605a6f1875d084f4f2a3600}
+deletes memory of 2d array \hypertarget{classCArray2d_afee234adb0190a1d8f3841f75a295e26}{
+\index{CArray2d@{CArray2d}!GetErrorFlag@{GetErrorFlag}}
+\index{GetErrorFlag@{GetErrorFlag}!CArray2d@{CArray2d}}
+\subsubsection[{GetErrorFlag}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::GetErrorFlag ()}}
+\label{classCArray2d_afee234adb0190a1d8f3841f75a295e26}
+returns error flag 
+
+Reimplemented in \hyperlink{classCSpace_afe1840ea70f14055a39090ceaec9778e}{CSpace}.\hypertarget{classCArray2d_afbfa71015584fcb399c6fde2fa9be1b0}{
+\index{CArray2d@{CArray2d}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CArray2d@{CArray2d}}
+\subsubsection[{GetHeight}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::GetHeight () const}}
+\label{classCArray2d_afbfa71015584fcb399c6fde2fa9be1b0}
+returns height of array \hypertarget{classCArray2d_ae019e1beca716a4ea7d368e342fe23a1}{
+\index{CArray2d@{CArray2d}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CArray2d@{CArray2d}}
+\subsubsection[{GetHeight}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::GetHeight ()}}
+\label{classCArray2d_ae019e1beca716a4ea7d368e342fe23a1}
+returns height of array 
+
+Reimplemented in \hyperlink{classCSpace_a00b9bce5ca8303b7bae59e2ab6ce98be}{CSpace}.\hypertarget{classCArray2d_a021336ae61eb605e5d534722259d3c62}{
+\index{CArray2d@{CArray2d}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CArray2d@{CArray2d}}
+\subsubsection[{GetWidth}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::GetWidth () const}}
+\label{classCArray2d_a021336ae61eb605e5d534722259d3c62}
+returns width of array \hypertarget{classCArray2d_a7cfeb98b3112d1e147464a7ec2374579}{
+\index{CArray2d@{CArray2d}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CArray2d@{CArray2d}}
+\subsubsection[{GetWidth}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::GetWidth ()}}
+\label{classCArray2d_a7cfeb98b3112d1e147464a7ec2374579}
+returns width of array 
+
+Reimplemented in \hyperlink{classCSpace_a0358e524cecae683cfbcf526ea99d818}{CSpace}.\hypertarget{classCArray2d_aa568ff144541b03023e1afc3c8fe9cba}{
+\index{CArray2d@{CArray2d}!InitArray@{InitArray}}
+\index{InitArray@{InitArray}!CArray2d@{CArray2d}}
+\subsubsection[{InitArray}]{\setlength{\rightskip}{0pt plus 5cm}int CArray2d::InitArray (int {\em sizeX}, \/  int {\em sizeY})\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCArray2d_aa568ff144541b03023e1afc3c8fe9cba}
+array init -\/ checking sizes of axes \hypertarget{classCArray2d_aa2e06bfd438eff2979d51c87b561343b}{
+\index{CArray2d@{CArray2d}!operator()@{operator()}}
+\index{operator()@{operator()}!CArray2d@{CArray2d}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}BYTE \& CArray2d::operator() (int {\em posX}, \/  int {\em posY})}}
+\label{classCArray2d_aa2e06bfd438eff2979d51c87b561343b}
+returns reference to element at given coordinates
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCArray2d_a4d823e1efbdf408cf6960ccd9a40f651}{
+\index{CArray2d@{CArray2d}!operator()@{operator()}}
+\index{operator()@{operator()}!CArray2d@{CArray2d}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}BYTE CArray2d::operator() (int {\em posX}, \/  int {\em posY}) const}}
+\label{classCArray2d_a4d823e1efbdf408cf6960ccd9a40f651}
+returns element from given coordinates
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em posX}]position on x-\/axes \item[{\em posY}]position on y-\/axes \end{DoxyParams}
+\hypertarget{classCArray2d_aed5c505b790e7b4ea06bf46ef67065f8}{
+\index{CArray2d@{CArray2d}!operator=@{operator=}}
+\index{operator=@{operator=}!CArray2d@{CArray2d}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CArray2d} \& CArray2d::operator= (const {\bf CArray2d} \& {\em rSide})}}
+\label{classCArray2d_aed5c505b790e7b4ea06bf46ef67065f8}
+copies one array into another
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \&rSide}]reference to class on right side of '=' \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Array2d.h\item 
+Array2d.cpp\end{DoxyCompactItemize}
